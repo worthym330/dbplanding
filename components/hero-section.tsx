@@ -25,7 +25,7 @@ export function HeroSection() {
         <h1 className="mb-6 text-4xl font-bold leading-tight tracking-tighter md:text-6xl lg:text-7xl">
           Premium Recovery
           <br />
-          <span className="text-primary">After Your Marathon</span>
+          <span className="text-white">After Your Marathon</span>
         </h1>
         <p className="mb-8 max-w-[600px] text-lg text-gray-200 md:text-xl">
           Exclusive hotels with premium amenities for the perfect post-race

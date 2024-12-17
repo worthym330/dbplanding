@@ -22,7 +22,7 @@ export function Footer() {
           <div>
             <h3 className="mb-4 text-lg font-semibold">Contact</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Email: support@spikereach.com</li>
+              <li>Email: support@daybreakpass.com</li>
               <li>Phone: +1 (555) 123-4567</li>
               <li>Address: 123 Marathon St, NY 10001</li>
             </ul>
@@ -37,7 +37,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t pt-8 text-center text-sm text-muted-foreground">
-          © 2024 SpikeReach. All rights reserved.
+          © 2024 DayBreakPass. All rights reserved.
         </div>
       </div>
     </footer>

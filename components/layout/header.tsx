@@ -14,8 +14,8 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur-lg">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 text-xl font-bold">
-          <Hotel className="h-6 w-6" />
-          <span>SpikeReach</span>
+          <img src="/logos/LogoBlack.png" className="h-10 w-10" />
+          <span>DayBreakPass</span>
         </Link>
         <nav className="flex items-center gap-6">
           <Link href="/" className="text-sm font-medium">

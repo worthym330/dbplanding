@@ -3,8 +3,16 @@
 import { motion } from "framer-motion";
 import { HotelCard } from "@/components/hotel-card/hotel-card";
 import { hotels } from "@/lib/data";
+// import { useHotelsStore } from "@/lib/hooks/use-hotel";
+// import { useEffect } from "react";
 
 export function HotelList() {
+  // const { hotels, fetchHotels } = useHotelsStore();
+
+  // useEffect(() => {
+  //   fetchHotels();
+  // }, [fetchHotels]);
+
   return (
     <div className="mx-auto max-w-7xl px-4 py-12">
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
