@@ -18,7 +18,7 @@ export function Header() {
           <span>DayBreakPass</span>
         </Link>
         <nav className="flex items-center gap-6">
-          <Link href="/" className="text-sm font-medium">
+          <Link href="/#hotels" className="text-sm font-medium">
             Hotels
           </Link>
           <Link href="/cart" className="relative">
