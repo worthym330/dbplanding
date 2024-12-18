@@ -1,6 +1,7 @@
 "use client";
 
 import { create } from "zustand";
+import { persist } from "zustand/middleware";
 
 interface CheckoutForm {
   name: string;
@@ -22,11 +23,16 @@ const initialState: CheckoutForm = {
   specialRequests: "",
 };
 
-export const useCheckout = create<CheckoutStore>((set) => ({
-  form: initialState,
-  updateForm: (data) =>
-    set((state) => ({
-      form: { ...state.form, ...data },
-    })),
-  resetForm: () => set({ form: initialState }),
-}));
+export const useCheckout = create<CheckoutStore>()(
+  persist(
+    (set, get) => ({
+      form: initialState,
+      updateForm: (data) =>
+        set((state) => ({
+          form: { ...state.form, ...data },
+        })),
+      resetForm: () => set({ form: initialState }),
+    }),
+    { name: "form-storage" }
+  )
+);

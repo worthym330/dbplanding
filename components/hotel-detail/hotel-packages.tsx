@@ -1,6 +1,6 @@
 "use client";
 
-import { Package } from "@/lib/types";
+import { Hotel, Package } from "@/lib/types";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import {
@@ -12,12 +12,29 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useCart } from "@/lib/hooks/use-cart";
+import toast from "react-hot-toast";
 
 interface HotelPackagesProps {
   packages: Package[];
+  hotel: Hotel;
 }
 
-export function HotelPackages({ packages }: HotelPackagesProps) {
+export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
+  const addItem = useCart((state) => state.addItem);
+
+  const handleAddToCart = (pkg: Package) => {
+    toast.success("Successfully added into the cart");
+    addItem({
+      id: pkg.id,
+      name: pkg.name,
+      price: pkg.price,
+      quantity: 1,
+      hotelName: hotel.name,
+      hotelId: hotel.id,
+    });
+  };
+
   return (
     <section className="space-y-6">
       <div>
@@ -57,7 +74,9 @@ export function HotelPackages({ packages }: HotelPackagesProps) {
                 </p>
               </CardContent>
               <CardFooter>
-                <Button className="w-full">Add to Cart</Button>
+                <Button className="w-full" onClick={() => handleAddToCart(pkg)}>
+                  Add to Cart
+                </Button>
               </CardFooter>
             </Card>
           </motion.div>

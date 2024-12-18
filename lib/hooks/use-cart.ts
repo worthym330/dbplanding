@@ -8,13 +8,17 @@ interface CartItem {
   name: string;
   price: number;
   quantity: number;
+  hotelName: string;
+  hotelId: string;
+  // date: string;
+  // time: string;
 }
 
 interface CartStore {
   items: CartItem[];
   addItem: (item: CartItem) => void;
-  removeItem: (id: string) => void;
-  updateQuantity: (id: string, quantity: number) => void;
+  removeItem: (id: string, hotelId: string) => void;
+  updateQuantity: (id: string, quantity: number, hotelId: string) => void;
   clearCart: () => void;
   getTotal: () => number;
 }
@@ -25,11 +29,13 @@ export const useCart = create<CartStore>()(
       items: [],
       addItem: (item) =>
         set((state) => {
-          const existingItem = state.items.find((i) => i.id === item.id);
+          const existingItem = state.items.find(
+            (i) => i.id === item.id && i.hotelId === item.hotelId
+          );
           if (existingItem) {
             return {
               items: state.items.map((i) =>
-                i.id === item.id
+                i.id === item.id && i.hotelId === item.hotelId
                   ? { ...i, quantity: i.quantity + item.quantity }
                   : i
               ),
@@ -37,20 +43,38 @@ export const useCart = create<CartStore>()(
           }
           return { items: [...state.items, item] };
         }),
-      removeItem: (id) =>
+      removeItem: (id, hotelId) =>
         set((state) => ({
-          items: state.items.filter((item) => item.id !== id),
-        })),
-      updateQuantity: (id, quantity) =>
-        set((state) => ({
-          items: state.items.map((item) =>
-            item.id === id ? { ...item, quantity } : item
+          items: state.items.filter(
+            (item) => !(item.id === id && item.hotelId === hotelId)
           ),
         })),
+      updateQuantity: (id, quantity, hotelId) =>
+        set((state) => {
+          if (quantity <= 0) {
+            // If the quantity is 0 or less, remove the item
+            return {
+              items: state.items.filter(
+                (item) => !(item.id === id && item.hotelId === hotelId)
+              ),
+            };
+          }
+          // Otherwise, update the quantity
+          return {
+            items: state.items.map((item) =>
+              item.id === id && item.hotelId === hotelId
+                ? { ...item, quantity }
+                : item
+            ),
+          };
+        }),
       clearCart: () => set({ items: [] }),
       getTotal: () => {
         const items = get().items;
-        return items.reduce((total, item) => total + item.price * item.quantity, 0);
+        return items.reduce(
+          (total, item) => total + item.price * item.quantity,
+          0
+        );
       },
     }),
     {

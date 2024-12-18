@@ -1,19 +1,42 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Filter } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { hotels } from "@/lib/data"; 
 
-const filterOptions = [
-  { id: "all", label: "All" },
-  { id: "brunch-pool", label: "Brunch + Pool" },
-  { id: "spa", label: "Spa Packages" },
-  { id: "brunch", label: "Brunch Only" },
-];
+// Function to extract unique package names from hotels
+const getUniquePackages = () => {
+  const packages: string[] = [];
+  hotels.forEach((hotel) => {
+    hotel.packages.forEach((pkg) => {
+      if (!packages.includes(pkg.name)) {
+        packages.push(pkg.name);
+      }
+    });
+  });
+  return packages;
+};
 
-export function FilterBar() {
+export function FilterBar({ onFilterChange }: { onFilterChange: (filter: string) => void }) {
   const [activeFilter, setActiveFilter] = useState("all");
+  const [filterOptions, setFilterOptions] = useState<{ id: string, label: string }[]>([]);
+
+  // Set filter options once the component mounts
+  useEffect(() => {
+    const uniquePackages = getUniquePackages();
+    const options = [
+      { id: "all", label: "All" },
+      ...uniquePackages.map((pkg) => ({ id: pkg.toLowerCase(), label: pkg }))
+    ];
+    setFilterOptions(options);
+  }, []);
+
+  const handleFilterChange = (filter: string) => {
+    setActiveFilter(filter);
+    onFilterChange(filter);
+  };
 
   return (
     <div className="sticky top-0 z-50 bg-background/80 backdrop-blur-lg">
@@ -28,7 +51,7 @@ export function FilterBar() {
               <Button
                 key={option.id}
                 variant={activeFilter === option.id ? "default" : "outline"}
-                onClick={() => setActiveFilter(option.id)}
+                onClick={() => handleFilterChange(option.id)}
                 className="relative"
               >
                 {activeFilter === option.id && (

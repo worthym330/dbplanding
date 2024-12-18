@@ -15,7 +15,7 @@ interface HotelDetailHeaderProps {
 export function HotelDetailHeader({ hotel }: HotelDetailHeaderProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
-    hotel.image,
+    ...hotel.images,
     "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=1920&auto=format&fit=crop",
     "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1920&auto=format&fit=crop",
   ];

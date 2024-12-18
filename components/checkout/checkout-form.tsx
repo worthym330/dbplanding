@@ -14,6 +14,12 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "../ui/button";
+import { useCheckout } from "@/lib/hooks/use-checkout";
+import { initiateRazorpayPayment } from "@/lib/utils/razorpay";
+import app_api from "@/lib/utils/api";
+import { useCart } from "@/lib/hooks/use-cart";
+import toast from "react-hot-toast";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -23,15 +29,84 @@ const formSchema = z.object({
 });
 
 export function CheckoutForm() {
+  const { form: checkoutForm, updateForm, resetForm } = useCheckout();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      phone: "",
-      specialRequests: "",
-    },
+    defaultValues: checkoutForm,
   });
+  const { items } = useCart((state) => ({
+    items: state.items,
+  }));
+
+  const { clearCart } = useCart();
+
+  const subtotal = items.reduce(
+    (total: number, item: { price: number; quantity: number }) =>
+      total + item.price * item.quantity,
+    0
+  );
+
+  const tax = subtotal * 0.18;
+
+  const total = subtotal + tax;
+
+  const onSubmit = async (data: z.infer<typeof formSchema>) => {
+    updateForm(data);
+
+    let payload = {
+      name: data.name,
+      phone: data.phone,
+      email: data.email,
+      cartItems: items,
+      totalAmount: total,
+    };
+    await app_api
+      .post("/landing/create-order", payload)
+      .then(async (res) => {
+        const order = res.data;
+        await initiateRazorpayPayment(
+          {
+            amount: order.amount,
+            currency: order.currency,
+            name: data.name,
+            description: "Order Payment",
+            orderId: order.orderId,
+            prefill: {
+              name: data.name,
+              email: data.email,
+              contact: data.phone,
+            },
+          },
+          (paymentResponse) => {
+            console.log("Payment Successful:", paymentResponse);
+            let payload = {
+              razorpayOrderId: order.orderId,
+              razorpayPaymentId: paymentResponse.razorpay_payment_id,
+              userId: order.userId,
+            };
+            // app_api
+            //   .post("/landing/validate-payment", payload)
+            //   .then((res) => {
+            //     console.log(res);
+
+            //   })
+            //   .catch((err) => {
+            //     console.log(err);
+            //   });
+            toast.success("Successfully payment marked");
+            resetForm();
+            clearCart()
+          },
+          (error) => {
+            toast.error("Payment failed");
+            console.log("errror", error);
+          }
+        );
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   return (
     <Card className="mb-8">
@@ -40,7 +115,7 @@ export function CheckoutForm() {
       </CardHeader>
       <CardContent>
         <Form {...form}>
-          <form className="space-y-6">
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
             <FormField
               control={form.control}
               name="name"
@@ -48,7 +123,7 @@ export function CheckoutForm() {
                 <FormItem>
                   <FormLabel>Full Name</FormLabel>
                   <FormControl>
-                    <Input placeholder="John Doe" {...field} />
+                    <Input placeholder="Enter your name..." {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -61,7 +136,7 @@ export function CheckoutForm() {
                 <FormItem>
                   <FormLabel>Email</FormLabel>
                   <FormControl>
-                    <Input placeholder="john@example.com" {...field} />
+                    <Input placeholder="Enter your email..." {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -74,7 +149,10 @@ export function CheckoutForm() {
                 <FormItem>
                   <FormLabel>Phone</FormLabel>
                   <FormControl>
-                    <Input placeholder="+1 (555) 000-0000" {...field} />
+                    <Input
+                      placeholder="Enter your mobile number..."
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -96,6 +174,9 @@ export function CheckoutForm() {
                 </FormItem>
               )}
             />
+            <Button type="submit" className="w-full" size="lg">
+              Pay Now
+            </Button>
           </form>
         </Form>
       </CardContent>

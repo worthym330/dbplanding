@@ -22,7 +22,7 @@ export function HotelCard({ hotel }: HotelCardProps) {
         className="h-full"
       >
         <Card className="h-full cursor-pointer overflow-hidden">
-          <HotelCardImage src={hotel.image} alt={hotel.name} />
+          <HotelCardImage src={hotel.images[0]} alt={hotel.name} partner={hotel?.ispartner} />
           <HotelCardHeader
             name={hotel.name}
             distance={hotel.distance}
