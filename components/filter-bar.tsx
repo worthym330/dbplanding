@@ -39,7 +39,7 @@ export function FilterBar({ onFilterChange }: { onFilterChange: (filter: string)
   };
 
   return (
-    <div className="sticky top-0 z-50 bg-background/80 backdrop-blur-lg">
+    <div className="sticky top-0 z-40 bg-background/80 backdrop-blur-lg">
       <div className="mx-auto max-w-7xl px-4 py-4">
         <div className="flex items-center justify-between gap-4 overflow-x-auto">
           <div className="flex items-center gap-2">
