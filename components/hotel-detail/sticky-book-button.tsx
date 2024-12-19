@@ -21,7 +21,7 @@ export function StickyBookButton({ hotel }: StickyBookButtonProps) {
         <div>
           <p className="font-medium">{hotel.name}</p>
           <p className="text-2xl font-bold">
-            ${hotel.price}
+            ₹{hotel.price}
             <span className="text-sm font-normal text-muted-foreground">
               /night
             </span>

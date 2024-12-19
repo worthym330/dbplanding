@@ -37,7 +37,7 @@ export function HotelCard({ hotel }: HotelCardProps) {
               ))}
             </div>
             <p className="mt-4 text-2xl font-bold">
-              ${hotel.price}
+              ₹{hotel.price}
               <span className="text-sm font-normal text-muted-foreground">
                 /night
               </span>
