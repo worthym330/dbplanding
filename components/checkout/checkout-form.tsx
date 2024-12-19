@@ -20,6 +20,7 @@ import { initiateRazorpayPayment } from "@/lib/utils/razorpay";
 import app_api from "@/lib/utils/api";
 import { useCart } from "@/lib/hooks/use-cart";
 import toast from "react-hot-toast";
+import { useRouter } from "next/navigation";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -29,7 +30,8 @@ const formSchema = z.object({
 });
 
 export function CheckoutForm() {
-  const { form: checkoutForm, updateForm, resetForm } = useCheckout();
+  const { form: checkoutForm, updateForm } = useCheckout();
+  const router = useRouter();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: checkoutForm,
@@ -37,8 +39,6 @@ export function CheckoutForm() {
   const { items } = useCart((state) => ({
     items: state.items,
   }));
-
-  const { clearCart } = useCart();
 
   const subtotal = items.reduce(
     (total: number, item: { price: number; quantity: number }) =>
@@ -84,18 +84,16 @@ export function CheckoutForm() {
               razorpayPaymentId: paymentResponse.razorpay_payment_id,
               userId: order.userId,
             };
-            // app_api
-            //   .post("/landing/validate-payment", payload)
-            //   .then((res) => {
-            //     console.log(res);
-
-            //   })
-            //   .catch((err) => {
-            //     console.log(err);
-            //   });
-            toast.success("Successfully payment marked");
-            resetForm();
-            clearCart()
+            app_api
+              .post("/landing/validate-payment", payload)
+              .then((res) => {
+                toast.success("Successfully payment marked");
+                const orderId = res.data.invoice.orderId;
+                router.push(`/thank-you?orderid=${orderId}`);
+              })
+              .catch((err) => {
+                console.log(err);
+              });
           },
           (error) => {
             toast.error("Payment failed");

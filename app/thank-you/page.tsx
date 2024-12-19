@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { Check, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -9,11 +9,33 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useCart } from "@/lib/hooks/use-cart";
 import { useCheckout } from "@/lib/hooks/use-checkout";
 import { formatPrice } from "@/lib/utils/price";
+import app_api from "@/lib/utils/api";
 
 export default function ThankYouPage() {
   const router = useRouter();
   const { items, clearCart } = useCart();
   const { form, resetForm } = useCheckout();
+  const searchParams = useSearchParams();
+  const orderid = searchParams.get("orderid");
+
+  const [pdfUrl, setPdfUrl] = useState(null); // State to hold the PDF URL
+
+  useEffect(() => {
+    getData();
+  }, [orderid]);
+
+  const getData = async () => {
+    try {
+      const res = await app_api.get(`/landing/order-details/${orderid}`);
+      console.log(res);
+      // Assuming the response contains the URL of the PDF
+      if (res?.data?.invoice.filename) {
+        setPdfUrl(res.data.invoice.filename); // Set the PDF URL in state
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   useEffect(() => {
     // Reset cart and form after successful payment
@@ -22,6 +44,16 @@ export default function ThankYouPage() {
       resetForm();
     };
   }, [clearCart, resetForm]);
+
+  // Function to trigger the PDF download
+  const handleDownload = () => {
+    if (pdfUrl) {
+      const link = document.createElement("a");
+      link.href = pdfUrl;
+      link.download = "receipt.pdf"; 
+      link.click();
+    }
+  };
 
   return (
     <main className="min-h-screen bg-background pb-24">
@@ -38,7 +70,9 @@ export default function ThankYouPage() {
                   <Check className="h-8 w-8 text-primary-foreground" />
                 </div>
               </div>
-              <CardTitle className="text-3xl">Thank You for Your Booking!</CardTitle>
+              <CardTitle className="text-3xl">
+                Thank You for Your Booking!
+              </CardTitle>
               <p className="mt-2 text-muted-foreground">
                 A confirmation email has been sent to {form.email}
               </p>
@@ -65,7 +99,7 @@ export default function ThankYouPage() {
                 >
                   Return Home
                 </Button>
-                <Button className="gap-2">
+                <Button className="gap-2" onClick={handleDownload}>
                   <Download className="h-4 w-4" />
                   Download Receipt
                 </Button>

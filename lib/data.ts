@@ -18,7 +18,7 @@ export const hotels = [
         id: "1",
         name: "Brunch with Pool",
         description: "A delightful brunch experience with pool access.",
-        price: 6999,
+        price: 1,
         features: ["Gourmet brunch", "Pool access"],
       },
       {
