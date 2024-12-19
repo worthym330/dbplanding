@@ -18,7 +18,7 @@ export default function ThankYouPage() {
   const searchParams = useSearchParams();
   const orderid = searchParams.get("orderid");
 
-  const [pdfUrl, setPdfUrl] = useState(null); // State to hold the PDF URL
+  const [pdfUrl, setPdfUrl] = useState(null);
 
   useEffect(() => {
     getData();
@@ -27,10 +27,8 @@ export default function ThankYouPage() {
   const getData = async () => {
     try {
       const res = await app_api.get(`/landing/order-details/${orderid}`);
-      console.log(res);
-      // Assuming the response contains the URL of the PDF
-      if (res?.data?.invoice.filename) {
-        setPdfUrl(res.data.invoice.filename); // Set the PDF URL in state
+      if (res?.data?.invoice) {
+        setPdfUrl(res.data.invoice);
       }
     } catch (err) {
       console.log(err);

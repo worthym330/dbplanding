@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 export function PaymentSection() {
   const handlePayment = async () => {
     // Integrate with payment gateway
-    console.log("Processing payment...");
   };
 
   return (

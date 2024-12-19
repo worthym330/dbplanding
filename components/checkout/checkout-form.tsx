@@ -78,7 +78,6 @@ export function CheckoutForm() {
             },
           },
           (paymentResponse) => {
-            console.log("Payment Successful:", paymentResponse);
             let payload = {
               razorpayOrderId: order.orderId,
               razorpayPaymentId: paymentResponse.razorpay_payment_id,

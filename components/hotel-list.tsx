@@ -10,7 +10,6 @@ export function HotelList() {
   const [filteredHotels, setFilteredHotels] = useState(hotels);
 
   const handleFilterChange = (filter: string) => {
-    console.log(filter)
     if (filter === "all") {
       setFilteredHotels(hotels);
     } else {

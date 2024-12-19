@@ -34,7 +34,6 @@ export const loadRazorpayScript = () => {
       return;
     }
   
-    console.log(process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID)
     const options = {
       key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
       amount: data.amount,
@@ -56,7 +55,6 @@ export const loadRazorpayScript = () => {
       },
     };
     
-    console.log("Razorpay Options:", options);
     const razorpay = new (window as any).Razorpay(options);
     razorpay.open();
   };

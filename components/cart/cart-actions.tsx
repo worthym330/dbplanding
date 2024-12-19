@@ -9,7 +9,6 @@ export function CartActions() {
   const { items } = useCart((state) => ({
     items: state.items,
   }));
-  console.log(items);
   return (
     <div className="mt-4 space-y-4">
       <Button
