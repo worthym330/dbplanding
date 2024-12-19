@@ -67,7 +67,7 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
                   ))}
                 </ul>
                 <p className="mt-4 text-2xl font-bold">
-                  ${pkg.price}
+                  ₹{pkg.price}
                   <span className="text-sm font-normal text-muted-foreground">
                     /person
                   </span>

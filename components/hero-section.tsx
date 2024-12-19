@@ -35,6 +35,14 @@ export function HeroSection() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="rounded-full bg-primary px-8 py-4 font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+          onClick={() => {
+            const targetElement = document.getElementById("hotels");
+            if (targetElement) {
+              targetElement.scrollIntoView({ behavior: "smooth" });
+            } else {
+              console.warn("Element with ID 'hotel' not found.");
+            }
+          }}
         >
           Book Early Slots Now
         </motion.button>
