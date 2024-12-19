@@ -17,5 +17,5 @@ export interface Package {
   description: string;
   price: number;
   features: string[];
-  hotelName: string;
+  hotelName?: string;
 }
