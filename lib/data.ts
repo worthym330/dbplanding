@@ -1,17 +1,17 @@
 export const hotels = [
   {
-    "id": "1",
-    "name": "Lemon Tree Premier, Mumbai International Airport, Mumbai",
-    "images": [
+    id: "1",
+    name: "Lemon Tree Premier, Mumbai International Airport, Mumbai",
+    images: [
       "/hotels/lemontree/lemon.avif",
       "/hotels/lemontree/pool.avif",
       "/hotels/lemontree/spa.avif",
       "/hotels/lemontree/1000009794.avif",
-      "/hotels/lemontree/restro.avif"
+      "/hotels/lemontree/restro.avif",
     ],
-    "distance": "10 km ",
-    "rating": 4.2,
-    "amenities": [
+    distance: "10 km ",
+    rating: 4.2,
+    amenities: [
       "Brunch",
       "Day use room",
       "Gym",
@@ -19,48 +19,50 @@ export const hotels = [
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 3500,
-    "description": "Luxury hotel with premium amenities perfect for post-marathon recovery.",
-    "packages": [
+    ispartner: false,
+    price: 3500,
+    description:
+      "Luxury hotel with premium amenities perfect for post-marathon recovery.",
+    packages: [
       {
-        "id": "1",
-        "name": "Day use room",
-        "description": "Day use rooms are for stay between 11am to 5pm only and not for overnight stay",
-        "price": 4000,
-        "features": ["Swimming Pool", "Gym", "Wifi access", "Tea Coffee maker"]
+        id: "1",
+        name: "Day use room",
+        description:
+          "Day use rooms are for stay between 11am to 5pm only and not for overnight stay",
+        price: 4000,
+        features: ["Swimming Pool", "Gym", "Wifi access", "Tea Coffee maker"],
       },
       {
-        "id": "2",
-        "name": "Brunch Buffet (without alcohol)",
-        "description": "SUN  12:30 PM - 04:00 PM",
-        "price": 3180,
-        "features": ["Gourmet brunch"]
+        id: "2",
+        name: "Brunch Buffet (without alcohol)",
+        description: "SUN  12:30 PM - 04:00 PM",
+        price: 3180,
+        features: ["Gourmet brunch"],
       },
       {
-        "id": "3",
-        "name": "Lunch Buffet",
-        "description": "MON-SUN  12:30 PM - 03:00 PM",
-        "price": 2236,
-        "features": ["Gourmet Lunch"]
-      }
-    ]
+        id: "3",
+        name: "Lunch Buffet",
+        description: "MON-SUN  12:30 PM - 03:00 PM",
+        price: 2236,
+        features: ["Gourmet Lunch"],
+      },
+    ],
   },
   {
-    "id": "2",
-    "name": "Holiday Inn Mumbai International Airport",
-    "images": [
+    id: "2",
+    name: "Holiday Inn Mumbai International Airport",
+    images: [
       "/hotels/Holiday/inn.webp",
       "/hotels/Holiday/swimmingpool.avif",
       "/hotels/Holiday/pooltwo.avif",
       "/hotels/Holiday/restro.avif",
-      "/hotels/Holiday/aabfe372238b11e98b380242ac110003.avif"
+      "/hotels/Holiday/aabfe372238b11e98b380242ac110003.avif",
     ],
-    "distance": "10 km ",
-    "rating": 4.3,
-    "amenities": [
+    distance: "10 km ",
+    rating: 4.3,
+    amenities: [
       "Brunch",
       "Day use room",
       "Gym",
@@ -68,42 +70,45 @@ export const hotels = [
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 2500,
-    "description": "Step into a world of luxury and convenience with expansive rooms, a fitness centre, amazing dining outlets, a luxury spa, and more! perfect for post-marathon recovery.",
-    "packages": [
+    ispartner: false,
+    price: 2500,
+    description:
+      "Step into a world of luxury and convenience with expansive rooms, a fitness centre, amazing dining outlets, a luxury spa, and more! perfect for post-marathon recovery.",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch with Live Music (without alcohol)",
-        "description": "The Sunday brunch comprises a variety of cold cuts, desserts, starters and main course options along with their live band adding to the relaxed and fun vibe!",
-        "price": 2800,
-        "features": ["Swimming Pool, Gym, Wifi access", "Tea Coffee maker"]
+        id: "1",
+        name: "Sunday Brunch with Live Music (without alcohol)",
+        description:
+          "The Sunday brunch comprises a variety of cold cuts, desserts, starters and main course options along with their live band adding to the relaxed and fun vibe!",
+        price: 2800,
+        features: ["Swimming Pool, Gym, Wifi access", "Tea Coffee maker"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch with Live Music  (with alcohol)",
-        "description": "The Sunday brunch comprises a variety of cold cuts, desserts, starters and main course options along with their live band adding to the relaxed and fun vibe!",
-        "price": 3200,
-        "features": ["Gourmet brunch"]
-      }
-    ]
+        id: "2",
+        name: "Sunday Brunch with Live Music  (with alcohol)",
+        description:
+          "The Sunday brunch comprises a variety of cold cuts, desserts, starters and main course options along with their live band adding to the relaxed and fun vibe!",
+        price: 3200,
+        features: ["Gourmet brunch"],
+      },
+    ],
   },
   {
-    "id": "3",
-    "name": "The Lalit Mumbai",
-    "images": [
+    id: "3",
+    name: "The Lalit Mumbai",
+    images: [
       "/hotels/lalit/outdoor.jpg",
       "/hotels/lalit/pool.avif",
       "/hotels/lalit/restro.avif",
       "/hotels/lalit/restro2.avif",
       "/hotels/lalit/spa.avif",
-      "/hotels/lalit/spatwo.avif"
+      "/hotels/lalit/spatwo.avif",
     ],
-    "distance": "10 km ",
-    "rating": 4.3,
-    "amenities": [
+    distance: "10 km ",
+    rating: 4.3,
+    amenities: [
       "Brunch",
       "Day use room",
       "Gym",
@@ -111,1121 +116,1262 @@ export const hotels = [
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": true,
-    "price": 2500,
-    "description": "Step into a world of luxury and convenience with expansive rooms, a fitness centre, amazing dining outlets, a luxury spa, and more! perfect for post-marathon recovery.",
-    "packages": [
+    ispartner: true,
+    price: 2500,
+    description:
+      "Step into a world of luxury and convenience with expansive rooms, a fitness centre, amazing dining outlets, a luxury spa, and more! perfect for post-marathon recovery.",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch with Pool (without alcohol)",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 3634,
-        "features": ["Gourmet brunch,Swimming Pool"]
+        id: "1",
+        name: "Sunday Brunch with Pool (without alcohol)",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 3634,
+        features: ["Gourmet brunch,Swimming Pool"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch with Pool (with alcohol)",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 4890,
-        "features": ["Gourmet brunch,Swimming Pool"]
+        id: "2",
+        name: "Sunday Brunch with Pool (with alcohol)",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 4890,
+        features: ["Gourmet brunch,Swimming Pool"],
       },
       {
-        "id": "3",
-        "name": "Sunday Brunch with Pool (Kids brunch)",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 1622,
-        "features": ["Gourmet brunch,Swimming Pool"]
-      }
-    ]
+        id: "3",
+        name: "Sunday Brunch with Pool (Kids brunch)",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 1622,
+        features: ["Gourmet brunch,Swimming Pool"],
+      },
+    ],
   },
   {
-    "id": "4",
-    "name": "JW Marriott Mumbai Sahar",
-    "images": [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+    id: "4",
+    name: "JW Marriott Mumbai Sahar",
+    images: [
+      "/hotels/mariotte/mariotte.webp",
+      "/hotels/mariotte/swimmingpool.avif",
+      "/hotels/mariotte/pool.avif",
+      "/hotels/mariotte/spa.avif",
+      "/hotels/mariotte/sps.avif",
+      "/hotels/mariotte/restro.avif",
     ],
-    "distance": "10 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "10 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 2500,
-    "description": "Step into a world of luxury and convenience with expansive rooms, a fitness centre, amazing dining outlets, a luxury spa, and more! perfect for post-marathon recovery.",
-    "packages": [
+    ispartner: false,
+    price: 2500,
+    description:
+      "Step into a world of luxury and convenience with expansive rooms, a fitness centre, amazing dining outlets, a luxury spa, and more! perfect for post-marathon recovery.",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch (Non Alcoholic)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 3634,
-        "features": ["Gourmet brunch"]
+        id: "1",
+        name: "Sunday Brunch (Non Alcoholic)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 3634,
+        features: ["Gourmet brunch"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch (Beer & Wine)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 4890,
-        "features": ["Gourmet brunch"]
+        id: "2",
+        name: "Sunday Brunch (Beer & Wine)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 4890,
+        features: ["Gourmet brunch"],
       },
       {
-        "id": "3",
-        "name": "Sunday Brunch(Premium Beverage)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 1622,
-        "features": ["Gourmet brunch"]
+        id: "3",
+        name: "Sunday Brunch(Premium Beverage)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 1622,
+        features: ["Gourmet brunch"],
       },
       {
-        "id": "4",
-        "name": "Sunday Brunch(Champagne)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 1622,
-        "features": ["Gourmet brunch"]
+        id: "4",
+        name: "Sunday Brunch(Champagne)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 1622,
+        features: ["Gourmet brunch"],
       },
       {
-        "id": "5",
-        "name": "Sunday Brunch(Kids Brunch)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 1622,
-        "features": ["Gourmet brunch"]
-      }
-    ]
+        id: "5",
+        name: "Sunday Brunch(Kids Brunch)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 1622,
+        features: ["Gourmet brunch"],
+      },
+    ],
   },
   {
-    "id": "5",
-    "name": "Radisson Blu Mumbai International Airport",
-    "images": [
+    id: "5",
+    name: "Radisson Blu Mumbai International Airport",
+    images: [
       "/hotels/radissonblu/6a653fe4d7ac11eabeec0242ac110005.avif",
       "/hotels/radissonblu/24dcfe4c6e1b11eca8430a58a9feac02.avif",
       "/hotels/radissonblu/202008061201129632-ba2cff746e1b11ec8ac40a58a9feac02.avif",
       "/hotels/radissonblu/202008061201129632-d55f7e0ef6db11ecb2f30a58a9feac02.avif",
     ],
-    "distance": "10 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "10 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 2500,
-    "description": "Step into a world of luxury and convenience with expansive rooms, a fitness centre, amazing dining outlets, a luxury spa, and more! perfect for post-marathon recovery.",
-    "packages": [
+    ispartner: false,
+    price: 2500,
+    description:
+      "Step into a world of luxury and convenience with expansive rooms, a fitness centre, amazing dining outlets, a luxury spa, and more! perfect for post-marathon recovery.",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch with Pool (without alcohol)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 3634,
-        "features": ["Gourmet brunch"]
+        id: "1",
+        name: "Sunday Brunch with Pool (without alcohol)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 3634,
+        features: ["Gourmet brunch"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch (Beer & Wine)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 4890,
-        "features": ["Gourmet brunch"]
+        id: "2",
+        name: "Sunday Brunch (Beer & Wine)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 4890,
+        features: ["Gourmet brunch"],
       },
       {
-        "id": "3",
-        "name": "Sunday Brunch(Premium Beverage)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 1622,
-        "features": ["Gourmet brunch"]
+        id: "3",
+        name: "Sunday Brunch(Premium Beverage)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 1622,
+        features: ["Gourmet brunch"],
       },
       {
-        "id": "4",
-        "name": "Sunday Brunch(Champagne)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 1622,
-        "features": ["Gourmet brunch"]
+        id: "4",
+        name: "Sunday Brunch(Champagne)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 1622,
+        features: ["Gourmet brunch"],
       },
       {
-        "id": "5",
-        "name": "Sunday Brunch(Kids Brunch)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 1622,
-        "features": ["Gourmet brunch"]
-      }
-    ]
+        id: "5",
+        name: "Sunday Brunch(Kids Brunch)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 1622,
+        features: ["Gourmet brunch"],
+      },
+    ],
   },
   {
-    "id": "6",
-    "name": "Hotel Sea Princess",
-    "images": [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+    id: "6",
+    name: "Hotel Sea Princess",
+    images: [
+      "/hotels/princess/outdoor.jpg",
+      "/hotels/princess/swimmingpool.avif",
+      "/hotels/princess/pool.avif",
+      "/hotels/princess/spa.avif",
+      "/hotels/princess/restrotwo.avif",
+      "/hotels/princess/restro.avif",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": true,
-    "price": 2500,
-    "description": "A soul altering experience awaits you where luxury meets the seabreeze ,perfect for post-marathon recovery.",
-    "packages": [
+    ispartner: true,
+    price: 2500,
+    description:
+      "A soul altering experience awaits you where luxury meets the seabreeze ,perfect for post-marathon recovery.",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch with Pool & live music (without alcohol)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        "price": 2500,
-        "features": ["Gourmet brunch,pool,live music"]
+        id: "1",
+        name: "Sunday Brunch with Pool & live music (without alcohol)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+        price: 2500,
+        features: ["Gourmet brunch,pool,live music"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch (Beer & Wine)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 4000,
-        "features": ["Gourmet brunch,pool and live music"]
+        id: "2",
+        name: "Sunday Brunch (Beer & Wine)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 4000,
+        features: ["Gourmet brunch,pool and live music"],
       },
       {
-        "id": "2",
-        "name": "Spa Pass",
-        "description": "Foot massage, deep tissue and swedish massage ",
-        "price": 3000,
-        "features": ["Spa"]
-      }
-    ]
+        id: "2",
+        name: "Spa Pass",
+        description: "Foot massage, deep tissue and swedish massage ",
+        price: 3000,
+        features: ["Spa"],
+      },
+    ],
   },
   {
-    "id": "7",
-    "name": "Aurika, Mumbai International Airport - Luxury by Lemon Tree Hotels",
-    "images": [
+    id: "7",
+    name: "Aurika, Mumbai International Airport - Luxury by Lemon Tree Hotels",
+    images: [
       "/hotels/lemontreeaurika/1000435182.webp",
       "/hotels/lemontreeaurika/1721879538478.avif",
-      "/hotels/lemontreeaurika/1722244984970.avif"
+      "/hotels/lemontreeaurika/1722244984970.avif",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": true,
-    "price": 2500,
-    "description": "Close to the airport, this classy property offers well-appointed rooms, a spa, multiple dining spots, and a host of modern amenities,perfect for post-marathon recovery.",
-    "packages": [
+    ispartner: true,
+    price: 2500,
+    description:
+      "Close to the airport, this classy property offers well-appointed rooms, a spa, multiple dining spots, and a host of modern amenities,perfect for post-marathon recovery.",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch with Pool & live music (without alcohol)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        "price": 2500,
-        "features": ["Gourmet brunch,pool,live music"]
+        id: "1",
+        name: "Sunday Brunch with Pool & live music (without alcohol)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+        price: 2500,
+        features: ["Gourmet brunch,pool,live music"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch (Beer & Wine)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 4000,
-        "features": ["Gourmet brunch,pool and live music"]
+        id: "2",
+        name: "Sunday Brunch (Beer & Wine)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 4000,
+        features: ["Gourmet brunch,pool and live music"],
       },
       {
-        "id": "2",
-        "name": "Spa Pass",
-        "description": "Foot massage, deep tissue and swedish massage ",
-        "price": 3000,
-        "features": ["Spa"]
-      }
-    ]
+        id: "2",
+        name: "Spa Pass",
+        description: "Foot massage, deep tissue and swedish massage ",
+        price: 3000,
+        features: ["Spa"],
+      },
+    ],
   },
   {
-    "id": "8",
-    "name": "The Leela Palace",
-    "images": [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+    id: "8",
+    name: "The Leela Palace",
+    images: [
+      "/hotels/leela/outdoor.avif",
+      "/hotels/leela/swimmingpool.avif",
+      "/hotels/leela/pool.avif",
+      "/hotels/leela/spa.avif",
+      "/hotels/leela/restrotwo.avif",
+      "/hotels/leela/restro.avif",
+      "/hotels/leela/spa2.avif",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": true,
-    "price": 2500,
-    "description": "Close to the airport, this classy property offers well-appointed rooms, a spa, multiple dining spots, and a host of modern amenities,perfect for post-marathon recovery.",
-    "packages": [
+    ispartner: true,
+    price: 2500,
+    description:
+      "Close to the airport, this classy property offers well-appointed rooms, a spa, multiple dining spots, and a host of modern amenities,perfect for post-marathon recovery.",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch with Pool (without alcohol)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        "price": 4248,
-        "features": ["Gourmet brunch,pool,live music"]
+        id: "1",
+        name: "Sunday Brunch with Pool (without alcohol)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+        price: 4248,
+        features: ["Gourmet brunch,pool,live music"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch (Beer & Wine)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 5700,
-        "features": ["Gourmet brunch,pool and live music"]
+        id: "2",
+        name: "Sunday Brunch (Beer & Wine)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 5700,
+        features: ["Gourmet brunch,pool and live music"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch for kids",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 2596,
-        "features": ["Gourmet brunch,pool and live music"]
-      }
-    ]
+        id: "2",
+        name: "Sunday Brunch for kids",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 2596,
+        features: ["Gourmet brunch,pool and live music"],
+      },
+    ],
   },
   {
-    "id": "9",
-    "name": "IRA By Orchid Mumbai T-2 International Airport",
-    "images": [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+    id: "9",
+    name: "IRA By Orchid Mumbai T-2 International Airport",
+    images: [
+      "/hotels/orchidMumbai/outdoor.avif",
+      "/hotels/orchidMumbai/swimmingpool.avif",
+      "/hotels/orchidMumbai/pool.avif",
+      "/hotels/orchidMumbai/spa.avif",
+      "/hotels/orchidMumbai/restrotwo.avif",
+      "/hotels/orchidMumbai/restro.avif",
+      "/hotels/orchidMumbai/spa2.avif",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": true,
-    "price": 1500,
-    "description": "Close to the airport, this classy property offers well-appointed rooms, a spa, multiple dining spots, and a host of modern amenities,perfect for post-marathon recovery.",
-    "packages": [
+    ispartner: true,
+    price: 1500,
+    description:
+      "Close to the airport, this classy property offers well-appointed rooms, a spa, multiple dining spots, and a host of modern amenities,perfect for post-marathon recovery.",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch with Pool (without alcohol)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        "price": 1500,
-        "features": ["Gourmet brunch,pool,live music"]
+        id: "1",
+        name: "Sunday Brunch with Pool (without alcohol)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+        price: 1500,
+        features: ["Gourmet brunch,pool,live music"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch (Beer & Wine)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 3000,
-        "features": ["Gourmet brunch,pool and live music"]
-      }
-    ]
+        id: "2",
+        name: "Sunday Brunch (Beer & Wine)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 3000,
+        features: ["Gourmet brunch,pool and live music"],
+      },
+    ],
   },
   {
-    "id": "10",
-    "name": "Novotel Mumbai International Airport",
-    "images": [
+    id: "10",
+    name: "Novotel Mumbai International Airport",
+    images: [
       "/hotels/novotel/1708335380494.avif",
       "/hotels/novotel/1731219600532.avif",
       "/hotels/novotel/IMG-7328.avif",
       "/hotels/novotel/1708335364463.avif",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": true,
-    "price": 1500,
-    "description": "A contemporary property well suited for both leisure and business travellers strategically located near industrial and recreational hubs offering modern amenities and eventful venues.",
-    "packages": [
+    ispartner: true,
+    price: 1500,
+    description:
+      "A contemporary property well suited for both leisure and business travellers strategically located near industrial and recreational hubs offering modern amenities and eventful venues.",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch with Pool (without alcohol)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        "price": 2795,
-        "features": ["Gourmet brunch,pool,live music"]
+        id: "1",
+        name: "Sunday Brunch with Pool (without alcohol)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+        price: 2795,
+        features: ["Gourmet brunch,pool,live music"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch (Beer & Wine)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 3595,
-        "features": ["Gourmet brunch,pool and live music"]
-      }
-    ]
+        id: "2",
+        name: "Sunday Brunch (Beer & Wine)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 3595,
+        features: ["Gourmet brunch,pool and live music"],
+      },
+    ],
   },
   {
-    "id": "11",
-    "name": "ITC Maratha - A Luxury Collection Hotel",
-    "images": [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+    id: "11",
+    name: "ITC Maratha - A Luxury Collection Hotel",
+    images: [
+      "/hotels/itcmaratha/outdoor.avif",
+      "/hotels/itcmaratha/outdoor.jpg",
+      "/hotels/itcmaratha/swimmingpool.avif",
+      "/hotels/itcmaratha/pool.avif",
+      "/hotels/itcmaratha/spa.avif",
+      "/hotels/itcmaratha/restrotwo.avif",
+      "/hotels/itcmaratha/restro.avif",
+      "/hotels/itcmaratha/spa2.avif",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": true,
-    "price": 1500,
-    "description": "Witness the grandeur of the great Maratha Dynasty paired with the ethos of warm Indian hospitality at ITC Maratha",
-    "packages": [
+    ispartner: true,
+    price: 1500,
+    description:
+      "Witness the grandeur of the great Maratha Dynasty paired with the ethos of warm Indian hospitality at ITC Maratha",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch(without alcohol)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        "price": 3300,
-        "features": ["Gourmet brunch,pool,live music"]
+        id: "1",
+        name: "Sunday Brunch(without alcohol)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+        price: 3300,
+        features: ["Gourmet brunch,pool,live music"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch (Beer & Wine)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 4245,
-        "features": ["Gourmet brunch,pool and live music"]
-      }
-    ]
+        id: "2",
+        name: "Sunday Brunch (Beer & Wine)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 4245,
+        features: ["Gourmet brunch,pool and live music"],
+      },
+    ],
   },
   {
-    "id": "12",
-    "name": "Courtyard by Marriott Mumbai International Airport",
-    "images": [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+    id: "12",
+    name: "Courtyard by Marriott Mumbai International Airport",
+    images: [
+      "/hotels/courtyardbymarriott/outdoor.avif",
+      "/hotels/courtyardbymarriott/swimmingpool.avif",
+      "/hotels/courtyardbymarriott/restrotwo.avif",
+      "/hotels/courtyardbymarriott/restro.avif",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": true,
-    "price": 1500,
-    "description": "Experience unparalleled comfort and luxury at this contemporary hotel featuring well-appointed rooms, multiple dining venues, upscale amenities and top-notch hospitality.",
-    "packages": [
+    ispartner: true,
+    price: 1500,
+    description:
+      "Experience unparalleled comfort and luxury at this contemporary hotel featuring well-appointed rooms, multiple dining venues, upscale amenities and top-notch hospitality.",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch(without alcohol)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        "price": 2199,
-        "features": ["Gourmet brunch,pool,live music"]
+        id: "1",
+        name: "Sunday Brunch(without alcohol)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+        price: 2199,
+        features: ["Gourmet brunch,pool,live music"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch (Beer & Wine)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 2499,
-        "features": ["Gourmet brunch,pool and live music"]
-      }
-    ]
+        id: "2",
+        name: "Sunday Brunch (Beer & Wine)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 2499,
+        features: ["Gourmet brunch,pool and live music"],
+      },
+    ],
   },
   {
-    "id": "13",
-    "name": "Trident Bandra Kurla",
-    "images": [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+    id: "13",
+    name: "Trident Bandra Kurla",
+    images: [
+      "/hotels/tridentbkc/outdoor.avif",
+      "/hotels/tridentbkc/swimmingpool.avif",
+      "/hotels/tridentbkc/pool.avif",
+      "/hotels/tridentbkc/spa.avif",
+      "/hotels/tridentbkc/restrotwo.avif",
+      "/hotels/tridentbkc/restro.avif",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": true,
-    "price": 1500,
-    "description": "Relax in the cosmopolitan Mumbai with a stay at Trident Bandra Kurla, which prides itself in offering the very best and indulgent leisure amenities for every type of guest",
-    "packages": [
+    ispartner: true,
+    price: 1500,
+    description:
+      "Relax in the cosmopolitan Mumbai with a stay at Trident Bandra Kurla, which prides itself in offering the very best and indulgent leisure amenities for every type of guest",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch(without alcohol)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        "price": 2950,
-        "features": ["Gourmet brunch,pool,live music"]
+        id: "1",
+        name: "Sunday Brunch(without alcohol)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+        price: 2950,
+        features: ["Gourmet brunch,pool,live music"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch (Beer & Wine)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 3550,
-        "features": ["Gourmet brunch,pool and live music"]
-      }
-    ]
+        id: "2",
+        name: "Sunday Brunch (Beer & Wine)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 3550,
+        features: ["Gourmet brunch,pool and live music"],
+      },
+    ],
   },
   {
-    "id": "14",
-    "name": "The Orchid Hotel Mumbai Vile Parle",
-    "images": [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+    id: "14",
+    name: "The Orchid Hotel Mumbai Vile Parle",
+    images: [
+      "/hotels/orchidMumbai/outdoor.avif",
+      "/hotels/orchidMumbai/swimmingpool.avif",
+      "/hotels/orchidMumbai/pool.avif",
+      "/hotels/orchidMumbai/spa.avif",
+      "/hotels/orchidMumbai/restrotwo.avif",
+      "/hotels/orchidMumbai/restro.avif",
+      "/hotels/orchidMumbai/spa2.avif",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 1500,
-    "description": "Within a walking distance from the Mumbai Airport, The Orchid Hotel Mumbai Vile Parle is a luxurious eco-friendly hotel and an epitome of architectural finesse with world-class service",
-    "packages": [
+    ispartner: false,
+    price: 1500,
+    description:
+      "Within a walking distance from the Mumbai Airport, The Orchid Hotel Mumbai Vile Parle is a luxurious eco-friendly hotel and an epitome of architectural finesse with world-class service",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch(without alcohol)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        "price": 2499,
-        "features": ["Gourmet brunch,pool,live music"]
+        id: "1",
+        name: "Sunday Brunch(without alcohol)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+        price: 2499,
+        features: ["Gourmet brunch,pool,live music"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch (Beer & Wine)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 3499,
-        "features": ["Gourmet brunch,pool and live music"]
-      }
-    ]
+        id: "2",
+        name: "Sunday Brunch (Beer & Wine)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 3499,
+        features: ["Gourmet brunch,pool and live music"],
+      },
+    ],
   },
   {
-    "id": "15",
-    "name": "Taj Santacruz, Mumbai",
-    "images": [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+    id: "15",
+    name: "Taj Santacruz, Mumbai",
+    images: [
+      "/hotels/tajsantacruz/outdoor.avif",
+      "/hotels/tajsantacruz/swimmingpool.avif",
+      "/hotels/tajsantacruz/pool.avif",
+      "/hotels/tajsantacruz/spa.avif",
+      "/hotels/tajsantacruz/restrotwo.avif",
+      "/hotels/tajsantacruz/restro.avif",
+      "/hotels/tajsantacruz/outdoor2.avif",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 1500,
-    "description": "Stay in a 5-star property located near the domestic airport offering stunning views of the runway and Mumbai city",
-    "packages": [
+    ispartner: false,
+    price: 1500,
+    description:
+      "Stay in a 5-star property located near the domestic airport offering stunning views of the runway and Mumbai city",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch(without alcohol)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        "price": 2999,
-        "features": ["Gourmet brunch,pool,live music"]
+        id: "1",
+        name: "Sunday Brunch(without alcohol)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+        price: 2999,
+        features: ["Gourmet brunch,pool,live music"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch (Beer & Wine)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 3333,
-        "features": ["Gourmet brunch,pool and live music"]
-      }
-    ]
+        id: "2",
+        name: "Sunday Brunch (Beer & Wine)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 3333,
+        features: ["Gourmet brunch,pool and live music"],
+      },
+    ],
   },
   {
-    "id": "16",
-    "name": "Sahara Star",
-    "images": [
+    id: "16",
+    name: "Sahara Star",
+    images: [
       "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 3000,
-    "description": "Near Mumbai’s domestic airport, Sahara Star is a flagship foundation of Sahara India Pariwar built inside a man-made glass structure",
-    "packages": [
+    ispartner: false,
+    price: 3000,
+    description:
+      "Near Mumbai’s domestic airport, Sahara Star is a flagship foundation of Sahara India Pariwar built inside a man-made glass structure",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch(without alcohol)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        "price": 3800,
-        "features": ["Gourmet brunch,pool,live music"]
+        id: "1",
+        name: "Sunday Brunch(without alcohol)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+        price: 3800,
+        features: ["Gourmet brunch,pool,live music"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch (Beer & Wine)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        "price": 3800,
-        "features": ["Gourmet brunch,pool and live music"]
-      }
-    ]
+        id: "2",
+        name: "Sunday Brunch (Beer & Wine)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 3800,
+        features: ["Gourmet brunch,pool and live music"],
+      },
+    ],
   },
   {
-    "id": "17",
-    "name": "Ramada Plaza by Wyndham Palm Grove, Mumbai",
-    "images": [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+    id: "17",
+    name: "Ramada Plaza by Wyndham Palm Grove, Mumbai",
+    images: [
+      "https://api.daybreakpass.com/uploads/hotel/images/food.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/Restaurant&Bar.avif",
+      "https://api.daybreakpass.com/uploads/hotel/images/Swimming Pool RAMADA.avif",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 3000,
-    "description": "Unwind with a refreshing swim,A delightful lunch at our Coffee Shop,Towel Service provided",
-    "packages": [
+    ispartner: true,
+    price: 3000,
+    description:
+      "Unwind with a refreshing swim,A delightful lunch at our Coffee Shop,Towel Service provided",
+    packages: [
       {
-        "id": "1",
-        "name": "Day Pass (Swim & Lunch)",
-        "description": "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        "price": 2000,
-        "features": ["Gourmet brunch,pool"]
+        id: "1",
+        name: "Day Pass (Swim & Lunch)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+        price: 2000,
+        features: ["Gourmet brunch,pool"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch with a Poolside Dip",
-        "description": "Enjoy a relaxing brunch by the pool with family or friends,Access to the swimming pool",
-        "price": 1800,
-        "features": ["Gourmet brunch,pool"]
-      }
-    ]
+        id: "2",
+        name: "Sunday Brunch with a Poolside Dip",
+        description:
+          "Enjoy a relaxing brunch by the pool with family or friends,Access to the swimming pool",
+        price: 1800,
+        features: ["Gourmet brunch,pool"],
+      },
+    ],
   },
   {
-    "id": "18",
-    "name": "Meluha - The Fern",
-    "images": [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+    id: "18",
+    name: "Meluha - The Fern",
+    images: [
+      "/hotels/meluha/outdoor.webp",
+      "/hotels/meluha/swimmingpool.jpg",
+      "/hotels/meluha/pool.jpg",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 2000,
-    "description": "This environmentally responsible hotel offers lavish rooms, multiple dining options, a well-equipped fitness centre and contemporary amenities for a delightful stay",
-    "packages": [
+    ispartner: false,
+    price: 2000,
+    description:
+      "This environmentally responsible hotel offers lavish rooms, multiple dining options, a well-equipped fitness centre and contemporary amenities for a delightful stay",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch",
-        "description": "Buffet Variety and Quality, Sophisticated,Luxury, Brunch",
-        "price": 1999,
-        "features": ["Gourmet brunch"]
-      }
-    ]
+        id: "1",
+        name: "Sunday Brunch",
+        description: "Buffet Variety and Quality, Sophisticated,Luxury, Brunch",
+        price: 1999,
+        features: ["Gourmet brunch"],
+      },
+    ],
   },
   {
-    "id": "19",
-    "name": "Lakeside Chalet Marriott Executive Apartments",
-    "images": [
+    id: "19",
+    name: "Lakeside Chalet Marriott Executive Apartments",
+    images: [
       "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 3000,
-    "description": "A blend of luxury & utility, Lakeside Chalet Marriott Executive Apartments provides a lavish stay at a convenient location, with ultra-modern amenities and exquisite apartments",
-    "packages": [
+    ispartner: false,
+    price: 3000,
+    description:
+      "A blend of luxury & utility, Lakeside Chalet Marriott Executive Apartments provides a lavish stay at a convenient location, with ultra-modern amenities and exquisite apartments",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch",
-        "description": "Buffet Variety and Quality, Sophisticated,Luxury, Brunch",
-        "price": 3000,
-        "features": ["Gourmet brunch"]
-      }
-    ]
+        id: "1",
+        name: "Sunday Brunch",
+        description: "Buffet Variety and Quality, Sophisticated,Luxury, Brunch",
+        price: 3000,
+        features: ["Gourmet brunch"],
+      },
+    ],
   },
   {
-    "id": "20",
-    "name": "The Westin Mumbai Powai Lake",
-    "images": [
+    id: "20",
+    name: "The Westin Mumbai Powai Lake",
+    images: [
       "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 3000,
-    "description": "Located on the banks of Lake Powai, this lavish property features well-appointed rooms, multiple dining venues, a luxury spa and world-class amenities.",
-    "packages": [
+    ispartner: false,
+    price: 3000,
+    description:
+      "Located on the banks of Lake Powai, this lavish property features well-appointed rooms, multiple dining venues, a luxury spa and world-class amenities.",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch with Pool (without alcohol)",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 3499,
-        "features": ["Gourmet brunch,Swimming Pool"]
+        id: "1",
+        name: "Sunday Brunch with Pool (without alcohol)",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 3499,
+        features: ["Gourmet brunch,Swimming Pool"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch with Pool (with alcohol)",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 4499,
-        "features": ["Gourmet brunch,Swimming Pool"]
+        id: "2",
+        name: "Sunday Brunch with Pool (with alcohol)",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 4499,
+        features: ["Gourmet brunch,Swimming Pool"],
       },
       {
-        "id": "3",
-        "name": "Sunday Brunch with Pool (Kids brunch)",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 1600,
-        "features": ["Gourmet brunch,Swimming Pool"]
-      }
-    ]
+        id: "3",
+        name: "Sunday Brunch with Pool (Kids brunch)",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 1600,
+        features: ["Gourmet brunch,Swimming Pool"],
+      },
+    ],
   },
   {
-    "id": "21",
-    "name": "Grand Hyatt Mumbai",
-    "images": [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+    id: "21",
+    name: "Grand Hyatt Mumbai",
+    images: [
+      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_Slides.avif",
+      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_missionbayslides.avif",
+      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_missionbaycabana.avif",
+      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_hyattregency7.avif",
+      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_HyattMissionBay_Firepit.avif",
+      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_hrmission2.avif",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 3000,
-    "description": "Enjoy a lavish stay at a premium hotel offering world-class comfort with elegant dining spaces, a spa and a pool.",
-    "packages": [
+    ispartner: false,
+    price: 3000,
+    description:
+      "Enjoy a lavish stay at a premium hotel offering world-class comfort with elegant dining spaces, a spa and a pool.",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch with Pool (without alcohol)",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 3500,
-        "features": ["Gourmet brunch,Swimming Pool"]
+        id: "1",
+        name: "Sunday Brunch with Pool (without alcohol)",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 3500,
+        features: ["Gourmet brunch,Swimming Pool"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch with Pool (with alcohol)",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 4500,
-        "features": ["Gourmet brunch,Swimming Pool"]
+        id: "2",
+        name: "Sunday Brunch with Pool (with alcohol)",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 4500,
+        features: ["Gourmet brunch,Swimming Pool"],
       },
       {
-        "id": "3",
-        "name": "Champagne Brunch",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 5500,
-        "features": ["Gourmet brunch,Swimming Pool"]
-      }
-    ]
+        id: "3",
+        name: "Champagne Brunch",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 5500,
+        features: ["Gourmet brunch,Swimming Pool"],
+      },
+    ],
   },
   {
-    "id": "22",
-    "name": "Sofitel Mumbai BKC",
-    "images": [
+    id: "22",
+    name: "Sofitel Mumbai BKC",
+    images: [
       "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 3000,
-    "description": "Inspired by French culture and tradition, Sofitel is an award-winning hotel offering a fine dining experience",
-    "packages": [
+    ispartner: false,
+    price: 3000,
+    description:
+      "Inspired by French culture and tradition, Sofitel is an award-winning hotel offering a fine dining experience",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch with Pool (without alcohol)",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 4199,
-        "features": ["Gourmet brunch,Swimming Pool"]
+        id: "1",
+        name: "Sunday Brunch with Pool (without alcohol)",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 4199,
+        features: ["Gourmet brunch,Swimming Pool"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch with Pool (with alcohol)",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 4999,
-        "features": ["Gourmet brunch,Swimming Pool"]
+        id: "2",
+        name: "Sunday Brunch with Pool (with alcohol)",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 4999,
+        features: ["Gourmet brunch,Swimming Pool"],
       },
       {
-        "id": "3",
-        "name": "Champagne Brunch",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 5899,
-        "features": ["Gourmet brunch,Swimming Pool"]
+        id: "3",
+        name: "Champagne Brunch",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 5899,
+        features: ["Gourmet brunch,Swimming Pool"],
       },
       {
-        "id": "4",
-        "name": "Kids Brunch",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 5899,
-        "features": ["Gourmet brunch,Swimming Pool"]
-      }
-    ]
+        id: "4",
+        name: "Kids Brunch",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 5899,
+        features: ["Gourmet brunch,Swimming Pool"],
+      },
+    ],
   },
   {
-    "id": "23",
-    "name": "Taj The Trees Mumbai",
-    "images": [
+    id: "23",
+    name: "Taj The Trees Mumbai",
+    images: [
       "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 3000,
-    "description": "Taj The Trees ensures a memorable stay with a fine dining experience, exceptional service, and top-tier amenities",
-    "packages": [
+    ispartner: false,
+    price: 3000,
+    description:
+      "Taj The Trees ensures a memorable stay with a fine dining experience, exceptional service, and top-tier amenities",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch with Pool (without alcohol)",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 2999,
-        "features": ["Gourmet brunch,Swimming Pool"]
-      }
-    ]
+        id: "1",
+        name: "Sunday Brunch with Pool (without alcohol)",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 2999,
+        features: ["Gourmet brunch,Swimming Pool"],
+      },
+    ],
   },
   {
-    "id": "24",
-    "name": "Novotel Mumbai Juhu Beach",
-    "images": [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+    id: "24",
+    name: "Novotel Mumbai Juhu Beach",
+    images: [
+      "/hotels/novotel/1708335380494.avif",
+      "/hotels/novotel/1731219600532.avif",
+      "/hotels/novotel/IMG-7328.avif",
+      "/hotels/novotel/1708335364463.avif",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 2500,
-    "description": "This contemporary property makes for a comfortable stay option with its spacious rooms, multiple dining venues and easy connectivity to the popular tourist spots of the city",
-    "packages": [
+    ispartner: false,
+    price: 2500,
+    description:
+      "This contemporary property makes for a comfortable stay option with its spacious rooms, multiple dining venues and easy connectivity to the popular tourist spots of the city",
+    packages: [
       {
-        "id": "1",
-        "name": " Sunday Brunch (without alcohol)",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 2800,
-        "features": ["Gourmet brunch,Swimming Pool"]
+        id: "1",
+        name: " Sunday Brunch (without alcohol)",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 2800,
+        features: ["Gourmet brunch,Swimming Pool"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch with Alcohol",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 4000,
-        "features": ["Gourmet brunch,Swimming Pool"]
-      }
-    ]
+        id: "2",
+        name: "Sunday Brunch with Alcohol",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 4000,
+        features: ["Gourmet brunch,Swimming Pool"],
+      },
+    ],
   },
 
   {
-    "id": "25",
-    "name": "The Empresa Hotel",
-    "images": [
+    id: "25",
+    name: "The Empresa Hotel",
+    images: [
       "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 2500,
-    "description": "Experience a lavish stay at this upscale property featuring well-appointed rooms, multiple eateries, an exclusive spa, a swimming pool and top-notch amenities",
-    "packages": [
+    ispartner: false,
+    price: 2500,
+    description:
+      "Experience a lavish stay at this upscale property featuring well-appointed rooms, multiple eateries, an exclusive spa, a swimming pool and top-notch amenities",
+    packages: [
       {
-        "id": "1",
-        "name": " Sunday Brunch (without alcohol)",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 2000,
-        "features": ["Gourmet brunch,Swimming Pool"]
-      }
-    ]
+        id: "1",
+        name: " Sunday Brunch (without alcohol)",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 2000,
+        features: ["Gourmet brunch,Swimming Pool"],
+      },
+    ],
   },
   {
-    "id": "26",
-    "name": "The Empresa Hotel",
-    "images": [
+    id: "26",
+    name: "The Empresa Hotel",
+    images: [
       "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 2500,
-    "description": "Experience a lavish stay at this upscale property featuring well-appointed rooms, multiple eateries, an exclusive spa, a swimming pool and top-notch amenities",
-    "packages": [
+    ispartner: false,
+    price: 2500,
+    description:
+      "Experience a lavish stay at this upscale property featuring well-appointed rooms, multiple eateries, an exclusive spa, a swimming pool and top-notch amenities",
+    packages: [
       {
-        "id": "1",
-        "name": " Sunday Brunch (without alcohol)",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 2000,
-        "features": ["Gourmet brunch,Swimming Pool"]
-      }
-    ]
+        id: "1",
+        name: " Sunday Brunch (without alcohol)",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 2000,
+        features: ["Gourmet brunch,Swimming Pool"],
+      },
+    ],
   },
   {
-    "id": "26",
-    "name": "Radisson Mumbai Goregaon",
-    "images": [
+    id: "26",
+    name: "Radisson Mumbai Goregaon",
+    images: [
       "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 2000,
-    "description": "Located in the heart of Mumbai's commercial and IT centre, this luxury hotel features well-appointed rooms, a full-service spa, and multiple dining venues.",
-    "packages": [
+    ispartner: false,
+    price: 2000,
+    description:
+      "Located in the heart of Mumbai's commercial and IT centre, this luxury hotel features well-appointed rooms, a full-service spa, and multiple dining venues.",
+    packages: [
       {
-        "id": "1",
-        "name": " Sunday Brunch (without alcohol)",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 2000,
-        "features": ["Gourmet brunch,Swimming Pool"]
-      }
-    ]
+        id: "1",
+        name: " Sunday Brunch (without alcohol)",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 2000,
+        features: ["Gourmet brunch,Swimming Pool"],
+      },
+    ],
   },
   {
-    "id": "27",
-    "name": "JW Marriott Mumbai Juhu",
-    "images": [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+    id: "27",
+    name: "JW Marriott Mumbai Juhu",
+    images: [
+      "/hotels/mariotte/mariotte.webp",
+      "/hotels/mariotte/swimmingpool.avif",
+      "/hotels/mariotte/pool.avif",
+      "/hotels/mariotte/spa.avif",
+      "/hotels/mariotte/sps.avif",
+      "/hotels/mariotte/restro.avif",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 2000,
-    "description": "Frequently visited by celebrities, this 5-star hotel is nestled along Juhu Beach and features chic decor",
-    "packages": [
+    ispartner: false,
+    price: 2000,
+    description:
+      "Frequently visited by celebrities, this 5-star hotel is nestled along Juhu Beach and features chic decor",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch with Pool (without alcohol)",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 3350,
-        "features": ["Gourmet brunch,Swimming Pool"]
+        id: "1",
+        name: "Sunday Brunch with Pool (without alcohol)",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 3350,
+        features: ["Gourmet brunch,Swimming Pool"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch with Pool (with alcohol)",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 4620,
-        "features": ["Gourmet brunch,Swimming Pool"]
+        id: "2",
+        name: "Sunday Brunch with Pool (with alcohol)",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 4620,
+        features: ["Gourmet brunch,Swimming Pool"],
       },
       {
-        "id": "3",
-        "name": "Sunday Brunch with Pool (Kids brunch)",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 1950,
-        "features": ["Gourmet brunch,Swimming Pool"]
-      }
-    ]
+        id: "3",
+        name: "Sunday Brunch with Pool (Kids brunch)",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 1950,
+        features: ["Gourmet brunch,Swimming Pool"],
+      },
+    ],
   },
   {
-    "id": "28",
-    "name": "The St. Regis Mumbai",
-    "images": [
+    id: "28",
+    name: "The St. Regis Mumbai",
+    images: [
       "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 3500,
-    "description": "Treat yourself to luxury at this premium hotel offering award-winning specialty restaurants & breathtaking city views.",
-    "packages": [
+    ispartner: false,
+    price: 3500,
+    description:
+      "Treat yourself to luxury at this premium hotel offering award-winning specialty restaurants & breathtaking city views.",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch with Pool (without alcohol)",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 3500,
-        "features": ["Gourmet brunch,Swimming Pool"]
+        id: "1",
+        name: "Sunday Brunch with Pool (without alcohol)",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 3500,
+        features: ["Gourmet brunch,Swimming Pool"],
       },
       {
-        "id": "2",
-        "name": "Sunday Brunch with Pool (with alcohol)",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 4500,
-        "features": ["Gourmet brunch,Swimming Pool"]
+        id: "2",
+        name: "Sunday Brunch with Pool (with alcohol)",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 4500,
+        features: ["Gourmet brunch,Swimming Pool"],
       },
       {
-        "id": "3",
-        "name": "Sunday Brunch with premium alcohol",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 7500,
-        "features": ["Gourmet brunch,Swimming Pool"]
-      }
-    ]
+        id: "3",
+        name: "Sunday Brunch with premium alcohol",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 7500,
+        features: ["Gourmet brunch,Swimming Pool"],
+      },
+    ],
   },
   {
-    "id": "29",
-    "name": "Four Seasons Hotel Mumbai",
-    "images": [
+    id: "29",
+    name: "Four Seasons Hotel Mumbai",
+    images: [
       "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg"
+      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
     ],
-    "distance": "25 km ",
-    "rating": 4.5,
-    "amenities": [
+    distance: "25 km ",
+    rating: 4.5,
+    amenities: [
       "Brunch",
       "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna"
+      "Steam and Sauna",
     ],
-    "ispartner": false,
-    "price": 3500,
-    "description": "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
-    "packages": [
+    ispartner: false,
+    price: 3500,
+    description:
+      "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
+    packages: [
       {
-        "id": "1",
-        "name": "Sunday Brunch with premium alcohol",
-        "description": "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        "price": 6500,
-        "features": ["Gourmet brunch,Swimming Pool"]
-      }
-    ]
-  }
-]
+        id: "1",
+        name: "Sunday Brunch with premium alcohol",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 6500,
+        features: ["Gourmet brunch,Swimming Pool"],
+      },
+    ],
+  },
+];
