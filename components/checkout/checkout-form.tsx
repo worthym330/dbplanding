@@ -43,7 +43,7 @@ export function CheckoutForm() {
     items: state.items,
   }));
 
-  const ispartner = items[0].ispartner;
+  const ispartner = items.length>0 && items[0]?.ispartner;
 
   const subtotal = items.reduce(
     (total: number, item: { price: number; quantity: number }) =>
