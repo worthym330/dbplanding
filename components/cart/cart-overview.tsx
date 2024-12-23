@@ -25,7 +25,7 @@ export function CartOverview() {
           <Card>
             <CardContent className="flex items-center justify-between p-6">
               <div>
-                <h1 className="font-bold">{item.hotelName}{item.hotelId}</h1>
+                <h1 className="font-bold">{item.hotelName}</h1>
                 <h3 className="font-semibold">{item.name}</h3>
                 <p className="text-2xl font-bold">
                   ₹{item.price}

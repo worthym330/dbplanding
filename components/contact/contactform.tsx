@@ -20,7 +20,7 @@ const contactFormSchema = z.object({
     .string()
     .min(10, "Phone number must be at least 10 digits.")
     .regex(/^[0-9]+$/, "Phone number must contain only numbers."),
-  message: z.string().optional(),
+  details: z.string().optional(),
 });
 
 type ContactFormValues = z.infer<typeof contactFormSchema>;
@@ -98,10 +98,10 @@ export function ContactForm() {
             id="message"
             placeholder="How can we help you?"
             className="min-h-[150px]"
-            {...register("message")}
+            {...register("details")}
           />
-          {errors?.message && (
-            <p className="text-red-500 text-sm">{errors?.message?.message}</p>
+          {errors?.details && (
+            <p className="text-red-500 text-sm">{errors?.details?.message}</p>
           )}
         </div>
         <Button type="submit" className="w-full" disabled={isSubmitting}>

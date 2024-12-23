@@ -12,11 +12,13 @@ export function Header() {
   const { theme, setTheme } = useTheme();
   const itemCount = items.reduce((acc, item) => acc + item.quantity, 0);
 
+  const logoSrc = theme === "dark" ? "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg" : "/logos/LogoBlack.png";
+
   return (
     <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur-lg">
       <div className="mx-auto flex h-16 container items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 text-xl font-bold">
-          <img src="/logos/LogoBlack.png" className="h-10 w-10" />
+          <img src={logoSrc} alt="DayBreakPass Logo" className="h-10 w-10" />
           <span>DayBreakPass</span>
         </Link>
         <nav className="flex items-center gap-6">
@@ -38,16 +40,16 @@ export function Header() {
             </Button>
           </Link>
           <Button
-          variant="ghost"
-          size="icon"
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-        >
-          {theme === "dark" ? (
-            <Sun className="h-5 w-5" />
-          ) : (
-            <Moon className="h-5 w-5" />
-          )}
-        </Button>
+            variant="ghost"
+            size="icon"
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          >
+            {theme === "dark" ? (
+              <Sun className="h-5 w-5" />
+            ) : (
+              <Moon className="h-5 w-5" />
+            )}
+          </Button>
         </nav>
       </div>
     </header>

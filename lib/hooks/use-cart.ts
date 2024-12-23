@@ -12,6 +12,7 @@ interface CartItem {
   hotelId: string;
   // date: string;
   // time: string;
+  ispartner:boolean | undefined
 }
 
 interface CartStore {
@@ -29,9 +30,19 @@ export const useCart = create<CartStore>()(
       items: [],
       addItem: (item) =>
         set((state) => {
+          const isSameHotel =
+            state.items.length === 0 ||
+            state.items[0]?.hotelId === item.hotelId;
+
+          if (!isSameHotel) {
+            // Replace items with the new hotel's package
+            return { items: [item] };
+          }
+
           const existingItem = state.items.find(
             (i) => i.id === item.id && i.hotelId === item.hotelId
           );
+
           if (existingItem) {
             return {
               items: state.items.map((i) =>
@@ -41,6 +52,7 @@ export const useCart = create<CartStore>()(
               ),
             };
           }
+
           return { items: [...state.items, item] };
         }),
       removeItem: (id, hotelId) =>

@@ -32,6 +32,7 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
       quantity: 1,
       hotelName: hotel.name,
       hotelId: hotel.id,
+      ispartner:hotel.ispartner
     });
   };
 

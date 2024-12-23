@@ -31,7 +31,7 @@ export function OrderSummary() {
               <p className="font-medium">{item.name}</p>
               <Badge variant="secondary">{item.quantity}x guests</Badge>
             </div>
-            <p className="font-bold">${(item.price * item.quantity).toFixed(2)}</p>
+            <p className="font-bold">₹{(item.price * item.quantity).toFixed(2)}</p>
           </div>
         ))}
         <div className="space-y-2 border-t pt-4">

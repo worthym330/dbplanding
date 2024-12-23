@@ -43,6 +43,8 @@ export function CheckoutForm() {
     items: state.items,
   }));
 
+  const ispartner = items[0].ispartner;
+
   const subtotal = items.reduce(
     (total: number, item: { price: number; quantity: number }) =>
       total + item.price * item.quantity,
@@ -54,58 +56,76 @@ export function CheckoutForm() {
   const total = subtotal + tax;
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
-    updateForm(data);
+    if (ispartner) {
+      updateForm(data);
 
-    let payload = {
-      name: data.name,
-      phone: data.phone,
-      email: data.email,
-      cartItems: items,
-      totalAmount: total,
-    };
-    await app_api
-      .post("/landing/create-order", payload)
-      .then(async (res) => {
-        const order = res.data;
-        await initiateRazorpayPayment(
-          {
-            amount: order.amount,
-            currency: order.currency,
-            name: data.name,
-            description: "Order Payment",
-            orderId: order.orderId,
-            prefill: {
+      let payload = {
+        name: data.name,
+        phone: data.phone,
+        email: data.email,
+        cartItems: items,
+        totalAmount: total,
+      };
+      await app_api
+        .post("/landing/create-order", payload)
+        .then(async (res) => {
+          const order = res.data;
+          await initiateRazorpayPayment(
+            {
+              amount: order.amount,
+              currency: order.currency,
               name: data.name,
-              email: data.email,
-              contact: data.phone,
+              description: "Order Payment",
+              orderId: order.orderId,
+              prefill: {
+                name: data.name,
+                email: data.email,
+                contact: data.phone,
+              },
             },
-          },
-          (paymentResponse) => {
-            let payload = {
-              razorpayOrderId: order.orderId,
-              razorpayPaymentId: paymentResponse.razorpay_payment_id,
-              userId: order.userId,
-            };
-            app_api
-              .post("/landing/validate-payment", payload)
-              .then((res) => {
-                toast.success("Successfully payment marked");
-                const orderId = res.data.invoice.orderId;
-                router.push(`/thank-you?orderid=${orderId}`);
-              })
-              .catch((err) => {
-                console.log(err);
-              });
-          },
-          (error) => {
-            toast.error("Payment failed");
-            console.log("errror", error);
-          }
-        );
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+            (paymentResponse) => {
+              let payload = {
+                razorpayOrderId: order.orderId,
+                razorpayPaymentId: paymentResponse.razorpay_payment_id,
+                userId: order.userId,
+              };
+              app_api
+                .post("/landing/validate-payment", payload)
+                .then((res) => {
+                  toast.success("Successfully payment marked");
+                  const orderId = res.data.invoice.orderId;
+                  router.push(`/thank-you?orderid=${orderId}`);
+                })
+                .catch((err) => {
+                  console.log(err);
+                });
+            },
+            (error) => {
+              toast.error("Payment failed");
+              console.log("errror", error);
+            }
+          );
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    } else {
+      let payload={
+        name: data.name,
+        phone: data.phone,
+        email: data.email,
+        items
+      }
+      await app_api
+        .post("/landing/non-partner",payload)
+        .then((res) => {
+          toast.success("Our team will contact you asap");
+          // router.push(`/thank-you`);
+        })
+        .catch((err) => {
+          toast.error("Something went wrong");
+        });
+    }
   };
 
   return (
@@ -158,7 +178,7 @@ export function CheckoutForm() {
                 </FormItem>
               )}
             />
-            <FormField
+            {/* <FormField
               control={form.control}
               name="specialRequests"
               render={({ field }) => (
@@ -173,7 +193,7 @@ export function CheckoutForm() {
                   <FormMessage />
                 </FormItem>
               )}
-            />
+            /> */}
             <Button type="submit" className="w-full" size="lg">
               Pay Now
             </Button>
