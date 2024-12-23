@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Ribbon } from "lucide-react";
+import { IoRibbon } from "react-icons/io5";
 
 interface HotelCardImageProps {
   src: string;
@@ -17,8 +17,8 @@ export function HotelCardImage({ src, alt, partner }: HotelCardImageProps) {
 
       {/* Ribbon */}
       {partner && (
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-red-500 text-white px-3 py-1 flex items-center gap-1 rounded-b-md shadow-md">
-          <Ribbon className="h-5 w-5" />
+        <div className="absolute top-0 left-0 bg-red-500 text-white px-3 py-1 flex items-center gap-1 rounded-b-md shadow-md">
+          <IoRibbon className="h-5 w-5" />
           <span className="text-sm font-semibold">Partnered</span>
         </div>
       )}
