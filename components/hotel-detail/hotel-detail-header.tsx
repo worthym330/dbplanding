@@ -16,8 +16,6 @@ export function HotelDetailHeader({ hotel }: HotelDetailHeaderProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
     ...hotel.images,
-    "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=1920&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1920&auto=format&fit=crop",
   ];
 
   const nextImage = () => {
@@ -53,7 +51,7 @@ export function HotelDetailHeader({ hotel }: HotelDetailHeaderProps) {
       <Button
         variant="outline"
         size="icon"
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80"
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-background"
         onClick={prevImage}
       >
         <ChevronLeft className="h-4 w-4" />
@@ -62,7 +60,7 @@ export function HotelDetailHeader({ hotel }: HotelDetailHeaderProps) {
       <Button
         variant="outline"
         size="icon"
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80"
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-background"
         onClick={nextImage}
       >
         <ChevronRight className="h-4 w-4" />

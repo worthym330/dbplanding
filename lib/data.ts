@@ -756,47 +756,47 @@ export const hotels = [
       },
     ],
   },
-  {
-    id: "16",
-    name: "Sahara Star",
-    images: [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-    ],
-    distance: "25 km ",
-    rating: 4.5,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: false,
-    price: 3000,
-    description:
-      "Near Mumbai’s domestic airport, Sahara Star is a flagship foundation of Sahara India Pariwar built inside a man-made glass structure",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch(without alcohol)",
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        price: 3800,
-        features: ["Gourmet brunch,pool,live music"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch (Beer & Wine)",
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 3800,
-        features: ["Gourmet brunch,pool and live music"],
-      },
-    ],
-  },
+  // {
+  //   id: "16",
+  //   name: "Sahara Star",
+  //   images: [
+  //     "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+  //     "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+  //   ],
+  //   distance: "25 km ",
+  //   rating: 4.5,
+  //   amenities: [
+  //     "Brunch",
+  //     "Gym",
+  //     "Swimming Pool",
+  //     "Spa",
+  //     "Restuarant",
+  //     "Bar",
+  //     "Steam and Sauna",
+  //   ],
+  //   ispartner: false,
+  //   price: 3000,
+  //   description:
+  //     "Near Mumbai’s domestic airport, Sahara Star is a flagship foundation of Sahara India Pariwar built inside a man-made glass structure",
+  //   packages: [
+  //     {
+  //       id: "1",
+  //       name: "Sunday Brunch(without alcohol)",
+  //       description:
+  //         "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+  //       price: 3800,
+  //       features: ["Gourmet brunch,pool,live music"],
+  //     },
+  //     {
+  //       id: "2",
+  //       name: "Sunday Brunch (Beer & Wine)",
+  //       description:
+  //         "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+  //       price: 3800,
+  //       features: ["Gourmet brunch,pool and live music"],
+  //     },
+  //   ],
+  // },
   {
     id: "17",
     name: "Ramada Plaza by Wyndham Palm Grove, Mumbai",
@@ -876,8 +876,11 @@ export const hotels = [
     id: "19",
     name: "Lakeside Chalet Marriott Executive Apartments",
     images: [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+      "/hotels/lakeside/outdoor.avif",
+      "/hotels/lakeside/swimmingpool.avif",
+      "/hotels/lakeside/pool.avif",
+      "/hotels/lakeside/restro.webp",
+      "/hotels/lakeside/restrotwo.webp"
     ],
     distance: "25 km ",
     rating: 4.5,
@@ -908,8 +911,13 @@ export const hotels = [
     id: "20",
     name: "The Westin Mumbai Powai Lake",
     images: [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+      "/hotels/westin/outdoor.avif",
+      "/hotels/westin/swimmingpool.avif",
+      "/hotels/westin/pool.avif",
+      "/hotels/westin/spa.avif",
+      "/hotels/westin/spa2.avif",
+      "/hotels/westin/restro.avif",
+      "/hotels/westin/restrotwo.avif"
     ],
     distance: "25 km ",
     rating: 4.5,
@@ -1010,8 +1018,14 @@ export const hotels = [
     id: "22",
     name: "Sofitel Mumbai BKC",
     images: [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+      "/hotels/sofitel/outdoor.avif",
+      "/hotels/sofitel/outdoor2.avif",
+      "/hotels/sofitel/swimmingpool.avif",
+      "/hotels/sofitel/pool.avif",
+      "/hotels/sofitel/spa.avif",
+      "/hotels/sofitel/spa2.avif",
+      "/hotels/sofitel/restro.avif",
+      "/hotels/sofitel/restrotwo.avif"
     ],
     distance: "25 km ",
     rating: 4.5,
@@ -1067,8 +1081,13 @@ export const hotels = [
     id: "23",
     name: "Taj The Trees Mumbai",
     images: [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+      "/hotels/tajtrees/outdoor.jpg",
+      "/hotels/tajtrees/swimmingpool.avif",
+      "/hotels/tajtrees/pool.avif",
+      "/hotels/tajtrees/spa.avif",
+      "/hotels/tajtrees/spa2.avif",
+      "/hotels/tajtrees/restro.avif",
+      "/hotels/tajtrees/restrotwo.avif"
     ],
     distance: "25 km ",
     rating: 4.5,
@@ -1139,46 +1158,16 @@ export const hotels = [
       },
     ],
   },
-
-  {
-    id: "25",
-    name: "The Empresa Hotel",
-    images: [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-    ],
-    distance: "25 km ",
-    rating: 4.5,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: false,
-    price: 2500,
-    description:
-      "Experience a lavish stay at this upscale property featuring well-appointed rooms, multiple eateries, an exclusive spa, a swimming pool and top-notch amenities",
-    packages: [
-      {
-        id: "1",
-        name: " Sunday Brunch (without alcohol)",
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 2000,
-        features: ["Gourmet brunch,Swimming Pool"],
-      },
-    ],
-  },
   {
     id: "26",
     name: "The Empresa Hotel",
     images: [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+      "/hotels/empressa/outdoor.avif",
+      "/hotels/empressa/swimmingpool.avif",
+      "/hotels/empressa/pool.avif",
+      "/hotels/empressa/spa.avif",
+      "/hotels/empressa/restro.avif",
+      "/hotels/empressa/restrotwo.avif"
     ],
     distance: "25 km ",
     rating: 4.5,
@@ -1210,8 +1199,13 @@ export const hotels = [
     id: "26",
     name: "Radisson Mumbai Goregaon",
     images: [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+      "/hotels/radissongoregaon/outdoor.avif",
+      "/hotels/radissongoregaon/swimmingpool.avif",
+      "/hotels/radissongoregaon/pool.avif",
+      "/hotels/radissongoregaon/spa.avif",
+      "/hotels/radissongoregaon/spatwo.avif",
+      "/hotels/radissongoregaon/restro.avif",
+      "/hotels/radissongoregaon/restrotwo.avif"
     ],
     distance: "25 km ",
     rating: 4.5,
@@ -1296,8 +1290,10 @@ export const hotels = [
     id: "28",
     name: "The St. Regis Mumbai",
     images: [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+      "/hotels/regis/outdoor.avif",
+      "/hotels/regis/restrotwo.avif",
+      "/hotels/regis/restro.avif",
+      "/hotels/regis/spa.webp",
     ],
     distance: "25 km ",
     rating: 4.5,
@@ -1345,8 +1341,10 @@ export const hotels = [
     id: "29",
     name: "Four Seasons Hotel Mumbai",
     images: [
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-      "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+      "/hotels/fourseasons/outdoor.avif",
+      "/hotels/fourseasons/restrotwo.avif",
+      "/hotels/fourseasons/restro.avif",
+      "/hotels/fourseasons/gym.webp",
     ],
     distance: "25 km ",
     rating: 4.5,

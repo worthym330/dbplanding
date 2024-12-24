@@ -12,7 +12,7 @@ export function Header() {
   const { theme, setTheme } = useTheme();
   const itemCount = items.reduce((acc, item) => acc + item.quantity, 0);
 
-  const logoSrc = theme === "dark" ? "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg" : "/logos/LogoBlack.png";
+  const logoSrc = theme === "dark" ? "/logos/logowhite.png" : "/logos/LogoBlack.png";
 
   return (
     <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur-lg">
