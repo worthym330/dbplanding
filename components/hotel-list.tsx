@@ -13,7 +13,7 @@ export function HotelList() {
     if (filter === "all") {
       setFilteredHotels(hotels);
     } else {
-      const filterLabel = filter
+      const filterLabel = filter;
       setFilteredHotels(
         hotels.filter((hotel) =>
           hotel.packages.some((pkg) =>
@@ -26,19 +26,24 @@ export function HotelList() {
 
   return (
     <div>
-      <FilterBar onFilterChange={handleFilterChange} />
+      <FilterBar onFilterChange={handleFilterChange}  />
       <div className="mx-auto max-w-7xl px-4 py-12" id="hotels">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {filteredHotels.map((hotel, index) => (
-            <motion.div
-              key={hotel.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-            >
-              <HotelCard hotel={hotel} />
-            </motion.div>
-          ))}
+          {filteredHotels
+            .sort((a, b) => {
+              if (a.ispartner === b.ispartner) return 0;
+              return a.ispartner ? -1 : 1;
+            })
+            .map((hotel, index) => (
+              <motion.div
+                key={hotel.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <HotelCard hotel={hotel} />
+              </motion.div>
+            ))}
         </div>
       </div>
     </div>
