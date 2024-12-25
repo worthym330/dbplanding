@@ -43,7 +43,7 @@ export function CheckoutForm() {
     items: state.items,
   }));
 
-  const ispartner = items.length>0 ? items[0]?.ispartner : false;
+  const ispartner = items.length > 0 ? items[0]?.ispartner : false;
 
   const subtotal = items.reduce(
     (total: number, item: { price: number; quantity: number }) =>
@@ -110,14 +110,14 @@ export function CheckoutForm() {
           console.log(err);
         });
     } else {
-      let payload={
+      let payload = {
         name: data.name,
         phone: data.phone,
         email: data.email,
-        items
-      }
+        items,
+      };
       await app_api
-        .post("/landing/non-partner",payload)
+        .post("/landing/non-partner", payload)
         .then((res) => {
           toast.success("Our team will contact you asap");
           // router.push(`/thank-you`);

@@ -18,5 +18,5 @@ export interface Package {
   price: number;
   features: string[];
   hotelName?: string;
-  ispartner?:boolean
+  issunday?:boolean
 }

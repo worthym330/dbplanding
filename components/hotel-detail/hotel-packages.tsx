@@ -14,26 +14,37 @@ import {
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/lib/hooks/use-cart";
 import toast from "react-hot-toast";
+import { BookingCalendar } from "./booking-calendar";
+import { useDateStore } from "@/lib/hooks/use-date";
 
 interface HotelPackagesProps {
   packages: Package[];
   hotel: Hotel;
+  outsideCalendarRef?: HTMLDivElement;
 }
 
-export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
+export function HotelPackages({
+  packages,
+  hotel,
+}: HotelPackagesProps) {
   const addItem = useCart((state) => state.addItem);
+  const { date } = useDateStore();
 
   const handleAddToCart = (pkg: Package) => {
-    toast.success("Successfully added into the cart");
-    addItem({
-      id: pkg.id,
-      name: pkg.name,
-      price: pkg.price,
-      quantity: 1,
-      hotelName: hotel.name,
-      hotelId: hotel.id,
-      ispartner:hotel.ispartner
-    });
+    if (!date) {
+      toast.error("Please add a date first");
+    } else {
+      toast.success("Successfully added into the cart");
+      addItem({
+        id: pkg.id,
+        name: pkg.name,
+        price: pkg.price,
+        quantity: 1,
+        hotelName: hotel.name,
+        hotelId: hotel.id,
+        ispartner: hotel.ispartner,
+      });
+    }
   };
 
   return (
@@ -45,7 +56,14 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
         </p>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+      {/* Calendar section with ref */}
+      <div
+        className="lg:hidden border p-4 transition-colors duration-300"
+      >
+        <BookingCalendar selectedHotel={hotel} />
+      </div>
+
+      <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
         {packages.map((pkg, index) => (
           <motion.div
             key={pkg.id}

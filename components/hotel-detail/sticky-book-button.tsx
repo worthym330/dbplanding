@@ -2,32 +2,57 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Hotel } from "@/lib/types";
+import { useCart } from "@/lib/hooks/use-cart";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { useDateStore } from "@/lib/hooks/use-date";
+import toast from "react-hot-toast";
 
-interface StickyBookButtonProps {
-  hotel: Hotel;
-}
-
-export function StickyBookButton({ hotel }: StickyBookButtonProps) {
+export function StickyBookButton() {
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 100], [0, 1]);
+  const router = useRouter();
+  const { getTotal ,items} = useCart();
+  const { date } = useDateStore();
+
+  const [amount, setAmount] = useState<number | null>(null);
+
+  useEffect(() => {
+    setAmount(getTotal());
+  }, [getTotal, items]);
+
+    const handleSubmit = () => {
+      toast.error("Please add a date first");
+  };
+
+  const displayDate = date instanceof Date ? date.toDateString() : "No date selected";
 
   return (
     <motion.div
       style={{ opacity }}
-      className="fixed bottom-0 left-0 right-0 z-50 bg-background/80 p-4 backdrop-blur-lg"
+      className="fixed bottom-0 left-0 right-0 z-50 bg-background/80 p-4 backdrop-blur-lg lg:hidden"
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
-        <div>
-          <p className="font-medium">{hotel.name}</p>
-          <p className="text-2xl font-bold">
-            ₹{hotel.price}
-            <span className="text-sm font-normal text-muted-foreground">
-              /night
-            </span>
-          </p>
-        </div>
-        <Button size="lg">Book Now</Button>
+        {amount && amount > 0 ? (
+          <div>
+            <p className="font-medium text-sm">Subtotal</p>
+            <p className="text-xl font-bold">₹{amount.toFixed(2)}</p>
+          </div>
+        ) : (
+          <div>
+            <p className="font-medium text-sm">Date</p>
+            <p className="text-lg font-bold">{displayDate || "No date selected"}</p>
+          </div>
+        )}
+
+        <Button
+          size="lg"
+          onClick={() => {
+            amount && amount > 0 ? router.push("/cart") : handleSubmit();
+          }}
+        >
+          Book Now
+        </Button>
       </div>
     </motion.div>
   );

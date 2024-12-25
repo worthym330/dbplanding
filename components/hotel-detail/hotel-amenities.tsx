@@ -1,24 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Wifi,
-  Car,
-  Dumbbell,
-  // Pool,
-  Coffee,
-  // Spa,
-  UtensilsCrossed,
-} from "lucide-react";
+import { FaUtensils, FaSwimmer, FaSpa, FaParking, FaDumbbell, FaCocktail, FaBath, FaHotTub } from "react-icons/fa";
+import { MdWifi } from "react-icons/md";
+import { IoRestaurant } from "react-icons/io5";
+import { Coffee } from "lucide-react";
 
 const amenityIcons: Record<string, React.ElementType> = {
-  "Free WiFi": Wifi,
-  Parking: Car,
-  Gym: Dumbbell,
-  // Pool: Pool,
-  "Brunch Only": Coffee,
-  // Spa: Spa,
-  "Brunch + Pool": UtensilsCrossed,
+  "Free WiFi": MdWifi,            
+  Parking: FaParking,             
+  Gym: FaDumbbell,                
+  "Swimming Pool": FaSwimmer,     
+  Spa: FaSpa,                     
+  Restaurant: IoRestaurant,       
+  Bar: FaCocktail,                
+  "Steam and Sauna": FaHotTub,     
+  "Brunch": FaUtensils,           
+  "Day use room": FaBath          
 };
 
 interface HotelAmenitiesProps {
@@ -35,7 +33,7 @@ export function HotelAmenities({ amenities }: HotelAmenitiesProps) {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
         {amenities.map((amenity, index) => {
           const Icon = amenityIcons[amenity] || Coffee;
           return (

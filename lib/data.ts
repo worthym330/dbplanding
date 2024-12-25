@@ -80,6 +80,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch with Live Music (without alcohol)",
+        issunday:true,
         description:
           "The Sunday brunch comprises a variety of cold cuts, desserts, starters and main course options along with their live band adding to the relaxed and fun vibe!",
         price: 2800,
@@ -88,6 +89,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch with Live Music  (with alcohol)",
+        issunday:true,
         description:
           "The Sunday brunch comprises a variety of cold cuts, desserts, starters and main course options along with their live band adding to the relaxed and fun vibe!",
         price: 3200,
@@ -126,6 +128,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch with Pool (without alcohol)",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 3634,
@@ -134,6 +137,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch with Pool (with alcohol)",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 4890,
@@ -142,6 +146,7 @@ export const hotels = [
       {
         id: "3",
         name: "Sunday Brunch with Pool (Kids brunch)",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 1622,
@@ -179,6 +184,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch (Non Alcoholic)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 3634,
@@ -187,6 +193,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch (Beer & Wine)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 4890,
@@ -195,6 +202,7 @@ export const hotels = [
       {
         id: "3",
         name: "Sunday Brunch(Premium Beverage)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 1622,
@@ -203,6 +211,7 @@ export const hotels = [
       {
         id: "4",
         name: "Sunday Brunch(Champagne)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 1622,
@@ -211,6 +220,7 @@ export const hotels = [
       {
         id: "5",
         name: "Sunday Brunch(Kids Brunch)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 1622,
@@ -246,6 +256,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch with Pool (without alcohol)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 3634,
@@ -254,6 +265,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch (Beer & Wine)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 4890,
@@ -262,6 +274,7 @@ export const hotels = [
       {
         id: "3",
         name: "Sunday Brunch(Premium Beverage)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 1622,
@@ -270,6 +283,7 @@ export const hotels = [
       {
         id: "4",
         name: "Sunday Brunch(Champagne)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 1622,
@@ -278,6 +292,7 @@ export const hotels = [
       {
         id: "5",
         name: "Sunday Brunch(Kids Brunch)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 1622,
@@ -315,6 +330,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch with Pool & live music (without alcohol)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 2500,
@@ -323,6 +339,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch (Beer & Wine)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 4000,
@@ -331,6 +348,7 @@ export const hotels = [
       {
         id: "2",
         name: "Spa Pass",
+        issunday:true,
         description: "Foot massage, deep tissue and swedish massage ",
         price: 3000,
         features: ["Spa"],
@@ -364,6 +382,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch with Pool & live music (without alcohol)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 2500,
@@ -372,6 +391,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch (Beer & Wine)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 4000,
@@ -417,6 +437,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch with Pool (without alcohol)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 4248,
@@ -425,6 +446,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch (Beer & Wine)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 5700,
@@ -433,6 +455,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch for kids",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 2596,
@@ -471,6 +494,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch with Pool (without alcohol)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 1500,
@@ -479,6 +503,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch (Beer & Wine)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 3000,
@@ -514,6 +539,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch with Pool (without alcohol)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 2795,
@@ -522,6 +548,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch (Beer & Wine)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 3595,
@@ -561,6 +588,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch(without alcohol)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 3300,
@@ -569,6 +597,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch (Beer & Wine)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 4245,
@@ -604,6 +633,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch(without alcohol)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 2199,
@@ -612,6 +642,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch (Beer & Wine)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 2499,
@@ -649,6 +680,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch(without alcohol)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 2950,
@@ -657,6 +689,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch (Beer & Wine)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 3550,
@@ -695,6 +728,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch(without alcohol)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 2499,
@@ -702,6 +736,7 @@ export const hotels = [
       },
       {
         id: "2",
+        issunday:true,
         name: "Sunday Brunch (Beer & Wine)",
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
@@ -740,6 +775,7 @@ export const hotels = [
     packages: [
       {
         id: "1",
+        issunday:true,
         name: "Sunday Brunch(without alcohol)",
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
@@ -749,6 +785,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch (Beer & Wine)",
+        issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 3333,
@@ -832,6 +869,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch with a Poolside Dip",
+        issunday:true,
         description:
           "Enjoy a relaxing brunch by the pool with family or friends,Access to the swimming pool",
         price: 1800,
@@ -866,6 +904,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch",
+        issunday:true,
         description: "Buffet Variety and Quality, Sophisticated,Luxury, Brunch",
         price: 1999,
         features: ["Gourmet brunch"],
@@ -902,6 +941,7 @@ export const hotels = [
         id: "1",
         name: "Sunday Brunch",
         description: "Buffet Variety and Quality, Sophisticated,Luxury, Brunch",
+        issunday:true,
         price: 3000,
         features: ["Gourmet brunch"],
       },
@@ -938,6 +978,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch with Pool (without alcohol)",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 3499,
@@ -946,6 +987,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch with Pool (with alcohol)",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 4499,
@@ -954,6 +996,7 @@ export const hotels = [
       {
         id: "3",
         name: "Sunday Brunch with Pool (Kids brunch)",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 1600,
@@ -991,6 +1034,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch with Pool (without alcohol)",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 3500,
@@ -999,6 +1043,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch with Pool (with alcohol)",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 4500,
@@ -1046,6 +1091,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch with Pool (without alcohol)",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 4199,
@@ -1054,6 +1100,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch with Pool (with alcohol)",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 4999,
@@ -1108,6 +1155,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch with Pool (without alcohol)",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 2999,
@@ -1143,6 +1191,7 @@ export const hotels = [
       {
         id: "1",
         name: " Sunday Brunch (without alcohol)",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 2800,
@@ -1151,6 +1200,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch with Alcohol",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 4000,
@@ -1188,6 +1238,7 @@ export const hotels = [
       {
         id: "1",
         name: " Sunday Brunch (without alcohol)",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 2000,
@@ -1226,6 +1277,7 @@ export const hotels = [
       {
         id: "1",
         name: " Sunday Brunch (without alcohol)",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 2000,
@@ -1263,6 +1315,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch with Pool (without alcohol)",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 3350,
@@ -1271,6 +1324,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch with Pool (with alcohol)",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 4620,
@@ -1279,6 +1333,7 @@ export const hotels = [
       {
         id: "3",
         name: "Sunday Brunch with Pool (Kids brunch)",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 1950,
@@ -1314,6 +1369,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch with Pool (without alcohol)",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 3500,
@@ -1322,6 +1378,7 @@ export const hotels = [
       {
         id: "2",
         name: "Sunday Brunch with Pool (with alcohol)",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 4500,
@@ -1330,6 +1387,7 @@ export const hotels = [
       {
         id: "3",
         name: "Sunday Brunch with premium alcohol",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 7500,
@@ -1365,6 +1423,7 @@ export const hotels = [
       {
         id: "1",
         name: "Sunday Brunch with premium alcohol",
+        issunday:true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 6500,
