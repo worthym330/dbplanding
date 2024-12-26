@@ -26,7 +26,7 @@ export function HotelList() {
 
   return (
     <div>
-      <FilterBar onFilterChange={handleFilterChange}  />
+      <FilterBar onFilterChange={handleFilterChange} hotels={filteredHotels} />
       <div className="mx-auto max-w-7xl px-4 py-12" id="hotels">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {filteredHotels
