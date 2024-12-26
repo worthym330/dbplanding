@@ -27,7 +27,7 @@ export function Header() {
         <nav className="flex items-center gap-2 md:gap-6">
           <Link href="/#hotels" className="text-sm font-medium">
             <Hotel className="w-6 h-6 md:hidden" />
-            <span className="hidden">Hotels</span>
+            <span className="hidden md:block">Hotels</span>
           </Link>
           <Link href="/cart" className="relative">
             <Button variant="outline" size="icon" className="border-transparent">
