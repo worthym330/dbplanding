@@ -23,7 +23,7 @@ export function BookingCalendar({ selectedHotel }: { selectedHotel: Hotel }) {
   >([]);
 
   const router = useRouter();
-  const { getTotal, items } = useCart();
+  const { getTotal, items, setSelectedPackage } = useCart();
 
   const [amount, setAmount] = useState<number | null>(null);
 
@@ -57,6 +57,7 @@ export function BookingCalendar({ selectedHotel }: { selectedHotel: Hotel }) {
 
   const handleFilterChange = (filter: string) => {
     setActiveFilter(filter);
+    setSelectedPackage(filter);
   };
 
   const getUniquePackages = () => {

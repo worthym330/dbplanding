@@ -2,7 +2,7 @@
 
 import { Hotel, Package } from "@/lib/types";
 import { motion } from "framer-motion";
-import { Check } from "lucide-react";
+import { Check, MapPin } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -16,6 +16,7 @@ import { useCart } from "@/lib/hooks/use-cart";
 import toast from "react-hot-toast";
 import { BookingCalendar } from "./booking-calendar";
 import { useDateStore } from "@/lib/hooks/use-date";
+import Link from "next/link";
 
 interface HotelPackagesProps {
   packages: Package[];
@@ -23,11 +24,8 @@ interface HotelPackagesProps {
   outsideCalendarRef?: HTMLDivElement;
 }
 
-export function HotelPackages({
-  packages,
-  hotel,
-}: HotelPackagesProps) {
-  const addItem = useCart((state) => state.addItem);
+export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
+  const { addItem, selectedpackage } = useCart();
   const { date } = useDateStore();
 
   const handleAddToCart = (pkg: Package) => {
@@ -42,13 +40,30 @@ export function HotelPackages({
         quantity: 1,
         hotelName: hotel.name,
         hotelId: hotel.id,
+        date: date,
         ispartner: hotel.ispartner,
       });
     }
   };
 
+  // Filter packages based on selectedpackage
+  const filteredPackages = selectedpackage === "all"
+    ? packages
+    : packages.filter((pkg) => pkg.name.toLowerCase() === selectedpackage);
+
   return (
     <section className="space-y-6">
+      <div className="flex flex-col-reverse md:flex-row justify-between">
+        <span>{hotel.address}</span>
+        <Link
+          href={hotel?.map_link || "https://maps.google.com/"}
+          target="_blank"
+          className="flex gap-2"
+        >
+          <MapPin className="w-6 h-6" />
+          <span className="text-primary">Preview</span>
+        </Link>
+      </div>
       <div>
         <h2 className="text-2xl font-bold">Available Packages</h2>
         <p className="text-muted-foreground">
@@ -57,14 +72,12 @@ export function HotelPackages({
       </div>
 
       {/* Calendar section with ref */}
-      <div
-        className="lg:hidden border p-4 transition-colors duration-300"
-      >
+      <div className="lg:hidden border p-4 transition-colors duration-300">
         <BookingCalendar selectedHotel={hotel} />
       </div>
 
       <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
-        {packages.map((pkg, index) => (
+        {filteredPackages.map((pkg, index) => (
           <motion.div
             key={pkg.id}
             initial={{ opacity: 0, y: 20 }}

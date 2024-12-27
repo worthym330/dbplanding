@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 
 interface HotelCardHeaderProps {
   name: string;
-  distance: string;
+  distance?: string;
   rating: number;
 }
 

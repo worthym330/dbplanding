@@ -44,7 +44,7 @@ export function HotelCard({ hotel }: HotelCardProps) {
             </p>
           </CardContent>
           <CardFooter>
-            <Button className="w-full">View Details</Button>
+            <Button className="w-full">Book Now</Button>
           </CardFooter>
         </Card>
       </motion.div>

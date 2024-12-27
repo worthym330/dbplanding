@@ -41,7 +41,7 @@ const FloatingButtons: React.FC = () => {
   // const [isChatOpen, setIsChatOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-20 right-4 flex flex-col space-y-3 z-10">
+    <div className="fixed bottom-20 right-4 flex flex-col space-y-3 z-20">
       {/* WhatsApp Button */}
       <motion.a
         href="https://api.whatsapp.com/send?phone=918356070349&text=Hello%2C%20I%20would%20like%20to%20make%20a%20booking.%20Can%20you%20please%20assist%20me%3F"

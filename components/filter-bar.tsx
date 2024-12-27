@@ -49,7 +49,7 @@ export function FilterBar({
   };
 
   return (
-    <div className="sticky top-16 z-50 bg-background/95 backdrop-blur-lg supports-[backdrop-filter]:bg-background/60 border-b border-border">
+    <div className="sticky top-16 z-10 bg-background/95 backdrop-blur-lg supports-[backdrop-filter]:bg-background/60 border-b border-border">
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between gap-4">
           <Button

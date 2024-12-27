@@ -19,7 +19,7 @@ export default function HotelDetailClient({ hotel }: { hotel: any }) {
             <HotelAmenities amenities={hotel.amenities} />
           </div>
           <div className="lg:col-span-1 hidden lg:block" ref={calendarRef}>
-            <BookingCalendar selectedHotel={hotel}  />
+            <BookingCalendar selectedHotel={hotel} />
           </div>
         </div>
       </div>

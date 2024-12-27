@@ -10,9 +10,9 @@ interface CartItem {
   quantity: number;
   hotelName: string;
   hotelId: string;
-  // date: string;
+  date: Date;
   // time: string;
-  ispartner:boolean | undefined
+  ispartner: boolean | undefined;
 }
 
 interface CartStore {
@@ -22,13 +22,20 @@ interface CartStore {
   updateQuantity: (id: string, quantity: number, hotelId: string) => void;
   clearCart: () => void;
   getTotal: () => number;
+  selectedpackage: string;
+  setSelectedPackage: (pkg: string) => void;
 }
 
 export const useCart = create<CartStore>()(
   persist(
     (set, get) => ({
       items: [],
-      addItem: (item) =>
+      selectedpackage: "",
+      setSelectedPackage: (pkg) =>
+        set({
+          selectedpackage: pkg,
+        }),
+      addItem: (item: CartItem) =>
         set((state) => {
           const isSameHotel =
             state.items.length === 0 ||
