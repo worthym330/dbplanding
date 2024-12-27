@@ -120,7 +120,7 @@ export function CheckoutForm() {
         .post("/landing/non-partner", payload)
         .then((res) => {
           toast.success("Our team will contact you asap");
-          // router.push(`/thank-you`);
+          router.push(`/thank-you`);
         })
         .catch((err) => {
           toast.error("Something went wrong");
@@ -195,7 +195,7 @@ export function CheckoutForm() {
               )}
             /> */}
             <Button type="submit" className="w-full" size="lg">
-              Pay Now
+              {ispartner ? "Pay Now" : "Submit"}
             </Button>
           </form>
         </Form>
