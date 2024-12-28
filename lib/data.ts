@@ -9,7 +9,8 @@ export const hotels = [
       "/hotels/lemontree/1000009794.avif",
       "/hotels/lemontree/restro.avif",
     ],
-    distance: "10 km ",
+    map_link: "https://maps.app.goo.gl/JP9Jce7rFzpPCbGv6",
+    address:"Andheri - Kurla Rd, opposite Mittal Industrial Estate, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059",
     rating: 4.2,
     amenities: [
       "Brunch",
