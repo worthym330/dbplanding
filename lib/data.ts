@@ -9,6 +9,7 @@ export const hotels = [
       "/hotels/lemontree/1000009794.avif",
       "/hotels/lemontree/restro.avif",
     ],
+    distance: "18.1 miles ",
     map_link: "https://maps.app.goo.gl/JP9Jce7rFzpPCbGv6",
     address:"Andheri - Kurla Rd, opposite Mittal Industrial Estate, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059",
     rating: 4.2,
@@ -23,9 +24,9 @@ export const hotels = [
       "Steam and Sauna",
     ],
     ispartner: false,
-    price: 3500,
+    price: 2500,
     description:
-      "Luxury hotel with premium amenities perfect for post-marathon recovery.",
+      "A bright and inviting multi-cuisine coffee shop with a show kitchen offers an eclectic all day dining menu including Indian, European, American and Pan-Asian cuisine. Indulge in the wholesome breakfast buffet served daily. Choose from a wide range of popular Indian, South Indian, Asian and Western preparations",
     packages: [
       {
         id: "1",
