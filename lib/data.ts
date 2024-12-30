@@ -238,7 +238,7 @@ export const hotels = [
         features: ["Gourmet brunch"],
       },
       {
-        id: "2",
+        id: "3",
         name: "Tattva Spa",
         issunday: true,
         description:
@@ -322,7 +322,7 @@ export const hotels = [
         features: ["Gourmet brunch"],
       },
       {
-        id: "2",
+        id: "3",
         name: "Tattva Spa",
         issunday: true,
         description:
@@ -1120,7 +1120,7 @@ export const hotels = [
     ],
   },
   {
-    id: "26",
+    id: "25",
     name: "The Empresa Hotel",
     images: [
       "/hotels/empressa/outdoor.avif",
