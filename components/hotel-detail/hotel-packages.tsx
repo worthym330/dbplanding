@@ -17,6 +17,8 @@ import toast from "react-hot-toast";
 import { BookingCalendar } from "./booking-calendar";
 import { useDateStore } from "@/lib/hooks/use-date";
 import Link from "next/link";
+import { useState } from "react";
+import { Badge } from "../ui/badge";
 
 interface HotelPackagesProps {
   packages: Package[];
@@ -27,6 +29,8 @@ interface HotelPackagesProps {
 export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
   const { addItem, selectedpackage } = useCart();
   const { date } = useDateStore();
+  const [isExpanded, setIsExpanded] = useState(false);
+  const toggleExpand = () => setIsExpanded(!isExpanded);
 
   const handleAddToCart = (pkg: Package) => {
     if (!date) {
@@ -42,26 +46,45 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
         hotelId: hotel.id,
         date: date,
         ispartner: hotel.ispartner,
+        hotelAddress: hotel?.address,
       });
     }
   };
 
   // Filter packages based on selectedpackage
-  const filteredPackages = selectedpackage === "all"
-    ? packages
-    : packages.filter((pkg) => pkg.name.toLowerCase() === selectedpackage);
+  const filteredPackages =
+    selectedpackage === "all"
+      ? packages
+      : packages.filter((pkg) => pkg.name.toLowerCase() === selectedpackage);
 
   return (
     <section className="space-y-6">
+      <div className="w-full break-words mb-5 lg:hidden">
+        <p>
+          {isExpanded
+            ? hotel.description
+            : `${hotel.description.substring(0, 100)}...`}
+        </p>
+        <Badge
+          onClick={toggleExpand}
+          variant='outline' 
+        >
+          {isExpanded ? "Read Less" : "Read More"}
+        </Badge>
+      </div>
+
+      <div className="w-full break-words mb-5 hidden lg:block">
+        {hotel.description}
+      </div>
       <div className="flex flex-col-reverse md:flex-row justify-between">
-        <span>{hotel.address}</span>
+        <span>Address: {hotel.address}</span>
         <Link
           href={hotel?.map_link || "https://maps.google.com/"}
           target="_blank"
           className="flex gap-2"
         >
           <MapPin className="w-6 h-6" />
-          <span className="text-primary">Preview</span>
+          <span className="text-primary">Direction</span>
         </Link>
       </div>
       <div>
@@ -77,42 +100,50 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
       </div>
 
       <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
-        {filteredPackages.map((pkg, index) => (
-          <motion.div
-            key={pkg.id}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
-          >
-            <Card>
-              <CardHeader>
-                <CardTitle>{pkg.name}</CardTitle>
-                <CardDescription>{pkg.description}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
-                  {pkg.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-primary" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <p className="mt-4 text-2xl font-bold">
-                  ₹{pkg.price}
-                  <span className="text-sm font-normal text-muted-foreground">
-                    /person
-                  </span>
-                </p>
-              </CardContent>
-              <CardFooter>
-                <Button className="w-full" onClick={() => handleAddToCart(pkg)}>
-                  Add to Cart
-                </Button>
-              </CardFooter>
-            </Card>
-          </motion.div>
-        ))}
+      {filteredPackages.map((pkg, index) => (
+  <motion.div
+    key={pkg.id}
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: index * 0.1 }}
+  >
+    <Card>
+      {/* Top Center Badge */}
+      {/* {pkg.stock && pkg.stock <= 5 && ( */}
+        <div className="absolute top-2 left-1/2 transform -translate-x-1/2 bg-red-500 text-white text-xs font-bold py-1 px-3 rounded-full">
+          Only 5 packages left!
+        </div>
+      {/* )} */}
+
+      <CardHeader>
+        <CardTitle>{pkg.name}</CardTitle>
+        <CardDescription>{pkg.description}</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <ul className="space-y-2">
+          {pkg.features.map((feature) => (
+            <li key={feature} className="flex items-center gap-2">
+              <Check className="h-4 w-4 text-primary" />
+              {feature}
+            </li>
+          ))}
+        </ul>
+        <p className="mt-4 text-2xl font-bold">
+          ₹{pkg.price}
+          <span className="text-sm font-normal text-muted-foreground">
+            /person
+          </span>
+        </p>
+      </CardContent>
+      <CardFooter>
+        <Button className="w-full" onClick={() => handleAddToCart(pkg)}>
+          Add to Cart
+        </Button>
+      </CardFooter>
+    </Card>
+  </motion.div>
+))}
+
       </div>
     </section>
   );

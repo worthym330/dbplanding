@@ -16,12 +16,12 @@ export default function CheckoutPage() {
         <h1 className="mb-8 text-3xl font-bold">
           {ispartner ? "Checkout" : "Enquiry Now"}
         </h1>
-        <div className="grid gap-8 lg:grid-cols-3">
-          <div className="lg:col-span-2">
+        <div className="flex flex-col-reverse gap-8 lg:flex-row">
+          <div className="w-full lg:w-2/3">
             <CheckoutForm />
             {/* <PaymentSection /> */}
           </div>
-          <div className="lg:col-span-1">
+          <div className="w-full lg:w-1/3">
             <OrderSummary />
           </div>
         </div>

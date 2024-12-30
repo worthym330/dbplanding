@@ -61,3 +61,21 @@
 html {
   scroll-behavior: smooth;
 }
+
+.overflowclass {
+  overflow-x: auto;
+  scrollbar-width: none;
+  scrollbar-color: #888 transparent; 
+}
+
+.overflowclass::-webkit-scrollbar {
+  height: 6px;
+}
+
+.overflowclass::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.overflowclass::-webkit-scrollbar-track {
+  background: transparent;
+}

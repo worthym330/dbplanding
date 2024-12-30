@@ -13,6 +13,7 @@ interface CartItem {
   date: Date;
   // time: string;
   ispartner: boolean | undefined;
+  hotelAddress?: string;
 }
 
 interface CartStore {

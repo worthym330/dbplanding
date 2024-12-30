@@ -14,9 +14,7 @@ interface HotelDetailHeaderProps {
 
 export function HotelDetailHeader({ hotel }: HotelDetailHeaderProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = [
-    ...hotel.images,
-  ];
+  const images = [...hotel.images];
 
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % images.length);
@@ -27,7 +25,7 @@ export function HotelDetailHeader({ hotel }: HotelDetailHeaderProps) {
   };
 
   return (
-    <div className="relative h-[60vh] w-full overflow-hidden">
+    <div className="relative h-[40vh] md:h-[50vh] lg:h-[60vh] w-full overflow-hidden">
       <AnimatePresence initial={false}>
         <motion.div
           key={currentImageIndex}
@@ -51,38 +49,38 @@ export function HotelDetailHeader({ hotel }: HotelDetailHeaderProps) {
       <Button
         variant="outline"
         size="icon"
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-background"
+        className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-background"
         onClick={prevImage}
       >
-        <ChevronLeft className="h-4 w-4" />
+        <ChevronLeft className="h-4 w-4 md:h-6 md:w-6" />
       </Button>
 
       <Button
         variant="outline"
         size="icon"
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-background"
+        className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-background"
         onClick={nextImage}
       >
-        <ChevronRight className="h-4 w-4" />
+        <ChevronRight className="h-4 w-4 md:h-6 md:w-6" />
       </Button>
 
-      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8 text-white">
+      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 md:p-8 text-white">
         <div className="mx-auto max-w-7xl">
-          <div className="flex items-start justify-between">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div>
-              <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">
                 {hotel.name}
               </h1>
-              <p className="mt-2 flex items-center gap-2 text-lg text-gray-200">
-                <MapPin className="h-5 w-5" />
+              <p className="mt-2 flex items-center gap-2 text-sm md:text-lg text-gray-200">
+                <MapPin className="h-4 w-4 md:h-5 md:w-5" />
                 {hotel.distance} from marathon event
               </p>
             </div>
             <Badge
               variant="secondary"
-              className="flex items-center gap-1 bg-white/20 text-white"
+              className="flex items-center gap-1 bg-white/20 text-white text-xs md:text-sm"
             >
-              <Star className="h-4 w-4 fill-current" />
+              <Star className="h-3 w-3 md:h-4 md:w-4 fill-current" />
               {hotel.rating}
             </Badge>
           </div>

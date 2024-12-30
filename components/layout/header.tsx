@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ShoppingCart, Sun, Moon, Menu, X, Hotel } from "lucide-react";
@@ -9,7 +8,6 @@ import { useCart } from "@/lib/hooks/use-cart";
 import { useTheme } from "next-themes";
 
 export function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { items } = useCart();
   const { theme, setTheme } = useTheme();
   const itemCount = items.reduce((acc, item) => acc + item.quantity, 0);
