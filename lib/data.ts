@@ -15,13 +15,8 @@ export const hotels = [
     rating: 4.2,
     amenities: [
       "Brunch",
-      "Day use room",
-      "Gym",
       "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
+      
     ],
     ispartner: false,
     price: 2500,
@@ -62,35 +57,28 @@ export const hotels = [
       "/hotels/Holiday/restro.avif",
       "/hotels/Holiday/aabfe372238b11e98b380242ac110003.avif",
     ],
-    distance: "10 km ",
+    distance: "16.4 miles ",
     rating: 4.3,
     amenities: [
       "Brunch",
-      "Day use room",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
+      
     ],
     ispartner: false,
     price: 2500,
     description:
-      "Step into a world of luxury and convenience with expansive rooms, a fitness centre, amazing dining outlets, a luxury spa, and more! perfect for post-marathon recovery.",
+      "Step into a world of luxury and convenience with expansive rooms, a fitness centre, amazing dining outlets, a luxury spa, and more!",
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch with Live Music (without alcohol)",
+        name: "Sunday Brunch (without alcohol)",
         issunday:true,
-        description:
-          "The Sunday brunch comprises a variety of cold cuts, desserts, starters and main course options along with their live band adding to the relaxed and fun vibe!",
+        description: "SUN 12:30pm to 3:30pm",
         price: 2800,
         features: ["Swimming Pool, Gym, Wifi access", "Tea Coffee maker"],
       },
       {
         id: "2",
-        name: "Sunday Brunch with Live Music  (with alcohol)",
+        name: "Sunday Brunch (with alcohol)",
         issunday:true,
         description:
           "The Sunday brunch comprises a variety of cold cuts, desserts, starters and main course options along with their live band adding to the relaxed and fun vibe!",
@@ -110,22 +98,18 @@ export const hotels = [
       "/hotels/lalit/spa.avif",
       "/hotels/lalit/spatwo.avif",
     ],
-    distance: "10 km ",
+    distance: "17.3 miles ",
     rating: 4.3,
     amenities: [
       "Brunch",
-      "Day use room",
-      "Gym",
       "Swimming Pool",
-      "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna",
     ],
     ispartner: true,
     price: 2500,
     description:
-      "Step into a world of luxury and convenience with expansive rooms, a fitness centre, amazing dining outlets, a luxury spa, and more! perfect for post-marathon recovery.",
+      "The Lalit Mumbai is the epitome of world-class architecture and comfort with premium dining spaces, world-class leisure amenities, and unbeatable hospitality",
     packages: [
       {
         id: "1",
@@ -167,21 +151,15 @@ export const hotels = [
       "/hotels/mariotte/sps.avif",
       "/hotels/mariotte/restro.avif",
     ],
-    distance: "10 km ",
+    distance: "17.2 miles",
     rating: 4.5,
     amenities: [
       "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
     ],
     ispartner: false,
     price: 2500,
     description:
-      "Step into a world of luxury and convenience with expansive rooms, a fitness centre, amazing dining outlets, a luxury spa, and more! perfect for post-marathon recovery.",
+      "Experience unmatched luxury and world-class service at this luxury resort located near the business hubs.",
     packages: [
       {
         id: "1",
@@ -239,21 +217,20 @@ export const hotels = [
       "/hotels/radissonblu/202008061201129632-ba2cff746e1b11ec8ac40a58a9feac02.avif",
       "/hotels/radissonblu/202008061201129632-d55f7e0ef6db11ecb2f30a58a9feac02.avif",
     ],
-    distance: "10 km ",
+    distance: "17.8 miles",
     rating: 4.5,
     amenities: [
       "Brunch",
-      "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna",
+      "Jacuzzi",
     ],
-    ispartner: false,
+    ispartner: true,
     price: 2500,
     description:
-      "Step into a world of luxury and convenience with expansive rooms, a fitness centre, amazing dining outlets, a luxury spa, and more! perfect for post-marathon recovery.",
+      "Experience utmost luxury at this lavish retreat offering well-furnished rooms, elite restaurants, and a host of modern amenities.",
     packages: [
       {
         id: "1",
@@ -274,31 +251,13 @@ export const hotels = [
         features: ["Gourmet brunch"],
       },
       {
-        id: "3",
-        name: "Sunday Brunch(Premium Beverage)",
+        id: "2",
+        name: "Tattva Spa",
         issunday:true,
         description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 1622,
-        features: ["Gourmet brunch"],
-      },
-      {
-        id: "4",
-        name: "Sunday Brunch(Champagne)",
-        issunday:true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 1622,
-        features: ["Gourmet brunch"],
-      },
-      {
-        id: "5",
-        name: "Sunday Brunch(Kids Brunch)",
-        issunday:true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 1622,
-        features: ["Gourmet brunch"],
+          "Best spa in Mumbai with all sorts of massage to rejuvenate",
+        price: 4890,
+        features: ["Deep Tissue","Swedish","Foot Massage"],
       },
     ],
   },
@@ -313,59 +272,46 @@ export const hotels = [
       "/hotels/princess/restrotwo.avif",
       "/hotels/princess/restro.avif",
     ],
-    distance: "25 km ",
+    distance: "14.5 miles",
     rating: 4.5,
     amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
+      "Brunch",      
+      "Swimming Pool",     
       "Restuarant",
       "Bar",
-      "Steam and Sauna",
     ],
     ispartner: true,
     price: 2500,
     description:
-      "A soul altering experience awaits you where luxury meets the seabreeze ,perfect for post-marathon recovery.",
+      "Hotel Sea Princess puts you in the prime area f Mumbai with the finest interiors, ultra-modern facilities, and warm hospitality you can ever imagine",
     packages: [
       {
         id: "1",
         name: "Sunday Brunch with Pool & live music (without alcohol)",
         issunday:true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+        description:"Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 2500,
-        features: ["Gourmet brunch,pool,live music"],
+        features: ["Gourmet brunch,pool,live music"]
       },
       {
         id: "2",
         name: "Sunday Brunch (Beer & Wine)",
         issunday:true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        description:"Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 4000,
         features: ["Gourmet brunch,pool and live music"],
-      },
-      {
-        id: "2",
-        name: "Spa Pass",
-        issunday:true,
-        description: "Foot massage, deep tissue and swedish massage ",
-        price: 3000,
-        features: ["Spa"],
       },
     ],
   },
   {
     id: "7",
-    name: "Aurika, Mumbai International Airport - Luxury by Lemon Tree Hotels",
+    name: "Aurika,Mumbai International Airport - Luxury by Lemon Tree Hotels",
     images: [
       "/hotels/lemontreeaurika/1000435182.webp",
       "/hotels/lemontreeaurika/1721879538478.avif",
       "/hotels/lemontreeaurika/1722244984970.avif",
     ],
-    distance: "25 km ",
+    distance: "16.5 miles",
     rating: 4.5,
     amenities: [
       "Brunch",
@@ -374,62 +320,6 @@ export const hotels = [
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: true,
-    price: 2500,
-    description:
-      "Close to the airport, this classy property offers well-appointed rooms, a spa, multiple dining spots, and a host of modern amenities,perfect for post-marathon recovery.",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch with Pool & live music (without alcohol)",
-        issunday:true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        price: 2500,
-        features: ["Gourmet brunch,pool,live music"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch (Beer & Wine)",
-        issunday:true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 4000,
-        features: ["Gourmet brunch,pool and live music"],
-      },
-      {
-        id: "2",
-        name: "Spa Pass",
-        description: "Foot massage, deep tissue and swedish massage ",
-        price: 3000,
-        features: ["Spa"],
-      },
-    ],
-  },
-  {
-    id: "8",
-    name: "The Leela Palace",
-    images: [
-      "/hotels/leela/outdoor.avif",
-      "/hotels/leela/swimmingpool.avif",
-      "/hotels/leela/pool.avif",
-      "/hotels/leela/spa.avif",
-      "/hotels/leela/restrotwo.avif",
-      "/hotels/leela/restro.avif",
-      "/hotels/leela/spa2.avif",
-    ],
-    distance: "25 km ",
-    rating: 4.5,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
     ],
     ispartner: true,
     price: 2500,
@@ -441,8 +331,59 @@ export const hotels = [
         name: "Sunday Brunch with Pool (without alcohol)",
         issunday:true,
         description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 3634,
+        features: ["Gourmet brunch"],
+      },
+      {
+        id: "2",
+        name: "Sunday Brunch (Beer & Wine)",
+        issunday:true,
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 4890,
+        features: ["Gourmet brunch"],
+      },
+      {
+        id: "2",
+        name: "Tattva Spa",
+        issunday:true,
+        description:
+          "Best spa in Mumbai with all sorts of massage to rejuvenate",
+        price: 4890,
+        features: ["Deep Tissue","Swedish","Foot Massage"],
+      },
+  {
+    id: "8",
+    name: "The Leela Mumbai",
+    images: [
+      "/hotels/leela/outdoor.avif",
+      "/hotels/leela/swimmingpool.avif",
+      "/hotels/leela/pool.avif",
+      "/hotels/leela/spa.avif",
+      "/hotels/leela/restrotwo.avif",
+      "/hotels/leela/restro.avif",
+      "/hotels/leela/spa2.avif",
+    ],
+    distance: "17.8 miles",
+    rating: 4.5,
+    amenities: [
+      "Brunch",
+      "Restuarant",
+      "Bar",
+    ],
+    ispartner: true,
+    price: 3600,
+    description:
+      "An opulent 5-star hotel, The Leela boasts rich interiors, high-end facilities and award-winning restaurants",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch with Pool (without alcohol)",
+        issunday:true,
+        description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        price: 4248,
+        price: 3600,
         features: ["Gourmet brunch,pool,live music"],
       },
       {
@@ -451,7 +392,7 @@ export const hotels = [
         issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 5700,
+        price: 4830,
         features: ["Gourmet brunch,pool and live music"],
       },
       {
@@ -460,8 +401,8 @@ export const hotels = [
         issunday:true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 2596,
-        features: ["Gourmet brunch,pool and live music"],
+        price: 2200,
+        features: ["Gourmet brunch,pool and live music"]
       },
     ],
   },
@@ -477,21 +418,18 @@ export const hotels = [
       "/hotels/orchidMumbai/restro.avif",
       "/hotels/orchidMumbai/spa2.avif",
     ],
-    distance: "25 km ",
+    distance: "17.2 miles ",
     rating: 4.5,
     amenities: [
       "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
+      "Swimming pool",
       "Restuarant",
       "Bar",
-      "Steam and Sauna",
     ],
     ispartner: true,
     price: 1500,
     description:
-      "Close to the airport, this classy property offers well-appointed rooms, a spa, multiple dining spots, and a host of modern amenities,perfect for post-marathon recovery.",
+      "Close to the Mumbai International Airport, this lavish hotel features comfortable rooms, a well-equipped fitness centre, a full-service spa, and a host of modern amenities",
     packages: [
       {
         id: "1",
@@ -522,16 +460,13 @@ export const hotels = [
       "/hotels/novotel/IMG-7328.avif",
       "/hotels/novotel/1708335364463.avif",
     ],
-    distance: "25 km ",
+    distance: "17.4 miles",
     rating: 4.5,
     amenities: [
       "Brunch",
-      "Gym",
-      "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Steam and Sauna",
     ],
     ispartner: true,
     price: 1500,
@@ -555,6 +490,15 @@ export const hotels = [
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 3595,
         features: ["Gourmet brunch,pool and live music"],
+      },
+      {
+        id: "3",
+        name: "Tattva Spa",
+        issunday:true,
+        description:
+          "Best spa in Mumbai with all sorts of massage to rejuvenate",
+        price: 2500,
+        features: ["Deep Tissue","Swedish","Foot Massage"],
       },
     ],
   },
