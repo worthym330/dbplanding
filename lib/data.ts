@@ -275,7 +275,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 4000,
-        features: ["Gourmet brunch","pool" and live music"],
+        features: ["Gourmet brunch","pool" ,"live music"],
       },
     ],
   },
