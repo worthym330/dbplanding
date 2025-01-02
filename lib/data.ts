@@ -1,49 +1,41 @@
 export const hotels = [
-  {
+{
     id: "1",
     name: "Lemon Tree Premier, Mumbai International Airport, Mumbai",
     images: [
-      "/hotels/lemontree/lemon.avif",
-      "/hotels/lemontree/pool.avif",
-      "/hotels/lemontree/spa.avif",
-      "/hotels/lemontree/1000009794.avif",
-      "/hotels/lemontree/restro.avif",
+        "/hotels/lemontree/lemon.avif",
+        "/hotels/lemontree/pool.avif",
+        "/hotels/lemontree/spa.avif",
+        "/hotels/lemontree/1000009794.avif",
+        "/hotels/lemontree/restro.avif",
     ],
-    distance: "18.1 miles ",
+    distance: "18.1 miles",
     map_link: "https://maps.app.goo.gl/JP9Jce7rFzpPCbGv6",
     address:
-      "Andheri - Kurla Rd, opposite Mittal Industrial Estate, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059",
+        "Andheri - Kurla Rd, opposite Mittal Industrial Estate, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059",
     rating: 4.2,
     amenities: ["Brunch", "Swimming Pool"],
     ispartner: false,
     price: 2500,
     description:
-      "A bright and inviting multi-cuisine coffee shop with a show kitchen offers an eclectic all day dining menu including Indian, European, American and Pan-Asian cuisine. Indulge in the wholesome breakfast buffet served daily. Choose from a wide range of popular Indian, South Indian, Asian and Western preparations",
+        "A bright and inviting multi-cuisine coffee shop with a show kitchen offers an eclectic all-day dining menu including Indian, European, American, and Pan-Asian cuisine. Indulge in the wholesome breakfast buffet served daily. Choose from a wide range of popular Indian, South Indian, Asian, and Western preparations.",
     packages: [
-      {
-        id: "1",
-        name: "Day use room",
-        description:
-          "Day use rooms are for stay between 11am to 5pm only and not for overnight stay",
-        price: 4000,
-        features: ["Swimming Pool", "Gym", "Wifi access", "Tea Coffee maker"],
-      },
-      {
-        id: "2",
-        name: "Brunch Buffet (without alcohol)",
-        description: "SUN  12:30 PM - 04:00 PM",
-        price: 3180,
-        features: ["Gourmet brunch"],
-      },
-      {
-        id: "3",
-        name: "Lunch Buffet",
-        description: "MON-SUN  12:30 PM - 03:00 PM",
-        price: 2236,
-        features: ["Gourmet Lunch"],
-      },
+        {
+            id: "1",
+            name: "Sunday Brunch Buffet (without alcohol)",
+            description: "SUN 12:30 PM - 04:00 PM",
+            price: 2695,
+            features: ["Gourmet brunch"],
+        },
+        {
+            id: "2",
+            name: "Lunch Buffet",
+            description: "MON-SUN 12:30 PM - 03:00 PM",
+            price: 2236,
+            features: ["Gourmet Lunch"],
+        },
     ],
-  },
+},
   {
     id: "2",
     name: "Holiday Inn Mumbai International Airport",
@@ -68,7 +60,7 @@ export const hotels = [
         issunday: true,
         description: "SUN 12:30pm to 3:30pm",
         price: 2800,
-        features: ["Swimming Pool, Gym, Wifi access", "Tea Coffee maker"],
+        features: ["Gourmet brunch","Swimming Pool"],
       },
       {
         id: "2",
@@ -77,7 +69,7 @@ export const hotels = [
         description:
           "The Sunday brunch comprises a variety of cold cuts, desserts, starters and main course options along with their live band adding to the relaxed and fun vibe!",
         price: 3200,
-        features: ["Gourmet brunch"],
+        features: ["Gourmet brunch","Swimming Pool","Alcohol"],
       },
     ],
   },
@@ -105,27 +97,27 @@ export const hotels = [
         name: "Sunday Brunch with Pool (without alcohol)",
         issunday: true,
         description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 3634,
-        features: ["Gourmet brunch,Swimming Pool"],
+          "Poolside view with a variety of quality buffets, sophistication, value for price, access to pool, and valet parking.",
+        price: 3080,
+        features: ["Gourmet brunch,Swimming Pool","Valet Parking"],
       },
       {
         id: "2",
         name: "Sunday Brunch with Pool (with alcohol)",
         issunday: true,
         description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 4890,
-        features: ["Gourmet brunch,Swimming Pool"],
+          "Poolside view with a variety of quality buffets, sophistication, value for price, access to pool, and valet parking.",
+        price: 4145,
+        features: ["Gourmet brunch,Swimming Pool","Valet Parking"],
       },
       {
         id: "3",
         name: "Sunday Brunch with Pool (Kids brunch)",
         issunday: true,
         description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 1622,
-        features: ["Gourmet brunch,Swimming Pool"],
+          "Poolside view with a variety of quality buffets, sophistication, value for price, access to pool, and valet parking.",
+        price: 1375,
+        features: ["Gourmet brunch,Swimming Pool","Valet Parking"],
       },
     ],
   },
@@ -159,12 +151,12 @@ export const hotels = [
       },
       {
         id: "2",
-        name: "Sunday Brunch (Beer & Wine)",
+        name: "Sunday Brunch with Alcohol",
         issunday: true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 4890,
-        features: ["Gourmet brunch"],
+        features: ["Gourmet brunch",],
       },
       {
         id: "3",
@@ -283,7 +275,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 4000,
-        features: ["Gourmet brunch,pool and live music"],
+        features: ["Gourmet brunch","pool" and live music"],
       },
     ],
   },
