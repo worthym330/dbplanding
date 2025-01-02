@@ -12,10 +12,9 @@ import { motion } from "framer-motion";
 import toast from "react-hot-toast";
 import { useCart } from "@/lib/hooks/use-cart";
 import { useRouter } from "next/navigation";
-// import { useMediaQuery } from "@/lib/hooks/use-media-query"; // Assuming you have a custom hook for media query
 
 export function BookingCalendar({ selectedHotel }: { selectedHotel: Hotel }) {
-  const { date, setDate } = useDateStore();
+  const { date, setDate, err } = useDateStore();
   const [isOpen, setIsOpen] = useState(false);
   const [activeFilter, setActiveFilter] = useState("all");
   const [filterOptions, setFilterOptions] = useState<
@@ -23,10 +22,14 @@ export function BookingCalendar({ selectedHotel }: { selectedHotel: Hotel }) {
   >([]);
 
   const router = useRouter();
-  const { getTotal, items, setSelectedPackage } = useCart();
+  const { getTotal, items, setSelectedPackage, selectedpackage } = useCart();
 
   const [amount, setAmount] = useState<number | null>(null);
 
+  useEffect(() => {
+    setActiveFilter(selectedpackage);
+  }, [selectedpackage]);
+  
   useEffect(() => {
     setAmount(getTotal());
   }, [getTotal, items]);
@@ -71,6 +74,7 @@ export function BookingCalendar({ selectedHotel }: { selectedHotel: Hotel }) {
   };
 
   const isDateDisabled = (date: Date) => {
+    if (activeFilter === "all") return true;
     if (isBefore(date, new Date())) return true;
 
     if (
@@ -91,7 +95,9 @@ export function BookingCalendar({ selectedHotel }: { selectedHotel: Hotel }) {
           <Drawer.Trigger asChild>
             <Button
               variant="outline"
-              className="w-full justify-start text-left font-normal"
+              className={`w-full justify-start text-left font-normal ${
+                err ? "border-2 border-red-500" : ""
+              }`}
             >
               <CalendarIcon className="mr-2 h-4 w-4" />
               {date ? format(date, "PPP") : <span>Pick a date</span>}
