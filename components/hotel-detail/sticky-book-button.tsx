@@ -6,7 +6,6 @@ import { useCart } from "@/lib/hooks/use-cart";
 import { useRouter, usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useDateStore } from "@/lib/hooks/use-date";
-import toast from "react-hot-toast";
 
 export function StickyBookButton() {
   const { scrollY } = useScroll();
@@ -14,20 +13,19 @@ export function StickyBookButton() {
   const router = useRouter();
   const pathname = usePathname();
   const { getTotal, items } = useCart();
-  const { date } = useDateStore();
+  const { date, setCalendarRefErr, setErr } = useDateStore();
 
   const [amount, setAmount] = useState<number | null>(null);
-
   useEffect(() => {
     setAmount(getTotal());
   }, [getTotal, items]);
 
   const handleSubmit = () => {
-    toast.error("Please add a date first");
+    setCalendarRefErr(true);
+    setErr(true);
   };
 
-  const displayDate =
-    date instanceof Date ? date.toDateString() : "No date selected";
+  const displayDate = date ? new Date(date).toDateString() : "No date selected";
 
   return !pathname.startsWith("/hotels/") ? (
     amount !== null && amount > 0 && (
