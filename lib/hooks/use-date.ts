@@ -10,6 +10,8 @@ interface DateState {
   setDate: (date: Date | undefined) => void;
   clearDate: () => void;
   getDate: () => Date | undefined;
+  calendarRefErr: boolean;
+  setCalendarRefErr: (err: boolean) => void;
 }
 
 export const useDateStore = create(
@@ -21,6 +23,8 @@ export const useDateStore = create(
       setDate: (date) => set({ date }),
       clearDate: () => set({ date: undefined }),
       getDate: () => get().date,
+      calendarRefErr: false,
+      setCalendarRefErr: (err) => set({ calendarRefErr: err }),
     }),
     {
       name: "date-storage",

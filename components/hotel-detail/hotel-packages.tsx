@@ -35,13 +35,15 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
     removeItem,
     updateQuantity,
   } = useCart();
-  const { date, setErr, err } = useDateStore();
+  const { date, setErr, calendarRefErr, setCalendarRefErr } = useDateStore();
   const [isExpanded, setIsExpanded] = useState(false);
-  // const [filteredPackages, setFilteredPackages] = useState<Package[]>([]);
   const toggleExpand = () => setIsExpanded(!isExpanded);
-  // const calendarRef = useRef<HTMLDivElement>(null);
+  const calendarRef = useRef<HTMLDivElement>(null);
+  const divref = useRef<HTMLDivElement>(null);
+
   const handleAddToCart = (pkg: Package) => {
     // setSelectedPackage(pkg.name);
+    setCalendarRefErr(true);
     if (!date) {
       toast.error("Please add a date first");
       setErr(true);
@@ -72,8 +74,25 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
   //   setFilteredPackages(selectedpackage === "all"
   //     ? packages
   //     : packages.filter((pkg) => pkg.name.toLowerCase() === selectedpackage));
-
   // }, [selectedpackage]);
+
+  useEffect(() => {
+    if (calendarRefErr) {
+      if (calendarRef.current) {
+        calendarRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+        setCalendarRefErr(false);
+      }
+    }
+  }, [calendarRefErr]);
+
+  useEffect(() => {
+    if (divref.current) {
+      divref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
 
   return (
     <section className="space-y-6">
@@ -110,13 +129,12 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
       </div>
 
       {/* Calendar section with ref */}
-      <div className="lg:hidden border p-4 transition-colors duration-300">
+      <div className="lg:hidden border p-4 transition-colors duration-300"  ref={calendarRefErr ? calendarRef : undefined}>
         <BookingCalendar selectedHotel={hotel} />
       </div>
 
-      <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
+      <div className="grid gap-6 grid-cols-1 md:grid-cols-2" ref={divref}>
         {packages.map((pkg, index) => {
-          // Find the matching cart item based on package id and name
           const cartItem = items.find(
             (item) => item.id === pkg.id && item.name === pkg.name
           );

@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import toast, { Toaster } from "react-hot-toast";
 import FloatingButtons from "@/components/floating-button";
 import Script from "next/script";
+import { StickyBookButton } from "@/components/hotel-detail/sticky-book-button";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -125,6 +126,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <FloatingButtons />
+          <StickyBookButton />
           <div className="flex min-h-screen flex-col">
             <Header />
             <main className="flex-1">{children}</main>

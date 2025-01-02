@@ -1,6 +1,5 @@
 "use client";
 
-import { useRef } from "react";
 import { BookingCalendar } from "./booking-calendar";
 // import { HotelAmenities } from "./hotel-amenities";
 import { HotelDetailHeader } from "./hotel-detail-header";
@@ -8,7 +7,6 @@ import { HotelPackages } from "./hotel-packages";
 import { StickyBookButton } from "./sticky-book-button";
 
 export default function HotelDetailClient({ hotel }: { hotel: any }) {
-  const calendarRef = useRef<HTMLDivElement>(null);
   return (
     <>
       <HotelDetailHeader hotel={hotel} />
@@ -18,7 +16,7 @@ export default function HotelDetailClient({ hotel }: { hotel: any }) {
             <HotelPackages packages={hotel.packages} hotel={hotel} />
             {/* <HotelAmenities amenities={hotel.amenities} /> */}
           </div>
-          <div className="lg:col-span-1 hidden lg:block" ref={calendarRef}>
+          <div className="lg:col-span-1 hidden lg:block">
             <BookingCalendar selectedHotel={hotel} />
           </div>
         </div>

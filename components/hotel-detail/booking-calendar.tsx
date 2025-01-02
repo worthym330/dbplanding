@@ -14,7 +14,7 @@ import { useCart } from "@/lib/hooks/use-cart";
 import { useRouter } from "next/navigation";
 
 export function BookingCalendar({ selectedHotel }: { selectedHotel: Hotel }) {
-  const { date, setDate, err } = useDateStore();
+  const { date, setDate, err,setErr } = useDateStore();
   const [isOpen, setIsOpen] = useState(false);
   const [activeFilter, setActiveFilter] = useState("all");
   const [filterOptions, setFilterOptions] = useState<
@@ -62,6 +62,11 @@ export function BookingCalendar({ selectedHotel }: { selectedHotel: Hotel }) {
     setActiveFilter(filter);
     setSelectedPackage(filter);
   };
+
+  const handleDateChange = (date: Date) => {
+    setDate(date);
+    setErr(false)
+  }
 
   const getUniquePackages = () => {
     const packages: string[] = [];
@@ -141,7 +146,7 @@ export function BookingCalendar({ selectedHotel }: { selectedHotel: Hotel }) {
                   <Calendar
                     mode="single"
                     selected={date}
-                    onSelect={setDate}
+                    onSelect={(date) => date && handleDateChange(date)}
                     className="rounded-md border"
                     disabled={isDateDisabled} // Use the isDateDisabled function to disable dates
                   />
@@ -200,7 +205,7 @@ export function BookingCalendar({ selectedHotel }: { selectedHotel: Hotel }) {
           <Calendar
             mode="single"
             selected={date}
-            onSelect={setDate}
+            onSelect={(date) => date && handleDateChange(date)}
             className="rounded-md border w-full"
             disabled={isDateDisabled}
           />
