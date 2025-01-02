@@ -26,6 +26,7 @@ export const hotels = [
             description: "SUN 12:30 PM - 04:00 PM",
             price: 2695,
             features: ["Gourmet brunch"],
+            stock:5
         },
         {
             id: "2",
@@ -33,6 +34,7 @@ export const hotels = [
             description: "MON-SUN 12:30 PM - 03:00 PM",
             price: 2236,
             features: ["Gourmet Lunch"],
+            stock:8
         },
     ],
 },
@@ -418,6 +420,7 @@ export const hotels = [
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 1500,
         features: ["Gourmet brunch,pool,live music"],
+        stock:3
       },
       {
         id: "2",
@@ -427,6 +430,7 @@ export const hotels = [
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 3000,
         features: ["Gourmet brunch,pool and live music"],
+        stock:8
       },
     ],
   },
