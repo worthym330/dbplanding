@@ -1471,7 +1471,7 @@ export const hotels = [
         issunday: true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 6500,
+        price: 3500,
         features: ["Swimming Pool","Gym","Steam & Sauna","Food not included"],
       },
     ],
