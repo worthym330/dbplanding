@@ -1423,12 +1423,12 @@ export const hotels = [
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch with premium alcohol",
+        name: "Sunday Brunch with pool",
         issunday: true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 6500,
-        features: ["Gourmet brunch,Swimming Pool"],
+        price: 3000,
+        features: ["Gourmet brunch","Welcome Drinks","Swimming Pool","Pool","Alcohol not included" ],
       },
     ],
   },
@@ -1467,12 +1467,12 @@ export const hotels = [
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch with premium alcohol",
+        name: "Swimming Pool",
         issunday: true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 6500,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["Swimming Pool","Gym","Steam & Sauna","Food not included"],
       },
     ],
   },
