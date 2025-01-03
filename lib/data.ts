@@ -1555,5 +1555,54 @@ export const hotels = [
 
     ],
   },
+     {
+    id: "33",
+    name: "Hyatt Centric Juhu Mumbai",
+    images: [
+      "https://api.daybreakpass.com/uploads/hotel/images/5688d26d070809f0a9b8c9f4d877c8e9.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/79c07ccc6d93a80927b69d0372e7297f.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/8b4c67cb27b9caad631968192cb470de.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/02_Feb_2023_09_29_32Facilities.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/02_Feb_2023_09_28_55Dine.jpg",
+    ],
+    distance: "14.4 miles",
+    map_link: "https://maps.app.goo.gl/bkPMgxdQ9eKVVH9h8",
+    address: "Juhu Tara Rd, Shivaji Nagr, Juhu, Mumbai, Maharashtra 400049",
+    rating: 4.0,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: true,
+    price: 1350,
+    description:
+      "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
+    packages: [
+      {
+        id: "1",
+        name: "Lunch & Swimming Pool",
+        issunday: false,
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
+        price: 1350,
+        features: ["MON-SUN: 12:30pm to 3:00pm","Pool timings: 3hrs","Multi-Cuisine Buffet","Swimming Pool","Gym","Valet Service"],
+      },
+        {
+        id: "2",
+        name: "Lunch & Swimming Pool for Kids",
+        issunday: false,
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
+        price: 800,
+        features: ["MON-SUN: 12:30pm to 3:00pm","Pool timings: 3hrs","Multi-Cuisine Buffet","Swimming Pool","Gym","Valet Service"],
+      },
+
+    ],
+  },
 
 ];
