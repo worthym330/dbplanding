@@ -45,6 +45,52 @@ export const hotels = [
     ],
   },
 {
+    id: "5",
+    name: "Radisson Blu Mumbai International Airport",
+    images: [
+      "/hotels/radissonblu/6a653fe4d7ac11eabeec0242ac110005.avif",
+      "/hotels/radissonblu/24dcfe4c6e1b11eca8430a58a9feac02.avif",
+      "/hotels/radissonblu/202008061201129632-ba2cff746e1b11ec8ac40a58a9feac02.avif",
+      "/hotels/radissonblu/202008061201129632-d55f7e0ef6db11ecb2f30a58a9feac02.avif",
+    ],
+    distance: "18.1 miles",
+    map_link: "https://maps.app.goo.gl/GhYcpJNQv6zRFk3g9",
+    address: "Marol Maroshi Rd, near Metro Station Marol Naka, Bori Colony, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059",
+    rating: 4.5,
+    amenities: [
+      "Brunch",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Jacuzzi",
+    ],
+    ispartner: true,
+    price: 3000,
+    description:
+      "Experience utmost luxury at this lavish retreat offering well-furnished rooms, elite restaurants, and a host of modern amenities.",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch with Pool (without Alcohol)",
+        issunday: true,
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 3500,
+        features: ["SUN: 12:30pm to 4:00pm","Multi-cuisine brunch","Jain Food Available","Rooftop Swimming Pool"],
+      },
+      {
+        id: "32",
+        name: "Tattva Spa",
+        issunday: true,
+        description:
+          "Best spa in Mumbai with all sorts of massage to rejuvenate",
+        price: 3000,
+        features: ["Deep Tissue", "Swedish", "Foot Massage"],
+      },
+    ],
+  },
+{
     id: "1",
     name: "Lemon Tree Premier, Mumbai International Airport, Mumbai",
     images: [
