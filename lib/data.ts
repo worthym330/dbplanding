@@ -21,26 +21,26 @@ export const hotels = [
       "Steam and Sauna",
     ],
     ispartner: true,
-    price: 3000,
+    price: 1800,
     description:
       "Unwind with a refreshing swim,A delightful lunch at our Coffee Shop,Towel Service provided",
     packages: [
       {
         id: "1",
-        name: "Day Pass (Swim & Lunch)",
+        name: "Sunday Brunch with Pool (without Alcohol)",
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        price: 2000,
-        features: ["Gourmet brunch,pool"],
+        price: 1800,
+        features: ["SUN: 11:00 pm to 4:00pm","Multi-cuisine brunch","Swimming Pool"],
       },
       {
         id: "2",
-        name: "Sunday Brunch with a Poolside Dip",
+        name: "Lunch with Pool",
         issunday: true,
         description:
           "Enjoy a relaxing brunch by the pool with family or friends,Access to the swimming pool",
-        price: 1800,
-        features: ["Gourmet brunch,pool"],
+        price: 2000,
+        features: ["MON-SAT: 11:00 pm to 4:00pm","Multi-cuisine brunch","Swimming Pool"],
       },
     ],
   },
