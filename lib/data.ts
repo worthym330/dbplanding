@@ -546,7 +546,7 @@ export const hotels = [
       "Steam and Sauna",
     ],
     ispartner: true,
-    price: 1500,
+    price: 3300,
     description:
       "Witness the grandeur of the great Maratha Dynasty paired with the ethos of warm Indian hospitality at ITC Maratha",
     packages: [
