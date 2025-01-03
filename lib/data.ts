@@ -1497,52 +1497,8 @@ export const hotels = [
       "Bar",
       "Steam and Sauna",
     ],
-    ispartner: false,
-    price: 3500,
-    description:
-      "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
-    packages: [
-      {
-        id: "1",
-        name: "Lunch & Swimming Pool",
-        issunday: true,
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 1800,
-        features: ["MON-SUN: 12:30pm to 3:00pm","Pool timings: 12:00 to 6pm","Multi-Cuisine Buffet","Swimming Pool","Gym","Valet Service"],
-      },
-    ],
-  },
-{
-    id: "33",
-    name: "Ramada by Wyndham Navi Mumbai",
-    images: [
-      "/hotels/tajwellignton/outdoor.avif",
-      "/hotels/tajwellignton/outdoor2.avif",
-      "/hotels/tajwellignton/swimmingpool.avif",
-      "/hotels/tajwellignton/pool.avif",
-      "/hotels/tajwellignton/pool2.avif",
-      "/hotels/tajwellignton/spa.avif",
-      "/hotels/tajwellignton/spa2.avif",
-      "/hotels/tajwellignton/spa3.avif",
-      "/hotels/tajwellignton/restrotwo.avif",
-      "/hotels/tajwellignton/restro.avif",
-    ],
-    distance: "21.9 miles",
-    map_link: "https://maps.app.goo.gl/xCPL9PUvT5Hcnqtg6",
-    address: "MILLENNIUM BUSINESS PARK, 156, MIDC, Millenium Business Park, Sector 2, Mahape, Navi Mumbai, Maharashtra 400710",
-    rating: 4.5,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: false,
-    price: 3500,
+    ispartner: true,
+    price: 1800,
     description:
       "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
     packages: [
@@ -1585,8 +1541,8 @@ export const hotels = [
       "Bar",
       "Steam and Sauna",
     ],
-    ispartner: false,
-    price: 3500,
+    ispartner: true,
+    price: 1350,
     description:
       "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
     packages: [
