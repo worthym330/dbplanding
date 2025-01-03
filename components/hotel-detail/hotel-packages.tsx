@@ -31,7 +31,15 @@ interface HotelPackagesProps {
 }
 
 export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
-  const { addItem, items, getTotal, removeItem, updateQuantity, setSelectedPackage } = useCart();
+  const {
+    addItem,
+    items,
+    getTotal,
+    removeItem,
+    updateQuantity,
+    setSelectedPackage,
+    updateDate,
+  } = useCart();
   const { date, err, setDate, setErr, calendarRefErr, setCalendarRefErr } =
     useDateStore();
   const [isOpen, setIsOpen] = useState(false);
@@ -44,6 +52,9 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
   const handleDateChange = (date: Date) => {
     setDate(date);
     setErr(false);
+    items.forEach((item) => {
+      updateDate(item.id, date, item.hotelId);
+    });
   };
 
   const handleAddToCart = (pkg: Package) => {
@@ -54,6 +65,17 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
       setFilteredPackages(pkg.name);
       setSelectedPackage(pkg.name);
       setErr(true);
+      addItem({
+        id: pkg.id,
+        name: pkg.name,
+        price: pkg.price,
+        quantity: 1,
+        hotelName: hotel.name,
+        hotelId: hotel.id,
+        date: null,
+        ispartner: hotel.ispartner,
+        hotelAddress: hotel?.address,
+      });
     } else {
       setErr(false);
       toast.success("Successfully added into the cart");
@@ -91,7 +113,12 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
 
   const isDateDisabled = (date: Date) => {
     if (isBefore(date, new Date())) return true;
-    if(filteredPackages !== "" && packages.find((pkg) => pkg.name.toLowerCase() === filteredPackages.toLowerCase())?.issunday){
+    if (
+      filteredPackages !== "" &&
+      packages.find(
+        (pkg) => pkg.name.toLowerCase() === filteredPackages.toLowerCase()
+      )?.issunday
+    ) {
       return !isSunday(date);
     }
     return false;

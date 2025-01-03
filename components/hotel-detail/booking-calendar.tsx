@@ -1,21 +1,18 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import {  useEffect, useState } from "react";
 import { Calendar } from "@/components/ui/calendar";
 import { Button } from "@/components/ui/button";
-import { Drawer } from "vaul";
-import { CalendarIcon } from "lucide-react";
-import { format, isSunday, isBefore } from "date-fns";
+import {  isSunday, isBefore } from "date-fns";
 import { useDateStore } from "@/lib/hooks/use-date";
 import { Hotel } from "@/lib/types";
-import { motion } from "framer-motion";
 import toast from "react-hot-toast";
 import { useCart } from "@/lib/hooks/use-cart";
 import { useRouter } from "next/navigation";
 
 export function BookingCalendar({ selectedHotel }: { selectedHotel: Hotel }) {
   const { date, setDate, err, setErr } = useDateStore();
-  const { getTotal, items, selectedpackage } = useCart();
+  const { getTotal, items, selectedpackage, updateDate } = useCart();
   const [amount, setAmount] = useState<number | null>(null);
   const router = useRouter();
 
@@ -30,6 +27,9 @@ export function BookingCalendar({ selectedHotel }: { selectedHotel: Hotel }) {
   const handleDateChange = (date: Date) => {
     setDate(date);
     setErr(false);
+    items.forEach((item) => {
+      updateDate(item.id, date, item.hotelId);
+    });
   };
 
   const isDateDisabled = (date: Date) => {

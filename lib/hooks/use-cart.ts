@@ -10,8 +10,7 @@ interface CartItem {
   quantity: number;
   hotelName: string;
   hotelId: string;
-  date: Date;
-  // time: string;
+  date: Date | null;
   ispartner: boolean | undefined;
   hotelAddress?: string;
 }
@@ -21,6 +20,7 @@ interface CartStore {
   addItem: (item: CartItem) => void;
   removeItem: (id: string, hotelId: string) => void;
   updateQuantity: (id: string, quantity: number, hotelId: string) => void;
+  updateDate: (id: string, date: Date, hotelId: string) => void;
   clearCart: () => void;
   getTotal: () => number;
   selectedpackage: string;
@@ -43,7 +43,6 @@ export const useCart = create<CartStore>()(
             state.items[0]?.hotelId === item.hotelId;
 
           if (!isSameHotel) {
-            // Replace items with the new hotel's package
             return { items: [item] };
           }
 
@@ -72,14 +71,12 @@ export const useCart = create<CartStore>()(
       updateQuantity: (id, quantity, hotelId) =>
         set((state) => {
           if (quantity <= 0) {
-            // If the quantity is 0 or less, remove the item
             return {
               items: state.items.filter(
                 (item) => !(item.id === id && item.hotelId === hotelId)
               ),
             };
           }
-          // Otherwise, update the quantity
           return {
             items: state.items.map((item) =>
               item.id === id && item.hotelId === hotelId
@@ -88,6 +85,14 @@ export const useCart = create<CartStore>()(
             ),
           };
         }),
+      updateDate: (id, date, hotelId) =>
+        set((state) => ({
+          items: state.items.map((item) =>
+            item.id === id && item.hotelId === hotelId
+              ? { ...item, date }
+              : item
+          ),
+        })),
       clearCart: () => set({ items: [] }),
       getTotal: () => {
         const items = get().items;
