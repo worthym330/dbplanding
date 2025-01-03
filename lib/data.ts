@@ -1,4 +1,49 @@
 export const hotels = [
+    {
+    id: "17",
+    name: "Ramada Plaza by Wyndham Palm Grove, Mumbai",
+    images: [
+      "https://api.daybreakpass.com/uploads/hotel/images/food.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/Restaurant&Bar.avif",
+      "https://api.daybreakpass.com/uploads/hotel/images/Swimming Pool RAMADA.avif",
+    ],
+    distance: "14.7 miles",
+    map_link: "https://maps.app.goo.gl/iWGaiu6s7PCD5UyGA",
+    address: "Juhu Beach, Juhu Tara Rd, next to Shivaji Maharaj Statue, Nazir Wadi, Theosophical Housing Colony, Juhu, Mumbai, Maharashtra 400049",
+    rating: 4.0,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: true,
+    price: 3000,
+    description:
+      "Unwind with a refreshing swim,A delightful lunch at our Coffee Shop,Towel Service provided",
+    packages: [
+      {
+        id: "1",
+        name: "Day Pass (Swim & Lunch)",
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+        price: 2000,
+        features: ["Gourmet brunch,pool"],
+      },
+      {
+        id: "2",
+        name: "Sunday Brunch with a Poolside Dip",
+        issunday: true,
+        description:
+          "Enjoy a relaxing brunch by the pool with family or friends,Access to the swimming pool",
+        price: 1800,
+        features: ["Gourmet brunch,pool"],
+      },
+    ],
+  },
 {
     id: "1",
     name: "Lemon Tree Premier, Mumbai International Airport, Mumbai",
@@ -770,51 +815,7 @@ export const hotels = [
   //     },
   //   ],
   // },
-  {
-    id: "17",
-    name: "Ramada Plaza by Wyndham Palm Grove, Mumbai",
-    images: [
-      "https://api.daybreakpass.com/uploads/hotel/images/food.jpg",
-      "https://api.daybreakpass.com/uploads/hotel/images/Restaurant&Bar.avif",
-      "https://api.daybreakpass.com/uploads/hotel/images/Swimming Pool RAMADA.avif",
-    ],
-    distance: "14.7 miles",
-    map_link: "https://maps.app.goo.gl/iWGaiu6s7PCD5UyGA",
-    address: "Juhu Beach, Juhu Tara Rd, next to Shivaji Maharaj Statue, Nazir Wadi, Theosophical Housing Colony, Juhu, Mumbai, Maharashtra 400049",
-    rating: 4.0,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: true,
-    price: 3000,
-    description:
-      "Unwind with a refreshing swim,A delightful lunch at our Coffee Shop,Towel Service provided",
-    packages: [
-      {
-        id: "1",
-        name: "Day Pass (Swim & Lunch)",
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        price: 2000,
-        features: ["Gourmet brunch,pool"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch with a Poolside Dip",
-        issunday: true,
-        description:
-          "Enjoy a relaxing brunch by the pool with family or friends,Access to the swimming pool",
-        price: 1800,
-        features: ["Gourmet brunch,pool"],
-      },
-    ],
-  },
+  
   {
     id: "18",
     name: "Meluha The Fern - An Ecotel Hotel, Powai, Mumbai",
