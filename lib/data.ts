@@ -1254,7 +1254,7 @@ export const hotels = [
     ],
     distance: "15 miles",
     map_link: "https://maps.app.goo.gl/hvN6qPwbqju4DP4p8",
-    address: "Jw Marriott Mumbai Juhu, Juhu Tara Rd, Juhu Tara, Juhu, Mumbai, Maharashtra 400049",
+    address: "JW Marriott Mumbai Juhu, Juhu Tara Rd, Juhu Tara, Juhu, Mumbai, Maharashtra 400049",
     rating: 4.6,
     amenities: [
       "Brunch",
@@ -1272,30 +1272,30 @@ export const hotels = [
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch with Pool (without alcohol)",
+        name: "Sunday Brunch (without Alcohol)",
         issunday: true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 3350,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["SUN: 12:30pm - 4:00pm","Multi-Cuisine","Chef Choice Menu","Jain Available"],
       },
       {
         id: "2",
-        name: "Sunday Brunch with Pool (with alcohol)",
+        name: "Sunday Brunch (with Alcohol)",
         issunday: true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 4620,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["SUN: 12:30pm - 4:00pm","Multi-Cuisine","Chef Choice Menu","Alcohol","Jain Available"],
       },
       {
         id: "3",
-        name: "Sunday Brunch with Pool (Kids brunch)",
+        name: "Sunday Brunch (Kids brunch)",
         issunday: true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 1950,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["SUN: 12:30pm - 4:00pm","Multi-Cuisine","Chef Choice Menu","Jain Available"],
       },
     ],
   },
