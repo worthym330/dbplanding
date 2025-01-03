@@ -38,7 +38,7 @@ export function CartOverview() {
                 <p className="text-sm flex justify-between items-center">
                   <span>Date</span>
                   <span className="text-sm font-normal text-muted-foreground">
-                    {new Date(item.date).toDateString()}
+                    {item.date && new Date(item.date).toDateString()}
                   </span>
                 </p>
               </div>
