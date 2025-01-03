@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useCart } from "@/lib/hooks/use-cart";
 import { useCheckout } from "@/lib/hooks/use-checkout";
-import { formatPrice } from "@/lib/utils/price";
+import { calculateTotal, formatPrice } from "@/lib/utils/price";
 import app_api from "@/lib/utils/api";
 import { useDateStore } from "@/lib/hooks/use-date";
 
@@ -21,6 +21,23 @@ export default function ThankYouPage() {
   const orderid = searchParams.get("orderid");
 
   const [pdfUrl, setPdfUrl] = useState(null);
+  interface LineItem {
+    id: string;
+    description: string;
+    amount: number;
+    quantity: number;
+  }
+
+  interface BookingDetails {
+    bookingId: string;
+    customerName: string;
+    customerEmail: string;
+    hotelName: string;
+    invoiceNo: string;
+    lineItems: LineItem[];
+  }
+
+  const [bookingDetails, setBookingDetails] = useState<BookingDetails>();
 
   useEffect(() => {
     getData();
@@ -32,6 +49,7 @@ export default function ThankYouPage() {
         const res = await app_api.get(`/landing/order-details/${orderid}`);
         if (res?.data?.invoice) {
           setPdfUrl(res.data.invoice);
+          setBookingDetails(res.data.invoiceData);
         }
       } catch (err) {
         console.log(err);
@@ -44,9 +62,9 @@ export default function ThankYouPage() {
     return () => {
       clearCart();
       resetForm();
-      clearDate()
+      clearDate();
     };
-  }, [clearCart, resetForm,clearDate]);
+  }, [clearCart, resetForm, clearDate]);
 
   // Function to trigger the PDF download
   const handleDownload = () => {
@@ -85,14 +103,32 @@ export default function ThankYouPage() {
                 <div className="rounded-lg bg-muted p-6">
                   <h3 className="mb-4 font-semibold">Booking Details</h3>
                   <div className="space-y-4">
-                    {items.map((item) => (
+                    {bookingDetails?.lineItems?.map((item) => (
                       <div key={item.id} className="flex justify-between">
-                        <span>{item.name}</span>
+                        <span>{item.description}</span>
                         <span className="font-medium">
-                          {formatPrice(item.price * item.quantity)}
+                          {formatPrice(item.amount)}
                         </span>
                       </div>
                     ))}
+
+                    <div className="flex justify-between">
+                      <span>Total</span>
+                      <span className="font-medium">
+                        ₹
+                        {bookingDetails?.lineItems
+                          ?.reduce((total, item) => {
+                            const numericAmount =
+                              typeof item.amount === "string"
+                                ? parseFloat(item.amount)
+                                : item.amount;
+                            return (
+                              total + (isNaN(numericAmount) ? 0 : numericAmount)
+                            );
+                          }, 0)
+                          .toFixed(2)}
+                      </span>
+                    </div>
                   </div>
                 </div>
                 <div className="flex justify-center gap-4">
