@@ -72,7 +72,7 @@ export const hotels = [
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch with Pool (without Alcohol)",
+        name: "Sunday Brunch with Rooftop Pool (without Alcohol)",
         issunday: true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
