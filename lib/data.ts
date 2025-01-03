@@ -31,12 +31,13 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 1800,
+        issunday: true,
         features: ["SUN: 11:00 pm to 4:00pm","Multi-cuisine brunch","Swimming Pool"],
       },
       {
         id: "2",
         name: "Lunch with Pool",
-        issunday: true,
+        issunday: false,
         description:
           "Enjoy a relaxing brunch by the pool with family or friends,Access to the swimming pool",
         price: 2000,
