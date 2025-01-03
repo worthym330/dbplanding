@@ -186,7 +186,7 @@ export const hotels = [
     address: "Chhatrapati Shivaji Maharaj Int'l Airport Rd, Navpada, Marol, Andheri East, Mumbai, Maharashtra 400059",
     rating: 4.3,
     amenities: ["Brunch", "Swimming Pool", "Restuarant", "Bar"],
-    ispartner: true,
+    ispartner: false,
     price: 2500,
     description:
       "The Lalit Mumbai is the epitome of world-class architecture and comfort with premium dining spaces, world-class leisure amenities, and unbeatable hospitality",
@@ -545,7 +545,7 @@ export const hotels = [
       "Bar",
       "Steam and Sauna",
     ],
-    ispartner: true,
+    ispartner: false,
     price: 3300,
     description:
       "Witness the grandeur of the great Maratha Dynasty paired with the ethos of warm Indian hospitality at ITC Maratha",
