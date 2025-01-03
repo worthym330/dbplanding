@@ -1659,7 +1659,7 @@ export const hotels = [
       "Steam and Sauna",
     ],
     ispartner: true,
-    price: 1350,
+    price: 2500,
     description:
       "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
     packages: [
@@ -1669,7 +1669,7 @@ export const hotels = [
         issunday: true,
         description:
           "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
-        price: 1350,
+        price: 2500,
         features: [
           "Sun: 11:00am to 3:00pm",
           "Gourmet Brunch",
