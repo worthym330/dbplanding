@@ -31,7 +31,7 @@ export const useCart = create<CartStore>()(
   persist(
     (set, get) => ({
       items: [],
-      selectedpackage: "all",
+      selectedpackage: "",
       setSelectedPackage: (pkg) =>
         set({
           selectedpackage: pkg,

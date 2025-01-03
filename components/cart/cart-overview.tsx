@@ -35,6 +35,12 @@ export function CartOverview() {
                     /person
                   </span>
                 </p>
+                <p className="text-sm flex justify-between items-center">
+                  <span>Date</span>
+                  <span className="text-sm font-normal text-muted-foreground">
+                    {new Date(item.date).toDateString()}
+                  </span>
+                </p>
               </div>
               <div className="flex flex-wrap sm:flex-nowrap items-center gap-4 sm:gap-6">
                 <div className="flex items-center gap-2">
