@@ -1,5 +1,5 @@
 export const hotels = [
-    {
+  {
     id: "17",
     name: "Ramada Plaza by Wyndham Palm Grove, Mumbai",
     images: [
@@ -9,7 +9,8 @@ export const hotels = [
     ],
     distance: "14.7 miles",
     map_link: "https://maps.app.goo.gl/iWGaiu6s7PCD5UyGA",
-    address: "Juhu Beach, Juhu Tara Rd, next to Shivaji Maharaj Statue, Nazir Wadi, Theosophical Housing Colony, Juhu, Mumbai, Maharashtra 400049",
+    address:
+      "Juhu Beach, Juhu Tara Rd, next to Shivaji Maharaj Statue, Nazir Wadi, Theosophical Housing Colony, Juhu, Mumbai, Maharashtra 400049",
     rating: 4.0,
     amenities: [
       "Brunch",
@@ -32,7 +33,11 @@ export const hotels = [
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 1800,
         issunday: true,
-        features: ["SUN: 11:00 pm to 4:00pm","Multi-cuisine brunch","Swimming Pool"],
+        features: [
+          "SUN: 11:00 pm to 4:00pm",
+          "Multi-cuisine brunch",
+          "Swimming Pool",
+        ],
       },
       {
         id: "2",
@@ -41,11 +46,15 @@ export const hotels = [
         description:
           "Enjoy a relaxing brunch by the pool with family or friends,Access to the swimming pool",
         price: 2000,
-        features: ["MON-SAT: 11:00 pm to 4:00pm","Multi-cuisine brunch","Swimming Pool"],
+        features: [
+          "MON-SAT: 11:00 pm to 4:00pm",
+          "Multi-cuisine brunch",
+          "Swimming Pool",
+        ],
       },
     ],
   },
-{
+  {
     id: "5",
     name: "Radisson Blu Mumbai International Airport",
     images: [
@@ -56,7 +65,8 @@ export const hotels = [
     ],
     distance: "18.1 miles",
     map_link: "https://maps.app.goo.gl/GhYcpJNQv6zRFk3g9",
-    address: "Marol Maroshi Rd, near Metro Station Marol Naka, Bori Colony, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059",
+    address:
+      "Marol Maroshi Rd, near Metro Station Marol Naka, Bori Colony, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059",
     rating: 4.5,
     amenities: [
       "Brunch",
@@ -78,7 +88,12 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 3500,
-        features: ["SUN: 12:30pm to 4:00pm","Multi-cuisine brunch","Jain Food Available","Rooftop Swimming Pool"],
+        features: [
+          "SUN: 12:30pm to 4:00pm",
+          "Multi-cuisine brunch",
+          "Jain Food Available",
+          "Rooftop Swimming Pool",
+        ],
       },
       {
         id: "32",
@@ -91,45 +106,45 @@ export const hotels = [
       },
     ],
   },
-{
+  {
     id: "1",
     name: "Lemon Tree Premier, Mumbai International Airport, Mumbai",
     images: [
-        "/hotels/lemontree/lemon.avif",
-        "/hotels/lemontree/pool.avif",
-        "/hotels/lemontree/spa.avif",
-        "/hotels/lemontree/1000009794.avif",
-        "/hotels/lemontree/restro.avif",
+      "/hotels/lemontree/lemon.avif",
+      "/hotels/lemontree/pool.avif",
+      "/hotels/lemontree/spa.avif",
+      "/hotels/lemontree/1000009794.avif",
+      "/hotels/lemontree/restro.avif",
     ],
     distance: "18.1 miles",
     map_link: "https://maps.app.goo.gl/JP9Jce7rFzpPCbGv6",
     address:
-        "Andheri - Kurla Rd, opposite Mittal Industrial Estate, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059",
+      "Andheri - Kurla Rd, opposite Mittal Industrial Estate, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059",
     rating: 4.2,
     amenities: ["Brunch", "Swimming Pool"],
     ispartner: false,
     price: 2500,
     description:
-        "A bright and inviting multi-cuisine coffee shop with a show kitchen offers an eclectic all-day dining menu including Indian, European, American, and Pan-Asian cuisine. Indulge in the wholesome breakfast buffet served daily. Choose from a wide range of popular Indian, South Indian, Asian, and Western preparations.",
+      "A bright and inviting multi-cuisine coffee shop with a show kitchen offers an eclectic all-day dining menu including Indian, European, American, and Pan-Asian cuisine. Indulge in the wholesome breakfast buffet served daily. Choose from a wide range of popular Indian, South Indian, Asian, and Western preparations.",
     packages: [
-        {
-            id: "1",
-            name: "Sunday Brunch Buffet (without alcohol)",
-            description: "SUN 12:30 PM - 04:00 PM",
-            price: 2695,
-            features: ["Gourmet brunch"],
-            stock:5
-        },
-        {
-            id: "2",
-            name: "Lunch Buffet",
-            description: "MON-SUN 12:30 PM - 03:00 PM",
-            price: 2236,
-            features: ["Gourmet Lunch"],
-            stock:8
-        },
+      {
+        id: "1",
+        name: "Sunday Brunch Buffet (without alcohol)",
+        description: "SUN 12:30 PM - 04:00 PM",
+        price: 2695,
+        features: ["Gourmet brunch"],
+        stock: 5,
+      },
+      {
+        id: "2",
+        name: "Lunch Buffet",
+        description: "MON-SUN 12:30 PM - 03:00 PM",
+        price: 2236,
+        features: ["Gourmet Lunch"],
+        stock: 8,
+      },
     ],
-},
+  },
   {
     id: "2",
     name: "Holiday Inn Mumbai International Airport,an IHG Hotel",
@@ -143,7 +158,7 @@ export const hotels = [
     distance: "16.4 miles",
     map_link: "https://maps.app.goo.gl/7HbvXi8oXnKA1hAF9",
     address:
-        "Sakinaka, Junction, Andheri - Kurla Rd, Andheri East, Mumbai, Maharashtra 400072",
+      "Sakinaka, Junction, Andheri - Kurla Rd, Andheri East, Mumbai, Maharashtra 400072",
     rating: 4.3,
     amenities: ["Brunch"],
     ispartner: false,
@@ -157,7 +172,7 @@ export const hotels = [
         issunday: true,
         description: "SUN 12:30pm to 3:30pm",
         price: 2800,
-        features: ["Gourmet brunch","Swimming Pool"],
+        features: ["Gourmet brunch", "Swimming Pool"],
       },
       {
         id: "2",
@@ -166,7 +181,7 @@ export const hotels = [
         description:
           "The Sunday brunch comprises a variety of cold cuts, desserts, starters and main course options along with their live band adding to the relaxed and fun vibe!",
         price: 3200,
-        features: ["Gourmet brunch","Swimming Pool","Alcohol"],
+        features: ["Gourmet brunch", "Swimming Pool", "Alcohol"],
       },
     ],
   },
@@ -183,7 +198,8 @@ export const hotels = [
     ],
     distance: "17.6 miles ",
     map_link: "https://maps.app.goo.gl/9G6EaXjvhsVLimzM7",
-    address: "Chhatrapati Shivaji Maharaj Int'l Airport Rd, Navpada, Marol, Andheri East, Mumbai, Maharashtra 400059",
+    address:
+      "Chhatrapati Shivaji Maharaj Int'l Airport Rd, Navpada, Marol, Andheri East, Mumbai, Maharashtra 400059",
     rating: 4.3,
     amenities: ["Brunch", "Swimming Pool", "Restuarant", "Bar"],
     ispartner: false,
@@ -198,7 +214,7 @@ export const hotels = [
         description:
           "Poolside view with a variety of quality buffets, sophistication, value for price, access to pool, and valet parking.",
         price: 3080,
-        features: ["Gourmet brunch,Swimming Pool","Valet Parking"],
+        features: ["Gourmet brunch", "Swimming Pool", "Valet Parking"],
       },
       {
         id: "2",
@@ -207,7 +223,7 @@ export const hotels = [
         description:
           "Poolside view with a variety of quality buffets, sophistication, value for price, access to pool, and valet parking.",
         price: 4145,
-        features: ["Gourmet brunch,Swimming Pool","Valet Parking"],
+        features: ["Gourmet brunch", "Swimming Pool", "Valet Parking"],
       },
       {
         id: "3",
@@ -216,7 +232,7 @@ export const hotels = [
         description:
           "Poolside view with a variety of quality buffets, sophistication, value for price, access to pool, and valet parking.",
         price: 1375,
-        features: ["Gourmet brunch,Swimming Pool","Valet Parking"],
+        features: ["Gourmet brunch", "Swimming Pool", "Valet Parking"],
       },
     ],
   },
@@ -233,7 +249,8 @@ export const hotels = [
     ],
     distance: "17.2 miles",
     map_link: "https://maps.app.goo.gl/9G6EaXjvhsVLimzM7",
-    address: "Chhatrapati Shivaji Maharaj Int'l Airport Rd, Navpada, Marol, Andheri East, Mumbai, Maharashtra 400059",
+    address:
+      "Chhatrapati Shivaji Maharaj Int'l Airport Rd, Navpada, Marol, Andheri East, Mumbai, Maharashtra 400059",
     rating: 4.5,
     amenities: ["Brunch"],
     ispartner: false,
@@ -257,7 +274,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 4890,
-        features: ["Gourmet brunch",],
+        features: ["Gourmet brunch"],
       },
       {
         id: "3",
@@ -301,7 +318,8 @@ export const hotels = [
     ],
     distance: "14.3 miles",
     map_link: "https://maps.app.goo.gl/RJkGeGG823B7sGum8",
-    address: "Juhu Tara Road, Beach, near Juhu, Juhu, Mumbai, Maharashtra 400049",    
+    address:
+      "Juhu Tara Road, Beach, near Juhu, Juhu, Mumbai, Maharashtra 400049",
     rating: 4.5,
     amenities: ["Brunch", "Swimming Pool", "Restuarant", "Bar"],
     ispartner: true,
@@ -316,7 +334,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 2500,
-        features: ["Gourmet brunch,pool,live music"],
+        features: ["Gourmet brunch", "pool", "live music"],
       },
       {
         id: "2",
@@ -325,7 +343,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 4000,
-        features: ["Gourmet brunch","pool" ,"live music"],
+        features: ["Gourmet brunch", "pool", "live music"],
       },
     ],
   },
@@ -339,7 +357,8 @@ export const hotels = [
     ],
     distance: "16.5 miles",
     map_link: "https://maps.app.goo.gl/6yj6UNYxxMXiARou8",
-    address: "CTS No. 145, A, NS C-04, Skycity, Chhatrapati Shivaji Maharaj Int'l Airport Rd, near Mumbai International Airport, Mumbai, Maharashtra 400099",
+    address:
+      "CTS No. 145, A, NS C-04, Skycity, Chhatrapati Shivaji Maharaj Int'l Airport Rd, near Mumbai International Airport, Mumbai, Maharashtra 400099",
     rating: 4.5,
     amenities: ["Brunch", "Gym", "Swimming Pool", "Spa", "Restuarant", "Bar"],
     ispartner: true,
@@ -390,7 +409,8 @@ export const hotels = [
     ],
     distance: "17.8 miles",
     map_link: "https://maps.app.goo.gl/s36icmhTE7hpuu3N6",
-    address: "Sahar Airport Road, Andheri - Kurla Rd, near Mumbai International Airport, Greater Indra Nagar, Andheri East, Mumbai, Maharashtra 400059",
+    address:
+      "Sahar Airport Road, Andheri - Kurla Rd, near Mumbai International Airport, Greater Indra Nagar, Andheri East, Mumbai, Maharashtra 400059",
     rating: 4.5,
     amenities: ["Brunch", "Restuarant", "Bar"],
     ispartner: true,
@@ -405,7 +425,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 3600,
-        features: ["Gourmet brunch,pool,live music"],
+        features: ["Gourmet brunch", "pool", "live music"],
       },
       {
         id: "2",
@@ -414,7 +434,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 4830,
-        features: ["Gourmet brunch,pool and live music"],
+        features: ["Gourmet brunch", "pool", "live music"],
       },
       {
         id: "3",
@@ -423,7 +443,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 2200,
-        features: ["Gourmet brunch,pool and live music"],
+        features: ["Gourmet brunch", "pool", "live music"],
       },
     ],
   },
@@ -441,7 +461,8 @@ export const hotels = [
     ],
     distance: "17.2 miles ",
     map_link: "https://maps.app.goo.gl/Bf1DR5KL3uph73nQ8",
-    address: "Metro Station, IRA By Orchid, Andheri - Kurla Rd, near Chakala, Bhim Nagar, Andheri East, Mumbai, Maharashtra 400059",
+    address:
+      "Metro Station, IRA By Orchid, Andheri - Kurla Rd, near Chakala, Bhim Nagar, Andheri East, Mumbai, Maharashtra 400059",
     rating: 4.5,
     amenities: ["Brunch", "Swimming pool", "Restuarant", "Bar"],
     ispartner: true,
@@ -456,8 +477,8 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 1500,
-        features: ["Gourmet brunch,pool,live music"],
-        stock:3
+        features: ["Gourmet brunch", "pool", "live music"],
+        stock: 3,
       },
       {
         id: "2",
@@ -466,8 +487,8 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 3000,
-        features: ["Gourmet brunch,pool and live music"],
-        stock:8
+        features: ["Gourmet brunch", "pool", "live music"],
+        stock: 8,
       },
     ],
   },
@@ -482,7 +503,8 @@ export const hotels = [
     ],
     distance: "17.4 miles",
     map_link: "https://maps.app.goo.gl/w9bwzoCPJXDHwqBGA",
-    address: "entrance no 3, CTS 1359, Andheri - Kurla Rd, next to Airport Metro Station, Bori Colony, Marol, Andheri East, Mumbai, Maharashtra 400059",
+    address:
+      "entrance no 3, CTS 1359, Andheri - Kurla Rd, next to Airport Metro Station, Bori Colony, Marol, Andheri East, Mumbai, Maharashtra 400059",
     rating: 4.5,
     amenities: ["Brunch", "Spa", "Restuarant", "Bar"],
     ispartner: true,
@@ -497,7 +519,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 2795,
-        features: ["Gourmet brunch,pool,live music"],
+        features: ["Gourmet brunch", "pool", "live music"],
       },
       {
         id: "2",
@@ -506,7 +528,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 3595,
-        features: ["Gourmet brunch,pool and live music"],
+        features: ["Gourmet brunch", "pool", "live music"],
       },
       {
         id: "3",
@@ -581,7 +603,8 @@ export const hotels = [
     ],
     distance: "16.9 miles ",
     map_link: "https://maps.app.goo.gl/2TuEbWC3yUxtw3Wg6",
-    address: "Cts 215, Andheri - Kurla Rd, opposite Carnival Cinemas, Andheri East, Mumbai, Maharashtra 400059",
+    address:
+      "Cts 215, Andheri - Kurla Rd, opposite Carnival Cinemas, Andheri East, Mumbai, Maharashtra 400059",
     rating: 4.4,
     amenities: [
       "Brunch",
@@ -604,7 +627,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 2199,
-        features: ["Gourmet brunch,pool,live music"],
+        features: ["Gourmet brunch", "pool", "live music"],
       },
       {
         id: "2",
@@ -613,7 +636,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 2499,
-        features: ["Gourmet brunch,pool and live music"],
+        features: ["Gourmet brunch", "pool", "live music"],
       },
     ],
   },
@@ -630,7 +653,8 @@ export const hotels = [
     ],
     distance: "13.2 miles ",
     map_link: "https://maps.app.goo.gl/LGMe4Vk3rGbPGbY67",
-    address: "C 56, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400098",
+    address:
+      "C 56, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400098",
     rating: 4.6,
     amenities: [
       "Brunch",
@@ -653,7 +677,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 2950,
-        features: ["Gourmet brunch,pool,live music"],
+        features: ["Gourmet brunch", "pool", "live music"],
       },
       {
         id: "2",
@@ -662,7 +686,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 3550,
-        features: ["Gourmet brunch,pool and live music"],
+        features: ["Gourmet brunch", "pool", "live music"],
       },
     ],
   },
@@ -680,7 +704,8 @@ export const hotels = [
     ],
     distance: "15.1 miles",
     map_link: "https://maps.app.goo.gl/xjsmYahjVFA1SAV89",
-    address: "T1, 70-C, Nehru Rd, near Chhatrapati Shivaji Maharaj International Airport Mumbai, Navpada, Vile Parle East, Vile Parle, Mumbai, Maharashtra 400099",
+    address:
+      "T1, 70-C, Nehru Rd, near Chhatrapati Shivaji Maharaj International Airport Mumbai, Navpada, Vile Parle East, Vile Parle, Mumbai, Maharashtra 400099",
     rating: 4.3,
     amenities: [
       "Brunch",
@@ -703,7 +728,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 2499,
-        features: ["Gourmet brunch,pool,live music"],
+        features: ["Gourmet brunch", "pool", "live music"],
       },
       {
         id: "2",
@@ -712,7 +737,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 3499,
-        features: ["Gourmet brunch,pool and live music"],
+        features: ["Gourmet brunch", "pool", "live music"],
       },
     ],
   },
@@ -730,7 +755,8 @@ export const hotels = [
     ],
     distance: "15.2 miles",
     map_link: "https://maps.app.goo.gl/mUP3NBZUA29yYVUQ8",
-    address: "Chhatrapati Shivaji Maharaj International Airport Mumbai, T1, off Western Express Highway, Navpada, Vile Parle East, Santacruz East, Mumbai, Maharashtra 400099",
+    address:
+      "Chhatrapati Shivaji Maharaj International Airport Mumbai, T1, off Western Express Highway, Navpada, Vile Parle East, Santacruz East, Mumbai, Maharashtra 400099",
     rating: 4.6,
     amenities: [
       "Brunch",
@@ -753,7 +779,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 2999,
-        features: ["Gourmet brunch,pool,live music"],
+        features: ["Gourmet brunch", "pool", "live music"],
       },
       {
         id: "2",
@@ -762,7 +788,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 3333,
-        features: ["Gourmet brunch,pool and live music"],
+        features: ["Gourmet brunch", "pool", "live music"],
       },
     ],
   },
@@ -795,7 +821,7 @@ export const hotels = [
   //       description:
   //         "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
   //       price: 3800,
-  //       features: ["Gourmet brunch,pool,live music"],
+  //       features: ["Gourmet brunch","pool","live music"],
   //     },
   //     {
   //       id: "2",
@@ -803,11 +829,11 @@ export const hotels = [
   //       description:
   //         "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
   //       price: 3800,
-  //       features: ["Gourmet brunch,pool and live music"],
+  //       features: ["Gourmet brunch","pool", "live music"],
   //     },
   //   ],
   // },
-  
+
   {
     id: "18",
     name: "Meluha The Fern - An Ecotel Hotel, Powai, Mumbai",
@@ -818,7 +844,8 @@ export const hotels = [
     ],
     distance: "19.1 miles ",
     map_link: "https://maps.app.goo.gl/3jbwfLARV2CMGWUC6",
-    address: "Central Ave, Hiranandani Gardens, Panchkutir Ganesh Nagar, Powai, Mumbai, Maharashtra 400076",
+    address:
+      "Central Ave, Hiranandani Gardens, Panchkutir Ganesh Nagar, Powai, Mumbai, Maharashtra 400076",
     rating: 4.4,
     amenities: [
       "Brunch",
@@ -856,7 +883,8 @@ export const hotels = [
     ],
     distance: "21.7 miles ",
     map_link: "https://maps.app.goo.gl/jEt8tQbwKppFsioh9",
-    address: "2 & 3B, near Chinmayanand Ashram, Kailash Nagar, Mayur Nagar, Morarji Nagar, Powai, Mumbai, Maharashtra 400087",
+    address:
+      "2 & 3B, near Chinmayanand Ashram, Kailash Nagar, Mayur Nagar, Morarji Nagar, Powai, Mumbai, Maharashtra 400087",
     rating: 4.5,
     amenities: [
       "Brunch",
@@ -896,7 +924,8 @@ export const hotels = [
     ],
     distance: "20.9 miles ",
     map_link: "https://maps.app.goo.gl/yN9rsSCgafBSx1eBA",
-    address: "2 & 3B, near Chinmayanand Ashram, Kailash Nagar, Mayur Nagar, Morarji Nagar, Powai, Mumbai, Maharashtra 400087",
+    address:
+      "2 & 3B, near Chinmayanand Ashram, Kailash Nagar, Mayur Nagar, Morarji Nagar, Powai, Mumbai, Maharashtra 400087",
     rating: 4.5,
     amenities: [
       "Brunch",
@@ -919,7 +948,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 3499,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["Gourmet brunch", "Swimming Pool"],
       },
       {
         id: "2",
@@ -928,7 +957,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 4499,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["Gourmet brunch", "Swimming Pool"],
       },
       {
         id: "3",
@@ -937,7 +966,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 1600,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["Gourmet brunch", "Swimming Pool"],
       },
     ],
   },
@@ -954,7 +983,8 @@ export const hotels = [
     ],
     distance: "13.5 miles",
     map_link: "https://maps.app.goo.gl/mimXGAQ4LPiMF5TG8",
-    address: "Bandra Kurla Complex, Siddharath Nagar, Vakola, Vicinity, Mumbai, Maharashtra 400055",
+    address:
+      "Bandra Kurla Complex, Siddharath Nagar, Vakola, Vicinity, Mumbai, Maharashtra 400055",
     rating: 4.5,
     amenities: [
       "Brunch",
@@ -977,7 +1007,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 3500,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["Gourmet brunch", "Swimming Pool"],
       },
       {
         id: "2",
@@ -986,7 +1016,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 4500,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["Gourmet brunch", "Swimming Pool"],
       },
       {
         id: "3",
@@ -994,7 +1024,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 5500,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["Gourmet brunch", "Swimming Pool"],
       },
     ],
   },
@@ -1013,7 +1043,8 @@ export const hotels = [
     ],
     distance: "13.4 miles ",
     map_link: "https://maps.app.goo.gl/yazbEN7WU8qThTAN8",
-    address: "C 57, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051",
+    address:
+      "C 57, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051",
     rating: 4.5,
     amenities: [
       "Brunch",
@@ -1036,7 +1067,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 4199,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["Gourmet brunch", "Swimming Pool"],
       },
       {
         id: "2",
@@ -1045,7 +1076,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 4999,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["Gourmet brunch", "Swimming Pool"],
       },
       {
         id: "3",
@@ -1053,7 +1084,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 5899,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["Gourmet brunch", "Swimming Pool"],
       },
       {
         id: "4",
@@ -1061,7 +1092,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 5899,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["Gourmet brunch", "Swimming Pool"],
       },
     ],
   },
@@ -1079,7 +1110,8 @@ export const hotels = [
     ],
     distance: "14.6 miles",
     map_link: "https://maps.app.goo.gl/9ex8WmJSweithjNN9",
-    address: "Taj the Trees, off Eastern Express Highway, Juhi - D wing, Pirojshanagar, Vikhroli, Mumbai, Maharashtra 400079",
+    address:
+      "Taj the Trees, off Eastern Express Highway, Juhi - D wing, Pirojshanagar, Vikhroli, Mumbai, Maharashtra 400079",
     rating: 4.6,
     amenities: [
       "Brunch",
@@ -1102,7 +1134,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 2999,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["Gourmet brunch", "Swimming Pool"],
       },
     ],
   },
@@ -1140,7 +1172,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 2800,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["Gourmet brunch", "Swimming Pool"],
       },
       {
         id: "2",
@@ -1149,7 +1181,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 4000,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["Gourmet brunch", "Swimming Pool"],
       },
     ],
   },
@@ -1166,7 +1198,8 @@ export const hotels = [
     ],
     distance: "20 miles",
     map_link: "https://maps.app.goo.gl/19Jqth1vLrtk972DA",
-    address: "Oberoi Complex, SAB TV Rd, near Laxmi Industrial Estate, off New Link Road, Suresh Nagar, Andheri West, Mumbai, Maharashtra 400053",
+    address:
+      "Oberoi Complex, SAB TV Rd, near Laxmi Industrial Estate, off New Link Road, Suresh Nagar, Andheri West, Mumbai, Maharashtra 400053",
     rating: 3.1,
     amenities: [
       "Brunch",
@@ -1189,7 +1222,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 2000,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["Gourmet brunch", "Swimming Pool"],
       },
     ],
   },
@@ -1207,7 +1240,8 @@ export const hotels = [
     ],
     distance: "21 miles",
     map_link: "https://maps.app.goo.gl/hHv7hdAfVkjxB4Aq7",
-    address: "S.V. Road, Veer Savarkar Flyover, Goregaon West, Mumbai, Maharashtra 400062",
+    address:
+      "S.V. Road, Veer Savarkar Flyover, Goregaon West, Mumbai, Maharashtra 400062",
     rating: 4.2,
     amenities: [
       "Brunch",
@@ -1230,7 +1264,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 2000,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["Gourmet brunch", "Swimming Pool"],
       },
     ],
   },
@@ -1247,7 +1281,8 @@ export const hotels = [
     ],
     distance: "15 miles",
     map_link: "https://maps.app.goo.gl/hvN6qPwbqju4DP4p8",
-    address: "JW Marriott Mumbai Juhu, Juhu Tara Rd, Juhu Tara, Juhu, Mumbai, Maharashtra 400049",
+    address:
+      "JW Marriott Mumbai Juhu, Juhu Tara Rd, Juhu Tara, Juhu, Mumbai, Maharashtra 400049",
     rating: 4.6,
     amenities: [
       "Brunch",
@@ -1270,7 +1305,12 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 3350,
-        features: ["SUN: 12:30pm - 4:00pm","Multi-Cuisine","Chef Choice Menu","Jain Available"],
+        features: [
+          "SUN: 12:30pm - 4:00pm",
+          "Multi-Cuisine",
+          "Chef Choice Menu",
+          "Jain Available",
+        ],
       },
       {
         id: "2",
@@ -1279,7 +1319,13 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 4620,
-        features: ["SUN: 12:30pm - 4:00pm","Multi-Cuisine","Chef Choice Menu","Alcohol","Jain Available"],
+        features: [
+          "SUN: 12:30pm - 4:00pm",
+          "Multi-Cuisine",
+          "Chef Choice Menu",
+          "Alcohol",
+          "Jain Available",
+        ],
       },
       {
         id: "3",
@@ -1288,7 +1334,12 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 1950,
-        features: ["SUN: 12:30pm - 4:00pm","Multi-Cuisine","Chef Choice Menu","Jain Available"],
+        features: [
+          "SUN: 12:30pm - 4:00pm",
+          "Multi-Cuisine",
+          "Chef Choice Menu",
+          "Jain Available",
+        ],
       },
     ],
   },
@@ -1303,7 +1354,8 @@ export const hotels = [
     ],
     distance: "4.4 miles",
     map_link: "https://maps.app.goo.gl/YXnhbRmb1xdmHta1A",
-    address: "462, Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013",
+    address:
+      "462, Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013",
     rating: 4.6,
     amenities: [
       "Brunch",
@@ -1326,7 +1378,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 3500,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["Gourmet brunch", "Swimming Pool"],
       },
       {
         id: "2",
@@ -1335,7 +1387,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 4500,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["Gourmet brunch", "Swimming Pool"],
       },
       {
         id: "3",
@@ -1344,7 +1396,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 7500,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["Gourmet brunch", "Swimming Pool"],
       },
     ],
   },
@@ -1359,7 +1411,8 @@ export const hotels = [
     ],
     distance: "4.4 miles",
     map_link: "https://maps.app.goo.gl/tmfrTYd3tfUagXPU6",
-    address: "1/136, Dr Elijah Moses Rd, Gandhi Nagar, Upper Worli, Worli, Mumbai, Maharashtra 400018",
+    address:
+      "1/136, Dr Elijah Moses Rd, Gandhi Nagar, Upper Worli, Worli, Mumbai, Maharashtra 400018",
     rating: 4.5,
     amenities: [
       "Brunch",
@@ -1382,50 +1435,50 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 6500,
-        features: ["Gourmet brunch,Swimming Pool"],
+        features: ["Gourmet brunch", "Swimming Pool"],
       },
     ],
   },
- // {
- //    id: "30",
- //    name: "Hotel Marine Plaza",
- //    images: [
- //      "/hotels/marineplaza/outdoor.avif",
- //      "/hotels/marineplaza/restrotwo.avif",
- //      "/hotels/marineplaza/restro.avif",
- //      "/hotels/marineplaza/swimmingpool.avif",
- //      "/hotels/marineplaza/pool.avif",
- //    ],
- //    distance: "1.4 miles",
- //    map_link: "https://maps.app.goo.gl/3gkzqMabHh2bZ7kN8",
- //    address: "29, Marine Dr, Chowpatty, Marine Lines, Mumbai, Maharashtra 400020",
- //    rating: 4.3,
- //    amenities: [
- //      "Brunch",
- //      "Gym",
- //      "Swimming Pool",
- //      "Spa",
- //      "Restuarant",
- //      "Bar",
- //      "Steam and Sauna",
- //    ],
- //    ispartner: false,
- //    price: 3500,
- //    description:
- //      "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
- //    packages: [
- //      {
- //        id: "1",
- //        name: "Sunday Brunch with pool",
- //        issunday: true,
- //        description:
- //          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
- //        price: 3000,
- //        features: ["Gourmet brunch","Welcome Drinks","Swimming Pool","Pool","Alcohol not included" ],
- //      },
- //    ],
- //  },
-{
+  // {
+  //    id: "30",
+  //    name: "Hotel Marine Plaza",
+  //    images: [
+  //      "/hotels/marineplaza/outdoor.avif",
+  //      "/hotels/marineplaza/restrotwo.avif",
+  //      "/hotels/marineplaza/restro.avif",
+  //      "/hotels/marineplaza/swimmingpool.avif",
+  //      "/hotels/marineplaza/pool.avif",
+  //    ],
+  //    distance: "1.4 miles",
+  //    map_link: "https://maps.app.goo.gl/3gkzqMabHh2bZ7kN8",
+  //    address: "29, Marine Dr, Chowpatty, Marine Lines, Mumbai, Maharashtra 400020",
+  //    rating: 4.3,
+  //    amenities: [
+  //      "Brunch",
+  //      "Gym",
+  //      "Swimming Pool",
+  //      "Spa",
+  //      "Restuarant",
+  //      "Bar",
+  //      "Steam and Sauna",
+  //    ],
+  //    ispartner: false,
+  //    price: 3500,
+  //    description:
+  //      "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
+  //    packages: [
+  //      {
+  //        id: "1",
+  //        name: "Sunday Brunch with pool",
+  //        issunday: true,
+  //        description:
+  //          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+  //        price: 3000,
+  //        features: ["Gourmet brunch","Welcome Drinks","Swimming Pool","Pool","Alcohol not included" ],
+  //      },
+  //    ],
+  //  },
+  {
     id: "31",
     name: "Taj Wellington Mews, Mumbai",
     images: [
@@ -1442,7 +1495,8 @@ export const hotels = [
     ],
     distance: "1.6 miles",
     map_link: "https://maps.app.goo.gl/jhsKJGb6PzfqwK9t9",
-    address: "33, Nathalal Parikh Marg, Cusrow Baug Colony, Apollo Bandar, Colaba, Mumbai, Maharashtra 400001",
+    address:
+      "33, Nathalal Parikh Marg, Cusrow Baug Colony, Apollo Bandar, Colaba, Mumbai, Maharashtra 400001",
     rating: 4.5,
     amenities: [
       "Brunch",
@@ -1465,11 +1519,16 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 3500,
-        features: ["Swimming Pool","Gym","Steam & Sauna","Food not included"],
+        features: [
+          "Swimming Pool",
+          "Gym",
+          "Steam & Sauna",
+          "Food not included",
+        ],
       },
     ],
   },
-    {
+  {
     id: "32",
     name: "Ramada by Wyndham Navi Mumbai",
     images: [
@@ -1479,7 +1538,8 @@ export const hotels = [
     ],
     distance: "21.9 miles",
     map_link: "https://maps.app.goo.gl/xCPL9PUvT5Hcnqtg6",
-    address: "MILLENNIUM BUSINESS PARK, 156, MIDC, Millenium Business Park, Sector 2, Mahape, Navi Mumbai, Maharashtra 400710",
+    address:
+      "MILLENNIUM BUSINESS PARK, 156, MIDC, Millenium Business Park, Sector 2, Mahape, Navi Mumbai, Maharashtra 400710",
     rating: 4.2,
     amenities: [
       "Brunch",
@@ -1502,11 +1562,18 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 1800,
-        features: ["MON-SUN: 12:30pm to 3:00pm","Pool timings: 12:00 to 6pm","Multi-Cuisine Buffet","Swimming Pool","Gym","Valet Service"],
+        features: [
+          "MON-SUN: 12:30pm to 3:00pm",
+          "Pool timings: 12:00 to 6pm",
+          "Multi-Cuisine Buffet",
+          "Swimming Pool",
+          "Gym",
+          "Valet Service",
+        ],
       },
     ],
   },
-    {
+  {
     id: "33",
     name: "Royal Orchid Central Grazia, Navi Mumbai",
     images: [
@@ -1518,7 +1585,8 @@ export const hotels = [
     ],
     distance: "21.9 miles",
     map_link: "https://maps.app.goo.gl/9tY8vxopJ9USqiJ97",
-    address: "Plot No. 67, Palm Beach Rd, Juhu Nagar, Sector 19, Vashi, Navi Mumbai, Maharashtra 400705",
+    address:
+      "Plot No. 67, Palm Beach Rd, Juhu Nagar, Sector 19, Vashi, Navi Mumbai, Maharashtra 400705",
     rating: 4.0,
     amenities: [
       "Brunch",
@@ -1541,21 +1609,34 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
         price: 1350,
-        features: ["MON-SUN: 12:30pm to 3:00pm","Pool timings: 3hrs","Multi-Cuisine Buffet","Swimming Pool","Gym","Valet Service"],
+        features: [
+          "MON-SUN: 12:30pm to 3:00pm",
+          "Pool timings: 3hrs",
+          "Multi-Cuisine Buffet",
+          "Swimming Pool",
+          "Gym",
+          "Valet Service",
+        ],
       },
-        {
+      {
         id: "2",
         name: "Lunch & Swimming Pool for Kids",
         issunday: false,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
         price: 800,
-        features: ["MON-SUN: 12:30pm to 3:00pm","Pool timings: 3hrs","Multi-Cuisine Buffet","Swimming Pool","Gym","Valet Service"],
+        features: [
+          "MON-SUN: 12:30pm to 3:00pm",
+          "Pool timings: 3hrs",
+          "Multi-Cuisine Buffet",
+          "Swimming Pool",
+          "Gym",
+          "Valet Service",
+        ],
       },
-
     ],
   },
-     {
+  {
     id: "34",
     name: "Hyatt Centric Juhu Mumbai",
     images: [
@@ -1584,24 +1665,17 @@ export const hotels = [
     packages: [
       {
         id: "1",
-        name: "Lunch & Swimming Pool",
-        issunday: false,
+        name: "Sunday Brunch",
+        issunday: true,
         description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
         price: 1350,
-        features: ["MON-SUN: 12:30pm to 3:00pm","Pool timings: 3hrs","Multi-Cuisine Buffet","Swimming Pool","Gym","Valet Service"],
+        features: [
+          "Sun: 11:00am to 3:00pm",
+          "Gourmet Brunch",
+          "Multi-Cuisine Buffet",
+        ],
       },
-        {
-        id: "2",
-        name: "Lunch & Swimming Pool for Kids",
-        issunday: false,
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
-        price: 800,
-        features: ["MON-SUN: 12:30pm to 3:00pm","Pool timings: 3hrs","Multi-Cuisine Buffet","Swimming Pool","Gym","Valet Service"],
-      },
-
     ],
   },
-
 ];
