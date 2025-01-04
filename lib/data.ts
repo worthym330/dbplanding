@@ -136,20 +136,22 @@ export const hotels = [
       "Steam and Sauna",
     ],
     ispartner: true,
-    price: 7850,
+    price: 10499,
     description:
       "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
     packages: [
       {
         id: "1",
-        name: "Swimming Pool",
+        name: "Premium Recovery Pass",
         issunday: true,
+        stock: 6,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 8000,
+        price: 10499,
         features: [
-          "Rooftop Swimming Pool",
-          "60 mins Indian Aromatherapy massage",
+          "Heated Swimming Pool", 
+          "J Wellness Circle Spa",
+          "Indian Aromatherapy (60 mins)",
           "Locker and show facilities",
           "Chill pool",
           "Jacuzzi",
