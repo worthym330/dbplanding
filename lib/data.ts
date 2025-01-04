@@ -210,7 +210,7 @@ export const hotels = [
     ],
     distance: "16.4 miles",
     map_link: "https://maps.app.goo.gl/7HbvXi8oXnKA1hAF9",
-    address:
+    address:f
       "Sakinaka, Junction, Andheri - Kurla Rd, Andheri East, Mumbai, Maharashtra 400072",
     rating: 4.3,
     amenities: ["Brunch"],
@@ -1572,6 +1572,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 8000,
+        stock: 7,
         features: [
           "Rooftop Swimming Pool",
           "60 mins Indian Aromatherapy massage",
