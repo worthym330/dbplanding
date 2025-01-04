@@ -106,7 +106,7 @@ export const hotels = [
       },
     ],
   },
-{
+  {
     id: "31",
     name: "Taj Wellington Mews, Mumbai",
     images: [
@@ -154,7 +154,7 @@ export const hotels = [
           "Chill pool",
           "Jacuzzi",
           "Sauna",
-          "Steam"
+          "Steam",
         ],
       },
     ],
@@ -1580,7 +1580,7 @@ export const hotels = [
           "Chill pool",
           "Jacuzzi",
           "Sauna",
-          "Steam"
+          "Steam",
         ],
       },
     ],
@@ -1589,9 +1589,12 @@ export const hotels = [
     id: "32",
     name: "Ramada by Wyndham Navi Mumbai",
     images: [
-      "https://api.daybreakpass.com/uploads/hotel/images/food.jpg",
-      "https://api.daybreakpass.com/uploads/hotel/images/Restaurant&Bar.avif",
-      "https://api.daybreakpass.com/uploads/hotel/images/Swimming Pool RAMADA.avif",
+      "https://api.daybreakpass.com/uploads/hotel/images/Lounge.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/swimming pool 2.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/gym.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/coffeescapes.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/Swimming pool.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/Exterior.jpg",
     ],
     distance: "21.9 miles",
     map_link: "https://maps.app.goo.gl/xCPL9PUvT5Hcnqtg6",
