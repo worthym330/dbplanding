@@ -106,6 +106,59 @@ export const hotels = [
       },
     ],
   },
+{
+    id: "31",
+    name: "Taj Wellington Mews, Mumbai",
+    images: [
+      "/hotels/tajwellignton/outdoor.avif",
+      "/hotels/tajwellignton/outdoor2.avif",
+      "/hotels/tajwellignton/swimmingpool.avif",
+      "/hotels/tajwellignton/pool.avif",
+      "/hotels/tajwellignton/pool2.avif",
+      "/hotels/tajwellignton/spa.avif",
+      "/hotels/tajwellignton/spa2.avif",
+      "/hotels/tajwellignton/spa3.avif",
+      "/hotels/tajwellignton/restrotwo.avif",
+      "/hotels/tajwellignton/restro.avif",
+    ],
+    distance: "1.6 miles",
+    map_link: "https://maps.app.goo.gl/jhsKJGb6PzfqwK9t9",
+    address:
+      "33, Nathalal Parikh Marg, Cusrow Baug Colony, Apollo Bandar, Colaba, Mumbai, Maharashtra 400001",
+    rating: 4.5,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: true,
+    price: 7850,
+    description:
+      "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
+    packages: [
+      {
+        id: "1",
+        name: "Swimming Pool",
+        issunday: true,
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 8000,
+        features: [
+          "Rooftop Swimming Pool",
+          "60 mins Indian Aromatherapy massage",
+          "Locker and show facilities",
+          "Chill pool",
+          "Jacuzzi",
+          "Sauna",
+          "Steam"
+        ],
+      },
+    ],
+  },
   {
     id: "1",
     name: "Lemon Tree Premier, Mumbai International Airport, Mumbai",
