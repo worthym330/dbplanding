@@ -1507,8 +1507,8 @@ export const hotels = [
       "Bar",
       "Steam and Sauna",
     ],
-    ispartner: false,
-    price: 3500,
+    ispartner: true,
+    price: 7850,
     description:
       "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
     packages: [
@@ -1518,12 +1518,15 @@ export const hotels = [
         issunday: true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 3500,
+        price: 7500,
         features: [
-          "Swimming Pool",
-          "Gym",
-          "Steam & Sauna",
-          "Food not included",
+          "Rooftop Swimming Pool",
+          "60 mins Indian Aromatherapy massage",
+          "Locker and show facilities",
+          "Chill pool",
+          "Jacuzzi",
+          "Sauna",
+          "Steam"
         ],
       },
     ],
