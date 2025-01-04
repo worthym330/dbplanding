@@ -58,7 +58,6 @@ export default function ThankYouPage() {
   };
 
   useEffect(() => {
-    // Reset cart and form after successful payment
     return () => {
       clearCart();
       resetForm();
@@ -96,7 +95,7 @@ export default function ThankYouPage() {
                   Thank You for Your Booking!
                 </CardTitle>
                 <p className="mt-2 text-muted-foreground">
-                  A confirmation email has been sent to {form.email}
+                  A confirmation email has been sent to {bookingDetails?.customerEmail}
                 </p>
               </CardHeader>
               <CardContent className="space-y-6">
