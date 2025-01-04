@@ -19,8 +19,8 @@ const contactDetails = [
   {
     icon: Mail,
     title: "Email",
-    content: "support@daybreakpass.com",
-    link: "mailto:support@daybreakpass.com",
+    content: "team@daybreakpass.com",
+    link: "mailto:team@daybreakpass.com",
   },
   {
     icon: Clock,

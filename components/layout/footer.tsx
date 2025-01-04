@@ -42,10 +42,10 @@ export function Footer() {
               <li>
                 Email:{" "}
                 <a
-                  href="mailto:support@daybreakpass.com"
+                  href="mailto:team@daybreakpass.com"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  support@daybreakpass.com
+                  team@daybreakpass.com
                 </a>
               </li>
               <li>
