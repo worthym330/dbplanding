@@ -27,8 +27,35 @@ export function StickyBookButton() {
 
   const displayDate = date ? new Date(date).toDateString() : "No date selected";
 
-  return !pathname.startsWith("/hotels/") ? (
-    amount !== null && amount > 0 && (
+  return pathname.startsWith("/hotels/") ? (
+    <motion.div
+      style={{ opacity }}
+      className="fixed bottom-0 left-0 right-0 z-50 bg-background/80 p-4 backdrop-blur-lg lg:hidden"
+    >
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
+        {amount && amount > 0 ? (
+          <div>
+            <p className="font-medium text-sm">Subtotal</p>
+            <p className="text-xl font-bold">₹{amount.toFixed(2)}</p>
+          </div>
+        ) : (
+          <div>
+            <p className="font-medium text-sm">Date</p>
+            <p className="text-lg font-bold">{displayDate}</p>
+          </div>
+        )}
+        <Button
+          size="lg"
+          onClick={() => {
+            amount && amount > 0 ? router.push("/cart") : handleSubmit();
+          }}
+        >
+          Book Now
+        </Button>
+      </div>
+    </motion.div>
+  ) : (
+    amount !== null && amount > 0 && pathname !== "/cart" && pathname !== "/checkout" && (
       <motion.div
         style={{ opacity }}
         className="fixed bottom-0 left-0 right-0 z-50 bg-background/80 p-4 backdrop-blur-lg lg:hidden"
@@ -49,33 +76,5 @@ export function StickyBookButton() {
         </div>
       </motion.div>
     )
-  ) : (
-    <motion.div
-      style={{ opacity }}
-      className="fixed bottom-0 left-0 right-0 z-50 bg-background/80 p-4 backdrop-blur-lg lg:hidden"
-    >
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
-        {amount && amount > 0 ? (
-          <div>
-            <p className="font-medium text-sm">Subtotal</p>
-            <p className="text-xl font-bold">₹{amount.toFixed(2)}</p>
-          </div>
-        ) : (
-          <div>
-            <p className="font-medium text-sm">Date</p>
-            <p className="text-lg font-bold">{displayDate}</p>
-          </div>
-        )}
-
-        <Button
-          size="lg"
-          onClick={() => {
-            amount && amount > 0 ? router.push("/cart") : handleSubmit();
-          }}
-        >
-          Book Now
-        </Button>
-      </div>
-    </motion.div>
   );
 }
