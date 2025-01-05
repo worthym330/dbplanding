@@ -1,9 +1,9 @@
 "use client";
 
-import {  useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Calendar } from "@/components/ui/calendar";
 import { Button } from "@/components/ui/button";
-import {  isSunday, isBefore } from "date-fns";
+import { isSunday, isBefore } from "date-fns";
 import { useDateStore } from "@/lib/hooks/use-date";
 import { Hotel } from "@/lib/types";
 import toast from "react-hot-toast";
@@ -34,7 +34,7 @@ export function BookingCalendar({ selectedHotel }: { selectedHotel: Hotel }) {
 
   const isDateDisabled = (date: Date) => {
     if (isBefore(date, new Date())) return true;
-
+    if (selectedpackage === "") return true;
     if (
       selectedpackage !== "" &&
       selectedHotel.packages.find(
@@ -52,13 +52,21 @@ export function BookingCalendar({ selectedHotel }: { selectedHotel: Hotel }) {
         <div className="mx-auto w-12 h-1.5 flex-shrink-0 rounded-full bg-muted mb-8" />
         <span className="font-bold text-xl">Select a date</span>
         <div className="w-full space-y-4">
-          <Calendar
-            mode="single"
-            selected={date}
-            onSelect={(date) => date && handleDateChange(date)}
-            className="rounded-md border w-full"
-            disabled={isDateDisabled}
-          />
+        {selectedpackage === "" ? (
+            <div className="flex flex-col items-center justify-center p-4 bg-muted rounded-md">
+              <span className="text-red-500 font-semibold">
+                Please select the package first
+              </span>
+            </div>
+          ) : (
+            <Calendar
+              mode="single"
+              selected={date}
+              onSelect={(date) => date && handleDateChange(date)}
+              className="rounded-md border w-full"
+              disabled={isDateDisabled}
+            />
+          )}
 
           <Button
             size="lg"

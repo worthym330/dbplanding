@@ -5,13 +5,11 @@ import { Minus, Plus, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useCart } from "@/lib/hooks/use-cart";
+import { useDateStore } from "@/lib/hooks/use-date";
 
 export function CartOverview() {
-  const { items, updateQuantity, removeItem } = useCart((state) => ({
-    items: state.items,
-    updateQuantity: state.updateQuantity,
-    removeItem: state.removeItem,
-  }));
+  const { items, updateQuantity, removeItem, setSelectedPackage } = useCart();
+  const { setErr } = useDateStore();
 
   return (
     <div className="space-y-4">
@@ -69,7 +67,11 @@ export function CartOverview() {
                 <Button
                   variant="ghost"
                   size="icon"
-                  onClick={() => removeItem(item.id, item.hotelId)}
+                  onClick={() => {
+                    removeItem(item.id, item.hotelId);
+                    setSelectedPackage("");
+                    setErr(false);
+                  }}
                 >
                   <Trash2 className="h-4 w-4" />
                 </Button>

@@ -78,6 +78,8 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
       });
     } else {
       setErr(false);
+      setFilteredPackages(pkg.name);
+      setSelectedPackage(pkg.name);
       toast.success("Successfully added into the cart");
       addItem({
         id: pkg.id,
@@ -113,6 +115,7 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
 
   const isDateDisabled = (date: Date) => {
     if (isBefore(date, new Date())) return true;
+    if (filteredPackages === "") return true;
     if (
       filteredPackages !== "" &&
       packages.find(
@@ -166,53 +169,61 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
         <div className="relative">
           <div className="lg:hidden">
             <span className="font-bold text-xl p-2">Select a date</span>
-            <Drawer.Root open={isOpen} onOpenChange={setIsOpen}>
-              <Drawer.Trigger asChild>
-                <Button
-                  variant="outline"
-                  className={`w-full justify-start text-left font-normal ${
-                    err ? "border-2 border-red-500" : ""
-                  }`}
-                >
-                  <CalendarIcon className="mr-2 h-4 w-4" />
-                  {date ? format(date, "PPP") : <span>Pick a date</span>}
-                </Button>
-              </Drawer.Trigger>
-              <Drawer.Portal>
-                <Drawer.Overlay className="fixed inset-0 bg-black/40" />
-                <Drawer.Content className="fixed bottom-0 left-0 right-0 mt-24 flex flex-col rounded-t-[10px] bg-background lg:hidden">
-                  <div className="flex-1 rounded-t-[10px] bg-background p-4">
-                    <div className="mx-auto w-12 h-1.5 flex-shrink-0 rounded-full bg-muted mb-8" />
-                    <div className="max-w-md mx-auto">
-                      <Calendar
-                        mode="single"
-                        selected={date}
-                        onSelect={(date) => date && handleDateChange(date)}
-                        className="rounded-md border"
-                        disabled={isDateDisabled} // Use the isDateDisabled function to disable dates
-                      />
-                      <div className="mt-4 flex gap-4">
-                        <Button
-                          variant="outline"
-                          className="flex-1"
-                          onClick={() => setIsOpen(false)}
-                        >
-                          Cancel
-                        </Button>
-                        <Button
-                          className="flex-1"
-                          onClick={() => {
-                            setIsOpen(false);
-                          }}
-                        >
-                          Confirm
-                        </Button>
+            {filteredPackages === "" ? (
+              <div className="flex flex-col items-center justify-center p-4 bg-muted rounded-md">
+                <span className="text-red-500 font-semibold">
+                  Please select the package first
+                </span>
+              </div>
+            ) : (
+              <Drawer.Root open={isOpen} onOpenChange={setIsOpen}>
+                <Drawer.Trigger asChild>
+                  <Button
+                    variant="outline"
+                    className={`w-full justify-start text-left font-normal ${
+                      err ? "border-2 border-red-500" : ""
+                    }`}
+                  >
+                    <CalendarIcon className="mr-2 h-4 w-4" />
+                    {date ? format(date, "PPP") : <span>Pick a date</span>}
+                  </Button>
+                </Drawer.Trigger>
+                <Drawer.Portal>
+                  <Drawer.Overlay className="fixed inset-0 bg-black/40" />
+                  <Drawer.Content className="fixed bottom-0 left-0 right-0 mt-24 flex flex-col rounded-t-[10px] bg-background lg:hidden">
+                    <div className="flex-1 rounded-t-[10px] bg-background p-4">
+                      <div className="mx-auto w-12 h-1.5 flex-shrink-0 rounded-full bg-muted mb-8" />
+                      <div className="max-w-md mx-auto">
+                        <Calendar
+                          mode="single"
+                          selected={date}
+                          onSelect={(date) => date && handleDateChange(date)}
+                          className="rounded-md border"
+                          disabled={isDateDisabled} // Use the isDateDisabled function to disable dates
+                        />
+                        <div className="mt-4 flex gap-4">
+                          <Button
+                            variant="outline"
+                            className="flex-1"
+                            onClick={() => setIsOpen(false)}
+                          >
+                            Cancel
+                          </Button>
+                          <Button
+                            className="flex-1"
+                            onClick={() => {
+                              setIsOpen(false);
+                            }}
+                          >
+                            Confirm
+                          </Button>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Drawer.Content>
-              </Drawer.Portal>
-            </Drawer.Root>
+                  </Drawer.Content>
+                </Drawer.Portal>
+              </Drawer.Root>
+            )}
           </div>
         </div>
       </div>
@@ -220,7 +231,7 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
       <div className="grid gap-6 grid-cols-1 md:grid-cols-2" ref={divref}>
         {packages.map((pkg, index) => {
           const cartItem = items.find(
-            (item) => item.id === pkg.id && item.name === pkg.name
+            (item) => item.id === pkg.id && item.name === pkg.name && item.hotelId === hotel.id
           );
 
           return (
@@ -297,9 +308,12 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
                       <Button
                         variant="ghost"
                         size="icon"
-                        onClick={() =>
-                          removeItem(cartItem.id, cartItem.hotelId)
-                        }
+                        onClick={() => {
+                          removeItem(cartItem.id, cartItem.hotelId);
+                          setSelectedPackage("");
+                          setFilteredPackages("");
+                          setErr(false);
+                        }}
                       >
                         <Trash2 className="h-4 w-4" />
                       </Button>
