@@ -1552,63 +1552,63 @@ export const hotels = [
       },
     ],
   },
-  {
-    id: "28",
-    name: "The St. Regis Mumbai",
-    images: [
-      "/hotels/regis/outdoor.avif",
-      "/hotels/regis/restrotwo.avif",
-      "/hotels/regis/restro.avif",
-      "/hotels/regis/spa.webp",
-    ],
-    distance: "4.4 miles",
-    map_link: "https://maps.app.goo.gl/YXnhbRmb1xdmHta1A",
-    address:
-      "462, Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013",
-    rating: 4.6,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: false,
-    price: 3500,
-    description:
-      "Treat yourself to luxury at this premium hotel offering award-winning specialty restaurants & breathtaking city views.",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch with Pool (without alcohol)",
-        issunday: true,
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 3500,
-        features: ["Gourmet brunch", "Swimming Pool"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch with Pool (with alcohol)",
-        issunday: true,
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 4500,
-        features: ["Gourmet brunch", "Swimming Pool"],
-      },
-      {
-        id: "3",
-        name: "Sunday Brunch with premium alcohol",
-        issunday: true,
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 7500,
-        features: ["Gourmet brunch", "Swimming Pool"],
-      },
-    ],
-  },
+  // {
+  //   id: "28",
+  //   name: "The St. Regis Mumbai",
+  //   images: [
+  //     "/hotels/regis/outdoor.avif",
+  //     "/hotels/regis/restrotwo.avif",
+  //     "/hotels/regis/restro.avif",
+  //     "/hotels/regis/spa.webp",
+  //   ],
+  //   distance: "4.4 miles",
+  //   map_link: "https://maps.app.goo.gl/YXnhbRmb1xdmHta1A",
+  //   address:
+  //     "462, Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013",
+  //   rating: 4.6,
+  //   amenities: [
+  //     "Brunch",
+  //     "Gym",
+  //     "Swimming Pool",
+  //     "Spa",
+  //     "Restuarant",
+  //     "Bar",
+  //     "Steam and Sauna",
+  //   ],
+  //   ispartner: false,
+  //   price: 3500,
+  //   description:
+  //     "Treat yourself to luxury at this premium hotel offering award-winning specialty restaurants & breathtaking city views.",
+  //   packages: [
+  //     {
+  //       id: "1",
+  //       name: "Sunday Brunch with Pool (without alcohol)",
+  //       issunday: true,
+  //       description:
+  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+  //       price: 3500,
+  //       features: ["Gourmet brunch", "Swimming Pool"],
+  //     },
+  //     {
+  //       id: "2",
+  //       name: "Sunday Brunch with Pool (with alcohol)",
+  //       issunday: true,
+  //       description:
+  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+  //       price: 4500,
+  //       features: ["Gourmet brunch", "Swimming Pool"],
+  //     },
+  //     {
+  //       id: "3",
+  //       name: "Sunday Brunch with premium alcohol",
+  //       issunday: true,
+  //       description:
+  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+  //       price: 7500,
+  //       features: ["Gourmet brunch", "Swimming Pool"],
+  //     },
+  //   ],
+  // },
   {
     id: "29",
     name: "Four Seasons Hotel Mumbai",
