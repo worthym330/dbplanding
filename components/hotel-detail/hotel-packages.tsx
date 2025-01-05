@@ -231,9 +231,9 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
               transition={{ delay: index * 0.1 }}
             >
               <Card className="relative">
-                {pkg.stock && pkg.stock <= 5 && (
+                {pkg.stock && pkg.stock <= 10 && (
                   <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 bg-red-500 text-white text-xs font-bold py-1 px-3 rounded-full">
-                    Only {pkg.stock || 5} packages left!
+                    Only {pkg.stock} packages left!
                   </div>
                 )}
 
