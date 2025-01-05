@@ -144,7 +144,6 @@ export const hotels = [
         id: "1",
         name: "Premium Recovery Pass",
         issunday: true,
-        stock: 6,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 10499,
@@ -158,6 +157,7 @@ export const hotels = [
           "Sauna",
           "Steam",
         ],
+        stock: 6,
       },
     ],
   },
