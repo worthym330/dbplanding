@@ -604,103 +604,52 @@ export const hotels = [
       },
     ],
   },
-  {
-    id: "8",
-    name: "The Leela Mumbai - Resort Style Business Hotel",
-    images: [
-      "/hotels/leela/outdoor.avif",
-      "/hotels/leela/swimmingpool.avif",
-      "/hotels/leela/pool.avif",
-      "/hotels/leela/spa.avif",
-      "/hotels/leela/restrotwo.avif",
-      "/hotels/leela/restro.avif",
-      "/hotels/leela/spa2.avif",
-    ],
-    distance: "17.8 miles",
-    map_link: "https://maps.app.goo.gl/s36icmhTE7hpuu3N6",
-    address:
-      "Sahar Airport Road, Andheri - Kurla Rd, near Mumbai International Airport, Greater Indra Nagar, Andheri East, Mumbai, Maharashtra 400059",
-    rating: 4.5,
-    amenities: ["Brunch", "Restuarant", "Bar"],
-    ispartner: true,
-    price: 3600,
-    description:
-      "An opulent 5-star hotel, The Leela boasts rich interiors, high-end facilities and award-winning restaurants",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch with Pool (without alcohol)",
-        issunday: true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        price: 3600,
-        features: ["Gourmet brunch", "pool", "live music"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch (Beer & Wine)",
-        issunday: true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 4830,
-        features: ["Gourmet brunch", "pool", "live music"],
-      },
-      {
-        id: "3",
-        name: "Sunday Brunch for kids",
-        issunday: true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 2200,
-        features: ["Gourmet brunch", "pool", "live music"],
-      },
-    ],
-  },
-  {
-    id: "9",
-    name: "IRA By Orchid Mumbai T-2 International Airport",
-    images: [
-      "/hotels/orchidMumbai/outdoor.avif",
-      "/hotels/orchidMumbai/swimmingpool.avif",
-      "/hotels/orchidMumbai/pool.avif",
-      "/hotels/orchidMumbai/spa.avif",
-      "/hotels/orchidMumbai/restrotwo.avif",
-      "/hotels/orchidMumbai/restro.avif",
-      "/hotels/orchidMumbai/spa2.avif",
-    ],
-    distance: "17.2 miles ",
-    map_link: "https://maps.app.goo.gl/Bf1DR5KL3uph73nQ8",
-    address:
-      "Metro Station, IRA By Orchid, Andheri - Kurla Rd, near Chakala, Bhim Nagar, Andheri East, Mumbai, Maharashtra 400059",
-    rating: 4.5,
-    amenities: ["Brunch", "Swimming pool", "Restuarant", "Bar"],
-    ispartner: true,
-    price: 1500,
-    description:
-      "Close to the Mumbai International Airport, this lavish hotel features comfortable rooms, a well-equipped fitness centre, a full-service spa, and a host of modern amenities",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch with Pool (without alcohol)",
-        issunday: true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        price: 1500,
-        features: ["Gourmet brunch", "pool", "live music"],
-        stock: 3,
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch (Beer & Wine)",
-        issunday: true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 3000,
-        features: ["Gourmet brunch", "pool", "live music"],
-        stock: 8,
-      },
-    ],
-  },
+ 
+  // {
+  //   id: "9",
+  //   name: "IRA By Orchid Mumbai T-2 International Airport",
+  //   images: [
+  //     "/hotels/orchidMumbai/outdoor.avif",
+  //     "/hotels/orchidMumbai/swimmingpool.avif",
+  //     "/hotels/orchidMumbai/pool.avif",
+  //     "/hotels/orchidMumbai/spa.avif",
+  //     "/hotels/orchidMumbai/restrotwo.avif",
+  //     "/hotels/orchidMumbai/restro.avif",
+  //     "/hotels/orchidMumbai/spa2.avif",
+  //   ],
+  //   distance: "17.2 miles ",
+  //   map_link: "https://maps.app.goo.gl/Bf1DR5KL3uph73nQ8",
+  //   address:
+  //     "Metro Station, IRA By Orchid, Andheri - Kurla Rd, near Chakala, Bhim Nagar, Andheri East, Mumbai, Maharashtra 400059",
+  //   rating: 4.5,
+  //   amenities: ["Brunch", "Swimming pool", "Restuarant", "Bar"],
+  //   ispartner: true,
+  //   price: 1500,
+  //   description:
+  //     "Close to the Mumbai International Airport, this lavish hotel features comfortable rooms, a well-equipped fitness centre, a full-service spa, and a host of modern amenities",
+  //   packages: [
+  //     {
+  //       id: "1",
+  //       name: "Sunday Brunch with Pool (without alcohol)",
+  //       issunday: true,
+  //       description:
+  //         "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+  //       price: 1500,
+  //       features: ["Gourmet brunch", "pool", "live music"],
+  //       stock: 3,
+  //     },
+  //     {
+  //       id: "2",
+  //       name: "Sunday Brunch (Beer & Wine)",
+  //       issunday: true,
+  //       description:
+  //         "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+  //       price: 3000,
+  //       features: ["Gourmet brunch", "pool", "live music"],
+  //       stock: 8,
+  //     },
+  //   ],
+  // },
   {
     id: "10",
     name: "Novotel Mumbai International Airport",
@@ -1477,81 +1426,7 @@ export const hotels = [
       },
     ],
   },
-  {
-    id: "27",
-    name: "JW Marriott Mumbai Juhu",
-    images: [
-      "/hotels/mariotte/mariotte.webp",
-      "/hotels/mariotte/swimmingpool.avif",
-      "/hotels/mariotte/pool.avif",
-      "/hotels/mariotte/spa.avif",
-      "/hotels/mariotte/sps.avif",
-      "/hotels/mariotte/restro.avif",
-    ],
-    distance: "15 miles",
-    map_link: "https://maps.app.goo.gl/hvN6qPwbqju4DP4p8",
-    address:
-      "JW Marriott Mumbai Juhu, Juhu Tara Rd, Juhu Tara, Juhu, Mumbai, Maharashtra 400049",
-    rating: 4.6,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: false,
-    price: 2000,
-    description:
-      "Frequently visited by celebrities, this 5-star hotel is nestled along Juhu Beach and features chic decor",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch (without Alcohol)",
-        issunday: true,
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 3350,
-        features: [
-          "SUN: 12:30pm - 4:00pm",
-          "Multi-Cuisine",
-          "Chef Choice Menu",
-          "Jain Available",
-        ],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch (with Alcohol)",
-        issunday: true,
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 4620,
-        features: [
-          "SUN: 12:30pm - 4:00pm",
-          "Multi-Cuisine",
-          "Chef Choice Menu",
-          "Alcohol",
-          "Jain Available",
-        ],
-      },
-      {
-        id: "3",
-        name: "Sunday Brunch (Kids brunch)",
-        issunday: true,
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 1950,
-        features: [
-          "SUN: 12:30pm - 4:00pm",
-          "Multi-Cuisine",
-          "Chef Choice Menu",
-          "Jain Available",
-        ],
-      },
-    ],
-  },
+  // 
   // {
   //   id: "28",
   //   name: "The St. Regis Mumbai",
