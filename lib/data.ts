@@ -650,55 +650,55 @@ export const hotels = [
   //     },
   //   ],
   // },
-  {
-    id: "10",
-    name: "Novotel Mumbai International Airport",
-    images: [
-      "/hotels/novotel/1708335380494.avif",
-      "/hotels/novotel/1731219600532.avif",
-      "/hotels/novotel/IMG-7328.avif",
-      "/hotels/novotel/1708335364463.avif",
-    ],
-    distance: "17.4 miles",
-    map_link: "https://maps.app.goo.gl/w9bwzoCPJXDHwqBGA",
-    address:
-      "entrance no 3, CTS 1359, Andheri - Kurla Rd, next to Airport Metro Station, Bori Colony, Marol, Andheri East, Mumbai, Maharashtra 400059",
-    rating: 4.5,
-    amenities: ["Brunch", "Spa", "Restuarant", "Bar"],
-    ispartner: true,
-    price: 1500,
-    description:
-      "A contemporary property well suited for both leisure and business travellers strategically located near industrial and recreational hubs offering modern amenities and eventful venues.",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch with Pool (without alcohol)",
-        issunday: true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        price: 2795,
-        features: ["Gourmet brunch", "pool", "live music"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch (Beer & Wine)",
-        issunday: true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 3595,
-        features: ["Gourmet brunch", "pool", "live music"],
-      },
-      {
-        id: "3",
-        name: "Tattva Spa",
-        issunday: true,
-        description:
-          "Best spa in Mumbai with all sorts of massage to rejuvenate",
-        price: 2500,
-        features: ["Deep Tissue", "Swedish", "Foot Massage"],
-      },
-    ],
-  },
+  // {
+  //   id: "10",
+  //   name: "Novotel Mumbai International Airport",
+  //   images: [
+  //     "/hotels/novotel/1708335380494.avif",
+  //     "/hotels/novotel/1731219600532.avif",
+  //     "/hotels/novotel/IMG-7328.avif",
+  //     "/hotels/novotel/1708335364463.avif",
+  //   ],
+  //   distance: "17.4 miles",
+  //   map_link: "https://maps.app.goo.gl/w9bwzoCPJXDHwqBGA",
+  //   address:
+  //     "entrance no 3, CTS 1359, Andheri - Kurla Rd, next to Airport Metro Station, Bori Colony, Marol, Andheri East, Mumbai, Maharashtra 400059",
+  //   rating: 4.5,
+  //   amenities: ["Brunch", "Spa", "Restuarant", "Bar"],
+  //   ispartner: true,
+  //   price: 1500,
+  //   description:
+  //     "A contemporary property well suited for both leisure and business travellers strategically located near industrial and recreational hubs offering modern amenities and eventful venues.",
+  //   packages: [
+  //     {
+  //       id: "1",
+  //       name: "Sunday Brunch with Pool (without alcohol)",
+  //       issunday: true,
+  //       description:
+  //         "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+  //       price: 2795,
+  //       features: ["Gourmet brunch", "pool", "live music"],
+  //     },
+  //     {
+  //       id: "2",
+  //       name: "Sunday Brunch (Beer & Wine)",
+  //       issunday: true,
+  //       description:
+  //         "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+  //       price: 3595,
+  //       features: ["Gourmet brunch", "pool", "live music"],
+  //     },
+  //     {
+  //       id: "3",
+  //       name: "Tattva Spa",
+  //       issunday: true,
+  //       description:
+  //         "Best spa in Mumbai with all sorts of massage to rejuvenate",
+  //       price: 2500,
+  //       features: ["Deep Tissue", "Swedish", "Foot Massage"],
+  //     },
+  //   ],
+  // },
   {
     id: "11",
     name: "ITC Maratha - A Luxury Collection Hotel",
