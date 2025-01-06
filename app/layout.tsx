@@ -4,10 +4,11 @@ import { Footer } from "@/components/layout/footer";
 import "./globals.css";
 import { Metadata } from "next";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 import FloatingButtons from "@/components/floating-button";
 import Script from "next/script";
 import { StickyBookButton } from "@/components/hotel-detail/sticky-book-button";
+import { WelcomeModal } from "@/components/welcomeModal";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -125,6 +126,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <WelcomeModal />
           <FloatingButtons />
           <StickyBookButton />
           <div className="flex min-h-screen flex-col">
