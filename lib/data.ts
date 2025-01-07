@@ -1304,53 +1304,53 @@ export const hotels = [
       },
     ],
   },
-  {
-    id: "24",
-    name: "Novotel Mumbai Juhu Beach",
-    images: [
-      "/hotels/novotel/1708335380494.avif",
-      "/hotels/novotel/1731219600532.avif",
-      "/hotels/novotel/IMG-7328.avif",
-      "/hotels/novotel/1708335364463.avif",
-    ],
-    distance: "15.5 miles",
-    map_link: "https://maps.app.goo.gl/181Hk6N6imFELZnc7",
-    address: "Balraj Sahni Rd, Juhu, Mumbai, Maharashtra 400049",
-    rating: 4.3,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: false,
-    price: 2500,
-    description:
-      "This contemporary property makes for a comfortable stay option with its spacious rooms, multiple dining venues and easy connectivity to the popular tourist spots of the city",
-    packages: [
-      {
-        id: "1",
-        name: " Sunday Brunch (without alcohol)",
-        issunday: true,
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 2800,
-        features: ["Gourmet brunch", "Swimming Pool"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch with Alcohol",
-        issunday: true,
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 4000,
-        features: ["Gourmet brunch", "Swimming Pool"],
-      },
-    ],
-  },
+  // {
+  //   id: "24",
+  //   name: "Novotel Mumbai Juhu Beach",
+  //   images: [
+  //     "/hotels/novotel/1708335380494.avif",
+  //     "/hotels/novotel/1731219600532.avif",
+  //     "/hotels/novotel/IMG-7328.avif",
+  //     "/hotels/novotel/1708335364463.avif",
+  //   ],
+  //   distance: "15.5 miles",
+  //   map_link: "https://maps.app.goo.gl/181Hk6N6imFELZnc7",
+  //   address: "Balraj Sahni Rd, Juhu, Mumbai, Maharashtra 400049",
+  //   rating: 4.3,
+  //   amenities: [
+  //     "Brunch",
+  //     "Gym",
+  //     "Swimming Pool",
+  //     "Spa",
+  //     "Restuarant",
+  //     "Bar",
+  //     "Steam and Sauna",
+  //   ],
+  //   ispartner: false,
+  //   price: 2500,
+  //   description:
+  //     "This contemporary property makes for a comfortable stay option with its spacious rooms, multiple dining venues and easy connectivity to the popular tourist spots of the city",
+  //   packages: [
+  //     {
+  //       id: "1",
+  //       name: " Sunday Brunch (without alcohol)",
+  //       issunday: true,
+  //       description:
+  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+  //       price: 2800,
+  //       features: ["Gourmet brunch", "Swimming Pool"],
+  //     },
+  //     {
+  //       id: "2",
+  //       name: "Sunday Brunch with Alcohol",
+  //       issunday: true,
+  //       description:
+  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+  //       price: 4000,
+  //       features: ["Gourmet brunch", "Swimming Pool"],
+  //     },
+  //   ],
+  // },
   {
     id: "25",
     name: "The Empresa Hotel",
