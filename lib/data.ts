@@ -798,56 +798,56 @@ export const hotels = [
       },
     ],
   },
-  {
-    id: "13",
-    name: "Trident Bandra Kurla",
-    images: [
-      "/hotels/tridentbkc/outdoor.avif",
-      "/hotels/tridentbkc/swimmingpool.avif",
-      "/hotels/tridentbkc/pool.avif",
-      "/hotels/tridentbkc/spa.avif",
-      "/hotels/tridentbkc/restrotwo.avif",
-      "/hotels/tridentbkc/restro.avif",
-    ],
-    distance: "13.2 miles ",
-    map_link: "https://maps.app.goo.gl/LGMe4Vk3rGbPGbY67",
-    address:
-      "C 56, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400098",
-    rating: 4.6,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: true,
-    price: 1500,
-    description:
-      "Relax in the cosmopolitan Mumbai with a stay at Trident Bandra Kurla, which prides itself in offering the very best and indulgent leisure amenities for every type of guest",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch(without alcohol)",
-        issunday: true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        price: 2950,
-        features: ["Gourmet brunch", "pool", "live music"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch (Beer & Wine)",
-        issunday: true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 3550,
-        features: ["Gourmet brunch", "pool", "live music"],
-      },
-    ],
-  },
+  // {
+  //   id: "13",
+  //   name: "Trident Bandra Kurla",
+  //   images: [
+  //     "/hotels/tridentbkc/outdoor.avif",
+  //     "/hotels/tridentbkc/swimmingpool.avif",
+  //     "/hotels/tridentbkc/pool.avif",
+  //     "/hotels/tridentbkc/spa.avif",
+  //     "/hotels/tridentbkc/restrotwo.avif",
+  //     "/hotels/tridentbkc/restro.avif",
+  //   ],
+  //   distance: "13.2 miles ",
+  //   map_link: "https://maps.app.goo.gl/LGMe4Vk3rGbPGbY67",
+  //   address:
+  //     "C 56, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400098",
+  //   rating: 4.6,
+  //   amenities: [
+  //     "Brunch",
+  //     "Gym",
+  //     "Swimming Pool",
+  //     "Spa",
+  //     "Restuarant",
+  //     "Bar",
+  //     "Steam and Sauna",
+  //   ],
+  //   ispartner: true,
+  //   price: 1500,
+  //   description:
+  //     "Relax in the cosmopolitan Mumbai with a stay at Trident Bandra Kurla, which prides itself in offering the very best and indulgent leisure amenities for every type of guest",
+  //   packages: [
+  //     {
+  //       id: "1",
+  //       name: "Sunday Brunch(without alcohol)",
+  //       issunday: true,
+  //       description:
+  //         "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+  //       price: 2950,
+  //       features: ["Gourmet brunch", "pool", "live music"],
+  //     },
+  //     {
+  //       id: "2",
+  //       name: "Sunday Brunch (Beer & Wine)",
+  //       issunday: true,
+  //       description:
+  //         "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+  //       price: 3550,
+  //       features: ["Gourmet brunch", "pool", "live music"],
+  //     },
+  //   ],
+  // },
   {
     id: "14",
     name: "The Orchid Hotel Mumbai Vile Parle",

@@ -18,6 +18,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useLocalStorage } from "@/lib/hooks/uselocalstorage";
 import app_api from "@/lib/utils/api";
+import toast from "react-hot-toast";
 
 // Validation schema
 const formSchema = z.object({
@@ -31,10 +32,7 @@ type FormData = z.infer<typeof formSchema>;
 
 export function WelcomeModal() {
   const [isOpen, setIsOpen] = useState(false);
-  const [hasSeenWelcome, setHasSeenWelcome] = useLocalStorage(
-    "hasSeenWelcome",
-    false
-  );
+  const [hasSeenWelcome, setHasSeenWelcome] = useState(false);
 
   const {
     register,
@@ -56,9 +54,16 @@ export function WelcomeModal() {
 
   const onSubmit = async (data: FormData) => {
     try {
-      await app_api.post("/contact", data);
-      setHasSeenWelcome(true);
-      setIsOpen(false);
+      await app_api
+        .post("/contact", data)
+        .then((response) => {
+          toast.success("We will contact you soon!");
+          setHasSeenWelcome(true);
+          setIsOpen(false);
+        })
+        .catch((error) => {
+          console.error("Failed to submit data:", error);
+        });
     } catch (error) {
       console.error("Failed to submit data:", error);
     }
