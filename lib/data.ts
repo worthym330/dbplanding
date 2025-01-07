@@ -231,7 +231,7 @@ export const hotels = [
         issunday: true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        price: 2500,
+        price: 3250,
         features: ["Gourmet brunch", "pool", "live music"],
       },
       {
