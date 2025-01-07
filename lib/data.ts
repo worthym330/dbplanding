@@ -356,85 +356,85 @@ export const hotels = [
       },
     ],
   },
-  {
-    id: "1",
-    name: "Lemon Tree Premier, Mumbai International Airport, Mumbai",
-    images: [
-      "/hotels/lemontree/lemon.avif",
-      "/hotels/lemontree/pool.avif",
-      "/hotels/lemontree/spa.avif",
-      "/hotels/lemontree/1000009794.avif",
-      "/hotels/lemontree/restro.avif",
-    ],
-    distance: "18.1 miles",
-    map_link: "https://maps.app.goo.gl/JP9Jce7rFzpPCbGv6",
-    address:
-      "Andheri - Kurla Rd, opposite Mittal Industrial Estate, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059",
-    rating: 4.2,
-    amenities: ["Brunch", "Swimming Pool"],
-    ispartner: false,
-    price: 2500,
-    description:
-      "A bright and inviting multi-cuisine coffee shop with a show kitchen offers an eclectic all-day dining menu including Indian, European, American, and Pan-Asian cuisine. Indulge in the wholesome breakfast buffet served daily. Choose from a wide range of popular Indian, South Indian, Asian, and Western preparations.",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch Buffet (without alcohol)",
-        description: "SUN 12:30 PM - 04:00 PM",
-        price: 2695,
-        features: ["Gourmet brunch"],
-        stock: 5,
-      },
-      {
-        id: "2",
-        name: "Lunch Buffet",
-        description: "MON-SUN 12:30 PM - 03:00 PM",
-        price: 2236,
-        features: ["Gourmet Lunch"],
-        stock: 8,
-      },
-    ],
-  },
-  {
-    id: "2",
-    name: "Holiday Inn Mumbai International Airport,an IHG Hotel",
-    images: [
-      "/hotels/Holiday/inn.webp",
-      "/hotels/Holiday/swimmingpool.avif",
-      "/hotels/Holiday/pooltwo.avif",
-      "/hotels/Holiday/restro.avif",
-      "/hotels/Holiday/aabfe372238b11e98b380242ac110003.avif",
-    ],
-    distance: "16.4 miles",
-    map_link: "https://maps.app.goo.gl/7HbvXi8oXnKA1hAF9",
-    address:
-      "Sakinaka, Junction, Andheri - Kurla Rd, Andheri East, Mumbai, Maharashtra 400072",
-    rating: 4.3,
-    amenities: ["Brunch"],
-    ispartner: false,
-    price: 2500,
-    description:
-      "Step into a world of luxury and convenience with expansive rooms, a fitness centre, amazing dining outlets, a luxury spa, and more!",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch (without alcohol)",
-        issunday: true,
-        description: "SUN 12:30pm to 3:30pm",
-        price: 2800,
-        features: ["Gourmet brunch", "Swimming Pool"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch (with alcohol)",
-        issunday: true,
-        description:
-          "The Sunday brunch comprises a variety of cold cuts, desserts, starters and main course options along with their live band adding to the relaxed and fun vibe!",
-        price: 3200,
-        features: ["Gourmet brunch", "Swimming Pool", "Alcohol"],
-      },
-    ],
-  },
+  // {
+  //   id: "1",
+  //   name: "Lemon Tree Premier, Mumbai International Airport, Mumbai",
+  //   images: [
+  //     "/hotels/lemontree/lemon.avif",
+  //     "/hotels/lemontree/pool.avif",
+  //     "/hotels/lemontree/spa.avif",
+  //     "/hotels/lemontree/1000009794.avif",
+  //     "/hotels/lemontree/restro.avif",
+  //   ],
+  //   distance: "18.1 miles",
+  //   map_link: "https://maps.app.goo.gl/JP9Jce7rFzpPCbGv6",
+  //   address:
+  //     "Andheri - Kurla Rd, opposite Mittal Industrial Estate, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059",
+  //   rating: 4.2,
+  //   amenities: ["Brunch", "Swimming Pool"],
+  //   ispartner: false,
+  //   price: 2500,
+  //   description:
+  //     "A bright and inviting multi-cuisine coffee shop with a show kitchen offers an eclectic all-day dining menu including Indian, European, American, and Pan-Asian cuisine. Indulge in the wholesome breakfast buffet served daily. Choose from a wide range of popular Indian, South Indian, Asian, and Western preparations.",
+  //   packages: [
+  //     {
+  //       id: "1",
+  //       name: "Sunday Brunch Buffet (without alcohol)",
+  //       description: "SUN 12:30 PM - 04:00 PM",
+  //       price: 2695,
+  //       features: ["Gourmet brunch"],
+  //       stock: 5,
+  //     },
+  //     {
+  //       id: "2",
+  //       name: "Lunch Buffet",
+  //       description: "MON-SUN 12:30 PM - 03:00 PM",
+  //       price: 2236,
+  //       features: ["Gourmet Lunch"],
+  //       stock: 8,
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: "2",
+  //   name: "Holiday Inn Mumbai International Airport,an IHG Hotel",
+  //   images: [
+  //     "/hotels/Holiday/inn.webp",
+  //     "/hotels/Holiday/swimmingpool.avif",
+  //     "/hotels/Holiday/pooltwo.avif",
+  //     "/hotels/Holiday/restro.avif",
+  //     "/hotels/Holiday/aabfe372238b11e98b380242ac110003.avif",
+  //   ],
+  //   distance: "16.4 miles",
+  //   map_link: "https://maps.app.goo.gl/7HbvXi8oXnKA1hAF9",
+  //   address:
+  //     "Sakinaka, Junction, Andheri - Kurla Rd, Andheri East, Mumbai, Maharashtra 400072",
+  //   rating: 4.3,
+  //   amenities: ["Brunch"],
+  //   ispartner: false,
+  //   price: 2500,
+  //   description:
+  //     "Step into a world of luxury and convenience with expansive rooms, a fitness centre, amazing dining outlets, a luxury spa, and more!",
+  //   packages: [
+  //     {
+  //       id: "1",
+  //       name: "Sunday Brunch (without alcohol)",
+  //       issunday: true,
+  //       description: "SUN 12:30pm to 3:30pm",
+  //       price: 2800,
+  //       features: ["Gourmet brunch", "Swimming Pool"],
+  //     },
+  //     {
+  //       id: "2",
+  //       name: "Sunday Brunch (with alcohol)",
+  //       issunday: true,
+  //       description:
+  //         "The Sunday brunch comprises a variety of cold cuts, desserts, starters and main course options along with their live band adding to the relaxed and fun vibe!",
+  //       price: 3200,
+  //       features: ["Gourmet brunch", "Swimming Pool", "Alcohol"],
+  //     },
+  //   ],
+  // },
   {
     id: "3",
     name: "The Lalit Mumbai",
@@ -1136,132 +1136,132 @@ export const hotels = [
       },
     ],
   },
-  // {
-  //   id: "21",
-  //   name: "Grand Hyatt Mumbai Hotel & Residences",
-  //   images: [
-  //     "https://api.staging.daybreakpass.com/uploads/hotel/images/details_Slides.avif",
-  //     "https://api.staging.daybreakpass.com/uploads/hotel/images/details_missionbayslides.avif",
-  //     "https://api.staging.daybreakpass.com/uploads/hotel/images/details_missionbaycabana.avif",
-  //     "https://api.staging.daybreakpass.com/uploads/hotel/images/details_hyattregency7.avif",
-  //     "https://api.staging.daybreakpass.com/uploads/hotel/images/details_HyattMissionBay_Firepit.avif",
-  //     "https://api.staging.daybreakpass.com/uploads/hotel/images/details_hrmission2.avif",
-  //   ],
-  //   distance: "13.5 miles",
-  //   map_link: "https://maps.app.goo.gl/mimXGAQ4LPiMF5TG8",
-  //   address:
-  //     "Bandra Kurla Complex, Siddharath Nagar, Vakola, Vicinity, Mumbai, Maharashtra 400055",
-  //   rating: 4.5,
-  //   amenities: [
-  //     "Brunch",
-  //     "Gym",
-  //     "Swimming Pool",
-  //     "Spa",
-  //     "Restuarant",
-  //     "Bar",
-  //     "Steam and Sauna",
-  //   ],
-  //   ispartner: false,
-  //   price: 3000,
-  //   description:
-  //     "Enjoy a lavish stay at a premium hotel offering world-class comfort with elegant dining spaces, a spa and a pool.",
-  //   packages: [
-  //     {
-  //       id: "1",
-  //       name: "Sunday Brunch with Pool (without alcohol)",
-  //       issunday: true,
-  //       description:
-  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-  //       price: 3500,
-  //       features: ["Gourmet brunch", "Swimming Pool"],
-  //     },
-  //     {
-  //       id: "2",
-  //       name: "Sunday Brunch with Pool (with alcohol)",
-  //       issunday: true,
-  //       description:
-  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-  //       price: 4500,
-  //       features: ["Gourmet brunch", "Swimming Pool"],
-  //     },
-  //     {
-  //       id: "3",
-  //       name: "Champagne Brunch",
-  //       description:
-  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-  //       price: 5500,
-  //       features: ["Gourmet brunch", "Swimming Pool"],
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: "22",
-  //   name: "Sofitel Mumbai BKC",
-  //   images: [
-  //     "/hotels/sofitel/outdoor.avif",
-  //     "/hotels/sofitel/outdoor2.avif",
-  //     "/hotels/sofitel/swimmingpool.avif",
-  //     "/hotels/sofitel/pool.avif",
-  //     "/hotels/sofitel/spa.avif",
-  //     "/hotels/sofitel/spa2.avif",
-  //     "/hotels/sofitel/restro.avif",
-  //     "/hotels/sofitel/restrotwo.avif",
-  //   ],
-  //   distance: "13.4 miles ",
-  //   map_link: "https://maps.app.goo.gl/yazbEN7WU8qThTAN8",
-  //   address:
-  //     "C 57, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051",
-  //   rating: 4.5,
-  //   amenities: [
-  //     "Brunch",
-  //     "Gym",
-  //     "Swimming Pool",
-  //     "Spa",
-  //     "Restuarant",
-  //     "Bar",
-  //     "Steam and Sauna",
-  //   ],
-  //   ispartner: false,
-  //   price: 3000,
-  //   description:
-  //     "Inspired by French culture and tradition, Sofitel is an award-winning hotel offering a fine dining experience",
-  //   packages: [
-  //     {
-  //       id: "1",
-  //       name: "Sunday Brunch with Pool (without alcohol)",
-  //       issunday: true,
-  //       description:
-  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-  //       price: 4199,
-  //       features: ["Gourmet brunch", "Swimming Pool"],
-  //     },
-  //     {
-  //       id: "2",
-  //       name: "Sunday Brunch with Pool (with alcohol)",
-  //       issunday: true,
-  //       description:
-  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-  //       price: 4999,
-  //       features: ["Gourmet brunch", "Swimming Pool"],
-  //     },
-  //     {
-  //       id: "3",
-  //       name: "Champagne Brunch",
-  //       description:
-  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-  //       price: 5899,
-  //       features: ["Gourmet brunch", "Swimming Pool"],
-  //     },
-  //     {
-  //       id: "4",
-  //       name: "Kids Brunch",
-  //       description:
-  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-  //       price: 5899,
-  //       features: ["Gourmet brunch", "Swimming Pool"],
-  //     },
-  //   ],
-  // },
+  {
+    id: "21",
+    name: "Grand Hyatt Mumbai Hotel & Residences",
+    images: [
+      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_Slides.avif",
+      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_missionbayslides.avif",
+      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_missionbaycabana.avif",
+      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_hyattregency7.avif",
+      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_HyattMissionBay_Firepit.avif",
+      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_hrmission2.avif",
+    ],
+    distance: "13.5 miles",
+    map_link: "https://maps.app.goo.gl/mimXGAQ4LPiMF5TG8",
+    address:
+      "Bandra Kurla Complex, Siddharath Nagar, Vakola, Vicinity, Mumbai, Maharashtra 400055",
+    rating: 4.5,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: false,
+    price: 3000,
+    description:
+      "Enjoy a lavish stay at a premium hotel offering world-class comfort with elegant dining spaces, a spa and a pool.",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch with Pool (without alcohol)",
+        issunday: true,
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 3500,
+        features: ["Gourmet brunch", "Swimming Pool"],
+      },
+      {
+        id: "2",
+        name: "Sunday Brunch with Pool (with alcohol)",
+        issunday: true,
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 4500,
+        features: ["Gourmet brunch", "Swimming Pool"],
+      },
+      {
+        id: "3",
+        name: "Champagne Brunch",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 5500,
+        features: ["Gourmet brunch", "Swimming Pool"],
+      },
+    ],
+  },
+  {
+    id: "22",
+    name: "Sofitel Mumbai BKC",
+    images: [
+      "/hotels/sofitel/outdoor.avif",
+      "/hotels/sofitel/outdoor2.avif",
+      "/hotels/sofitel/swimmingpool.avif",
+      "/hotels/sofitel/pool.avif",
+      "/hotels/sofitel/spa.avif",
+      "/hotels/sofitel/spa2.avif",
+      "/hotels/sofitel/restro.avif",
+      "/hotels/sofitel/restrotwo.avif",
+    ],
+    distance: "13.4 miles ",
+    map_link: "https://maps.app.goo.gl/yazbEN7WU8qThTAN8",
+    address:
+      "C 57, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051",
+    rating: 4.5,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: false,
+    price: 3000,
+    description:
+      "Inspired by French culture and tradition, Sofitel is an award-winning hotel offering a fine dining experience",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch with Pool (without alcohol)",
+        issunday: true,
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 4199,
+        features: ["Gourmet brunch", "Swimming Pool"],
+      },
+      {
+        id: "2",
+        name: "Sunday Brunch with Pool (with alcohol)",
+        issunday: true,
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 4999,
+        features: ["Gourmet brunch", "Swimming Pool"],
+      },
+      {
+        id: "3",
+        name: "Champagne Brunch",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 5899,
+        features: ["Gourmet brunch", "Swimming Pool"],
+      },
+      {
+        id: "4",
+        name: "Kids Brunch",
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 5899,
+        features: ["Gourmet brunch", "Swimming Pool"],
+      },
+    ],
+  },
   {
     id: "23",
     name: "Taj The Trees, Mumbai",
