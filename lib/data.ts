@@ -1136,64 +1136,64 @@ export const hotels = [
       },
     ],
   },
-  {
-    id: "21",
-    name: "Grand Hyatt Mumbai Hotel & Residences",
-    images: [
-      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_Slides.avif",
-      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_missionbayslides.avif",
-      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_missionbaycabana.avif",
-      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_hyattregency7.avif",
-      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_HyattMissionBay_Firepit.avif",
-      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_hrmission2.avif",
-    ],
-    distance: "13.5 miles",
-    map_link: "https://maps.app.goo.gl/mimXGAQ4LPiMF5TG8",
-    address:
-      "Bandra Kurla Complex, Siddharath Nagar, Vakola, Vicinity, Mumbai, Maharashtra 400055",
-    rating: 4.5,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: false,
-    price: 3000,
-    description:
-      "Enjoy a lavish stay at a premium hotel offering world-class comfort with elegant dining spaces, a spa and a pool.",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch with Pool (without alcohol)",
-        issunday: true,
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 3500,
-        features: ["Gourmet brunch", "Swimming Pool"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch with Pool (with alcohol)",
-        issunday: true,
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 4500,
-        features: ["Gourmet brunch", "Swimming Pool"],
-      },
-      {
-        id: "3",
-        name: "Champagne Brunch",
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 5500,
-        features: ["Gourmet brunch", "Swimming Pool"],
-      },
-    ],
-  },
+  // {
+  //   id: "21",
+  //   name: "Grand Hyatt Mumbai Hotel & Residences",
+  //   images: [
+  //     "https://api.staging.daybreakpass.com/uploads/hotel/images/details_Slides.avif",
+  //     "https://api.staging.daybreakpass.com/uploads/hotel/images/details_missionbayslides.avif",
+  //     "https://api.staging.daybreakpass.com/uploads/hotel/images/details_missionbaycabana.avif",
+  //     "https://api.staging.daybreakpass.com/uploads/hotel/images/details_hyattregency7.avif",
+  //     "https://api.staging.daybreakpass.com/uploads/hotel/images/details_HyattMissionBay_Firepit.avif",
+  //     "https://api.staging.daybreakpass.com/uploads/hotel/images/details_hrmission2.avif",
+  //   ],
+  //   distance: "13.5 miles",
+  //   map_link: "https://maps.app.goo.gl/mimXGAQ4LPiMF5TG8",
+  //   address:
+  //     "Bandra Kurla Complex, Siddharath Nagar, Vakola, Vicinity, Mumbai, Maharashtra 400055",
+  //   rating: 4.5,
+  //   amenities: [
+  //     "Brunch",
+  //     "Gym",
+  //     "Swimming Pool",
+  //     "Spa",
+  //     "Restuarant",
+  //     "Bar",
+  //     "Steam and Sauna",
+  //   ],
+  //   ispartner: false,
+  //   price: 3000,
+  //   description:
+  //     "Enjoy a lavish stay at a premium hotel offering world-class comfort with elegant dining spaces, a spa and a pool.",
+  //   packages: [
+  //     {
+  //       id: "1",
+  //       name: "Sunday Brunch with Pool (without alcohol)",
+  //       issunday: true,
+  //       description:
+  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+  //       price: 3500,
+  //       features: ["Gourmet brunch", "Swimming Pool"],
+  //     },
+  //     {
+  //       id: "2",
+  //       name: "Sunday Brunch with Pool (with alcohol)",
+  //       issunday: true,
+  //       description:
+  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+  //       price: 4500,
+  //       features: ["Gourmet brunch", "Swimming Pool"],
+  //     },
+  //     {
+  //       id: "3",
+  //       name: "Champagne Brunch",
+  //       description:
+  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+  //       price: 5500,
+  //       features: ["Gourmet brunch", "Swimming Pool"],
+  //     },
+  //   ],
+  // },
   // {
   //   id: "22",
   //   name: "Sofitel Mumbai BKC",
