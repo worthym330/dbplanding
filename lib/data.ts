@@ -148,7 +148,7 @@ export const hotels = [
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 10499,
         features: [
-          "Heated Swimming Pool", 
+          "Heated Swimming Pool",
           "J Wellness Circle Spa",
           "Indian Aromatherapy (60 mins)",
           "Locker and show facilities",
@@ -161,7 +161,7 @@ export const hotels = [
       },
     ],
   },
- {
+  {
     id: "34",
     name: "Hyatt Centric Juhu Mumbai",
     images: [
@@ -203,7 +203,7 @@ export const hotels = [
       },
     ],
   },
-{
+  {
     id: "6",
     name: "Hotel Sea Princess",
     images: [
@@ -245,7 +245,7 @@ export const hotels = [
       },
     ],
   },
- {
+  {
     id: "32",
     name: "Ramada by Wyndham Navi Mumbai",
     images: [
@@ -604,7 +604,7 @@ export const hotels = [
       },
     ],
   },
- 
+
   // {
   //   id: "9",
   //   name: "IRA By Orchid Mumbai T-2 International Airport",
@@ -798,56 +798,64 @@ export const hotels = [
       },
     ],
   },
-  // {
-  //   id: "13",
-  //   name: "Trident Bandra Kurla",
-  //   images: [
-  //     "/hotels/tridentbkc/outdoor.avif",
-  //     "/hotels/tridentbkc/swimmingpool.avif",
-  //     "/hotels/tridentbkc/pool.avif",
-  //     "/hotels/tridentbkc/spa.avif",
-  //     "/hotels/tridentbkc/restrotwo.avif",
-  //     "/hotels/tridentbkc/restro.avif",
-  //   ],
-  //   distance: "13.2 miles ",
-  //   map_link: "https://maps.app.goo.gl/LGMe4Vk3rGbPGbY67",
-  //   address:
-  //     "C 56, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400098",
-  //   rating: 4.6,
-  //   amenities: [
-  //     "Brunch",
-  //     "Gym",
-  //     "Swimming Pool",
-  //     "Spa",
-  //     "Restuarant",
-  //     "Bar",
-  //     "Steam and Sauna",
-  //   ],
-  //   ispartner: true,
-  //   price: 1500,
-  //   description:
-  //     "Relax in the cosmopolitan Mumbai with a stay at Trident Bandra Kurla, which prides itself in offering the very best and indulgent leisure amenities for every type of guest",
-  //   packages: [
-  //     {
-  //       id: "1",
-  //       name: "Sunday Brunch(without alcohol)",
-  //       issunday: true,
-  //       description:
-  //         "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-  //       price: 2950,
-  //       features: ["Gourmet brunch", "pool", "live music"],
-  //     },
-  //     {
-  //       id: "2",
-  //       name: "Sunday Brunch (Beer & Wine)",
-  //       issunday: true,
-  //       description:
-  //         "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-  //       price: 3550,
-  //       features: ["Gourmet brunch", "pool", "live music"],
-  //     },
-  //   ],
-  // },
+  {
+    id: "13",
+    name: "Trident Bandra Kurla",
+    images: [
+      "/hotels/tridentbkc/outdoor.avif",
+      "/hotels/tridentbkc/swimmingpool.avif",
+      "/hotels/tridentbkc/pool.avif",
+      "/hotels/tridentbkc/spa.avif",
+      "/hotels/tridentbkc/restrotwo.avif",
+      "/hotels/tridentbkc/restro.avif",
+    ],
+    distance: "13.2 miles ",
+    map_link: "https://maps.app.goo.gl/LGMe4Vk3rGbPGbY67",
+    address:
+      "C 56, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400098",
+    rating: 4.6,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: true,
+    price: 1500,
+    description:
+      "Relax in the cosmopolitan Mumbai with a stay at Trident Bandra Kurla, which prides itself in offering the very best and indulgent leisure amenities for every type of guest",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch (without alcohol)",
+        issunday: true,
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+        price: 3199,
+        features: [
+          "Multi-Cuisine Brunch",
+          "Live Counter",
+          "SUN: 1:00 pm to 4:00pm",
+        ],
+      },
+      {
+        id: "2",
+        name: "Sunday Brunch (Beer & Wine)",
+        issunday: true,
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 3699,
+        features: [
+          "Multi-Cuisine Brunch",
+          "Live Counter",
+          "SUN: 1:00 pm to 4:00pm",
+        ],
+      },
+    ],
+  },
   {
     id: "14",
     name: "The Orchid Hotel Mumbai Vile Parle",
@@ -1186,74 +1194,74 @@ export const hotels = [
       },
     ],
   },
-  {
-    id: "22",
-    name: "Sofitel Mumbai BKC",
-    images: [
-      "/hotels/sofitel/outdoor.avif",
-      "/hotels/sofitel/outdoor2.avif",
-      "/hotels/sofitel/swimmingpool.avif",
-      "/hotels/sofitel/pool.avif",
-      "/hotels/sofitel/spa.avif",
-      "/hotels/sofitel/spa2.avif",
-      "/hotels/sofitel/restro.avif",
-      "/hotels/sofitel/restrotwo.avif",
-    ],
-    distance: "13.4 miles ",
-    map_link: "https://maps.app.goo.gl/yazbEN7WU8qThTAN8",
-    address:
-      "C 57, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051",
-    rating: 4.5,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: false,
-    price: 3000,
-    description:
-      "Inspired by French culture and tradition, Sofitel is an award-winning hotel offering a fine dining experience",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch with Pool (without alcohol)",
-        issunday: true,
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 4199,
-        features: ["Gourmet brunch", "Swimming Pool"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch with Pool (with alcohol)",
-        issunday: true,
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 4999,
-        features: ["Gourmet brunch", "Swimming Pool"],
-      },
-      {
-        id: "3",
-        name: "Champagne Brunch",
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 5899,
-        features: ["Gourmet brunch", "Swimming Pool"],
-      },
-      {
-        id: "4",
-        name: "Kids Brunch",
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 5899,
-        features: ["Gourmet brunch", "Swimming Pool"],
-      },
-    ],
-  },
+  // {
+  //   id: "22",
+  //   name: "Sofitel Mumbai BKC",
+  //   images: [
+  //     "/hotels/sofitel/outdoor.avif",
+  //     "/hotels/sofitel/outdoor2.avif",
+  //     "/hotels/sofitel/swimmingpool.avif",
+  //     "/hotels/sofitel/pool.avif",
+  //     "/hotels/sofitel/spa.avif",
+  //     "/hotels/sofitel/spa2.avif",
+  //     "/hotels/sofitel/restro.avif",
+  //     "/hotels/sofitel/restrotwo.avif",
+  //   ],
+  //   distance: "13.4 miles ",
+  //   map_link: "https://maps.app.goo.gl/yazbEN7WU8qThTAN8",
+  //   address:
+  //     "C 57, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051",
+  //   rating: 4.5,
+  //   amenities: [
+  //     "Brunch",
+  //     "Gym",
+  //     "Swimming Pool",
+  //     "Spa",
+  //     "Restuarant",
+  //     "Bar",
+  //     "Steam and Sauna",
+  //   ],
+  //   ispartner: false,
+  //   price: 3000,
+  //   description:
+  //     "Inspired by French culture and tradition, Sofitel is an award-winning hotel offering a fine dining experience",
+  //   packages: [
+  //     {
+  //       id: "1",
+  //       name: "Sunday Brunch with Pool (without alcohol)",
+  //       issunday: true,
+  //       description:
+  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+  //       price: 4199,
+  //       features: ["Gourmet brunch", "Swimming Pool"],
+  //     },
+  //     {
+  //       id: "2",
+  //       name: "Sunday Brunch with Pool (with alcohol)",
+  //       issunday: true,
+  //       description:
+  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+  //       price: 4999,
+  //       features: ["Gourmet brunch", "Swimming Pool"],
+  //     },
+  //     {
+  //       id: "3",
+  //       name: "Champagne Brunch",
+  //       description:
+  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+  //       price: 5899,
+  //       features: ["Gourmet brunch", "Swimming Pool"],
+  //     },
+  //     {
+  //       id: "4",
+  //       name: "Kids Brunch",
+  //       description:
+  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+  //       price: 5899,
+  //       features: ["Gourmet brunch", "Swimming Pool"],
+  //     },
+  //   ],
+  // },
   {
     id: "23",
     name: "Taj The Trees, Mumbai",
@@ -1422,7 +1430,12 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 2500,
-        features: ["Swimming Pool","Multi-Cuisine Brunch","Live Counter","Good Vibes music"],
+        features: [
+          "Swimming Pool",
+          "Multi-Cuisine Brunch",
+          "Live Counter",
+          "Good Vibes music",
+        ],
       },
       {
         id: "2",
@@ -1431,11 +1444,17 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 3500,
-        features: ["Swimming Pool","Hard Drinks","Multi-Cuisine Brunch","Live Counter","Good Vibes music"],
+        features: [
+          "Swimming Pool",
+          "Hard Drinks",
+          "Multi-Cuisine Brunch",
+          "Live Counter",
+          "Good Vibes music",
+        ],
       },
     ],
   },
-  // 
+  //
   // {
   //   id: "28",
   //   name: "The St. Regis Mumbai",
@@ -1570,5 +1589,5 @@ export const hotels = [
   //        features: ["Gourmet brunch","Welcome Drinks","Swimming Pool","Pool","Alcohol not included" ],
   //      },
   //    ],
-  //  }, 
+  //  },
 ];
