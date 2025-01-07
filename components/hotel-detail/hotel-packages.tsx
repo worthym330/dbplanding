@@ -231,7 +231,10 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
       <div className="grid gap-6 grid-cols-1 md:grid-cols-2" ref={divref}>
         {packages.map((pkg, index) => {
           const cartItem = items.find(
-            (item) => item.id === pkg.id && item.name === pkg.name && item.hotelId === hotel.id
+            (item) =>
+              item.id === pkg.id &&
+              item.name === pkg.name &&
+              item.hotelId === hotel.id
           );
 
           return (
@@ -328,9 +331,19 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
                   )}
                 </CardFooter>
               </Card>
+              {index < packages.length - 1 && (
+                <hr className="md:hidden my-4 border-t border-gray-300" />
+              )}
             </motion.div>
           );
         })}
+      </div>
+
+      <div>
+        <h2 className="text-2xl font-bold">Hotel Rules</h2>
+        <p className="text-muted-foreground">
+          Choose from our curated recovery packages
+        </p>
       </div>
     </section>
   );
