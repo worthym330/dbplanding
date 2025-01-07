@@ -3,9 +3,10 @@ export const hotels = [
     id: "17",
     name: "Ramada Plaza by Wyndham Palm Grove, Mumbai",
     images: [
+      "https://api.daybreakpass.com/uploads/hotel/images/Swimming Pool RAMADA.avif",
       "https://api.daybreakpass.com/uploads/hotel/images/food.jpg",
       "https://api.daybreakpass.com/uploads/hotel/images/Restaurant&Bar.avif",
-      "https://api.daybreakpass.com/uploads/hotel/images/Swimming Pool RAMADA.avif",
+      
     ],
     distance: "14.7 miles",
     map_link: "https://maps.app.goo.gl/iWGaiu6s7PCD5UyGA",
@@ -28,7 +29,7 @@ export const hotels = [
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch with Pool (without Alcohol)",
+        name: "Sunday Brunch with Pool (Non-Alcoholic)",
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 1800,
@@ -58,10 +59,11 @@ export const hotels = [
     id: "5",
     name: "Radisson Blu Mumbai International Airport",
     images: [
+      "/hotels/radissonblu/202008061201129632-d55f7e0ef6db11ecb2f30a58a9feac02.avif",
       "/hotels/radissonblu/6a653fe4d7ac11eabeec0242ac110005.avif",
       "/hotels/radissonblu/24dcfe4c6e1b11eca8430a58a9feac02.avif",
       "/hotels/radissonblu/202008061201129632-ba2cff746e1b11ec8ac40a58a9feac02.avif",
-      "/hotels/radissonblu/202008061201129632-d55f7e0ef6db11ecb2f30a58a9feac02.avif",
+      
     ],
     distance: "18.1 miles",
     map_link: "https://maps.app.goo.gl/GhYcpJNQv6zRFk3g9",
@@ -77,31 +79,32 @@ export const hotels = [
       "Jacuzzi",
     ],
     ispartner: true,
-    price: 3000,
+    price: 3450,
     description:
       "Experience utmost luxury at this lavish retreat offering well-furnished rooms, elite restaurants, and a host of modern amenities.",
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch with Rooftop Pool (without Alcohol)",
+        name: "Sunday Brunch with Rooftop Pool (Non-Alcoholic)",
         issunday: true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 3500,
+        price: 3450,
         features: [
           "SUN: 12:30pm to 4:00pm",
+          "Rooftop Swimming Pool",
           "Multi-cuisine brunch",
           "Jain Food Available",
-          "Rooftop Swimming Pool",
+          ,
         ],
       },
       {
         id: "32",
-        name: "Tattva Spa",
+        name: "Spa Pass",
         issunday: true,
         description:
-          "Best spa in Mumbai with all sorts of massage to rejuvenate",
-        price: 3000,
+          "Best spa in Mumbai with all sorts of massage to rejuvenate at Unora by Tattva Spa",
+        price: 3600,
         features: ["Deep Tissue", "Swedish", "Foot Massage"],
       },
     ],
@@ -221,18 +224,18 @@ export const hotels = [
     rating: 4.5,
     amenities: ["Brunch", "Swimming Pool", "Restuarant", "Bar"],
     ispartner: true,
-    price: 2500,
+    price: 3250,
     description:
       "Hotel Sea Princess puts you in the prime area f Mumbai with the finest interiors, ultra-modern facilities, and warm hospitality you can ever imagine",
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch with Pool & live music (without alcohol)",
+        name: "Sunday Brunch with Pool & live music (Non-Alcoholic)",
         issunday: true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 3250,
-        features: ["Gourmet brunch", "pool", "live music"],
+        features: ["Gourmet Brunch", "Swimming Pool", "Live Music"],
       },
       {
         id: "2",
@@ -241,7 +244,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 4000,
-        features: ["Gourmet brunch", "pool", "live music"],
+        features: ["Gourmet Brunch", "Swimming Pool", "Live Music","Hard Drinks"],
       },
     ],
   },
@@ -459,7 +462,7 @@ export const hotels = [
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch with Pool (without alcohol)",
+        name: "Sunday Brunch with Pool (Non-Alcoholic)",
         issunday: true,
         description:
           "Poolside view with a variety of quality buffets, sophistication, value for price, access to pool, and valet parking.",
@@ -468,7 +471,7 @@ export const hotels = [
       },
       {
         id: "2",
-        name: "Sunday Brunch with Pool (with alcohol)",
+        name: "Sunday Brunch with Pool (Alcoholic)",
         issunday: true,
         description:
           "Poolside view with a variety of quality buffets, sophistication, value for price, access to pool, and valet parking.",
@@ -510,30 +513,30 @@ export const hotels = [
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch (Non Alcoholic)",
+        name: "Sunday Brunch (Non-Alcoholic)",
         issunday: true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 3634,
+        price: 3500,
         features: ["Gourmet brunch"],
       },
       {
         id: "2",
-        name: "Sunday Brunch with Alcohol",
+        name: "Sunday Brunch (Alcoholic)",
         issunday: true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 4890,
-        features: ["Gourmet brunch"],
+        price: 4700,
+        features: ["SUN: 1:00pm - 05:00pm","Gourmet Brunch","Hard drinks","Multi-Cuisine"],
       },
       {
         id: "3",
-        name: "Sunday Brunch(Premium Beverage)",
+        name: "Sunday Brunch (Premium Beverage)",
         issunday: true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 1622,
-        features: ["Gourmet brunch"],
+        price: 5100,
+        features: ["SUN: 1:00pm - 05:00pm","Gourmet Brunch","Multi-Cuisine","Premium Beverages"],
       },
       {
         id: "4",
@@ -541,8 +544,8 @@ export const hotels = [
         issunday: true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 1622,
-        features: ["Gourmet brunch"],
+        price: 5600,
+        features: ["SUN: 1:00pm - 05:00pm","Gourmet Brunch","Multi-Cuisine","Champagne"],              
       },
       {
         id: "5",
@@ -550,8 +553,8 @@ export const hotels = [
         issunday: true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 1622,
-        features: ["Gourmet brunch"],
+        price: 1750,
+        features: ["SUN: 1:00pm - 05:00pm","Gourmet Brunch","Multi-Cuisine","Only for Kids"], 
       },
     ],
   },
@@ -577,7 +580,7 @@ export const hotels = [
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch with Pool (without alcohol)",
+        name: "Sunday Brunch with Pool (Non-Alcoholic)",
         issunday: true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
@@ -732,7 +735,7 @@ export const hotels = [
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch(without alcohol)",
+        name: "Sunday Brunch(Non-Alcoholic)",
         issunday: true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
@@ -774,18 +777,18 @@ export const hotels = [
       "Steam and Sauna",
     ],
     ispartner: true,
-    price: 1500,
+    price: 2200,
     description:
       "Experience unparalleled comfort and luxury at this contemporary hotel featuring well-appointed rooms, multiple dining venues, upscale amenities and top-notch hospitality.",
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch(without alcohol)",
+        name: "Sunday Brunch(Non-Alcoholic)",
         issunday: true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 2199,
-        features: ["Gourmet brunch", "pool", "live music"],
+        features: ["Gourmet brunch", "live music"],
       },
       {
         id: "2",
@@ -794,7 +797,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 2499,
-        features: ["Gourmet brunch", "pool", "live music"],
+        features: ["Gourmet brunch", "live music"],
       },
     ],
   },
@@ -830,7 +833,7 @@ export const hotels = [
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch (without alcohol)",
+        name: "Sunday Brunch (Non-Alcoholic)",
         issunday: true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
@@ -889,12 +892,12 @@ export const hotels = [
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch(without alcohol)",
+        name: "Sunday Brunch (Non-Alcoholic)",
         issunday: true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 2499,
-        features: ["Gourmet brunch", "pool", "live music"],
+        features: ["Gourmet brunch", "live music"],
       },
       {
         id: "2",
@@ -903,7 +906,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 3499,
-        features: ["Gourmet brunch", "pool", "live music"],
+        features: ["Gourmet brunch", "live music"],
       },
     ],
   },
@@ -934,18 +937,18 @@ export const hotels = [
       "Steam and Sauna",
     ],
     ispartner: false,
-    price: 1500,
+    price: 3500,
     description:
       "Stay in a 5-star property located near the domestic airport offering stunning views of the runway and Mumbai city",
     packages: [
       {
         id: "1",
         issunday: true,
-        name: "Sunday Brunch(without alcohol)",
+        name: "Sunday Brunch(Non-Alcoholic)",
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        price: 2999,
-        features: ["Gourmet brunch", "pool", "live music"],
+        price: 3500,
+        features: ["Gourmet brunch",, "live music"],
       },
       {
         id: "2",
@@ -953,8 +956,8 @@ export const hotels = [
         issunday: true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 3333,
-        features: ["Gourmet brunch", "pool", "live music"],
+        price: 4000,
+        features: ["Gourmet brunch", "live music"],
       },
     ],
   },
@@ -1103,27 +1106,27 @@ export const hotels = [
       "Steam and Sauna",
     ],
     ispartner: false,
-    price: 3000,
+    price: 3500,
     description:
       "Located on the banks of Lake Powai, this lavish property features well-appointed rooms, multiple dining venues, a luxury spa and world-class amenities.",
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch with Pool (without alcohol)",
+        name: "Sunday Brunch (Non-Alcoholic)",
         issunday: true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 3499,
-        features: ["Gourmet brunch", "Swimming Pool"],
+        features: ["Gourmet brunch"],
       },
       {
         id: "2",
-        name: "Sunday Brunch with Pool (with alcohol)",
+        name: "Sunday Brunch (Alcoholic)",
         issunday: true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 4499,
-        features: ["Gourmet brunch", "Swimming Pool"],
+        features: ["Gourmet brunch"],
       },
       {
         id: "3",
@@ -1132,7 +1135,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 1600,
-        features: ["Gourmet brunch", "Swimming Pool"],
+        features: ["Gourmet brunch"],
       },
     ],
   },
@@ -1168,7 +1171,7 @@ export const hotels = [
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch with Pool (without alcohol)",
+        name: "Sunday Brunch with Pool (Non-Alcoholic)",
         issunday: true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
@@ -1177,7 +1180,7 @@ export const hotels = [
       },
       {
         id: "2",
-        name: "Sunday Brunch with Pool (with alcohol)",
+        name: "Sunday Brunch with Pool (Alcoholic)",
         issunday: true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
@@ -1228,7 +1231,7 @@ export const hotels = [
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch with Pool (without alcohol)",
+        name: "Sunday Brunch with Pool (Non-Alcoholic)",
         issunday: true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
@@ -1237,7 +1240,7 @@ export const hotels = [
       },
       {
         id: "2",
-        name: "Sunday Brunch with Pool (with alcohol)",
+        name: "Sunday Brunch with Pool (Alcoholic)",
         issunday: true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
@@ -1295,7 +1298,7 @@ export const hotels = [
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch with Pool (without alcohol)",
+        name: "Sunday Brunch with Pool (Non-Alcoholic)",
         issunday: true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
@@ -1383,7 +1386,7 @@ export const hotels = [
     packages: [
       {
         id: "1",
-        name: " Sunday Brunch (without alcohol)",
+        name: " Sunday Brunch (Non-Alcoholic)",
         issunday: true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
@@ -1418,18 +1421,19 @@ export const hotels = [
       "Bar",
       "Steam and Sauna",
     ],
-    ispartner: false,
-    price: 2000,
+    ispartner: true,
+    price: 2500,
     description:
       "Located in the heart of Mumbai's commercial and IT centre, this luxury hotel features well-appointed rooms, a full-service spa, and multiple dining venues.",
     packages: [
       {
         id: "1",
-        name: " Sunday Brunch (Non Alcoholic) with Swimming Pool",
+        name: " Sunday Brunch (Non-Alcoholic) with Swimming Pool",
         issunday: true,
+        stock: 5,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 2500,
+        price: 2600,
         features: [
           "Swimming Pool",
           "Multi-Cuisine Brunch",
@@ -1444,6 +1448,7 @@ export const hotels = [
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 3500,
+        stock: 4,
         features: [
           "Swimming Pool",
           "Hard Drinks",
@@ -1542,12 +1547,12 @@ export const hotels = [
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch with premium alcohol",
+        name: "Sunday Brunch (Alcoholic)",
         issunday: true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 6500,
-        features: ["Gourmet brunch", "Swimming Pool"],
+        features: ["Gourmet brunch"],
       },
     ],
   },
