@@ -339,12 +339,12 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
         })}
       </div>
 
-      <div>
+      {/* <div>
         <h2 className="text-2xl font-bold">Hotel Rules</h2>
         <p className="text-muted-foreground">
           Choose from our curated recovery packages
         </p>
-      </div>
+      </div> */}
     </section>
   );
 }
