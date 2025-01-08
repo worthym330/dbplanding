@@ -798,13 +798,10 @@ export const hotels = [
   {
     id: "13",
     name: "Trident Bandra Kurla",
-    images: [
-      "/hotels/tridentbkc/outdoor.avif",
-      "/hotels/tridentbkc/swimmingpool.avif",
-      "/hotels/tridentbkc/pool.avif",
-      "/hotels/tridentbkc/spa.avif",
+    images: [    
       "/hotels/tridentbkc/restrotwo.avif",
       "/hotels/tridentbkc/restro.avif",
+      "/hotels/tridentbkc/outdoor.avif",
     ],
     distance: "13.2 miles ",
     map_link: "https://maps.app.goo.gl/LGMe4Vk3rGbPGbY67",
@@ -821,7 +818,7 @@ export const hotels = [
       "Steam and Sauna",
     ],
     ispartner: true,
-    price: 1500,
+    price: 3199,
     description:
       "Relax in the cosmopolitan Mumbai with a stay at Trident Bandra Kurla, which prides itself in offering the very best and indulgent leisure amenities for every type of guest",
     packages: [
