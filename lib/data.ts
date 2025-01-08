@@ -1178,6 +1178,7 @@ export const hotels = [
         price: 4800,
         features: ["Gourmet brunch","Hard drinks(Vodka, Chivas etc)"],
       },
+    ]},
   {
     id: "22",
     name: "Sofitel Mumbai BKC",
@@ -1288,6 +1289,7 @@ export const hotels = [
       },
     ],
   },
+
   // {
   //   id: "24",
   //   name: "Novotel Mumbai Juhu Beach",
@@ -1576,4 +1578,4 @@ export const hotels = [
   //      },
   //    ],
   //  },
-];
+    ]
