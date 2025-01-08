@@ -450,7 +450,7 @@ export const hotels = [
     rating: 4.3,
     amenities: ["Brunch", "Swimming Pool", "Restuarant", "Bar"],
     ispartner: false,
-    price: 2500,
+    price: 3000,
     description:
       "The Lalit Mumbai is the epitome of world-class architecture and comfort with premium dining spaces, world-class leisure amenities, and unbeatable hospitality",
     packages: [
@@ -460,7 +460,7 @@ export const hotels = [
         issunday: true,
         description:
           "Poolside view with a variety of quality buffets, sophistication, value for price, access to pool, and valet parking.",
-        price: 3080,
+        price: 3090,
         features: ["Gourmet brunch", "Swimming Pool", "Valet Parking"],
       },
       {
@@ -469,8 +469,8 @@ export const hotels = [
         issunday: true,
         description:
           "Poolside view with a variety of quality buffets, sophistication, value for price, access to pool, and valet parking.",
-        price: 4145,
-        features: ["Gourmet brunch", "Swimming Pool", "Valet Parking"],
+        price: 4000,
+        features: ["Gourmet brunch", "Swimming Pool", "Hard Drinks","Valet Parking"],
       },
       {
         id: "3",
@@ -1056,7 +1056,7 @@ export const hotels = [
       "Steam and Sauna",
     ],
     ispartner: false,
-    price: 3000,
+    price: 3499,
     description:
       "A blend of luxury & utility, Lakeside Chalet Marriott Executive Apartments provides a lavish stay at a convenient location, with ultra-modern amenities and exquisite apartments",
     packages: [
@@ -1065,7 +1065,15 @@ export const hotels = [
         name: "Sunday Brunch",
         description: "Buffet Variety and Quality, Sophisticated,Luxury, Brunch",
         issunday: true,
-        price: 3000,
+        price: 3499,
+        features: ["Gourmet brunch"],
+      },
+      {
+        id: "1",
+        name: "Sunday Brunch",
+        description: "Buffet Variety and Quality, Sophisticated,Luxury, Brunch",
+        issunday: true,
+        price: 4499,
         features: ["Gourmet brunch"],
       },
     ],
@@ -1178,7 +1186,7 @@ export const hotels = [
         price: 4800,
         features: ["Gourmet brunch","Hard drinks(Vodka, Chivas etc)"],
       },
-    ]},
+      ]},
   {
     id: "22",
     name: "Sofitel Mumbai BKC",
@@ -1289,7 +1297,6 @@ export const hotels = [
       },
     ],
   },
-
   // {
   //   id: "24",
   //   name: "Novotel Mumbai Juhu Beach",
@@ -1504,10 +1511,9 @@ export const hotels = [
     id: "29",
     name: "Four Seasons Hotel Mumbai",
     images: [
+      "/hotels/fourseasons/restro.avif",
       "/hotels/fourseasons/outdoor.avif",
       "/hotels/fourseasons/restrotwo.avif",
-      "/hotels/fourseasons/restro.avif",
-      "/hotels/fourseasons/gym.webp",
     ],
     distance: "4.4 miles",
     map_link: "https://maps.app.goo.gl/tmfrTYd3tfUagXPU6",
@@ -1523,22 +1529,41 @@ export const hotels = [
       "Bar",
       "Steam and Sauna",
     ],
-    ispartner: false,
+    ispartner: true,
     price: 3500,
     description:
       "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch (Alcoholic)",
+        name: "Sunday Brunch (Alcoholic & Non-Alcoholic)",
         issunday: true,
         description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 6500,
-        features: ["Gourmet brunch"],
+          " Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 3500,
+        features: ["SUN:12:30-4:00pm","Multi-Cuisine","Hard drinks Available","Live Music"],
+      },
+      {
+        id: "1",
+        name: "Recovery Spa Pass",
+        issunday: true,
+        description:
+          "Rejuvenate post-run with a Spa Pass offering relaxing massages, steam baths, and muscle recovery treatments, tailored for marathon runners.",
+        price: 6250,
+        features:  ["60-minute relaxing massage of your choice","Tranquil Music","Complimentary Jacuzzi","Steam"],
+      },
+      {
+        id: "2",
+        name: "Couple Spa Pass",
+        issunday: true,
+        description:
+          "Let the story of your connection start with 60-minute relaxing massage with harmonizing strokes combined with enchanting décor and tranquil music. The lavish rose petal bath will take your breath away when you immerse yourselves in the aromatic candle lit tub.",
+        price: 12500,
+        features: ["60-minute relaxing massage of your choice","Tranquil Music","Complimentary Jacuzzi","Steam"],
       },
     ],
   },
+      
   // {
   //    id: "30",
   //    name: "Hotel Marine Plaza",
@@ -1578,4 +1603,4 @@ export const hotels = [
   //      },
   //    ],
   //  },
-    ]
+];
