@@ -1449,64 +1449,73 @@ export const hotels = [
       },
     ],
   },
-  //
-  // {
-  //   id: "28",
-  //   name: "The St. Regis Mumbai",
-  //   images: [
-  //     "/hotels/regis/outdoor.avif",
-  //     "/hotels/regis/restrotwo.avif",
-  //     "/hotels/regis/restro.avif",
-  //     "/hotels/regis/spa.webp",
-  //   ],
-  //   distance: "4.4 miles",
-  //   map_link: "https://maps.app.goo.gl/YXnhbRmb1xdmHta1A",
-  //   address:
-  //     "462, Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013",
-  //   rating: 4.6,
-  //   amenities: [
-  //     "Brunch",
-  //     "Gym",
-  //     "Swimming Pool",
-  //     "Spa",
-  //     "Restuarant",
-  //     "Bar",
-  //     "Steam and Sauna",
-  //   ],
-  //   ispartner: false,
-  //   price: 3500,
-  //   description:
-  //     "Treat yourself to luxury at this premium hotel offering award-winning specialty restaurants & breathtaking city views.",
-  //   packages: [
-  //     {
-  //       id: "1",
-  //       name: "Sunday Brunch with Pool (Non-Alcoholic)",
-  //       issunday: true,
-  //       description:
-  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-  //       price: 3500,
-  //       features: ["Gourmet brunch", "Swimming Pool"],
-  //     },
-  //     {
-  //       id: "2",
-  //       name: "Sunday Brunch with Pool (Alcoholic)",
-  //       issunday: true,
-  //       description:
-  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-  //       price: 4500,
-  //       features: ["Gourmet brunch", "Swimming Pool"],
-  //     },
-  //     {
-  //       id: "3",
-  //       name: "Sunday Brunch with premium alcohol",
-  //       issunday: true,
-  //       description:
-  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-  //       price: 7500,
-  //       features: ["Gourmet brunch", "Swimming Pool"],
-  //     },
-  //   ],
-  // },
+  
+  {
+    id: "28",
+    name: "The St. Regis Mumbai",
+    images: [
+      "/hotels/regis/outdoor.avif",
+      "/hotels/regis/restrotwo.avif",
+      "/hotels/regis/restro.avif",
+      "/hotels/regis/spa.webp",
+    ],
+    distance: "4.4 miles",
+    map_link: "https://maps.app.goo.gl/YXnhbRmb1xdmHta1A",
+    address:
+      "462, Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013",
+    rating: 4.6,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: false,
+    price: 3500,
+    description:
+      "Treat yourself to luxury at this premium hotel offering award-winning specialty restaurants & breathtaking city views.",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch with Pool (Non-Alcoholic)",
+        issunday: true,
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 3500,
+        features: ["Gourmet brunch", "Swimming Pool"],
+      },
+      {
+        id: "2",
+        name: "Sunday Brunch with Pool (Alcoholic)",
+        issunday: true,
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 4500,
+        features: ["Gourmet brunch", "Swimming Pool"],
+      },
+      {
+        id: "3",
+        name: "Recovery Spa Pass",
+        issunday: true,
+        description:
+          "Rejuvenate post-run with a Spa Pass offering relaxing massages, steam baths, and muscle recovery treatments, tailored for marathon runners.",
+        price: 8000,
+        features: ["60-minute relaxing massage of your choice","Tranquil Music","Complimentary Jacuzzi","Steam"],
+      },
+       {
+        id: "4",
+        name: "Couple Spa Pass",
+        issunday: true,
+        description:
+          "Let the story of your connection start with 60-minute relaxing massage with harmonizing strokes combined with enchanting décor and tranquil music. The lavish rose petal bath will take your breath away when you immerse yourselves in the aromatic candle lit tub.",
+        price: 16500,
+        features: ["60-minute relaxing massage of your choice","Tranquil Music","Complimentary Jacuzzi","Steam"],
+      },
+    ],
+  },
   {
     id: "29",
     name: "Four Seasons Hotel Mumbai",
@@ -1539,12 +1548,12 @@ export const hotels = [
         name: "Sunday Brunch (Alcoholic & Non-Alcoholic)",
         issunday: true,
         description:
-          " Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 3500,
         features: ["SUN:12:30-4:00pm","Multi-Cuisine","Hard drinks Available","Live Music"],
       },
       {
-        id: "1",
+        id: "2",
         name: "Recovery Spa Pass",
         issunday: true,
         description:
@@ -1553,7 +1562,7 @@ export const hotels = [
         features:  ["60-minute relaxing massage of your choice","Tranquil Music","Complimentary Jacuzzi","Steam"],
       },
       {
-        id: "2",
+        id: "3",
         name: "Couple Spa Pass",
         issunday: true,
         description:
