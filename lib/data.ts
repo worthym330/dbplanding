@@ -663,7 +663,7 @@ export const hotels = [
     rating: 4.5,
     amenities: ["Brunch", "Spa", "Restuarant", "Bar"],
     ispartner: true,
-    price: 1500,
+    price: 3500,
     description:
       "A contemporary property well suited for both leisure and business travellers strategically located near industrial and recreational hubs offering modern amenities and eventful venues.",
     packages: [
@@ -1158,39 +1158,29 @@ export const hotels = [
       "Bar",
       "Steam and Sauna",
     ],
-    ispartner: false,
-    price: 3000,
+    ispartner: true,
+    price: 3800,
     description:
       "Enjoy a lavish stay at a premium hotel offering world-class comfort with elegant dining spaces, a spa and a pool.",
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch with Pool (Non-Alcoholic)",
+        name: "Sunday Brunch (Non-Alcoholic)",
         issunday: true,
         description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 3500,
-        features: ["Gourmet brunch", "Swimming Pool"],
+          " Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 3800,
+        features: ["Multi-Cuisine"],
       },
       {
         id: "2",
-        name: "Sunday Brunch with Pool (Alcoholic)",
+        name: "Sunday Brunch (Alcoholic)",
         issunday: true,
         description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 4500,
-        features: ["Gourmet brunch", "Swimming Pool"],
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 4800,
+        features: ["Gourmet brunch","Hard drinks(Vodka, Chivas etc)"],
       },
-      {
-        id: "3",
-        name: "Champagne Brunch",
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 5500,
-        features: ["Gourmet brunch", "Swimming Pool"],
-      },
-    ],
-  },
   {
     id: "22",
     name: "Sofitel Mumbai BKC",
