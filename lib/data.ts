@@ -6,7 +6,6 @@ export const hotels = [
       "https://api.daybreakpass.com/uploads/hotel/images/Swimming Pool RAMADA.avif",
       "https://api.daybreakpass.com/uploads/hotel/images/food.jpg",
       "https://api.daybreakpass.com/uploads/hotel/images/Restaurant&Bar.avif",
-      
     ],
     distance: "14.7 miles",
     map_link: "https://maps.app.goo.gl/iWGaiu6s7PCD5UyGA",
@@ -63,7 +62,6 @@ export const hotels = [
       "/hotels/radissonblu/6a653fe4d7ac11eabeec0242ac110005.avif",
       "/hotels/radissonblu/24dcfe4c6e1b11eca8430a58a9feac02.avif",
       "/hotels/radissonblu/202008061201129632-ba2cff746e1b11ec8ac40a58a9feac02.avif",
-      
     ],
     distance: "18.1 miles",
     map_link: "https://maps.app.goo.gl/GhYcpJNQv6zRFk3g9",
@@ -92,10 +90,9 @@ export const hotels = [
         price: 3450,
         features: [
           "SUN: 12:30pm to 4:00pm",
-          "Rooftop Swimming Pool",
           "Multi-cuisine brunch",
           "Jain Food Available",
-          ,
+          "Rooftop Swimming Pool",
         ],
       },
       {
@@ -103,7 +100,7 @@ export const hotels = [
         name: "Spa Pass",
         issunday: true,
         description:
-          "Best spa in Mumbai with all sorts of massage to rejuvenate at Unora by Tattva Spa",
+        "Best spa in Mumbai with all sorts of massage to rejuvenate at Unora by Tattva Spa",
         price: 3600,
         features: ["Deep Tissue", "Swedish", "Foot Massage"],
       },
@@ -382,7 +379,7 @@ export const hotels = [
   //   packages: [
   //     {
   //       id: "1",
-  //       name: "Sunday Brunch Buffet (without alcohol)",
+  //       name: "Sunday Brunch Buffet (Non-Alcoholic)",
   //       description: "SUN 12:30 PM - 04:00 PM",
   //       price: 2695,
   //       features: ["Gourmet brunch"],
@@ -421,7 +418,7 @@ export const hotels = [
   //   packages: [
   //     {
   //       id: "1",
-  //       name: "Sunday Brunch (without alcohol)",
+  //       name: "Sunday Brunch (Non-Alcoholic)",
   //       issunday: true,
   //       description: "SUN 12:30pm to 3:30pm",
   //       price: 2800,
@@ -429,7 +426,7 @@ export const hotels = [
   //     },
   //     {
   //       id: "2",
-  //       name: "Sunday Brunch (with alcohol)",
+  //       name: "Sunday Brunch (Alcoholic)",
   //       issunday: true,
   //       description:
   //         "The Sunday brunch comprises a variety of cold cuts, desserts, starters and main course options along with their live band adding to the relaxed and fun vibe!",
@@ -545,7 +542,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 5600,
-        features: ["SUN: 1:00pm - 05:00pm","Gourmet Brunch","Multi-Cuisine","Champagne"],              
+        features: ["SUN: 1:00pm - 05:00pm","Gourmet Brunch","Multi-Cuisine","Champagne"], 
       },
       {
         id: "5",
@@ -633,7 +630,7 @@ export const hotels = [
   //   packages: [
   //     {
   //       id: "1",
-  //       name: "Sunday Brunch with Pool (without alcohol)",
+  //       name: "Sunday Brunch with Pool (Non-Alcoholic)",
   //       issunday: true,
   //       description:
   //         "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
@@ -675,7 +672,7 @@ export const hotels = [
   //   packages: [
   //     {
   //       id: "1",
-  //       name: "Sunday Brunch with Pool (without alcohol)",
+  //       name: "Sunday Brunch with Pool (Non-Alcoholic)",
   //       issunday: true,
   //       description:
   //         "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
@@ -948,7 +945,7 @@ export const hotels = [
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
         price: 3500,
-        features: ["Gourmet brunch",, "live music"],
+        features: ["Gourmet brunch", "live music"],
       },
       {
         id: "2",
@@ -986,7 +983,7 @@ export const hotels = [
   //   packages: [
   //     {
   //       id: "1",
-  //       name: "Sunday Brunch(without alcohol)",
+  //       name: "Sunday Brunch(Non-Alcoholic)",
   //       description:
   //         "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
   //       price: 3800,
@@ -1336,7 +1333,7 @@ export const hotels = [
   //   packages: [
   //     {
   //       id: "1",
-  //       name: " Sunday Brunch (without alcohol)",
+  //       name: " Sunday Brunch (Non-Alcoholic)",
   //       issunday: true,
   //       description:
   //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
@@ -1345,7 +1342,7 @@ export const hotels = [
   //     },
   //     {
   //       id: "2",
-  //       name: "Sunday Brunch with Alcohol",
+  //       name: "Sunday Brunch (Alcoholic)",
   //       issunday: true,
   //       description:
   //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
@@ -1490,7 +1487,7 @@ export const hotels = [
   //   packages: [
   //     {
   //       id: "1",
-  //       name: "Sunday Brunch with Pool (without alcohol)",
+  //       name: "Sunday Brunch with Pool (Non-Alcoholic)",
   //       issunday: true,
   //       description:
   //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
@@ -1499,7 +1496,7 @@ export const hotels = [
   //     },
   //     {
   //       id: "2",
-  //       name: "Sunday Brunch with Pool (with alcohol)",
+  //       name: "Sunday Brunch with Pool (Alcoholic)",
   //       issunday: true,
   //       description:
   //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
