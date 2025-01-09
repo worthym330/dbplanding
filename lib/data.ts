@@ -1488,7 +1488,7 @@ export const hotels = [
     id: "28",
     name: "The St. Regis Mumbai",
     images: [
-      "/hotels/regis/spa.webp",
+      "/hotels/regis/spa.avif",
       "/hotels/regis/restro.avif",
       "/hotels/regis/outdoor.avif",
       "/hotels/regis/restrotwo.avif",
