@@ -15,11 +15,12 @@ const getUniquePackages = () => {
 };
 
 export function FilterBar({
-  onFilterChange,
+  activeFilter,
+  setActiveFilter,
 }: {
-  onFilterChange: (value: any) => void;
+  activeFilter: string;
+  setActiveFilter: (filter: string) => void;
 }) {
-  const [activeFilter, setActiveFilter] = useState("");
   const [filterOptions, setFilterOptions] = useState<
     { id: string; label: string }[]
   >([]);
@@ -33,11 +34,6 @@ export function FilterBar({
     setFilterOptions(options);
   }, []);
 
-  const handleFilterChange = (filter: string) => {
-    setActiveFilter(filter);
-    onFilterChange(filter);
-  };
-
   return (
     <div className="gap-4">
       <motion.div
@@ -50,8 +46,12 @@ export function FilterBar({
           {filterOptions.map((option) => (
             <Button
               key={option.id}
-              variant={activeFilter === option.id ? "default" : "outline"}
-              onClick={() => handleFilterChange(option.id)}
+              variant={
+                activeFilter !== "" && activeFilter === option.id
+                  ? "default"
+                  : "outline"
+              }
+              onClick={() => setActiveFilter(option.id)}
             >
               {option.label}
             </Button>

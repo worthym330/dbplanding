@@ -38,20 +38,21 @@ export function PackagesSection() {
       );
     }
 
-    setFilteredHotels(updatedHotels);
-  }, [sortOrder, ispremium]);
+    if (packageFilter !== "") {
+      updatedHotels = updatedHotels.filter(
+        (hotel) => hotel.hotelpackage.toLowerCase() === packageFilter
+      );
+    } else {
+      updatedHotels = hotels;
+    }
 
-  const handleFilterChange = (filter: string) => {
-    setPackageFilter(filter);
-    setFilteredHotels(
-      hotels.filter((hotel) => hotel.hotelpackage.toLowerCase() === filter)
-    );
-  };
+    setFilteredHotels(updatedHotels);
+  }, [sortOrder, ispremium, packageFilter]);
 
   const handleClearFilters = () => {
     setSortOrder("");
     setPackageFilter("");
-    setFilteredHotels(hotels);
+    // setFilteredHotels(hotels);
     setIspremium(undefined);
   };
 
@@ -61,7 +62,10 @@ export function PackagesSection() {
         <div className="hidden md:block sticky top-16 z-30 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border py-4 mb-8">
           <div className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-4">
-              <FilterBar onFilterChange={handleFilterChange} />
+              <FilterBar
+                activeFilter={packageFilter}
+                setActiveFilter={setPackageFilter}
+              />
               <PremiumFilter
                 ispremium={ispremium}
                 setIspremium={setIspremium}
@@ -102,7 +106,10 @@ export function PackagesSection() {
               <div className="mt-8 space-y-6">
                 <div className="space-y-4">
                   <h3 className="text-sm font-medium">Package Type</h3>
-                  <FilterBar onFilterChange={handleFilterChange} />
+                  <FilterBar
+                    activeFilter={packageFilter}
+                    setActiveFilter={setPackageFilter}
+                  />
                   <PremiumFilter
                     ispremium={ispremium}
                     setIspremium={setIspremium}
