@@ -2,7 +2,7 @@ export interface Hotel {
   id: string;
   name: string;
   images: string[];
-  distance?: string;
+  distance?: string | number;
   map_link?:string;
   address?:string;
   rating: number;

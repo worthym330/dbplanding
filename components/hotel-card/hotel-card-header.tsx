@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 
 interface HotelCardHeaderProps {
   name: string;
-  distance?: string;
+  distance?: number | string;
   rating: number;
 }
 
@@ -18,7 +18,7 @@ export function HotelCardHeader({ name, distance, rating }: HotelCardHeaderProps
           <CardTitle className="line-clamp-1">{name}</CardTitle>
           <CardDescription className="flex items-center gap-1">
             <MapPin className="h-4 w-4" />
-            {distance} from event
+            {distance} miles from event
           </CardDescription>
         </div>
         <Badge variant="secondary" className="flex items-center gap-1">

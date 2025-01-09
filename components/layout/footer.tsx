@@ -28,9 +28,9 @@ export function Footer() {
               <li>
                 <Link href={"/cookie-policy"}>Contact Policy</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href={"/cancellation-policy"}>Cancellation Policy</Link>
-              </li>
+              </li> */}
               <li>
                 <Link href={"/terms-condition"}>Terms & Condition</Link>
               </li>
