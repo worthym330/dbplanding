@@ -1483,18 +1483,18 @@ export const hotels = [
         name: "Sunday Brunch with Pool (Non-Alcoholic)",
         issunday: true,
         description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
         price: 3500,
-        features: ["Gourmet brunch", "Swimming Pool"],
+        features: ["SUN: 12:00pm to 4:00pm","Multi-cuisine brunch"],
       },
       {
         id: "2",
         name: "Sunday Brunch with Pool (Alcoholic)",
         issunday: true,
         description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
         price: 4500,
-        features: ["Gourmet brunch", "Swimming Pool"],
+        features: ["SUN: 12:00pm to 4:00pm","Multi-cuisine brunch"],
       },
       {
         id: "3",
