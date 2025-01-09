@@ -55,43 +55,44 @@ export function FilterBar({
   };
 
   return (
-        <div className="gap-4">
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            className="gap-4"
-          >
-            <div className="space-y-4">
-              {/* <Label>Packages</Label> */}
-              <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
-                <DropdownMenuTrigger asChild>
-                  <Button
-                  variant="outline"
-                  size="sm"
-                  className="flex items-center gap-2"
-                  >
-                  {activeFilter === "all" ? "Select Package" : filterOptions.find(option => option.id === activeFilter)?.label}
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent>
-                  {filterOptions.map((option) => (
-                    <DropdownMenuItem
-                      key={option.id}
-                      onClick={() => handleFilterChange(option.id)}
-                      className={
-                        activeFilter === option.id
-                          ? "bg-primary text-white"
-                          : ""
-                      }
-                    >
-                      {option.label}
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </div>
-          </motion.div>
+    <div className="gap-4">
+      <motion.div
+        initial={{ height: 0, opacity: 0 }}
+        animate={{ height: "auto", opacity: 1 }}
+        exit={{ height: 0, opacity: 0 }}
+        className="gap-4"
+      >
+        <div className="space-y-4">
+          {/* <Label>Packages</Label> */}
+          <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
+            <DropdownMenuTrigger asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="flex items-center gap-2"
+              >
+                {activeFilter === "all"
+                  ? "Select Package"
+                  : filterOptions.find((option) => option.id === activeFilter)
+                      ?.label}
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="max-h-96 overflow-y-auto">
+              {filterOptions.map((option) => (
+              <DropdownMenuItem
+                key={option.id}
+                onClick={() => handleFilterChange(option.id)}
+                className={
+                activeFilter === option.id ? "bg-primary text-white" : ""
+                }
+              >
+                {option.label}
+              </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
+      </motion.div>
+    </div>
   );
 }

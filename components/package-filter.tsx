@@ -5,9 +5,16 @@ import { useState, useEffect } from "react";
 import { FilterBar } from "./filter-bar";
 import { DistanceRangeSort, DistanceSort, PriceSort } from "./price-sort";
 import { HotelCard } from "./hotel-card/hotel-card";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "./ui/button";
 import { Filter } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "./ui/sheet";
 
 export function PackagesSection() {
   const [sortOrder, setSortOrder] = useState<"asc" | "desc" | "">("");
@@ -16,7 +23,7 @@ export function PackagesSection() {
   const [distanceSortOrder, setDistanceSortOrder] = useState<
     "asc" | "desc" | ""
   >("");
-  const [showSlider, setShowSlider] = useState(false);
+  const [openSheet, setOpenSheet] = useState(false);
 
   useEffect(() => {
     let updatedHotels = [...hotels];
@@ -75,64 +82,9 @@ export function PackagesSection() {
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center space-y-4 md:space-y-0 md:space-x-4 mb-8 top-16 z-10 sticky bg-background/95 backdrop-blur-lg supports-[backdrop-filter]:bg-background/60 border-b border-border py-2">
-          <div className="md:hidden">
-            <button onClick={() => setShowSlider(true)}>
-              <Filter className="h-6 w-6" />
-            </button>
-          </div>
-          <div className="hidden md:flex">
-            <FilterBar
-              onFilterChange={handleFilterChange}
-              hotels={filteredHotels}
-            />
-          </div>
-          <div className="hidden md:flex">
-            <PriceSort sortOrder={sortOrder} onSort={setSortOrder} />
-          </div>
-          <div className="hidden md:flex">
-            <DistanceRangeSort
-              selectedRange={selectedRange}
-              onRangeSelect={setSelectedRange}
-            />
-          </div>
-          <div className="hidden md:flex">
-            <DistanceSort
-              sortOrder={distanceSortOrder}
-              onSort={setDistanceSortOrder}
-            />
-          </div>
-          <div className="hidden md:flex">
-            <Button
-              variant={"default"}
-              onClick={handleClearFilters}
-              disabled={
-                !sortOrder &&
-                selectedRange[0] === 0 &&
-                selectedRange[1] === 0 &&
-                !distanceSortOrder
-              }
-            >
-              Clear Filters
-            </Button>
-          </div>
-        </div>
-
-        {showSlider && (
-          <div
-            className="fixed inset-0 bg-black bg-opacity-50 z-50"
-            onClick={() => setShowSlider(false)}
-          >
-            <motion.div
-              className="fixed left-0 top-0 bottom-0 w-64 bg-white p-4 z-50"
-              initial={{ x: -300 }}
-              animate={{ x: 0 }}
-              exit={{ x: -300 }}
-              onClick={(e) => e.stopPropagation()}
-            >
-              <button onClick={() => setShowSlider(false)} className="mb-4">
-                Close
-              </button>
+        <div className="hidden md:block sticky top-16 z-30 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border py-4 mb-8">
+          <div className="flex items-center justify-between gap-4">
+            <div className="flex items-center gap-4">
               <FilterBar
                 onFilterChange={handleFilterChange}
                 hotels={filteredHotels}
@@ -158,32 +110,103 @@ export function PackagesSection() {
               >
                 Clear Filters
               </Button>
-              <Button
-                variant={"default"}
-                onClick={() => setShowSlider(false)}
-                className="mt-4"
-              >
-                Apply
-              </Button>
-            </motion.div>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              {filteredHotels.length} hotels found
+            </p>
           </div>
-        )}
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredHotels
-            .sort((a, b) => {
-              if (a.ispartner === b.ispartner) return 0;
-              return a.ispartner ? -1 : 1;
-            })
-            .map((hotel, index) => (
-              <motion.div
-                key={hotel.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
+        </div>
+
+        <div className="md:hidden flex items-center justify-between mb-8 sticky top-16 z-30 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border py-4">
+          <Sheet open={openSheet} onOpenChange={setOpenSheet}>
+            <SheetTrigger asChild>
+              <Button
+                variant="outline"
+                size="sm"
+                className="flex items-center gap-2"
               >
-                <HotelCard hotel={hotel} />
-              </motion.div>
-            ))}
+                <Filter className="h-4 w-4" />
+                Filters
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="bottom" className="h-[90vh]">
+              <SheetHeader>
+                <SheetTitle>Filters</SheetTitle>
+              </SheetHeader>
+              <div className="mt-8 space-y-6">
+                <div className="space-y-4">
+                  <h3 className="text-sm font-medium">Package Type</h3>
+                  <FilterBar
+                    onFilterChange={handleFilterChange}
+                    hotels={filteredHotels}
+                  />
+                </div>
+                <div className="space-y-4">
+                  <h3 className="text-sm font-medium">Sort by Price</h3>
+                  <PriceSort sortOrder={sortOrder} onSort={setSortOrder} />
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-sm font-medium">Sort by Price</h3>
+                  <DistanceRangeSort
+                    selectedRange={selectedRange}
+                    onRangeSelect={setSelectedRange}
+                  />
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-sm font-medium">Sort by Price</h3>
+                  <DistanceSort
+                    sortOrder={distanceSortOrder}
+                    onSort={setDistanceSortOrder}
+                  />
+                </div>
+
+                <div className="flex justify-center items-center space-x-4">
+                  <Button
+                    variant={"default"}
+                    onClick={() => setOpenSheet(false)}
+                  >
+                    Apply Filters
+                  </Button>
+                  <Button
+                    variant={"default"}
+                    onClick={handleClearFilters}
+                    disabled={
+                      !sortOrder &&
+                      selectedRange[0] === 0 &&
+                      selectedRange[1] === 0 &&
+                      !distanceSortOrder
+                    }
+                  >
+                    Clear Filters
+                  </Button>
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
+          <p className="text-sm text-muted-foreground">
+            {filteredHotels.length} hotels found
+          </p>
+        </div>
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <AnimatePresence>
+            {filteredHotels
+              .sort((a, b) => {
+                if (a.ispartner === b.ispartner) return 0;
+                return a.ispartner ? -1 : 1;
+              })
+              .map((hotel, index) => (
+                <motion.div
+                  key={hotel.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <HotelCard hotel={hotel} />
+                </motion.div>
+              ))}
+          </AnimatePresence>
         </div>
       </div>
     </section>
