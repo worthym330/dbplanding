@@ -740,17 +740,17 @@ export const hotels = [
   },
   {
     id: "12",
-    name: "Courtyard by Marriott Mumbai International Airport",
+    name: "Fairfield by Marriott Mumbai International Airport",
     images: [
       "/hotels/courtyardbymarriott/outdoor.avif",
       "/hotels/courtyardbymarriott/swimmingpool.avif",
       "/hotels/courtyardbymarriott/restrotwo.avif",
       "/hotels/courtyardbymarriott/restro.avif",
     ],
-    distance: "16.9 miles ",
-    map_link: "https://maps.app.goo.gl/2TuEbWC3yUxtw3Wg6",
+    distance: "17.7 miles ",
+    map_link: "https://maps.app.goo.gl/CwQGpWNvGeyNz9pV8",
     address:
-      "Cts 215, Andheri - Kurla Rd, opposite Carnival Cinemas, Andheri East, Mumbai, Maharashtra 400059",
+      "Building 16B, Samita Industrial Estate, Saki Naka, Mumbai, Maharashtra 400072",
     rating: 4.4,
     amenities: [
       "Brunch",
@@ -762,27 +762,27 @@ export const hotels = [
       "Steam and Sauna",
     ],
     ispartner: true,
-    price: 2200,
+    price: 2299,
     description:
-      "Experience unparalleled comfort and luxury at this contemporary hotel featuring well-appointed rooms, multiple dining venues, upscale amenities and top-notch hospitality.",
+      "Treat your eyes to splendid runway views of the Mumbai International Airport",
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch(Non-Alcoholic)",
+        name: "Sunday Brunch with Rooftop Access(Non-Alcoholic)",
         issunday: true,
         description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        price: 2199,
-        features: ["Gourmet brunch", "live music"],
+          "Treat your eyes to splendid runway views of the Mumbai International Airport",
+        price: 2299,
+        features: ["Gourmet Brunch","Rooftop Access Airport Runway View", "Live Music"],
       },
       {
         id: "2",
-        name: "Sunday Brunch (Alcoholic)",
+        name: "Sunday Brunch with Rooftop Access(Alcoholic)",
         issunday: true,
         description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 2499,
-        features: ["Gourmet brunch", "live music"],
+          "Treat your eyes to splendid runway views of the Mumbai International Airport",
+        price: 3599,
+        features: ["Gourmet Brunch","Rooftop Access Airport Runway View", "Live Music","Hard Drinks"],
       },
     ],
   },
