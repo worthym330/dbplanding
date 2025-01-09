@@ -1281,19 +1281,28 @@ export const hotels = [
       "Bar",
       "Steam and Sauna",
     ],
-    ispartner: false,
-    price: 3000,
+    ispartner: true,
+    price: 2999,
     description:
       "Taj The Trees ensures a memorable stay with a fine dining experience, exceptional service, and top-tier amenities",
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch with Pool (Non-Alcoholic)",
+        name: "Sunday Brunch (Non-Alcoholic)",
         issunday: true,
         description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 2999,
-        features: ["Gourmet brunch", "Swimming Pool"],
+        features: ["Multi-Cuisine","Live Music"],
+      },
+      {
+        id: "2",
+        name: "Sunday Brunch (Alcoholic)",
+        issunday: true,
+        description:
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 4699,
+        features: ["Multi-Cuisine","Hard Drinks","Live Music"]
       },
     ],
   },
@@ -1473,7 +1482,7 @@ export const hotels = [
       "Bar",
       "Steam and Sauna",
     ],
-    ispartner: false,
+    ispartner: true,
     price: 3500,
     description:
       "Treat yourself to luxury at this premium hotel offering award-winning specialty restaurants & breathtaking city views.",
