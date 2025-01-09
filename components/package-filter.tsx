@@ -27,7 +27,6 @@ export function PackagesSection() {
     let updatedHotels = [...hotels];
     // Sort by price
     if (sortOrder) {
-      console.log("sortOrder", sortOrder);
       updatedHotels.sort((a, b) => {
         return sortOrder === "asc" ? a.price - b.price : b.price - a.price;
       });
