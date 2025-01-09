@@ -448,7 +448,7 @@ export const hotels = [
       "/hotels/lalit/spa.avif",
       "/hotels/lalit/spatwo.avif",
     ],
-    distance: "17.6 miles ",
+    distance: 17.6,
     map_link: "https://maps.app.goo.gl/9G6EaXjvhsVLimzM7",
     address:
       "Chhatrapati Shivaji Maharaj Int'l Airport Rd, Navpada, Marol, Andheri East, Mumbai, Maharashtra 400059",
@@ -576,7 +576,7 @@ export const hotels = [
   //     "/hotels/lemontreeaurika/1721879538478.avif",
   //     "/hotels/lemontreeaurika/1722244984970.avif",
   //   ],
-  //   distance: "16.5 miles",
+  //   distance: 16.5,
   //   map_link: "https://maps.app.goo.gl/6yj6UNYxxMXiARou8",
   //   address:
   //     "CTS No. 145, A, NS C-04, Skycity, Chhatrapati Shivaji Maharaj Int'l Airport Rd, near Mumbai International Airport, Mumbai, Maharashtra 400099",
@@ -629,7 +629,7 @@ export const hotels = [
   //     "/hotels/orchidMumbai/restro.avif",
   //     "/hotels/orchidMumbai/spa2.avif",
   //   ],
-  //   distance: "17.2 miles ",
+  //   distance: 17.2,
   //   map_link: "https://maps.app.goo.gl/Bf1DR5KL3uph73nQ8",
   //   address:
   //     "Metro Station, IRA By Orchid, Andheri - Kurla Rd, near Chakala, Bhim Nagar, Andheri East, Mumbai, Maharashtra 400059",
@@ -770,7 +770,7 @@ export const hotels = [
       "/hotels/courtyardbymarriott/fascade_ff.jpg",
       "/hotels/courtyardbymarriott/dining_ff.jpg",
     ],
-    distance: "17.7 miles ",
+    distance: 17.7,
     map_link: "https://maps.app.goo.gl/CwQGpWNvGeyNz9pV8",
     address:
       "Building 16B, Samita Industrial Estate, Saki Naka, Mumbai, Maharashtra 400072",
@@ -817,7 +817,7 @@ export const hotels = [
       "/hotels/tridentbkc/restro.avif",
       "/hotels/tridentbkc/outdoor.avif",
     ],
-    distance: "13.2 miles ",
+    distance: 13.2,
     map_link: "https://maps.app.goo.gl/LGMe4Vk3rGbPGbY67",
     address:
       "C 56, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400098",
@@ -973,7 +973,7 @@ export const hotels = [
   //     "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
   //     "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
   //   ],
-  //   distance: "25 km ",
+  //   distance: 25,
   //   rating: 4.5,
   //   amenities: [
   //     "Brunch",
@@ -1016,7 +1016,7 @@ export const hotels = [
       "/hotels/meluha/swimmingpool.jpg",
       "/hotels/meluha/pool.jpg",
     ],
-    distance: "19.1 miles ",
+    distance: 19.1,
     map_link: "https://maps.app.goo.gl/3jbwfLARV2CMGWUC6",
     address:
       "Central Ave, Hiranandani Gardens, Panchkutir Ganesh Nagar, Powai, Mumbai, Maharashtra 400076",
@@ -1055,7 +1055,7 @@ export const hotels = [
       "/hotels/lakeside/restro.webp",
       "/hotels/lakeside/restrotwo.webp",
     ],
-    distance: "21.7 miles ",
+    distance: 21.7,
     map_link: "https://maps.app.goo.gl/jEt8tQbwKppFsioh9",
     address:
       "2 & 3B, near Chinmayanand Ashram, Kailash Nagar, Mayur Nagar, Morarji Nagar, Powai, Mumbai, Maharashtra 400087",
@@ -1104,7 +1104,7 @@ export const hotels = [
       "/hotels/westin/restro.avif",
       "/hotels/westin/restrotwo.avif",
     ],
-    distance: "20.9 miles ",
+    distance: 20.9,
     map_link: "https://maps.app.goo.gl/yN9rsSCgafBSx1eBA",
     address:
       "2 & 3B, near Chinmayanand Ashram, Kailash Nagar, Mayur Nagar, Morarji Nagar, Powai, Mumbai, Maharashtra 400087",
@@ -1212,7 +1212,7 @@ export const hotels = [
       "/hotels/sofitel/restro.avif",
       "/hotels/sofitel/restrotwo.avif",
     ],
-    distance: "13.4 miles ",
+    distance: 13.4,
     map_link: "https://maps.app.goo.gl/yazbEN7WU8qThTAN8",
     address:
       "C 57, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051",
