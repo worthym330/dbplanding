@@ -475,7 +475,12 @@ export const hotels = [
         description:
           "Poolside view with a variety of quality buffets, sophistication, value for price, access to pool, and valet parking.",
         price: 3999,
-        features: ["Gourmet brunch", "Swimming Pool", "Hard Drinks","Valet Parking"],
+        features: [
+          "Gourmet brunch",
+          "Swimming Pool",
+          "Hard Drinks",
+          "Valet Parking",
+        ],
       },
     ],
   },
@@ -796,7 +801,11 @@ export const hotels = [
         description:
           "Treat your eyes to splendid runway views of the Mumbai International Airport",
         price: 2299,
-        features: ["Gourmet Brunch","Rooftop Access Airport Runway View", "Live Music"],
+        features: [
+          "Gourmet Brunch",
+          "Rooftop Access Airport Runway View",
+          "Live Music",
+        ],
       },
       {
         id: "2",
@@ -805,7 +814,12 @@ export const hotels = [
         description:
           "Treat your eyes to splendid runway views of the Mumbai International Airport",
         price: 3599,
-        features: ["Gourmet Brunch","Rooftop Access Airport Runway View", "Live Music","Hard Drinks"],
+        features: [
+          "Gourmet Brunch",
+          "Rooftop Access Airport Runway View",
+          "Live Music",
+          "Hard Drinks",
+        ],
       },
     ],
   },
@@ -1158,7 +1172,7 @@ export const hotels = [
     images: [
       "/hotels/Restro.jpg",
       "/hotels/Grandhyattrestrotwo.jpg",
-      "/hotels/Outdoor.jpg"
+      "/hotels/Outdoor.jpg",
     ],
     distance: 13.5,
     map_link: "https://maps.app.goo.gl/mimXGAQ4LPiMF5TG8",
@@ -1305,7 +1319,7 @@ export const hotels = [
         description:
           "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 2999,
-        features: ["Multi-Cuisine","Live Music"],
+        features: ["Multi-Cuisine", "Live Music"],
       },
       {
         id: "2",
@@ -1314,7 +1328,7 @@ export const hotels = [
         description:
           "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 4699,
-        features: ["Multi-Cuisine","Hard Drinks","Live Music"]
+        features: ["Multi-Cuisine", "Hard Drinks", "Live Music"],
       },
     ],
   },
@@ -1505,7 +1519,7 @@ export const hotels = [
         description:
           "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
         price: 3500,
-        features: ["SUN: 12:00pm to 4:00pm","Multi-cuisine brunch"],
+        features: ["SUN: 12:00pm to 4:00pm", "Multi-cuisine brunch"],
       },
       {
         id: "2",
@@ -1514,7 +1528,7 @@ export const hotels = [
         description:
           "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
         price: 4500,
-        features: ["SUN: 12:00pm to 4:00pm","Multi-cuisine brunch"],
+        features: ["SUN: 12:00pm to 4:00pm", "Multi-cuisine brunch"],
       },
       {
         id: "3",
