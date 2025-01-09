@@ -449,7 +449,7 @@ export const hotels = [
       "Chhatrapati Shivaji Maharaj Int'l Airport Rd, Navpada, Marol, Andheri East, Mumbai, Maharashtra 400059",
     rating: 4.3,
     amenities: ["Brunch", "Swimming Pool", "Restuarant", "Bar"],
-    ispartner: false,
+    ispartner: true,
     price: 3000,
     description:
       "The Lalit Mumbai is the epitome of world-class architecture and comfort with premium dining spaces, world-class leisure amenities, and unbeatable hospitality",
@@ -469,17 +469,8 @@ export const hotels = [
         issunday: true,
         description:
           "Poolside view with a variety of quality buffets, sophistication, value for price, access to pool, and valet parking.",
-        price: 4000,
+        price: 3999,
         features: ["Gourmet brunch", "Swimming Pool", "Hard Drinks","Valet Parking"],
-      },
-      {
-        id: "3",
-        name: "Sunday Brunch with Pool (Kids brunch)",
-        issunday: true,
-        description:
-          "Poolside view with a variety of quality buffets, sophistication, value for price, access to pool, and valet parking.",
-        price: 1375,
-        features: ["Gourmet brunch", "Swimming Pool", "Valet Parking"],
       },
     ],
   },
@@ -877,7 +868,7 @@ export const hotels = [
       "Steam and Sauna",
     ],
     ispartner: false,
-    price: 1500,
+    price: 2499,
     description:
       "Within a walking distance from the Mumbai Airport, The Orchid Hotel Mumbai Vile Parle is a luxurious eco-friendly hotel and an epitome of architectural finesse with world-class service",
     packages: [
