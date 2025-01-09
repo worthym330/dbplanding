@@ -544,54 +544,54 @@ export const hotels = [
     ],
   },
 
-  {
-    id: "7",
-    name: "Aurika,Mumbai International Airport - Luxury by Lemon Tree Hotels",
-    images: [
-      "/hotels/lemontreeaurika/1000435182.webp",
-      "/hotels/lemontreeaurika/1721879538478.avif",
-      "/hotels/lemontreeaurika/1722244984970.avif",
-    ],
-    distance: "16.5 miles",
-    map_link: "https://maps.app.goo.gl/6yj6UNYxxMXiARou8",
-    address:
-      "CTS No. 145, A, NS C-04, Skycity, Chhatrapati Shivaji Maharaj Int'l Airport Rd, near Mumbai International Airport, Mumbai, Maharashtra 400099",
-    rating: 4.5,
-    amenities: ["Brunch", "Gym", "Swimming Pool", "Spa", "Restuarant", "Bar"],
-    ispartner: true,
-    price: 2500,
-    description:
-      "Close to the airport, this classy property offers well-appointed rooms, a spa, multiple dining spots, and a host of modern amenities,perfect for post-marathon recovery.",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch with Pool (Non-Alcoholic)",
-        issunday: true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 3634,
-        features: ["Gourmet brunch"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch (Alcoholic)",
-        issunday: true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 4890,
-        features: ["Gourmet brunch"],
-      },
-      {
-        id: "3",
-        name: "Tattva Spa",
-        issunday: true,
-        description:
-          "Best spa in Mumbai with all sorts of massage to rejuvenate",
-        price: 4890,
-        features: ["Deep Tissue", "Swedish", "Foot Massage"],
-      },
-    ],
-  },
+  // {
+  //   id: "7",
+  //   name: "Aurika,Mumbai International Airport - Luxury by Lemon Tree Hotels",
+  //   images: [
+  //     "/hotels/lemontreeaurika/1000435182.webp",
+  //     "/hotels/lemontreeaurika/1721879538478.avif",
+  //     "/hotels/lemontreeaurika/1722244984970.avif",
+  //   ],
+  //   distance: "16.5 miles",
+  //   map_link: "https://maps.app.goo.gl/6yj6UNYxxMXiARou8",
+  //   address:
+  //     "CTS No. 145, A, NS C-04, Skycity, Chhatrapati Shivaji Maharaj Int'l Airport Rd, near Mumbai International Airport, Mumbai, Maharashtra 400099",
+  //   rating: 4.5,
+  //   amenities: ["Brunch", "Gym", "Swimming Pool", "Spa", "Restuarant", "Bar"],
+  //   ispartner: true,
+  //   price: 2500,
+  //   description:
+  //     "Close to the airport, this classy property offers well-appointed rooms, a spa, multiple dining spots, and a host of modern amenities,perfect for post-marathon recovery.",
+  //   packages: [
+  //     {
+  //       id: "1",
+  //       name: "Sunday Brunch with Pool (Non-Alcoholic)",
+  //       issunday: true,
+  //       description:
+  //         "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+  //       price: 3634,
+  //       features: ["Gourmet brunch"],
+  //     },
+  //     {
+  //       id: "2",
+  //       name: "Sunday Brunch (Alcoholic)",
+  //       issunday: true,
+  //       description:
+  //         "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+  //       price: 4890,
+  //       features: ["Gourmet brunch"],
+  //     },
+  //     {
+  //       id: "3",
+  //       name: "Tattva Spa",
+  //       issunday: true,
+  //       description:
+  //         "Best spa in Mumbai with all sorts of massage to rejuvenate",
+  //       price: 4890,
+  //       features: ["Deep Tissue", "Swedish", "Foot Massage"],
+  //     },
+  //   ],
+  // },
 
   // {
   //   id: "9",
