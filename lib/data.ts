@@ -1187,74 +1187,74 @@ export const hotels = [
         features: ["Gourmet brunch","Hard drinks(Vodka, Chivas etc)"],
       },
       ]},
-  {
-    id: "22",
-    name: "Sofitel Mumbai BKC",
-    images: [
-      "/hotels/sofitel/outdoor.avif",
-      "/hotels/sofitel/outdoor2.avif",
-      "/hotels/sofitel/swimmingpool.avif",
-      "/hotels/sofitel/pool.avif",
-      "/hotels/sofitel/spa.avif",
-      "/hotels/sofitel/spa2.avif",
-      "/hotels/sofitel/restro.avif",
-      "/hotels/sofitel/restrotwo.avif",
-    ],
-    distance: "13.4 miles ",
-    map_link: "https://maps.app.goo.gl/yazbEN7WU8qThTAN8",
-    address:
-      "C 57, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051",
-    rating: 4.5,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: false,
-    price: 3000,
-    description:
-      "Inspired by French culture and tradition, Sofitel is an award-winning hotel offering a fine dining experience",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch with Pool (Non-Alcoholic)",
-        issunday: true,
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 4199,
-        features: ["Gourmet brunch", "Swimming Pool"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch with Pool (Alcoholic)",
-        issunday: true,
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 4999,
-        features: ["Gourmet brunch", "Swimming Pool"],
-      },
-      {
-        id: "3",
-        name: "Champagne Brunch",
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 5899,
-        features: ["Gourmet brunch", "Swimming Pool"],
-      },
-      {
-        id: "4",
-        name: "Kids Brunch",
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 5899,
-        features: ["Gourmet brunch", "Swimming Pool"],
-      },
-    ],
-  },
+  // {
+  //   id: "22",
+  //   name: "Sofitel Mumbai BKC",
+  //   images: [
+  //     "/hotels/sofitel/outdoor.avif",
+  //     "/hotels/sofitel/outdoor2.avif",
+  //     "/hotels/sofitel/swimmingpool.avif",
+  //     "/hotels/sofitel/pool.avif",
+  //     "/hotels/sofitel/spa.avif",
+  //     "/hotels/sofitel/spa2.avif",
+  //     "/hotels/sofitel/restro.avif",
+  //     "/hotels/sofitel/restrotwo.avif",
+  //   ],
+  //   distance: "13.4 miles ",
+  //   map_link: "https://maps.app.goo.gl/yazbEN7WU8qThTAN8",
+  //   address:
+  //     "C 57, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051",
+  //   rating: 4.5,
+  //   amenities: [
+  //     "Brunch",
+  //     "Gym",
+  //     "Swimming Pool",
+  //     "Spa",
+  //     "Restuarant",
+  //     "Bar",
+  //     "Steam and Sauna",
+  //   ],
+  //   ispartner: false,
+  //   price: 3000,
+  //   description:
+  //     "Inspired by French culture and tradition, Sofitel is an award-winning hotel offering a fine dining experience",
+  //   packages: [
+  //     {
+  //       id: "1",
+  //       name: "Sunday Brunch with Pool (Non-Alcoholic)",
+  //       issunday: true,
+  //       description:
+  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+  //       price: 4199,
+  //       features: ["Gourmet brunch", "Swimming Pool"],
+  //     },
+  //     {
+  //       id: "2",
+  //       name: "Sunday Brunch with Pool (Alcoholic)",
+  //       issunday: true,
+  //       description:
+  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+  //       price: 4999,
+  //       features: ["Gourmet brunch", "Swimming Pool"],
+  //     },
+  //     {
+  //       id: "3",
+  //       name: "Champagne Brunch",
+  //       description:
+  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+  //       price: 5899,
+  //       features: ["Gourmet brunch", "Swimming Pool"],
+  //     },
+  //     {
+  //       id: "4",
+  //       name: "Kids Brunch",
+  //       description:
+  //         "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+  //       price: 5899,
+  //       features: ["Gourmet brunch", "Swimming Pool"],
+  //     },
+  //   ],
+  // },
   {
     id: "23",
     name: "Taj The Trees, Mumbai",
