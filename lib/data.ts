@@ -133,7 +133,7 @@ export const hotels = [
       "Steam and Sauna",
     ],
     ispartner: true,
-    price: 10499,
+    price: 8299,
     description:
       "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
     packages: [
@@ -143,7 +143,7 @@ export const hotels = [
         issunday: true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 10499,
+        price: 8299,
         features: [
           "Heated Swimming Pool",
           "J Wellness Circle Spa",
@@ -154,7 +154,7 @@ export const hotels = [
           "Sauna",
           "Steam",
         ],
-        stock: 6,
+        stock: 2,
       },
     ],
   },
@@ -454,7 +454,7 @@ export const hotels = [
       "Chhatrapati Shivaji Maharaj Int'l Airport Rd, Navpada, Marol, Andheri East, Mumbai, Maharashtra 400059",
     rating: 4.3,
     amenities: ["Brunch", "Swimming Pool", "Restuarant", "Bar"],
-    ispartner: false,
+    ispartner: true,
     price: 3000,
     description:
       "The Lalit Mumbai is the epitome of world-class architecture and comfort with premium dining spaces, world-class leisure amenities, and unbeatable hospitality",
@@ -474,22 +474,8 @@ export const hotels = [
         issunday: true,
         description:
           "Poolside view with a variety of quality buffets, sophistication, value for price, access to pool, and valet parking.",
-        price: 4000,
-        features: [
-          "Gourmet brunch",
-          "Swimming Pool",
-          "Hard Drinks",
-          "Valet Parking",
-        ],
-      },
-      {
-        id: "3",
-        name: "Sunday Brunch with Pool (Kids brunch)",
-        issunday: true,
-        description:
-          "Poolside view with a variety of quality buffets, sophistication, value for price, access to pool, and valet parking.",
-        price: 1375,
-        features: ["Gourmet brunch", "Swimming Pool", "Valet Parking"],
+        price: 3999,
+        features: ["Gourmet brunch", "Swimming Pool", "Hard Drinks","Valet Parking"],
       },
     ],
   },
@@ -582,55 +568,54 @@ export const hotels = [
       },
     ],
   },
-
-  {
-    id: "7",
-    name: "Aurika,Mumbai International Airport - Luxury by Lemon Tree Hotels",
-    images: [
-      "/hotels/lemontreeaurika/1000435182.webp",
-      "/hotels/lemontreeaurika/1721879538478.avif",
-      "/hotels/lemontreeaurika/1722244984970.avif",
-    ],
-    distance: 16.5,
-    map_link: "https://maps.app.goo.gl/6yj6UNYxxMXiARou8",
-    address:
-      "CTS No. 145, A, NS C-04, Skycity, Chhatrapati Shivaji Maharaj Int'l Airport Rd, near Mumbai International Airport, Mumbai, Maharashtra 400099",
-    rating: 4.5,
-    amenities: ["Brunch", "Gym", "Swimming Pool", "Spa", "Restuarant", "Bar"],
-    ispartner: true,
-    price: 2500,
-    description:
-      "Close to the airport, this classy property offers well-appointed rooms, a spa, multiple dining spots, and a host of modern amenities,perfect for post-marathon recovery.",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch with Pool (Non-Alcoholic)",
-        issunday: true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 3634,
-        features: ["Gourmet brunch"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch (Alcoholic)",
-        issunday: true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 4890,
-        features: ["Gourmet brunch"],
-      },
-      {
-        id: "3",
-        name: "Tattva Spa",
-        issunday: true,
-        description:
-          "Best spa in Mumbai with all sorts of massage to rejuvenate",
-        price: 4890,
-        features: ["Deep Tissue", "Swedish", "Foot Massage"],
-      },
-    ],
-  },
+  // {
+  //   id: "7",
+  //   name: "Aurika,Mumbai International Airport - Luxury by Lemon Tree Hotels",
+  //   images: [
+  //     "/hotels/lemontreeaurika/1000435182.webp",
+  //     "/hotels/lemontreeaurika/1721879538478.avif",
+  //     "/hotels/lemontreeaurika/1722244984970.avif",
+  //   ],
+  //   distance: "16.5 miles",
+  //   map_link: "https://maps.app.goo.gl/6yj6UNYxxMXiARou8",
+  //   address:
+  //     "CTS No. 145, A, NS C-04, Skycity, Chhatrapati Shivaji Maharaj Int'l Airport Rd, near Mumbai International Airport, Mumbai, Maharashtra 400099",
+  //   rating: 4.5,
+  //   amenities: ["Brunch", "Gym", "Swimming Pool", "Spa", "Restuarant", "Bar"],
+  //   ispartner: true,
+  //   price: 2500,
+  //   description:
+  //     "Close to the airport, this classy property offers well-appointed rooms, a spa, multiple dining spots, and a host of modern amenities,perfect for post-marathon recovery.",
+  //   packages: [
+  //     {
+  //       id: "1",
+  //       name: "Sunday Brunch with Pool (Non-Alcoholic)",
+  //       issunday: true,
+  //       description:
+  //         "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+  //       price: 3634,
+  //       features: ["Gourmet brunch"],
+  //     },
+  //     {
+  //       id: "2",
+  //       name: "Sunday Brunch (Alcoholic)",
+  //       issunday: true,
+  //       description:
+  //         "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+  //       price: 4890,
+  //       features: ["Gourmet brunch"],
+  //     },
+  //     {
+  //       id: "3",
+  //       name: "Tattva Spa",
+  //       issunday: true,
+  //       description:
+  //         "Best spa in Mumbai with all sorts of massage to rejuvenate",
+  //       price: 4890,
+  //       features: ["Deep Tissue", "Swedish", "Foot Massage"],
+  //     },
+  //   ],
+  // },
 
   // {
   //   id: "9",
@@ -779,17 +764,16 @@ export const hotels = [
   },
   {
     id: "12",
-    name: "Courtyard by Marriott Mumbai International Airport",
+    name: "Fairfield by Marriott Mumbai International Airport",
     images: [
-      "/hotels/courtyardbymarriott/outdoor.avif",
-      "/hotels/courtyardbymarriott/swimmingpool.avif",
-      "/hotels/courtyardbymarriott/restrotwo.avif",
-      "/hotels/courtyardbymarriott/restro.avif",
+      "/hotels/courtyardbymarriott/202208171217535059-8702feccc7cb11edbc5f0a58a9feac02.avif",
+      "/hotels/courtyardbymarriott/fascade_ff.jpg",
+      "/hotels/courtyardbymarriott/dining_ff.jpg",
     ],
-    distance: "16.9 miles ",
-    map_link: "https://maps.app.goo.gl/2TuEbWC3yUxtw3Wg6",
+    distance: "17.7 miles ",
+    map_link: "https://maps.app.goo.gl/CwQGpWNvGeyNz9pV8",
     address:
-      "Cts 215, Andheri - Kurla Rd, opposite Carnival Cinemas, Andheri East, Mumbai, Maharashtra 400059",
+      "Building 16B, Samita Industrial Estate, Saki Naka, Mumbai, Maharashtra 400072",
     rating: 4.4,
     amenities: [
       "Brunch",
@@ -801,27 +785,27 @@ export const hotels = [
       "Steam and Sauna",
     ],
     ispartner: true,
-    price: 2200,
+    price: 2299,
     description:
-      "Experience unparalleled comfort and luxury at this contemporary hotel featuring well-appointed rooms, multiple dining venues, upscale amenities and top-notch hospitality.",
+      "Treat your eyes to splendid runway views of the Mumbai International Airport",
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch (Non-Alcoholic)",
+        name: "Sunday Brunch with Rooftop Access(Non-Alcoholic)",
         issunday: true,
         description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        price: 2199,
-        features: ["Gourmet brunch", "live music"],
+          "Treat your eyes to splendid runway views of the Mumbai International Airport",
+        price: 2299,
+        features: ["Gourmet Brunch","Rooftop Access Airport Runway View", "Live Music"],
       },
       {
         id: "2",
-        name: "Sunday Brunch (Alcoholic)",
+        name: "Sunday Brunch with Rooftop Access(Alcoholic)",
         issunday: true,
         description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 2499,
-        features: ["Gourmet brunch", "live music"],
+          "Treat your eyes to splendid runway views of the Mumbai International Airport",
+        price: 3599,
+        features: ["Gourmet Brunch","Rooftop Access Airport Runway View", "Live Music","Hard Drinks"],
       },
     ],
   },
@@ -907,7 +891,7 @@ export const hotels = [
       "Steam and Sauna",
     ],
     ispartner: false,
-    price: 1500,
+    price: 2499,
     description:
       "Within a walking distance from the Mumbai Airport, The Orchid Hotel Mumbai Vile Parle is a luxurious eco-friendly hotel and an epitome of architectural finesse with world-class service",
     packages: [
@@ -1172,12 +1156,9 @@ export const hotels = [
     id: "21",
     name: "Grand Hyatt Mumbai Hotel & Residences",
     images: [
-      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_Slides.avif",
-      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_missionbayslides.avif",
-      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_missionbaycabana.avif",
-      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_hyattregency7.avif",
-      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_HyattMissionBay_Firepit.avif",
-      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_hrmission2.avif",
+      "/hotels/Restro.jpg",
+      "/hotels/Grandhyattrestrotwo.jpg",
+      "/hotels/Outdoor.jpg"
     ],
     distance: 13.5,
     map_link: "https://maps.app.goo.gl/mimXGAQ4LPiMF5TG8",
@@ -1312,19 +1293,28 @@ export const hotels = [
       "Bar",
       "Steam and Sauna",
     ],
-    ispartner: false,
-    price: 3000,
+    ispartner: true,
+    price: 2999,
     description:
       "Taj The Trees ensures a memorable stay with a fine dining experience, exceptional service, and top-tier amenities",
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch with Pool (Non-Alcoholic)",
+        name: "Sunday Brunch (Non-Alcoholic)",
         issunday: true,
         description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 2999,
-        features: ["Gourmet brunch", "Swimming Pool"],
+        features: ["Multi-Cuisine","Live Music"],
+      },
+      {
+        id: "2",
+        name: "Sunday Brunch (Alcoholic)",
+        issunday: true,
+        description:
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 4699,
+        features: ["Multi-Cuisine","Hard Drinks","Live Music"]
       },
     ],
   },
@@ -1503,7 +1493,7 @@ export const hotels = [
       "Bar",
       "Steam and Sauna",
     ],
-    ispartner: false,
+    ispartner: true,
     price: 3500,
     description:
       "Treat yourself to luxury at this premium hotel offering award-winning specialty restaurants & breathtaking city views.",
@@ -1513,18 +1503,18 @@ export const hotels = [
         name: "Sunday Brunch with Pool (Non-Alcoholic)",
         issunday: true,
         description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
         price: 3500,
-        features: ["Gourmet brunch", "Swimming Pool"],
+        features: ["SUN: 12:00pm to 4:00pm","Multi-cuisine brunch"],
       },
       {
         id: "2",
         name: "Sunday Brunch with Pool (Alcoholic)",
         issunday: true,
         description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
         price: 4500,
-        features: ["Gourmet brunch", "Swimming Pool"],
+        features: ["SUN: 12:00pm to 4:00pm","Multi-cuisine brunch"],
       },
       {
         id: "3",
