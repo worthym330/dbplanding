@@ -27,6 +27,7 @@ export function PackagesSection() {
     let updatedHotels = [...hotels];
     // Sort by price
     if (sortOrder) {
+      console.log("sortOrder", sortOrder);
       updatedHotels.sort((a, b) => {
         return sortOrder === "asc" ? a.price - b.price : b.price - a.price;
       });
@@ -40,10 +41,8 @@ export function PackagesSection() {
 
     if (packageFilter !== "") {
       updatedHotels = updatedHotels.filter(
-        (hotel) => hotel.hotelpackage.toLowerCase() === packageFilter
+        (hotel) => hotel.hotelpackage.toLowerCase() === packageFilter.toLowerCase()
       );
-    } else {
-      updatedHotels = hotels;
     }
 
     setFilteredHotels(updatedHotels);
