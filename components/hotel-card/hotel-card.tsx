@@ -26,6 +26,8 @@ export function HotelCard({ hotel }: HotelCardProps) {
             src={hotel.images[0]}
             alt={hotel.name}
             partner={hotel?.ispartner}
+            ispremium={hotel?.ispremium}
+            qnty={hotel?.quantity}
           />
           <HotelCardHeader
             name={hotel.name}

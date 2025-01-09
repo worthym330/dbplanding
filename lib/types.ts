@@ -11,6 +11,9 @@ export interface Hotel {
   description: string;
   packages: Package[];
   ispartner?: boolean;
+  ispremium?: boolean;
+  quantity?: number;
+  hotelpackage?: string;
 }
 
 export interface Package {

@@ -3,7 +3,7 @@
 import { hotels } from "@/lib/data";
 import { useState, useEffect } from "react";
 import { FilterBar } from "./filter-bar";
-import { DistanceRangeSort, DistanceSort, PriceSort } from "./price-sort";
+import { PremiumFilter, PriceSort } from "./price-sort";
 import { HotelCard } from "./hotel-card/hotel-card";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "./ui/button";
@@ -19,34 +19,12 @@ import {
 export function PackagesSection() {
   const [sortOrder, setSortOrder] = useState<"asc" | "desc" | "">("");
   const [filteredHotels, setFilteredHotels] = useState(hotels);
-  const [selectedRange, setSelectedRange] = useState<[number, number]>([0, 0]);
-  const [distanceSortOrder, setDistanceSortOrder] = useState<
-    "asc" | "desc" | ""
-  >("");
+  const [ispremium, setIspremium] = useState<boolean | undefined>(undefined);
+  const [packageFilter, setPackageFilter] = useState<string>("");
   const [openSheet, setOpenSheet] = useState(false);
 
   useEffect(() => {
     let updatedHotels = [...hotels];
-
-    // Filter by selected range
-    if (selectedRange[0] !== 0 || selectedRange[1] !== 0) {
-      updatedHotels = updatedHotels.filter(
-        (hotel) =>
-          typeof hotel.distance === "number" &&
-          hotel.distance >= selectedRange[0] &&
-          hotel.distance <= selectedRange[1]
-      );
-    }
-
-    // Sort by distance
-    if (distanceSortOrder) {
-      updatedHotels.sort((a, b) => {
-        return distanceSortOrder === "asc"
-          ? ((a.distance ?? 0) as number) - ((b.distance ?? 0) as number)
-          : ((b.distance ?? 0) as number) - ((a.distance ?? 0) as number);
-      });
-    }
-
     // Sort by price
     if (sortOrder) {
       updatedHotels.sort((a, b) => {
@@ -54,58 +32,46 @@ export function PackagesSection() {
       });
     }
 
-    setFilteredHotels(updatedHotels);
-  }, [sortOrder, selectedRange, distanceSortOrder]);
-
-  const handleFilterChange = (filter: string) => {
-    if (filter === "all") {
-      setFilteredHotels(hotels);
-    } else {
-      const filterLabel = filter;
-      setFilteredHotels(
-        hotels.filter((hotel) =>
-          hotel.packages.some((pkg) =>
-            pkg.name.toLowerCase().includes(filterLabel.toLowerCase())
-          )
-        )
+    if (ispremium !== undefined) {
+      updatedHotels = updatedHotels.filter(
+        (hotel) => hotel.ispremium === ispremium
       );
     }
+
+    setFilteredHotels(updatedHotels);
+  }, [sortOrder, ispremium]);
+
+  const handleFilterChange = (filter: string) => {
+    setPackageFilter(filter);
+    setFilteredHotels(
+      hotels.filter((hotel) => hotel.hotelpackage.toLowerCase() === filter)
+    );
   };
 
   const handleClearFilters = () => {
     setSortOrder("");
-    setSelectedRange([0, 0]);
-    setDistanceSortOrder("");
+    setPackageFilter("");
     setFilteredHotels(hotels);
+    setIspremium(undefined);
   };
 
   return (
-    <section className="py-20">
+    <section className="py-10">
       <div className="container mx-auto px-4">
         <div className="hidden md:block sticky top-16 z-30 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border py-4 mb-8">
           <div className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-4">
-              <FilterBar
-                onFilterChange={handleFilterChange}
-                hotels={filteredHotels}
+              <FilterBar onFilterChange={handleFilterChange} />
+              <PremiumFilter
+                ispremium={ispremium}
+                setIspremium={setIspremium}
               />
               <PriceSort sortOrder={sortOrder} onSort={setSortOrder} />
-              <DistanceRangeSort
-                selectedRange={selectedRange}
-                onRangeSelect={setSelectedRange}
-              />
-              <DistanceSort
-                sortOrder={distanceSortOrder}
-                onSort={setDistanceSortOrder}
-              />
               <Button
                 variant={"default"}
                 onClick={handleClearFilters}
                 disabled={
-                  !sortOrder &&
-                  selectedRange[0] === 0 &&
-                  selectedRange[1] === 0 &&
-                  !distanceSortOrder
+                  !sortOrder && ispremium === undefined && packageFilter === ""
                 }
               >
                 Clear Filters
@@ -136,30 +102,15 @@ export function PackagesSection() {
               <div className="mt-8 space-y-6">
                 <div className="space-y-4">
                   <h3 className="text-sm font-medium">Package Type</h3>
-                  <FilterBar
-                    onFilterChange={handleFilterChange}
-                    hotels={filteredHotels}
+                  <FilterBar onFilterChange={handleFilterChange} />
+                  <PremiumFilter
+                    ispremium={ispremium}
+                    setIspremium={setIspremium}
                   />
                 </div>
                 <div className="space-y-4">
                   <h3 className="text-sm font-medium">Sort by Price</h3>
                   <PriceSort sortOrder={sortOrder} onSort={setSortOrder} />
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="text-sm font-medium">Sort by Price</h3>
-                  <DistanceRangeSort
-                    selectedRange={selectedRange}
-                    onRangeSelect={setSelectedRange}
-                  />
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="text-sm font-medium">Sort by Price</h3>
-                  <DistanceSort
-                    sortOrder={distanceSortOrder}
-                    onSort={setDistanceSortOrder}
-                  />
                 </div>
 
                 <div className="flex justify-center items-center space-x-4">
@@ -174,9 +125,8 @@ export function PackagesSection() {
                     onClick={handleClearFilters}
                     disabled={
                       !sortOrder &&
-                      selectedRange[0] === 0 &&
-                      selectedRange[1] === 0 &&
-                      !distanceSortOrder
+                      ispremium === undefined &&
+                      packageFilter === ""
                     }
                   >
                     Clear Filters

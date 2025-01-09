@@ -1,5 +1,6 @@
 "use client";
 
+import { BadgePercent, Star } from "lucide-react";
 import Image from "next/image";
 import { IoRibbon } from "react-icons/io5";
 
@@ -7,9 +8,17 @@ interface HotelCardImageProps {
   src: string;
   alt: string;
   partner?: boolean;
+  ispremium?: boolean;
+  qnty?: number;
 }
 
-export function HotelCardImage({ src, alt, partner }: HotelCardImageProps) {
+export function HotelCardImage({
+  src,
+  alt,
+  partner,
+  ispremium,
+  qnty,
+}: HotelCardImageProps) {
   return (
     <div className="relative aspect-[16/9]">
       {/* Image */}
@@ -17,9 +26,27 @@ export function HotelCardImage({ src, alt, partner }: HotelCardImageProps) {
 
       {/* Ribbon */}
       {partner && (
-        <div className="absolute top-0 left-0 bg-red-500 text-white px-3 py-1 flex items-center gap-1 rounded-b-md shadow-md">
-          <IoRibbon className="h-5 w-5" />
-          <span className="text-sm font-semibold">Partnered</span>
+        <div className="absolute top-0 left-0 bg-red-500 text-white px-3 py-1 flex items-center gap-1 rounded-br-md shadow-md">
+          <IoRibbon className="h-4 w-4" />
+          <span className="text-xs font-semibold">Partnered</span>
+        </div>
+      )}
+
+      {ispremium ? (
+        <div className="absolute top-0 right-0 bg-[#4f63ac] text-white px-3 py-1 flex items-center gap-1 rounded-bl-md shadow-md">
+          <Star className="h-4 w-4 drop-shadow-lg" />
+          <span className="text-xs font-semibold">Premium</span>
+        </div>
+      ) : (
+        <div className="absolute top-0 right-0 bg-[#E6E6FA] text-white px-3 py-1 flex items-center gap-1 rounded-bl-md shadow-md text-[#4B0082]">
+          <BadgePercent className="h-4 w-4" />
+          <span className="text-xs font-semibold">Budget Friendly</span>
+        </div>
+      )}
+
+      {qnty && qnty <= 10 && (
+        <div className="absolute bottom-0 left-0 bg-gray-100 text-red-500 px-3 py-1 flex items-center gap-1 rounded-tr-md shadow-md text-xs">
+          Only {qnty} packages left!
         </div>
       )}
     </div>

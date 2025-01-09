@@ -8,6 +8,8 @@ export const hotels = [
       "https://api.daybreakpass.com/uploads/hotel/images/Restaurant&Bar.avif",
     ],
     distance: 14.7,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/iWGaiu6s7PCD5UyGA",
     address:
       "Juhu Beach, Juhu Tara Rd, next to Shivaji Maharaj Statue, Nazir Wadi, Theosophical Housing Colony, Juhu, Mumbai, Maharashtra 400049",
@@ -53,6 +55,7 @@ export const hotels = [
         ],
       },
     ],
+    hotelpackage: "Brunch + Swimming Pool",
   },
   {
     id: "5",
@@ -64,6 +67,8 @@ export const hotels = [
       "/hotels/radissonblu/202008061201129632-ba2cff746e1b11ec8ac40a58a9feac02.avif",
     ],
     distance: 18.1,
+    ispremium: true,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/GhYcpJNQv6zRFk3g9",
     address:
       "Marol Maroshi Rd, near Metro Station Marol Naka, Bori Colony, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059",
@@ -105,6 +110,7 @@ export const hotels = [
         features: ["Deep Tissue", "Swedish", "Foot Massage"],
       },
     ],
+    hotelpackage: "Brunch + Spa + Swimming Pool",
   },
   {
     id: "31",
@@ -120,6 +126,8 @@ export const hotels = [
     ],
     distance: 1.6,
     map_link: "https://maps.app.goo.gl/jhsKJGb6PzfqwK9t9",
+    ispremium: true,
+    quantity: 8,
     address:
       "33, Nathalal Parikh Marg, Cusrow Baug Colony, Apollo Bandar, Colaba, Mumbai, Maharashtra 400001",
     rating: 4.5,
@@ -157,6 +165,7 @@ export const hotels = [
         stock: 2,
       },
     ],
+    hotelpackage: "Brunch + Spa + Swimming Pool",
   },
   {
     id: "34",
@@ -168,6 +177,8 @@ export const hotels = [
       "/hotels/hyattcentric/restrotwo.avif",
     ],
     distance: 14.4,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/bkPMgxdQ9eKVVH9h8",
     address: "Juhu Tara Rd, Shivaji Nagr, Juhu, Mumbai, Maharashtra 400049",
     rating: 4.0,
@@ -199,6 +210,7 @@ export const hotels = [
         ],
       },
     ],
+    hotelpackage: "Brunch",
   },
   {
     id: "6",
@@ -212,6 +224,8 @@ export const hotels = [
       "/hotels/princess/restro.avif",
     ],
     distance: 14.3,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/RJkGeGG823B7sGum8",
     address:
       "Juhu Tara Road, Beach, near Juhu, Juhu, Mumbai, Maharashtra 400049",
@@ -246,6 +260,7 @@ export const hotels = [
         ],
       },
     ],
+    hotelpackage: "Brunch + Swimming Pool",
   },
   {
     id: "32",
@@ -259,6 +274,8 @@ export const hotels = [
       "https://api.daybreakpass.com/uploads/hotel/images/Exterior.jpg",
     ],
     distance: 21.9,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/xCPL9PUvT5Hcnqtg6",
     address:
       "MILLENNIUM BUSINESS PARK, 156, MIDC, Millenium Business Park, Sector 2, Mahape, Navi Mumbai, Maharashtra 400710",
@@ -294,6 +311,7 @@ export const hotels = [
         ],
       },
     ],
+    hotelpackage: "Brunch",
   },
   {
     id: "33",
@@ -306,6 +324,8 @@ export const hotels = [
       "https://api.daybreakpass.com/uploads/hotel/images/02_Feb_2023_09_28_55Dine.jpg",
     ],
     distance: 21.9,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/9tY8vxopJ9USqiJ97",
     address:
       "Plot No. 67, Palm Beach Rd, Juhu Nagar, Sector 19, Vashi, Navi Mumbai, Maharashtra 400705",
@@ -357,6 +377,7 @@ export const hotels = [
         ],
       },
     ],
+    hotelpackage: "Brunch + Swimming Pool",
   },
   // {
   //   id: "1",
@@ -369,6 +390,8 @@ export const hotels = [
   //     "/hotels/lemontree/restro.avif",
   //   ],
   //   distance: 18.1 ,
+  // ispremium:false,
+  // quantity: 12,
   //   map_link: "https://maps.app.goo.gl/JP9Jce7rFzpPCbGv6",
   //   address:
   //     "Andheri - Kurla Rd, opposite Mittal Industrial Estate, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059",
@@ -396,6 +419,8 @@ export const hotels = [
   //       stock: 8,
   //     },
   //   ],
+  // hotelpackage: "Brunch + Spa + Swimming Pool",
+
   // },
   // {
   //   id: "2",
@@ -408,6 +433,8 @@ export const hotels = [
   //     "/hotels/Holiday/aabfe372238b11e98b380242ac110003.avif",
   //   ],
   //   distance: 16.4 ,
+  // ispremium:false,
+  // quantity: 12,
   //   map_link: "https://maps.app.goo.gl/7HbvXi8oXnKA1hAF9",
   //   address:
   //     "Sakinaka, Junction, Andheri - Kurla Rd, Andheri East, Mumbai, Maharashtra 400072",
@@ -436,6 +463,7 @@ export const hotels = [
   //       features: ["Gourmet brunch", "Swimming Pool", "Alcohol"],
   //     },
   //   ],
+  // hotelpackage: "Brunch + Swimming Pool",
   // },
   {
     id: "3",
@@ -449,6 +477,8 @@ export const hotels = [
       "/hotels/lalit/spatwo.avif",
     ],
     distance: 17.6,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/9G6EaXjvhsVLimzM7",
     address:
       "Chhatrapati Shivaji Maharaj Int'l Airport Rd, Navpada, Marol, Andheri East, Mumbai, Maharashtra 400059",
@@ -483,6 +513,7 @@ export const hotels = [
         ],
       },
     ],
+    hotelpackage: "Brunch + Swimming Pool",
   },
   {
     id: "4",
@@ -496,6 +527,8 @@ export const hotels = [
       "/hotels/mariotte/restro.avif",
     ],
     distance: 17.2,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/9G6EaXjvhsVLimzM7",
     address:
       "Chhatrapati Shivaji Maharaj Int'l Airport Rd, Navpada, Marol, Andheri East, Mumbai, Maharashtra 400059",
@@ -572,6 +605,7 @@ export const hotels = [
         ],
       },
     ],
+    hotelpackage: "Brunch",
   },
   // {
   //   id: "7",
@@ -582,6 +616,8 @@ export const hotels = [
   //     "/hotels/lemontreeaurika/1722244984970.avif",
   //   ],
   //   distance: 16.5,
+  // ispremium:false,
+  // quantity: 12,
   //   map_link: "https://maps.app.goo.gl/6yj6UNYxxMXiARou8",
   //   address:
   //     "CTS No. 145, A, NS C-04, Skycity, Chhatrapati Shivaji Maharaj Int'l Airport Rd, near Mumbai International Airport, Mumbai, Maharashtra 400099",
@@ -620,6 +656,7 @@ export const hotels = [
   //       features: ["Deep Tissue", "Swedish", "Foot Massage"],
   //     },
   //   ],
+  // hotelpackage: "Brunch + Spa + Swimming Pool",
   // },
 
   // {
@@ -635,6 +672,8 @@ export const hotels = [
   //     "/hotels/orchidMumbai/spa2.avif",
   //   ],
   //   distance: 17.2,
+  // ispremium:false,
+  // quantity: 12,
   //   map_link: "https://maps.app.goo.gl/Bf1DR5KL3uph73nQ8",
   //   address:
   //     "Metro Station, IRA By Orchid, Andheri - Kurla Rd, near Chakala, Bhim Nagar, Andheri East, Mumbai, Maharashtra 400059",
@@ -666,6 +705,7 @@ export const hotels = [
   //       stock: 8,
   //     },
   //   ],
+  // hotelpackage: "Brunch + Spa + Swimming Pool",
   // },
   {
     id: "10",
@@ -677,6 +717,8 @@ export const hotels = [
       "/hotels/novotel/1708335364463.avif",
     ],
     distance: 17.4,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/w9bwzoCPJXDHwqBGA",
     address:
       "entrance no 3, CTS 1359, Andheri - Kurla Rd, next to Airport Metro Station, Bori Colony, Marol, Andheri East, Mumbai, Maharashtra 400059",
@@ -715,6 +757,7 @@ export const hotels = [
         features: ["Deep Tissue", "Swedish", "Foot Massage"],
       },
     ],
+    hotelpackage: "Brunch + Spa + Swimming Pool",
   },
   {
     id: "11",
@@ -731,6 +774,8 @@ export const hotels = [
     ],
     distance: 17,
     map_link: "https://maps.app.goo.gl/V6SN298FyXCZvMWu5",
+    ispremium: false,
+    quantity: 12,
     address: "Sahar Village, Andheri East, Mumbai, Maharashtra 400099",
     rating: 4.7,
     amenities: [
@@ -766,6 +811,7 @@ export const hotels = [
         features: ["Gourmet brunch,pool"],
       },
     ],
+    hotelpackage: "Brunch + Swimming Pool",
   },
   {
     id: "12",
@@ -776,6 +822,8 @@ export const hotels = [
       "/hotels/courtyardbymarriott/dining_ff.jpg",
     ],
     distance: 17.7,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/CwQGpWNvGeyNz9pV8",
     address:
       "Building 16B, Samita Industrial Estate, Saki Naka, Mumbai, Maharashtra 400072",
@@ -822,6 +870,7 @@ export const hotels = [
         ],
       },
     ],
+    hotelpackage: "Brunch + Swimming Pool",
   },
   {
     id: "13",
@@ -832,6 +881,8 @@ export const hotels = [
       "/hotels/tridentbkc/outdoor.avif",
     ],
     distance: 13.2,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/LGMe4Vk3rGbPGbY67",
     address:
       "C 56, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400098",
@@ -877,6 +928,7 @@ export const hotels = [
         ],
       },
     ],
+    hotelpackage: "Brunch",
   },
   {
     id: "14",
@@ -891,6 +943,8 @@ export const hotels = [
       "/hotels/orchidMumbai/spa2.avif",
     ],
     distance: 15.1,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/xjsmYahjVFA1SAV89",
     address:
       "T1, 70-C, Nehru Rd, near Chhatrapati Shivaji Maharaj International Airport Mumbai, Navpada, Vile Parle East, Vile Parle, Mumbai, Maharashtra 400099",
@@ -928,6 +982,7 @@ export const hotels = [
         features: ["Gourmet brunch", "live music"],
       },
     ],
+    hotelpackage: "Brunch",
   },
   {
     id: "15",
@@ -942,6 +997,8 @@ export const hotels = [
       "/hotels/tajsantacruz/outdoor2.avif",
     ],
     distance: 15.2,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/mUP3NBZUA29yYVUQ8",
     address:
       "Chhatrapati Shivaji Maharaj International Airport Mumbai, T1, off Western Express Highway, Navpada, Vile Parle East, Santacruz East, Mumbai, Maharashtra 400099",
@@ -979,6 +1036,7 @@ export const hotels = [
         features: ["Gourmet brunch", "live music"],
       },
     ],
+    hotelpackage: "Brunch",
   },
   // {
   //   id: "16",
@@ -989,6 +1047,8 @@ export const hotels = [
   //   ],
   //   distance: 25,
   //   rating: 4.5,
+  // ispremium:false,
+  // quantity: 12,
   //   amenities: [
   //     "Brunch",
   //     "Gym",
@@ -1020,6 +1080,7 @@ export const hotels = [
   //       features: ["Gourmet brunch","pool", "live music"],
   //     },
   //   ],
+  // hotelpackage: "Brunch + Swimming Pool",
   // },
 
   {
@@ -1031,6 +1092,8 @@ export const hotels = [
       "/hotels/meluha/pool.jpg",
     ],
     distance: 19.1,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/3jbwfLARV2CMGWUC6",
     address:
       "Central Ave, Hiranandani Gardens, Panchkutir Ganesh Nagar, Powai, Mumbai, Maharashtra 400076",
@@ -1058,6 +1121,7 @@ export const hotels = [
         features: ["Gourmet brunch"],
       },
     ],
+    hotelpackage: "Brunch",
   },
   {
     id: "19",
@@ -1070,6 +1134,8 @@ export const hotels = [
       "/hotels/lakeside/restrotwo.webp",
     ],
     distance: 21.7,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/jEt8tQbwKppFsioh9",
     address:
       "2 & 3B, near Chinmayanand Ashram, Kailash Nagar, Mayur Nagar, Morarji Nagar, Powai, Mumbai, Maharashtra 400087",
@@ -1105,6 +1171,7 @@ export const hotels = [
         features: ["Gourmet brunch"],
       },
     ],
+    hotelpackage: "Brunch",
   },
   {
     id: "20",
@@ -1119,6 +1186,8 @@ export const hotels = [
       "/hotels/westin/restrotwo.avif",
     ],
     distance: 20.9,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/yN9rsSCgafBSx1eBA",
     address:
       "2 & 3B, near Chinmayanand Ashram, Kailash Nagar, Mayur Nagar, Morarji Nagar, Powai, Mumbai, Maharashtra 400087",
@@ -1165,6 +1234,7 @@ export const hotels = [
         features: ["Gourmet brunch"],
       },
     ],
+    hotelpackage: "Brunch + Swimming Pool",
   },
   {
     id: "21",
@@ -1175,6 +1245,8 @@ export const hotels = [
       "/hotels/Outdoor.jpg",
     ],
     distance: 13.5,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/mimXGAQ4LPiMF5TG8",
     address:
       "Bandra Kurla Complex, Siddharath Nagar, Vakola, Vicinity, Mumbai, Maharashtra 400055",
@@ -1212,6 +1284,7 @@ export const hotels = [
         features: ["Gourmet brunch", "Hard drinks(Vodka, Chivas etc)"],
       },
     ],
+    hotelpackage: "Brunch",
   },
   {
     id: "22",
@@ -1227,6 +1300,8 @@ export const hotels = [
       "/hotels/sofitel/restrotwo.avif",
     ],
     distance: 13.4,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/yazbEN7WU8qThTAN8",
     address:
       "C 57, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051",
@@ -1280,6 +1355,7 @@ export const hotels = [
         features: ["Gourmet brunch", "Swimming Pool"],
       },
     ],
+    hotelpackage: "Brunch + Swimming Pool",
   },
   {
     id: "23",
@@ -1294,6 +1370,8 @@ export const hotels = [
       "/hotels/tajtrees/restrotwo.avif",
     ],
     distance: 14.6,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/9ex8WmJSweithjNN9",
     address:
       "Taj the Trees, off Eastern Express Highway, Juhi - D wing, Pirojshanagar, Vikhroli, Mumbai, Maharashtra 400079",
@@ -1331,6 +1409,7 @@ export const hotels = [
         features: ["Multi-Cuisine", "Hard Drinks", "Live Music"],
       },
     ],
+    hotelpackage: "Brunch",
   },
   // {
   //   id: "24",
@@ -1342,6 +1421,8 @@ export const hotels = [
   //     "/hotels/novotel/1708335364463.avif",
   //   ],
   //   distance: 15.5 ,
+  //   ispremium:false,
+  // quantity: 12,
   //   map_link: "https://maps.app.goo.gl/181Hk6N6imFELZnc7",
   //   address: "Balraj Sahni Rd, Juhu, Mumbai, Maharashtra 400049",
   //   rating: 4.3,
@@ -1378,6 +1459,7 @@ export const hotels = [
   //       features: ["Gourmet brunch", "Swimming Pool"],
   //     },
   //   ],
+  // hotelpackage: "Brunch + Spa + Swimming Pool",
   // },
   {
     id: "25",
@@ -1419,6 +1501,7 @@ export const hotels = [
         features: ["Gourmet brunch", "Swimming Pool"],
       },
     ],
+    hotelpackage: "Brunch + Swimming Pool",
   },
   {
     id: "26",
@@ -1432,7 +1515,9 @@ export const hotels = [
       "/hotels/radissongoregaon/restro.avif",
       "/hotels/radissongoregaon/restrotwo.avif",
     ],
-    distanc: 21,
+    distance: 21,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/hHv7hdAfVkjxB4Aq7",
     address:
       "S.V. Road, Veer Savarkar Flyover, Goregaon West, Mumbai, Maharashtra 400062",
@@ -1483,6 +1568,7 @@ export const hotels = [
         ],
       },
     ],
+    hotelpackage: "Brunch + Swimming Pool",
   },
   {
     id: "28",
@@ -1494,6 +1580,8 @@ export const hotels = [
       "/hotels/regis/restrotwo.avif",
     ],
     distance: 4.4,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/YXnhbRmb1xdmHta1A",
     address:
       "462, Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013",
@@ -1559,6 +1647,7 @@ export const hotels = [
         ],
       },
     ],
+    hotelpackage: "Brunch + Swimming Pool",
   },
   {
     id: "29",
@@ -1569,6 +1658,8 @@ export const hotels = [
       "/hotels/fourseasons/restrotwo.avif",
     ],
     distance: 4.4,
+    ispremium: false,
+    quantity: 12,
     map_link: "https://maps.app.goo.gl/tmfrTYd3tfUagXPU6",
     address:
       "1/136, Dr Elijah Moses Rd, Gandhi Nagar, Upper Worli, Worli, Mumbai, Maharashtra 400018",
@@ -1630,6 +1721,7 @@ export const hotels = [
         ],
       },
     ],
+    hotelpackage: "Brunch + Spa",
   },
   // {
   //    id: "30",
@@ -1642,6 +1734,8 @@ export const hotels = [
   //      "/hotels/marineplaza/pool.avif",
   //    ],
   //    distance: 1.4 ,
+  //    ispremium:false,
+  // quantity: 12,
   //    map_link: "https://maps.app.goo.gl/3gkzqMabHh2bZ7kN8",
   //    address: "29, Marine Dr, Chowpatty, Marine Lines, Mumbai, Maharashtra 400020",
   //    rating: 4.3,
@@ -1669,5 +1763,6 @@ export const hotels = [
   //        features: ["Gourmet brunch","Welcome Drinks","Swimming Pool","Pool","Alcohol not included" ],
   //      },
   //    ],
+  //    hotelpackage: "Brunch + Swimming Pool",
   //  },
 ];
