@@ -272,6 +272,9 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
                       /person
                     </span>
                   </p>
+                  <p className="text-xs font-bold text-muted-foreground">
+                    * Prices may vary based on availability
+                  </p>
                 </CardContent>
 
                 <CardFooter>
