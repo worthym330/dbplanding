@@ -1488,10 +1488,10 @@ export const hotels = [
     id: "28",
     name: "The St. Regis Mumbai",
     images: [
+      "/hotels/regis/spa.webp",
+      "/hotels/regis/restro.avif",
       "/hotels/regis/outdoor.avif",
       "/hotels/regis/restrotwo.avif",
-      "/hotels/regis/restro.avif",
-      "/hotels/regis/spa.webp",
     ],
     distance: 4.4,
     map_link: "https://maps.app.goo.gl/YXnhbRmb1xdmHta1A",
