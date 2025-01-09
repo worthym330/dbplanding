@@ -133,7 +133,7 @@ export const hotels = [
       "Steam and Sauna",
     ],
     ispartner: true,
-    price: 10499,
+    price: 8299,
     description:
       "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
     packages: [
@@ -143,7 +143,7 @@ export const hotels = [
         issunday: true,
         description:
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 10499,
+        price: 8299,
         features: [
           "Heated Swimming Pool",
           "J Wellness Circle Spa",
@@ -154,7 +154,7 @@ export const hotels = [
           "Sauna",
           "Steam",
         ],
-        stock: 6,
+        stock: 2,
       },
     ],
   },
