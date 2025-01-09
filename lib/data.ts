@@ -742,10 +742,9 @@ export const hotels = [
     id: "12",
     name: "Fairfield by Marriott Mumbai International Airport",
     images: [
-      "/hotels/courtyardbymarriott/outdoor.avif",
+      "/hotels/courtyardbymarriott/202208171217535059-8702feccc7cb11edbc5f0a58a9feac02.avif",
+      "/hotels/courtyardbymarriott/bgdefault_bg (1).avif",
       "/hotels/courtyardbymarriott/swimmingpool.avif",
-      "/hotels/courtyardbymarriott/restrotwo.avif",
-      "/hotels/courtyardbymarriott/restro.avif",
     ],
     distance: "17.7 miles ",
     map_link: "https://maps.app.goo.gl/CwQGpWNvGeyNz9pV8",
