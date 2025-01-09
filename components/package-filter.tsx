@@ -117,7 +117,7 @@ export function PackagesSection() {
           </div>
         </div>
 
-        <div className="md:hidden flex items-center justify-between mb-8 sticky top-16 z-30 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border py-4">
+        <div className="md:hidden flex items-center justify-between mb-8 sticky top-16 z-10 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border py-4">
           <Sheet open={openSheet} onOpenChange={setOpenSheet}>
             <SheetTrigger asChild>
               <Button
