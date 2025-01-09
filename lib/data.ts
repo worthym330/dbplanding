@@ -1133,12 +1133,9 @@ export const hotels = [
     id: "21",
     name: "Grand Hyatt Mumbai Hotel & Residences",
     images: [
-      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_Slides.avif",
-      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_missionbayslides.avif",
-      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_missionbaycabana.avif",
-      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_hyattregency7.avif",
-      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_HyattMissionBay_Firepit.avif",
-      "https://api.staging.daybreakpass.com/uploads/hotel/images/details_hrmission2.avif",
+      "/hotels/Restro.jpg",
+      "/hotels/Grandhyattrestrotwo.jpg",
+      "/hotels/Outdoor.jpg"
     ],
     distance: "13.5 miles",
     map_link: "https://maps.app.goo.gl/mimXGAQ4LPiMF5TG8",
