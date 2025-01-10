@@ -107,7 +107,7 @@ export function PremiumFilter({
 }) {
   return (
     <div className="gap-4">
-      <div className="flex flex-wrap gap-4 ">
+      <div className="flex gap-4 ">
         <Button
           variant={ispremium !== undefined && ispremium ? "default" : "outline"}
           size="sm"

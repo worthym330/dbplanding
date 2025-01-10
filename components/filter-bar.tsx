@@ -42,7 +42,7 @@ export function FilterBar({
         exit={{ height: 0, opacity: 0 }}
         className=""
       >
-        <div className="flex flex-wrap gap-4 ">
+        <div className="flex md:flex-nowrap flex-wrap gap-4 ">
           {filterOptions.map((option) => (
             <Button
               key={option.id}
