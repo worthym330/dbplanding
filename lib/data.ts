@@ -9,7 +9,7 @@ export const hotels = [
     ],
     distance: 14.7,
     ispremium: false,
-    quantity: 12,
+    quantity: 5,
     map_link: "https://maps.app.goo.gl/iWGaiu6s7PCD5UyGA",
     address:
       "Juhu Beach, Juhu Tara Rd, next to Shivaji Maharaj Statue, Nazir Wadi, Theosophical Housing Colony, Juhu, Mumbai, Maharashtra 400049",
@@ -68,7 +68,7 @@ export const hotels = [
     ],
     distance: 18.1,
     ispremium: true,
-    quantity: 12,
+    quantity: 6,
     map_link: "https://maps.app.goo.gl/GhYcpJNQv6zRFk3g9",
     address:
       "Marol Maroshi Rd, near Metro Station Marol Naka, Bori Colony, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059",
@@ -178,7 +178,7 @@ export const hotels = [
     ],
     distance: 14.4,
     ispremium: false,
-    quantity: 12,
+    quantity: 6,
     map_link: "https://maps.app.goo.gl/bkPMgxdQ9eKVVH9h8",
     address: "Juhu Tara Rd, Shivaji Nagr, Juhu, Mumbai, Maharashtra 400049",
     rating: 4.0,
@@ -225,7 +225,7 @@ export const hotels = [
     ],
     distance: 14.3,
     ispremium: false,
-    quantity: 12,
+    quantity: 5,
     map_link: "https://maps.app.goo.gl/RJkGeGG823B7sGum8",
     address:
       "Juhu Tara Road, Beach, near Juhu, Juhu, Mumbai, Maharashtra 400049",
@@ -275,7 +275,7 @@ export const hotels = [
     ],
     distance: 21.9,
     ispremium: false,
-    quantity: 12,
+    quantity: 9,
     map_link: "https://maps.app.goo.gl/xCPL9PUvT5Hcnqtg6",
     address:
       "MILLENNIUM BUSINESS PARK, 156, MIDC, Millenium Business Park, Sector 2, Mahape, Navi Mumbai, Maharashtra 400710",
@@ -325,7 +325,7 @@ export const hotels = [
     ],
     distance: 21.9,
     ispremium: false,
-    quantity: 12,
+    quantity: 10,
     map_link: "https://maps.app.goo.gl/9tY8vxopJ9USqiJ97",
     address:
       "Plot No. 67, Palm Beach Rd, Juhu Nagar, Sector 19, Vashi, Navi Mumbai, Maharashtra 400705",
@@ -478,7 +478,7 @@ export const hotels = [
     ],
     distance: 17.6,
     ispremium: false,
-    quantity: 12,
+    quantity: 6,
     map_link: "https://maps.app.goo.gl/9G6EaXjvhsVLimzM7",
     address:
       "Chhatrapati Shivaji Maharaj Int'l Airport Rd, Navpada, Marol, Andheri East, Mumbai, Maharashtra 400059",
@@ -718,7 +718,7 @@ export const hotels = [
     ],
     distance: 17.4,
     ispremium: false,
-    quantity: 12,
+    quantity: 9,
     map_link: "https://maps.app.goo.gl/w9bwzoCPJXDHwqBGA",
     address:
       "entrance no 3, CTS 1359, Andheri - Kurla Rd, next to Airport Metro Station, Bori Colony, Marol, Andheri East, Mumbai, Maharashtra 400059",
@@ -823,7 +823,7 @@ export const hotels = [
     ],
     distance: 17.7,
     ispremium: false,
-    quantity: 12,
+    quantity: 5,
     map_link: "https://maps.app.goo.gl/CwQGpWNvGeyNz9pV8",
     address:
       "Building 16B, Samita Industrial Estate, Saki Naka, Mumbai, Maharashtra 400072",
@@ -882,7 +882,7 @@ export const hotels = [
     ],
     distance: 13.2,
     ispremium: false,
-    quantity: 12,
+    quantity: 7,
     map_link: "https://maps.app.goo.gl/LGMe4Vk3rGbPGbY67",
     address:
       "C 56, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400098",
@@ -1246,7 +1246,7 @@ export const hotels = [
     ],
     distance: 13.5,
     ispremium: false,
-    quantity: 12,
+    quantity: 6,
     map_link: "https://maps.app.goo.gl/mimXGAQ4LPiMF5TG8",
     address:
       "Bandra Kurla Complex, Siddharath Nagar, Vakola, Vicinity, Mumbai, Maharashtra 400055",
@@ -1371,7 +1371,7 @@ export const hotels = [
     ],
     distance: 14.6,
     ispremium: false,
-    quantity: 12,
+    quantity: 10,
     map_link: "https://maps.app.goo.gl/9ex8WmJSweithjNN9",
     address:
       "Taj the Trees, off Eastern Express Highway, Juhi - D wing, Pirojshanagar, Vikhroli, Mumbai, Maharashtra 400079",
@@ -1517,7 +1517,7 @@ export const hotels = [
     ],
     distance: 21,
     ispremium: false,
-    quantity: 12,
+    quantity: 7,
     map_link: "https://maps.app.goo.gl/hHv7hdAfVkjxB4Aq7",
     address:
       "S.V. Road, Veer Savarkar Flyover, Goregaon West, Mumbai, Maharashtra 400062",
@@ -1581,7 +1581,7 @@ export const hotels = [
     ],
     distance: 4.4,
     ispremium: false,
-    quantity: 12,
+    quantity: 10,
     map_link: "https://maps.app.goo.gl/YXnhbRmb1xdmHta1A",
     address:
       "462, Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013",
@@ -1659,7 +1659,7 @@ export const hotels = [
     ],
     distance: 4.4,
     ispremium: false,
-    quantity: 12,
+    quantity: 10,
     map_link: "https://maps.app.goo.gl/tmfrTYd3tfUagXPU6",
     address:
       "1/136, Dr Elijah Moses Rd, Gandhi Nagar, Upper Worli, Worli, Mumbai, Maharashtra 400018",
