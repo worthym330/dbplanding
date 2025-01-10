@@ -38,7 +38,7 @@ export function HotelCardImage({
           <span className="text-xs font-semibold">Premium</span>
         </div>
       ) : (
-        <div className="absolute top-0 right-0 bg-[#E6E6FA] text-white px-3 py-1 flex items-center gap-1 rounded-bl-md shadow-md text-[#4B0082]">
+        <div className="absolute top-0 right-0 bg-[#E6E6FA] px-3 py-1 flex items-center gap-1 rounded-bl-md shadow-md text-[#4B0082]">
           <BadgePercent className="h-4 w-4" />
           <span className="text-xs font-semibold">Budget Friendly</span>
         </div>
