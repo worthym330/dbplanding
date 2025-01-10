@@ -9,7 +9,7 @@ export const hotels = [
     ],
     distance: 14.7,
     ispremium: false,
-    quantity: 12,
+    quantity: 5,
     map_link: "https://maps.app.goo.gl/iWGaiu6s7PCD5UyGA",
     address:
       "Juhu Beach, Juhu Tara Rd, next to Shivaji Maharaj Statue, Nazir Wadi, Theosophical Housing Colony, Juhu, Mumbai, Maharashtra 400049",
@@ -67,8 +67,8 @@ export const hotels = [
       "/hotels/radissonblu/202008061201129632-ba2cff746e1b11ec8ac40a58a9feac02.avif",
     ],
     distance: 18.1,
-    ispremium: true,
-    quantity: 12,
+    ispremium: false,
+    quantity: 6,
     map_link: "https://maps.app.goo.gl/GhYcpJNQv6zRFk3g9",
     address:
       "Marol Maroshi Rd, near Metro Station Marol Naka, Bori Colony, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059",
@@ -167,21 +167,75 @@ export const hotels = [
     ],
     hotelpackage: "Spa + Swimming Pool",
   },
-  {
-    id: "34",
-    name: "Hyatt Centric Juhu Mumbai",
+{
+    id: "3",
+    name: "The Lalit Mumbai",
     images: [
-      "/hotels/hyattcentric/outdoor.avif",
-      "/hotels/hyattcentric/swimmingpool.avif",
-      "/hotels/hyattcentric/restro.jpg",
-      "/hotels/hyattcentric/restrotwo.avif",
+      "/hotels/lalit/outdoor.jpg",
+      "/hotels/lalit/pool.avif",
+      "/hotels/lalit/restro.avif",
+      "/hotels/lalit/restro2.avif",
+      "/hotels/lalit/spa.avif",
+      "/hotels/lalit/spatwo.avif",
     ],
-    distance: 14.4,
+    distance: 17.6,
     ispremium: false,
-    quantity: 12,
-    map_link: "https://maps.app.goo.gl/bkPMgxdQ9eKVVH9h8",
-    address: "Juhu Tara Rd, Shivaji Nagr, Juhu, Mumbai, Maharashtra 400049",
-    rating: 4.0,
+    quantity: 6,
+    map_link: "https://maps.app.goo.gl/9G6EaXjvhsVLimzM7",
+    address:
+      "Chhatrapati Shivaji Maharaj Int'l Airport Rd, Navpada, Marol, Andheri East, Mumbai, Maharashtra 400059",
+    rating: 4.3,
+    amenities: ["Brunch", "Swimming Pool", "Restuarant", "Bar"],
+    ispartner: true,
+    price: 3000,
+    description:
+      "The Lalit Mumbai is the epitome of world-class architecture and comfort with premium dining spaces, world-class leisure amenities, and unbeatable hospitality",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch with Pool (Non-Alcoholic)",
+        issunday: true,
+        description:
+          "Poolside view with a variety of quality buffets, sophistication, value for price, access to pool, and valet parking.",
+        price: 3090,
+        features: ["Gourmet brunch", "Swimming Pool", "Valet Parking"],
+      },
+      {
+        id: "2",
+        name: "Sunday Brunch with Pool (Alcoholic)",
+        issunday: true,
+        description:
+          "Poolside view with a variety of quality buffets, sophistication, value for price, access to pool, and valet parking.",
+        price: 3999,
+        features: [
+          "Gourmet brunch",
+          "Swimming Pool",
+          "Hard Drinks",
+          "Valet Parking",
+        ],
+      },
+    ],
+    hotelpackage: "Brunch + Swimming Pool",
+  },
+{
+    id: "26",
+    name: "Radisson Mumbai Goregaon",
+    images: [
+      "/hotels/radissongoregaon/outdoor.avif",
+      "/hotels/radissongoregaon/swimmingpool.avif",
+      "/hotels/radissongoregaon/pool.avif",
+      "/hotels/radissongoregaon/spa.avif",
+      "/hotels/radissongoregaon/spatwo.avif",
+      "/hotels/radissongoregaon/restro.avif",
+      "/hotels/radissongoregaon/restrotwo.avif",
+    ],
+    distance: 21,
+    ispremium: false,
+    quantity: 7,
+    map_link: "https://maps.app.goo.gl/hHv7hdAfVkjxB4Aq7",
+    address:
+      "S.V. Road, Veer Savarkar Flyover, Goregaon West, Mumbai, Maharashtra 400062",
+    rating: 4.2,
     amenities: [
       "Brunch",
       "Gym",
@@ -194,25 +248,102 @@ export const hotels = [
     ispartner: true,
     price: 2500,
     description:
-      "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
+      "Located in the heart of Mumbai's commercial and IT centre, this luxury hotel features well-appointed rooms, a full-service spa, and multiple dining venues.",
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch",
+        name: " Sunday Brunch (Non-Alcoholic) with Swimming Pool",
+        issunday: true,
+        stock: 5,
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 2600,
+        features: [
+          "Swimming Pool",
+          "Multi-Cuisine Brunch",
+          "Live Counter",
+          "Good Vibes music",
+        ],
+      },
+      {
+        id: "2",
+        name: " Sunday Brunch (Alcoholic) with Swimming Pool",
         issunday: true,
         description:
-          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
-        price: 2500,
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 3500,
+        stock: 4,
         features: [
-          "Sun: 11:00am to 3:00pm",
-          "Gourmet Brunch",
-          "Multi-Cuisine Buffet",
+          "Swimming Pool",
+          "Hard Drinks",
+          "Multi-Cuisine Brunch",
+          "Live Counter",
+          "Good Vibes music",
         ],
       },
     ],
-    hotelpackage: "Brunch",
+    hotelpackage: "Brunch + Swimming Pool",
   },
-  {
+{
+    id: "12",
+    name: "Fairfield by Marriott Mumbai International Airport",
+    images: [
+      "/hotels/courtyardbymarriott/202208171217535059-8702feccc7cb11edbc5f0a58a9feac02.avif",
+      "/hotels/courtyardbymarriott/fascade_ff.jpg",
+      "/hotels/courtyardbymarriott/dining_ff.jpg",
+    ],
+    distance: 17.7,
+    ispremium: false,
+    quantity: 5,
+    map_link: "https://maps.app.goo.gl/CwQGpWNvGeyNz9pV8",
+    address:
+      "Building 16B, Samita Industrial Estate, Saki Naka, Mumbai, Maharashtra 400072",
+    rating: 4.4,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: true,
+    price: 2299,
+    description:
+      "Treat your eyes to splendid runway views of the Mumbai International Airport",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch with Rooftop Access(Non-Alcoholic)",
+        issunday: true,
+        description:
+          "Treat your eyes to splendid runway views of the Mumbai International Airport",
+        price: 2299,
+        features: [
+          "Gourmet Brunch",
+          "Rooftop Access Airport Runway View",
+          "Live Music",
+        ],
+      },
+      {
+        id: "2",
+        name: "Sunday Brunch with Rooftop Access(Alcoholic)",
+        issunday: true,
+        description:
+          "Treat your eyes to splendid runway views of the Mumbai International Airport",
+        price: 3599,
+        features: [
+          "Gourmet Brunch",
+          "Rooftop Access Airport Runway View",
+          "Live Music",
+          "Hard Drinks",
+        ],
+      },
+    ],
+    hotelpackage: "Brunch + Swimming Pool",
+  },
+{
     id: "6",
     name: "Hotel Sea Princess",
     images: [
@@ -225,7 +356,7 @@ export const hotels = [
     ],
     distance: 14.3,
     ispremium: false,
-    quantity: 12,
+    quantity: 5,
     map_link: "https://maps.app.goo.gl/RJkGeGG823B7sGum8",
     address:
       "Juhu Tara Road, Beach, near Juhu, Juhu, Mumbai, Maharashtra 400049",
@@ -262,24 +393,21 @@ export const hotels = [
     ],
     hotelpackage: "Brunch + Swimming Pool",
   },
-  {
-    id: "32",
-    name: "Ramada by Wyndham Navi Mumbai",
+{
+    id: "13",
+    name: "Trident Bandra Kurla",
     images: [
-      "https://api.daybreakpass.com/uploads/hotel/images/Lounge.jpg",
-      "https://api.daybreakpass.com/uploads/hotel/images/swimming pool 2.jpg",
-      "https://api.daybreakpass.com/uploads/hotel/images/gym.jpg",
-      "https://api.daybreakpass.com/uploads/hotel/images/coffeescapes.jpg",
-      "https://api.daybreakpass.com/uploads/hotel/images/Swimming pool.jpg",
-      "https://api.daybreakpass.com/uploads/hotel/images/Exterior.jpg",
+      "/hotels/tridentbkc/restrotwo.avif",
+      "/hotels/tridentbkc/restro.avif",
+      "/hotels/tridentbkc/outdoor.avif",
     ],
-    distance: 21.9,
-    ispremium: false,
-    quantity: 12,
-    map_link: "https://maps.app.goo.gl/xCPL9PUvT5Hcnqtg6",
+    distance: 13.2,
+    ispremium: true,
+    quantity: 7,
+    map_link: "https://maps.app.goo.gl/LGMe4Vk3rGbPGbY67",
     address:
-      "MILLENNIUM BUSINESS PARK, 156, MIDC, Millenium Business Park, Sector 2, Mahape, Navi Mumbai, Maharashtra 400710",
-    rating: 4.2,
+      "C 56, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400098",
+    rating: 4.6,
     amenities: [
       "Brunch",
       "Gym",
@@ -290,30 +418,297 @@ export const hotels = [
       "Steam and Sauna",
     ],
     ispartner: true,
-    price: 1800,
+    price: 3199,
     description:
-      "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
+      "Relax in the cosmopolitan Mumbai with a stay at Trident Bandra Kurla, which prides itself in offering the very best and indulgent leisure amenities for every type of guest",
     packages: [
       {
         id: "1",
-        name: "Lunch & Swimming Pool",
+        name: "Sunday Brunch (Non-Alcoholic)",
         issunday: true,
         description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 1800,
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+        price: 3199,
         features: [
-          "MON-SUN: 12:30pm to 3:00pm",
-          "Pool timings: 12:00 to 6pm",
-          "Multi-Cuisine Buffet",
-          "Swimming Pool",
-          "Gym",
-          "Valet Service",
+          "Multi-Cuisine Brunch",
+          "Live Counter",
+          "SUN: 1:00 pm to 4:00pm",
+        ],
+      },
+      {
+        id: "2",
+        name: "Sunday Brunch (Alcoholic)",
+        issunday: true,
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 3699,
+        features: [
+          "Multi-Cuisine Brunch",
+          "Live Counter",
+          "SUN: 1:00 pm to 4:00pm",
         ],
       },
     ],
     hotelpackage: "Brunch",
   },
-  {
+{
+    id: "29",
+    name: "Four Seasons Hotel Mumbai",
+    images: [
+      "/hotels/fourseasons/restro.avif",
+      "/hotels/fourseasons/outdoor.avif",
+      "/hotels/fourseasons/restrotwo.avif",
+    ],
+    distance: 4.4,
+    ispremium: true,
+    quantity: 10,
+    map_link: "https://maps.app.goo.gl/tmfrTYd3tfUagXPU6",
+    address:
+      "1/136, Dr Elijah Moses Rd, Gandhi Nagar, Upper Worli, Worli, Mumbai, Maharashtra 400018",
+    rating: 4.5,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: true,
+    price: 3500,
+    description:
+      "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch (Alcoholic & Non-Alcoholic)",
+        issunday: true,
+        description:
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 3500,
+        features: [
+          "SUN:12:30-4:00pm",
+          "Multi-Cuisine",
+          "Hard drinks Available",
+          "Live Music",
+        ],
+      },
+      {
+        id: "2",
+        name: "Recovery Spa Pass",
+        issunday: true,
+        description:
+          "Rejuvenate post-run with a Spa Pass offering relaxing massages, steam baths, and muscle recovery treatments, tailored for marathon runners.",
+        price: 6250,
+        features: [
+          "60-minute relaxing massage of your choice",
+          "Tranquil Music",
+          "Complimentary Jacuzzi",
+          "Steam",
+        ],
+      },
+      {
+        id: "3",
+        name: "Couple Spa Pass",
+        issunday: true,
+        description:
+          "Let the story of your connection start with 60-minute relaxing massage with harmonizing strokes combined with enchanting décor and tranquil music. The lavish rose petal bath will take your breath away when you immerse yourselves in the aromatic candle lit tub.",
+        price: 12500,
+        features: [
+          "60-minute relaxing massage of your choice",
+          "Tranquil Music",
+          "Complimentary Jacuzzi",
+          "Steam",
+        ],
+      },
+    ],
+    hotelpackage: "Brunch + Spa",
+  },
+{
+    id: "21",
+    name: "Grand Hyatt Mumbai Hotel & Residences",
+    images: [
+      "/hotels/Restro.jpg",
+      "/hotels/Grandhyattrestrotwo.jpg",
+      "/hotels/Outdoor.jpg",
+    ],
+    distance: 13.5,
+    ispremium: true,
+    quantity: 6,
+    map_link: "https://maps.app.goo.gl/mimXGAQ4LPiMF5TG8",
+    address:
+      "Bandra Kurla Complex, Siddharath Nagar, Vakola, Vicinity, Mumbai, Maharashtra 400055",
+    rating: 4.5,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: true,
+    price: 3800,
+    description:
+      "Enjoy a lavish stay at a premium hotel offering world-class comfort with elegant dining spaces, a spa and a pool.",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch (Non-Alcoholic)",
+        issunday: true,
+        description:
+          " Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 3800,
+        features: ["Multi-Cuisine"],
+      },
+      {
+        id: "2",
+        name: "Sunday Brunch (Alcoholic)",
+        issunday: true,
+        description:
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 4800,
+        features: ["Gourmet brunch", "Hard drinks(Vodka, Chivas etc)"],
+      },
+    ],
+    hotelpackage: "Brunch",
+  },
+{
+    id: "23",
+    name: "Taj The Trees, Mumbai",
+    images: [
+      "/hotels/tajtrees/outdoor.jpg",
+      "/hotels/tajtrees/swimmingpool.avif",
+      "/hotels/tajtrees/pool.avif",
+      "/hotels/tajtrees/spa.avif",
+      "/hotels/tajtrees/spa2.avif",
+      "/hotels/tajtrees/restro.avif",
+      "/hotels/tajtrees/restrotwo.avif",
+    ],
+    distance: 14.6,
+    ispremium: true,
+    quantity: 10,
+    map_link: "https://maps.app.goo.gl/9ex8WmJSweithjNN9",
+    address:
+      "Taj the Trees, off Eastern Express Highway, Juhi - D wing, Pirojshanagar, Vikhroli, Mumbai, Maharashtra 400079",
+    rating: 4.6,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: true,
+    price: 2999,
+    description:
+      "Taj The Trees ensures a memorable stay with a fine dining experience, exceptional service, and top-tier amenities",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch (Non-Alcoholic)",
+        issunday: true,
+        description:
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 2999,
+        features: ["Multi-Cuisine", "Live Music"],
+      },
+      {
+        id: "2",
+        name: "Sunday Brunch (Alcoholic)",
+        issunday: true,
+        description:
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 4699,
+        features: ["Multi-Cuisine", "Hard Drinks", "Live Music"],
+      },
+    ],
+    hotelpackage: "Brunch",
+  },
+{
+    id: "28",
+    name: "The St. Regis Mumbai",
+    images: [
+      "/hotels/regis/spa.avif",
+      "/hotels/regis/restro.avif",
+      "/hotels/regis/outdoor.avif",
+      "/hotels/regis/restrotwo.avif",
+    ],
+    distance: 4.4,
+    ispremium: true,
+    quantity: 10,
+    map_link: "https://maps.app.goo.gl/YXnhbRmb1xdmHta1A",
+    address:
+      "462, Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013",
+    rating: 4.6,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: true,
+    price: 3500,
+    description:
+      "Treat yourself to luxury at this premium hotel offering award-winning specialty restaurants & breathtaking city views.",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch with Pool (Non-Alcoholic)",
+        issunday: true,
+        description:
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
+        price: 3500,
+        features: ["SUN: 12:00pm to 4:00pm", "Multi-cuisine brunch"],
+      },
+      {
+        id: "2",
+        name: "Sunday Brunch with Pool (Alcoholic)",
+        issunday: true,
+        description:
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
+        price: 4500,
+        features: ["SUN: 12:00pm to 4:00pm", "Multi-cuisine brunch"],
+      },
+      {
+        id: "3",
+        name: "Recovery Spa Pass",
+        issunday: true,
+        description:
+          "Rejuvenate post-run with a Spa Pass offering relaxing massages, steam baths, and muscle recovery treatments, tailored for marathon runners.",
+        price: 8000,
+        features: [
+          "60-minute relaxing massage of your choice",
+          "Tranquil Music",
+          "Complimentary Jacuzzi",
+          "Steam",
+        ],
+      },
+      {
+        id: "4",
+        name: "Couple Spa Pass",
+        issunday: true,
+        description:
+          "Let the story of your connection start with 60-minute relaxing massage with harmonizing strokes combined with enchanting décor and tranquil music. The lavish rose petal bath will take your breath away when you immerse yourselves in the aromatic candle lit tub.",
+        price: 16500,
+        features: [
+          "60-minute relaxing massage of your choice",
+          "Tranquil Music",
+          "Complimentary Jacuzzi",
+          "Steam",
+        ],
+      },
+    ],
+    hotelpackage: "Brunch + Swimming Pool",
+  },
+{
     id: "33",
     name: "Royal Orchid Central Grazia, Navi Mumbai",
     images: [
@@ -325,7 +720,7 @@ export const hotels = [
     ],
     distance: 21.9,
     ispremium: false,
-    quantity: 12,
+    quantity: 10,
     map_link: "https://maps.app.goo.gl/9tY8vxopJ9USqiJ97",
     address:
       "Plot No. 67, Palm Beach Rd, Juhu Nagar, Sector 19, Vashi, Navi Mumbai, Maharashtra 400705",
@@ -379,6 +774,155 @@ export const hotels = [
     ],
     hotelpackage: "Brunch + Swimming Pool",
   },
+  {
+    id: "34",
+    name: "Hyatt Centric Juhu Mumbai",
+    images: [
+      "/hotels/hyattcentric/outdoor.avif",
+      "/hotels/hyattcentric/swimmingpool.avif",
+      "/hotels/hyattcentric/restro.jpg",
+      "/hotels/hyattcentric/restrotwo.avif",
+    ],
+    distance: 14.4,
+    ispremium: false,
+    quantity: 6,
+    map_link: "https://maps.app.goo.gl/bkPMgxdQ9eKVVH9h8",
+    address: "Juhu Tara Rd, Shivaji Nagr, Juhu, Mumbai, Maharashtra 400049",
+    rating: 4.0,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: true,
+    price: 2500,
+    description:
+      "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch",
+        issunday: true,
+        description:
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
+        price: 2500,
+        features: [
+          "Sun: 11:00am to 3:00pm",
+          "Gourmet Brunch",
+          "Multi-Cuisine Buffet",
+        ],
+      },
+    ],
+    hotelpackage: "Brunch",
+  },
+{
+    id: "10",
+    name: "Novotel Mumbai International Airport",
+    images: [
+      "/hotels/novotel/1708335380494.avif",
+      "/hotels/novotel/1731219600532.avif",
+      "/hotels/novotel/IMG-7328.avif",
+      "/hotels/novotel/1708335364463.avif",
+    ],
+    distance: 17.4,
+    ispremium: true,
+    quantity: 9,
+    map_link: "https://maps.app.goo.gl/w9bwzoCPJXDHwqBGA",
+    address:
+      "entrance no 3, CTS 1359, Andheri - Kurla Rd, next to Airport Metro Station, Bori Colony, Marol, Andheri East, Mumbai, Maharashtra 400059",
+    rating: 4.5,
+    amenities: ["Brunch", "Spa", "Restuarant", "Bar"],
+    ispartner: true,
+    price: 3500,
+    description:
+      "A contemporary property well suited for both leisure and business travellers strategically located near industrial and recreational hubs offering modern amenities and eventful venues.",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch with Pool (Non-Alcoholic)",
+        issunday: true,
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+        price: 5450,
+        features: ["Gourmet Brunch", "Rooftop Swimming Pool", "Live Music"],
+      },
+      {
+        id: "2",
+        name: "Sunday Brunch (Alcoholic)",
+        issunday: true,
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 6450,
+        features: ["Gourmet Brunch", "Rooftop Swimming Pool", "Live Music"],
+      },
+      {
+        id: "3",
+        name: "Tattva Spa",
+        issunday: true,
+        description:
+          "Best spa in Mumbai with all sorts of massage to rejuvenate",
+        price: 3500,
+        features: ["Deep Tissue", "Swedish", "Foot Massage"],
+      },
+    ],
+    hotelpackage: "Brunch + Spa + Swimming Pool",
+  },  
+  {
+    id: "32",
+    name: "Ramada by Wyndham Navi Mumbai",
+    images: [
+      "https://api.daybreakpass.com/uploads/hotel/images/Lounge.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/swimming pool 2.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/gym.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/coffeescapes.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/Swimming pool.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/Exterior.jpg",
+    ],
+    distance: 21.9,
+    ispremium: false,
+    quantity: 9,
+    map_link: "https://maps.app.goo.gl/xCPL9PUvT5Hcnqtg6",
+    address:
+      "MILLENNIUM BUSINESS PARK, 156, MIDC, Millenium Business Park, Sector 2, Mahape, Navi Mumbai, Maharashtra 400710",
+    rating: 4.2,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: true,
+    price: 1800,
+    description:
+      "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
+    packages: [
+      {
+        id: "1",
+        name: "Lunch & Swimming Pool",
+        issunday: true,
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 1800,
+        features: [
+          "MON-SUN: 12:30pm to 3:00pm",
+          "Pool timings: 12:00 to 6pm",
+          "Multi-Cuisine Buffet",
+          "Swimming Pool",
+          "Gym",
+          "Valet Service",
+        ],
+      },
+    ],
+    hotelpackage: "Brunch",
+  },
+  
   // {
   //   id: "1",
   //   name: "Lemon Tree Premier, Mumbai International Airport, Mumbai",
@@ -465,56 +1009,7 @@ export const hotels = [
   //   ],
   // hotelpackage: "Brunch + Swimming Pool",
   // },
-  {
-    id: "3",
-    name: "The Lalit Mumbai",
-    images: [
-      "/hotels/lalit/outdoor.jpg",
-      "/hotels/lalit/pool.avif",
-      "/hotels/lalit/restro.avif",
-      "/hotels/lalit/restro2.avif",
-      "/hotels/lalit/spa.avif",
-      "/hotels/lalit/spatwo.avif",
-    ],
-    distance: 17.6,
-    ispremium: false,
-    quantity: 12,
-    map_link: "https://maps.app.goo.gl/9G6EaXjvhsVLimzM7",
-    address:
-      "Chhatrapati Shivaji Maharaj Int'l Airport Rd, Navpada, Marol, Andheri East, Mumbai, Maharashtra 400059",
-    rating: 4.3,
-    amenities: ["Brunch", "Swimming Pool", "Restuarant", "Bar"],
-    ispartner: true,
-    price: 3000,
-    description:
-      "The Lalit Mumbai is the epitome of world-class architecture and comfort with premium dining spaces, world-class leisure amenities, and unbeatable hospitality",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch with Pool (Non-Alcoholic)",
-        issunday: true,
-        description:
-          "Poolside view with a variety of quality buffets, sophistication, value for price, access to pool, and valet parking.",
-        price: 3090,
-        features: ["Gourmet brunch", "Swimming Pool", "Valet Parking"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch with Pool (Alcoholic)",
-        issunday: true,
-        description:
-          "Poolside view with a variety of quality buffets, sophistication, value for price, access to pool, and valet parking.",
-        price: 3999,
-        features: [
-          "Gourmet brunch",
-          "Swimming Pool",
-          "Hard Drinks",
-          "Valet Parking",
-        ],
-      },
-    ],
-    hotelpackage: "Brunch + Swimming Pool",
-  },
+  
   // {
   //   id: "4",
   //   name: "JW Marriott Mumbai Sahar",
@@ -707,58 +1202,7 @@ export const hotels = [
   //   ],
   // hotelpackage: "Brunch + Spa + Swimming Pool",
   // },
-  {
-    id: "10",
-    name: "Novotel Mumbai International Airport",
-    images: [
-      "/hotels/novotel/1708335380494.avif",
-      "/hotels/novotel/1731219600532.avif",
-      "/hotels/novotel/IMG-7328.avif",
-      "/hotels/novotel/1708335364463.avif",
-    ],
-    distance: 17.4,
-    ispremium: false,
-    quantity: 12,
-    map_link: "https://maps.app.goo.gl/w9bwzoCPJXDHwqBGA",
-    address:
-      "entrance no 3, CTS 1359, Andheri - Kurla Rd, next to Airport Metro Station, Bori Colony, Marol, Andheri East, Mumbai, Maharashtra 400059",
-    rating: 4.5,
-    amenities: ["Brunch", "Spa", "Restuarant", "Bar"],
-    ispartner: true,
-    price: 3500,
-    description:
-      "A contemporary property well suited for both leisure and business travellers strategically located near industrial and recreational hubs offering modern amenities and eventful venues.",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch with Pool (Non-Alcoholic)",
-        issunday: true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        price: 5450,
-        features: ["Gourmet Brunch", "Rooftop Swimming Pool", "Live Music"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch (Alcoholic)",
-        issunday: true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 6450,
-        features: ["Gourmet Brunch", "Rooftop Swimming Pool", "Live Music"],
-      },
-      {
-        id: "3",
-        name: "Tattva Spa",
-        issunday: true,
-        description:
-          "Best spa in Mumbai with all sorts of massage to rejuvenate",
-        price: 3500,
-        features: ["Deep Tissue", "Swedish", "Foot Massage"],
-      },
-    ],
-    hotelpackage: "Brunch + Spa + Swimming Pool",
-  },
+  
   // {
   //   id: "11",
   //   name: "ITC Maratha - A Luxury Collection Hotel",
@@ -813,123 +1257,8 @@ export const hotels = [
   //   ],
   //   hotelpackage: "Brunch + Swimming Pool",
   // },
-  {
-    id: "12",
-    name: "Fairfield by Marriott Mumbai International Airport",
-    images: [
-      "/hotels/courtyardbymarriott/202208171217535059-8702feccc7cb11edbc5f0a58a9feac02.avif",
-      "/hotels/courtyardbymarriott/fascade_ff.jpg",
-      "/hotels/courtyardbymarriott/dining_ff.jpg",
-    ],
-    distance: 17.7,
-    ispremium: false,
-    quantity: 12,
-    map_link: "https://maps.app.goo.gl/CwQGpWNvGeyNz9pV8",
-    address:
-      "Building 16B, Samita Industrial Estate, Saki Naka, Mumbai, Maharashtra 400072",
-    rating: 4.4,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: true,
-    price: 2299,
-    description:
-      "Treat your eyes to splendid runway views of the Mumbai International Airport",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch with Rooftop Access(Non-Alcoholic)",
-        issunday: true,
-        description:
-          "Treat your eyes to splendid runway views of the Mumbai International Airport",
-        price: 2299,
-        features: [
-          "Gourmet Brunch",
-          "Rooftop Access Airport Runway View",
-          "Live Music",
-        ],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch with Rooftop Access(Alcoholic)",
-        issunday: true,
-        description:
-          "Treat your eyes to splendid runway views of the Mumbai International Airport",
-        price: 3599,
-        features: [
-          "Gourmet Brunch",
-          "Rooftop Access Airport Runway View",
-          "Live Music",
-          "Hard Drinks",
-        ],
-      },
-    ],
-    hotelpackage: "Brunch + Swimming Pool",
-  },
-  {
-    id: "13",
-    name: "Trident Bandra Kurla",
-    images: [
-      "/hotels/tridentbkc/restrotwo.avif",
-      "/hotels/tridentbkc/restro.avif",
-      "/hotels/tridentbkc/outdoor.avif",
-    ],
-    distance: 13.2,
-    ispremium: false,
-    quantity: 12,
-    map_link: "https://maps.app.goo.gl/LGMe4Vk3rGbPGbY67",
-    address:
-      "C 56, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400098",
-    rating: 4.6,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: true,
-    price: 3199,
-    description:
-      "Relax in the cosmopolitan Mumbai with a stay at Trident Bandra Kurla, which prides itself in offering the very best and indulgent leisure amenities for every type of guest",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch (Non-Alcoholic)",
-        issunday: true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        price: 3199,
-        features: [
-          "Multi-Cuisine Brunch",
-          "Live Counter",
-          "SUN: 1:00 pm to 4:00pm",
-        ],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch (Alcoholic)",
-        issunday: true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 3699,
-        features: [
-          "Multi-Cuisine Brunch",
-          "Live Counter",
-          "SUN: 1:00 pm to 4:00pm",
-        ],
-      },
-    ],
-    hotelpackage: "Brunch",
-  },
+  
+  
   // {
   //   id: "14",
   //   name: "The Orchid Hotel Mumbai Vile Parle",
@@ -1236,56 +1565,7 @@ export const hotels = [
   //   ],
   //   hotelpackage: "Brunch + Swimming Pool",
   // },
-  {
-    id: "21",
-    name: "Grand Hyatt Mumbai Hotel & Residences",
-    images: [
-      "/hotels/Restro.jpg",
-      "/hotels/Grandhyattrestrotwo.jpg",
-      "/hotels/Outdoor.jpg",
-    ],
-    distance: 13.5,
-    ispremium: false,
-    quantity: 12,
-    map_link: "https://maps.app.goo.gl/mimXGAQ4LPiMF5TG8",
-    address:
-      "Bandra Kurla Complex, Siddharath Nagar, Vakola, Vicinity, Mumbai, Maharashtra 400055",
-    rating: 4.5,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: true,
-    price: 3800,
-    description:
-      "Enjoy a lavish stay at a premium hotel offering world-class comfort with elegant dining spaces, a spa and a pool.",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch (Non-Alcoholic)",
-        issunday: true,
-        description:
-          " Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 3800,
-        features: ["Multi-Cuisine"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch (Alcoholic)",
-        issunday: true,
-        description:
-          "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 4800,
-        features: ["Gourmet brunch", "Hard drinks(Vodka, Chivas etc)"],
-      },
-    ],
-    hotelpackage: "Brunch",
-  },
+  
   // {
   //   id: "22",
   //   name: "Sofitel Mumbai BKC",
@@ -1357,60 +1637,7 @@ export const hotels = [
   //   ],
   //   hotelpackage: "Brunch + Swimming Pool",
   // },
-  {
-    id: "23",
-    name: "Taj The Trees, Mumbai",
-    images: [
-      "/hotels/tajtrees/outdoor.jpg",
-      "/hotels/tajtrees/swimmingpool.avif",
-      "/hotels/tajtrees/pool.avif",
-      "/hotels/tajtrees/spa.avif",
-      "/hotels/tajtrees/spa2.avif",
-      "/hotels/tajtrees/restro.avif",
-      "/hotels/tajtrees/restrotwo.avif",
-    ],
-    distance: 14.6,
-    ispremium: false,
-    quantity: 12,
-    map_link: "https://maps.app.goo.gl/9ex8WmJSweithjNN9",
-    address:
-      "Taj the Trees, off Eastern Express Highway, Juhi - D wing, Pirojshanagar, Vikhroli, Mumbai, Maharashtra 400079",
-    rating: 4.6,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: true,
-    price: 2999,
-    description:
-      "Taj The Trees ensures a memorable stay with a fine dining experience, exceptional service, and top-tier amenities",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch (Non-Alcoholic)",
-        issunday: true,
-        description:
-          "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 2999,
-        features: ["Multi-Cuisine", "Live Music"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch (Alcoholic)",
-        issunday: true,
-        description:
-          "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 4699,
-        features: ["Multi-Cuisine", "Hard Drinks", "Live Music"],
-      },
-    ],
-    hotelpackage: "Brunch",
-  },
+  
   // {
   //   id: "24",
   //   name: "Novotel Mumbai Juhu Beach",
@@ -1503,226 +1730,9 @@ export const hotels = [
   //   ],
   //   hotelpackage: "Brunch + Swimming Pool",
   // },
-  {
-    id: "26",
-    name: "Radisson Mumbai Goregaon",
-    images: [
-      "/hotels/radissongoregaon/outdoor.avif",
-      "/hotels/radissongoregaon/swimmingpool.avif",
-      "/hotels/radissongoregaon/pool.avif",
-      "/hotels/radissongoregaon/spa.avif",
-      "/hotels/radissongoregaon/spatwo.avif",
-      "/hotels/radissongoregaon/restro.avif",
-      "/hotels/radissongoregaon/restrotwo.avif",
-    ],
-    distance: 21,
-    ispremium: false,
-    quantity: 12,
-    map_link: "https://maps.app.goo.gl/hHv7hdAfVkjxB4Aq7",
-    address:
-      "S.V. Road, Veer Savarkar Flyover, Goregaon West, Mumbai, Maharashtra 400062",
-    rating: 4.2,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: true,
-    price: 2500,
-    description:
-      "Located in the heart of Mumbai's commercial and IT centre, this luxury hotel features well-appointed rooms, a full-service spa, and multiple dining venues.",
-    packages: [
-      {
-        id: "1",
-        name: " Sunday Brunch (Non-Alcoholic) with Swimming Pool",
-        issunday: true,
-        stock: 5,
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 2600,
-        features: [
-          "Swimming Pool",
-          "Multi-Cuisine Brunch",
-          "Live Counter",
-          "Good Vibes music",
-        ],
-      },
-      {
-        id: "2",
-        name: " Sunday Brunch (Alcoholic) with Swimming Pool",
-        issunday: true,
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 3500,
-        stock: 4,
-        features: [
-          "Swimming Pool",
-          "Hard Drinks",
-          "Multi-Cuisine Brunch",
-          "Live Counter",
-          "Good Vibes music",
-        ],
-      },
-    ],
-    hotelpackage: "Brunch + Swimming Pool",
-  },
-  {
-    id: "28",
-    name: "The St. Regis Mumbai",
-    images: [
-      "/hotels/regis/spa.avif",
-      "/hotels/regis/restro.avif",
-      "/hotels/regis/outdoor.avif",
-      "/hotels/regis/restrotwo.avif",
-    ],
-    distance: 4.4,
-    ispremium: false,
-    quantity: 12,
-    map_link: "https://maps.app.goo.gl/YXnhbRmb1xdmHta1A",
-    address:
-      "462, Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013",
-    rating: 4.6,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: true,
-    price: 3500,
-    description:
-      "Treat yourself to luxury at this premium hotel offering award-winning specialty restaurants & breathtaking city views.",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch with Pool (Non-Alcoholic)",
-        issunday: true,
-        description:
-          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
-        price: 3500,
-        features: ["SUN: 12:00pm to 4:00pm", "Multi-cuisine brunch"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch with Pool (Alcoholic)",
-        issunday: true,
-        description:
-          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
-        price: 4500,
-        features: ["SUN: 12:00pm to 4:00pm", "Multi-cuisine brunch"],
-      },
-      {
-        id: "3",
-        name: "Recovery Spa Pass",
-        issunday: true,
-        description:
-          "Rejuvenate post-run with a Spa Pass offering relaxing massages, steam baths, and muscle recovery treatments, tailored for marathon runners.",
-        price: 8000,
-        features: [
-          "60-minute relaxing massage of your choice",
-          "Tranquil Music",
-          "Complimentary Jacuzzi",
-          "Steam",
-        ],
-      },
-      {
-        id: "4",
-        name: "Couple Spa Pass",
-        issunday: true,
-        description:
-          "Let the story of your connection start with 60-minute relaxing massage with harmonizing strokes combined with enchanting décor and tranquil music. The lavish rose petal bath will take your breath away when you immerse yourselves in the aromatic candle lit tub.",
-        price: 16500,
-        features: [
-          "60-minute relaxing massage of your choice",
-          "Tranquil Music",
-          "Complimentary Jacuzzi",
-          "Steam",
-        ],
-      },
-    ],
-    hotelpackage: "Brunch + Swimming Pool",
-  },
-  {
-    id: "29",
-    name: "Four Seasons Hotel Mumbai",
-    images: [
-      "/hotels/fourseasons/restro.avif",
-      "/hotels/fourseasons/outdoor.avif",
-      "/hotels/fourseasons/restrotwo.avif",
-    ],
-    distance: 4.4,
-    ispremium: false,
-    quantity: 12,
-    map_link: "https://maps.app.goo.gl/tmfrTYd3tfUagXPU6",
-    address:
-      "1/136, Dr Elijah Moses Rd, Gandhi Nagar, Upper Worli, Worli, Mumbai, Maharashtra 400018",
-    rating: 4.5,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: true,
-    price: 3500,
-    description:
-      "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch (Alcoholic & Non-Alcoholic)",
-        issunday: true,
-        description:
-          "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 3500,
-        features: [
-          "SUN:12:30-4:00pm",
-          "Multi-Cuisine",
-          "Hard drinks Available",
-          "Live Music",
-        ],
-      },
-      {
-        id: "2",
-        name: "Recovery Spa Pass",
-        issunday: true,
-        description:
-          "Rejuvenate post-run with a Spa Pass offering relaxing massages, steam baths, and muscle recovery treatments, tailored for marathon runners.",
-        price: 6250,
-        features: [
-          "60-minute relaxing massage of your choice",
-          "Tranquil Music",
-          "Complimentary Jacuzzi",
-          "Steam",
-        ],
-      },
-      {
-        id: "3",
-        name: "Couple Spa Pass",
-        issunday: true,
-        description:
-          "Let the story of your connection start with 60-minute relaxing massage with harmonizing strokes combined with enchanting décor and tranquil music. The lavish rose petal bath will take your breath away when you immerse yourselves in the aromatic candle lit tub.",
-        price: 12500,
-        features: [
-          "60-minute relaxing massage of your choice",
-          "Tranquil Music",
-          "Complimentary Jacuzzi",
-          "Steam",
-        ],
-      },
-    ],
-    hotelpackage: "Brunch + Spa",
-  },
+  
+  
+  
   // {
   //    id: "30",
   //    name: "Hotel Marine Plaza",
