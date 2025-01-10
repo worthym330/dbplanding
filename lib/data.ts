@@ -67,7 +67,7 @@ export const hotels = [
       "/hotels/radissonblu/202008061201129632-ba2cff746e1b11ec8ac40a58a9feac02.avif",
     ],
     distance: 18.1,
-    ispremium: true,
+    ispremium: false,
     quantity: 6,
     map_link: "https://maps.app.goo.gl/GhYcpJNQv6zRFk3g9",
     address:
@@ -717,7 +717,7 @@ export const hotels = [
       "/hotels/novotel/1708335364463.avif",
     ],
     distance: 17.4,
-    ispremium: false,
+    ispremium: true,
     quantity: 9,
     map_link: "https://maps.app.goo.gl/w9bwzoCPJXDHwqBGA",
     address:
@@ -881,7 +881,7 @@ export const hotels = [
       "/hotels/tridentbkc/outdoor.avif",
     ],
     distance: 13.2,
-    ispremium: false,
+    ispremium: true,
     quantity: 7,
     map_link: "https://maps.app.goo.gl/LGMe4Vk3rGbPGbY67",
     address:
@@ -1245,7 +1245,7 @@ export const hotels = [
       "/hotels/Outdoor.jpg",
     ],
     distance: 13.5,
-    ispremium: false,
+    ispremium: true,
     quantity: 6,
     map_link: "https://maps.app.goo.gl/mimXGAQ4LPiMF5TG8",
     address:
@@ -1370,7 +1370,7 @@ export const hotels = [
       "/hotels/tajtrees/restrotwo.avif",
     ],
     distance: 14.6,
-    ispremium: false,
+    ispremium: true,
     quantity: 10,
     map_link: "https://maps.app.goo.gl/9ex8WmJSweithjNN9",
     address:
@@ -1580,7 +1580,7 @@ export const hotels = [
       "/hotels/regis/restrotwo.avif",
     ],
     distance: 4.4,
-    ispremium: false,
+    ispremium: true,
     quantity: 10,
     map_link: "https://maps.app.goo.gl/YXnhbRmb1xdmHta1A",
     address:
@@ -1658,7 +1658,7 @@ export const hotels = [
       "/hotels/fourseasons/restrotwo.avif",
     ],
     distance: 4.4,
-    ispremium: false,
+    ispremium: true,
     quantity: 10,
     map_link: "https://maps.app.goo.gl/tmfrTYd3tfUagXPU6",
     address:
