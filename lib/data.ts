@@ -127,7 +127,7 @@ export const hotels = [
     distance: 1.6,
     map_link: "https://maps.app.goo.gl/jhsKJGb6PzfqwK9t9",
     ispremium: true,
-    quantity: 8,
+    quantity: 2,
     address:
       "33, Nathalal Parikh Marg, Cusrow Baug Colony, Apollo Bandar, Colaba, Mumbai, Maharashtra 400001",
     rating: 4.5,
@@ -165,7 +165,7 @@ export const hotels = [
         stock: 2,
       },
     ],
-    hotelpackage: "Brunch + Spa + Swimming Pool",
+    hotelpackage: "Spa + Swimming Pool",
   },
   {
     id: "34",
