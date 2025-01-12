@@ -281,8 +281,17 @@ export const hotels = [
           "Good Vibes music",
         ],
       },
+      {
+        id: "3",
+        name: "Tattva Spa",
+        issunday: true,
+        description:
+          "Best spa in Mumbai with all sorts of massage to rejuvenate",
+        price: 3500,
+        features: ["Deep Tissue", "Swedish", "Foot Massage"],
+      },
     ],
-    hotelpackage: "Brunch + Swimming Pool",
+    hotelpackage: "Brunch + Swimming Pool + Spa",
   },
 {
     id: "12",
@@ -427,12 +436,13 @@ export const hotels = [
         name: "Sunday Brunch (Non-Alcoholic)",
         issunday: true,
         description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 3199,
         features: [
+          "SUN: 1:00 pm to 4:00pm",
           "Multi-Cuisine Brunch",
           "Live Counter",
-          "SUN: 1:00 pm to 4:00pm",
+          
         ],
       },
       {
@@ -443,9 +453,10 @@ export const hotels = [
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
         price: 3699,
         features: [
+          "SUN: 1:00 pm to 4:00pm",
           "Multi-Cuisine Brunch",
           "Live Counter",
-          "SUN: 1:00 pm to 4:00pm",
+          
         ],
       },
     ],
@@ -485,7 +496,7 @@ export const hotels = [
         name: "Sunday Brunch (Alcoholic & Non-Alcoholic)",
         issunday: true,
         description:
-          "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
         price: 3500,
         features: [
           "SUN:12:30-4:00pm",
@@ -559,7 +570,7 @@ export const hotels = [
         name: "Sunday Brunch (Non-Alcoholic)",
         issunday: true,
         description:
-          " Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+          " Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
         price: 3800,
         features: ["Multi-Cuisine"],
       },
@@ -568,7 +579,7 @@ export const hotels = [
         name: "Sunday Brunch (Alcoholic)",
         issunday: true,
         description:
-          "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
         price: 4800,
         features: ["Gourmet brunch", "Hard drinks(Vodka, Chivas etc)"],
       },
@@ -613,7 +624,7 @@ export const hotels = [
         name: "Sunday Brunch (Non-Alcoholic)",
         issunday: true,
         description:
-          "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
         price: 2999,
         features: ["Multi-Cuisine", "Live Music"],
       },
@@ -622,7 +633,7 @@ export const hotels = [
         name: "Sunday Brunch (Alcoholic)",
         issunday: true,
         description:
-          "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
         price: 4699,
         features: ["Multi-Cuisine", "Hard Drinks", "Live Music"],
       },
@@ -661,7 +672,7 @@ export const hotels = [
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch with Pool (Non-Alcoholic)",
+        name: "Sunday Brunch (Non-Alcoholic)",
         issunday: true,
         description:
           "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
@@ -670,7 +681,7 @@ export const hotels = [
       },
       {
         id: "2",
-        name: "Sunday Brunch with Pool (Alcoholic)",
+        name: "Sunday Brunch (Alcoholic)",
         issunday: true,
         description:
           "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
@@ -706,7 +717,7 @@ export const hotels = [
         ],
       },
     ],
-    hotelpackage: "Brunch + Swimming Pool",
+    hotelpackage: "Brunch + Spa",
   },
 {
     id: "33",
@@ -772,7 +783,7 @@ export const hotels = [
         ],
       },
     ],
-    hotelpackage: "Brunch + Swimming Pool",
+    hotelpackage: "Brunch + Swimming Pool ",
   },
   {
     id: "34",
