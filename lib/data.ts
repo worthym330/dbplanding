@@ -281,8 +281,17 @@ export const hotels = [
           "Good Vibes music",
         ],
       },
+      {
+        id: "3",
+        name: "Tattva Spa",
+        issunday: true,
+        description:
+          "Best spa in Mumbai with all sorts of massage to rejuvenate",
+        price: 3500,
+        features: ["Deep Tissue", "Swedish", "Foot Massage"],
+      },
     ],
-    hotelpackage: "Brunch + Swimming Pool",
+    hotelpackage: "Brunch + Swimming Pool + Spa",
   },
 {
     id: "12",
@@ -708,7 +717,7 @@ export const hotels = [
         ],
       },
     ],
-    hotelpackage: "Brunch + Swimming Pool",
+    hotelpackage: "Brunch + Spa",
   },
 {
     id: "33",
@@ -774,7 +783,7 @@ export const hotels = [
         ],
       },
     ],
-    hotelpackage: "Brunch + Swimming Pool",
+    hotelpackage: "Brunch + Swimming Pool ",
   },
   {
     id: "34",
