@@ -16,7 +16,6 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { useLocalStorage } from "@/lib/hooks/uselocalstorage";
 import app_api from "@/lib/utils/api";
 import toast from "react-hot-toast";
 
@@ -32,7 +31,6 @@ type FormData = z.infer<typeof formSchema>;
 
 export function WelcomeModal() {
   const [isOpen, setIsOpen] = useState(false);
-  const [hasSeenWelcome, setHasSeenWelcome] = useState(false);
 
   const {
     register,
@@ -43,27 +41,18 @@ export function WelcomeModal() {
   });
 
   useEffect(() => {
-    if (!hasSeenWelcome) {
-      const timer = setTimeout(() => {
-        setIsOpen(true);
-      }, 3000);
+    const interval = setInterval(() => {
+      setIsOpen(true);
+    }, 15000); // 15 seconds
 
-      return () => clearTimeout(timer);
-    }
-  }, [hasSeenWelcome]);
+    return () => clearInterval(interval); // Cleanup on component unmount
+  }, []);
 
   const onSubmit = async (data: FormData) => {
     try {
-      await app_api
-        .post("/contact", data)
-        .then((response) => {
-          toast.success("We will contact you soon!");
-          setHasSeenWelcome(true);
-          setIsOpen(false);
-        })
-        .catch((error) => {
-          console.error("Failed to submit data:", error);
-        });
+      await app_api.post("/contact", data);
+      toast.success("We will contact you soon!");
+      setIsOpen(false);
     } catch (error) {
       console.error("Failed to submit data:", error);
     }
