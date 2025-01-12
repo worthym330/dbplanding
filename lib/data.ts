@@ -59,7 +59,6 @@ export const hotels = [
     hotelRule: [
       "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
   },
@@ -120,7 +119,6 @@ export const hotels = [
     hotelRule: [
       "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
   },
@@ -181,7 +179,6 @@ export const hotels = [
     hotelRule: [
       "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
   },
@@ -237,7 +234,6 @@ export const hotels = [
     hotelRule: [
       "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
   },
@@ -319,7 +315,6 @@ export const hotels = [
     hotelRule: [
       "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
   },
@@ -380,7 +375,7 @@ export const hotels = [
         ],
       },
     ],
-    hotelpackage: "Brunch + Swimming Pool",
+    hotelpackage: "Brunch",
     hotelRule: [
       "Carrying food or having anything served near the pool area is not permitted.",
       "You will have access to the rooftop to enjoy the view.",
@@ -437,6 +432,11 @@ export const hotels = [
       },
     ],
     hotelpackage: "Brunch + Swimming Pool",
+    hotelRule: [
+      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
   },
   {
     id: "13",
@@ -496,9 +496,7 @@ export const hotels = [
     ],
     hotelpackage: "Brunch",
     hotelRule: [
-      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
   },
@@ -578,7 +576,6 @@ export const hotels = [
     hotelRule: [
       "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
   },
@@ -632,9 +629,7 @@ export const hotels = [
     ],
     hotelpackage: "Brunch",
     hotelRule: [
-      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
   },
@@ -692,9 +687,7 @@ export const hotels = [
     ],
     hotelpackage: "Brunch",
     hotelRule: [
-      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
   },
@@ -779,7 +772,6 @@ export const hotels = [
     hotelRule: [
       "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
   },
@@ -851,7 +843,6 @@ export const hotels = [
     hotelRule: [
       "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
   },
@@ -900,9 +891,7 @@ export const hotels = [
     ],
     hotelpackage: "Brunch",
     hotelRule: [
-      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
   },
@@ -960,7 +949,6 @@ export const hotels = [
     hotelRule: [
       "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
   },
@@ -1015,9 +1003,7 @@ export const hotels = [
     ],
     hotelpackage: "Brunch",
     hotelRule: [
-      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
   },
@@ -1066,7 +1052,6 @@ export const hotels = [
   // hotelRule:[
   //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
   //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
   //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
   // ]
   // },
@@ -1115,7 +1100,6 @@ export const hotels = [
   // hotelRule:[
   // "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
   // "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-  // "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
   // "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
   // ]
   // },
@@ -1212,9 +1196,7 @@ export const hotels = [
   //   ],
   //   hotelpackage: "Brunch",
   // hotelRule:[
-  //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
   //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
   //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
   // ]
   // },
@@ -1271,7 +1253,6 @@ export const hotels = [
   // hotelRule:[
   //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
   //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
   //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
   // ]
   // },
@@ -1326,7 +1307,6 @@ export const hotels = [
   // hotelRule:[
   //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
   //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
   //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
   // ]
   // },
@@ -1387,7 +1367,6 @@ export const hotels = [
   // hotelRule:[
   //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
   //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
   //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
   // ]
   // },
@@ -1446,9 +1425,7 @@ export const hotels = [
   //   ],
   //   hotelpackage: "Brunch",
   // hotelRule:[
-  //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
   //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
   //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
   // ]
   // },
@@ -1505,6 +1482,10 @@ export const hotels = [
   //     },
   //   ],
   //   hotelpackage: "Brunch",
+  // hotelRule: [
+  //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+  //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+  // ],
   // },
   // {
   //   id: "16",
@@ -1552,7 +1533,6 @@ export const hotels = [
   // hotelRule:[
   //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
   //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
   //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
   // ]
   // },
@@ -1596,6 +1576,10 @@ export const hotels = [
   //     },
   //   ],
   //   hotelpackage: "Brunch",
+  // hotelRule: [
+  //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+  //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+  // ],
   // },
   // {
   //   id: "19",
@@ -1647,9 +1631,7 @@ export const hotels = [
   //   ],
   //   hotelpackage: "Brunch",
   // hotelRule:[
-  //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
   //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
   //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
   // ]
   // },
@@ -1718,7 +1700,6 @@ export const hotels = [
   // hotelRule:[
   //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
   //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
   //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
   // ]
   // },
@@ -1796,7 +1777,6 @@ export const hotels = [
   // hotelRule:[
   //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
   //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
   //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
   // ]
   // },
@@ -1853,7 +1833,6 @@ export const hotels = [
   // hotelRule:[
   //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
   //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
   //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
   // ]
   // },
@@ -1901,7 +1880,6 @@ export const hotels = [
   // hotelRule:[
   //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
   //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
   //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
   // ]
   // },
@@ -1950,7 +1928,6 @@ export const hotels = [
   // hotelRule:[
   //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
   //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
   //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
   // ]
   //  },
