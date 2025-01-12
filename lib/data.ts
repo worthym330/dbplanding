@@ -92,7 +92,7 @@ export const hotels = [
         issunday: true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 3450,
+        price: 3250,
         features: [
           "SUN: 12:30pm to 4:00pm",
           "Multi-cuisine brunch",
@@ -141,7 +141,7 @@ export const hotels = [
       "Steam and Sauna",
     ],
     ispartner: true,
-    price: 8299,
+    price: 8250,
     description:
       "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
     packages: [
@@ -150,8 +150,8 @@ export const hotels = [
         name: "Premium Recovery Pass",
         issunday: true,
         description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 8299,
+          "Indian healing rituals invite transformative journeys. Rooted in the interplay of sacred elements - Jal, Vayu, Agni, Prithvi & Akash, we offer holistic rejuvenation for mind, body, and soul",
+        price: 8250,
         features: [
           "Heated Swimming Pool",
           "J Wellness Circle Spa",
@@ -196,7 +196,7 @@ export const hotels = [
         name: "Sunday Brunch with Pool (Non-Alcoholic)",
         issunday: true,
         description:
-          "Poolside view with a variety of quality buffets, sophistication, value for price, access to pool, and valet parking.",
+          "Outdoor pool spread over two levels features the main pool with a depth of 5 feet and the other one with a depth of 2 feet for kids only.",
         price: 3090,
         features: ["Gourmet brunch", "Swimming Pool", "Valet Parking"],
       },
