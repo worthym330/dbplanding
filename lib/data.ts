@@ -613,7 +613,7 @@ export const hotels = [
         name: "Sunday Brunch (Non-Alcoholic)",
         issunday: true,
         description:
-          "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
         price: 2999,
         features: ["Multi-Cuisine", "Live Music"],
       },
@@ -622,7 +622,7 @@ export const hotels = [
         name: "Sunday Brunch (Alcoholic)",
         issunday: true,
         description:
-          "Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
         price: 4699,
         features: ["Multi-Cuisine", "Hard Drinks", "Live Music"],
       },
