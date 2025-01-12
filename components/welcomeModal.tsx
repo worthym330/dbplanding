@@ -35,6 +35,7 @@ export function WelcomeModal() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<FormData>({
     resolver: zodResolver(formSchema),
@@ -53,6 +54,7 @@ export function WelcomeModal() {
       await app_api.post("/contact", data);
       toast.success("We will contact you soon!");
       setIsOpen(false);
+      reset()
     } catch (error) {
       console.error("Failed to submit data:", error);
     }
