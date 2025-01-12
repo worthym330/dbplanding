@@ -14,9 +14,8 @@ export function PriceSort({ sortOrder, onSort }: PriceSortProps) {
       <div className="flex gap-4">
         <Button
           variant={sortOrder === "asc" ? "default" : "outline"}
-          size="sm"
           onClick={() => onSort("asc")}
-          className="flex items-center gap-2"
+          className="px-2 space-x-2"
         >
           <ArrowUpAZ className="h-4 w-4" />
           Low to High
@@ -107,12 +106,11 @@ export function PremiumFilter({
 }) {
   return (
     <div className="gap-4">
-      <div className="flex gap-4 ">
+      <div className="flex gap-4 md:gap-2">
         <Button
           variant={ispremium !== undefined && ispremium ? "default" : "outline"}
-          size="sm"
           onClick={() => setIspremium(true)}
-          className="flex items-center gap-2"
+          className="px-2"
         >
           Premium
         </Button>
@@ -122,9 +120,8 @@ export function PremiumFilter({
           }
           size="sm"
           onClick={() => setIspremium(false)}
-          className="flex items-center gap-2"
+          className="px-2"
         >
-          {/* <ArrowUpAZ className="h-4 w-4" /> */}
           Budget Friendly
         </Button>
       </div>

@@ -39,8 +39,8 @@ export function PackagesSection() {
     }
 
     if (packageFilter !== "") {
-      updatedHotels = updatedHotels.filter(
-        (hotel) => hotel.hotelpackage.toLowerCase().includes(packageFilter.toLowerCase())
+      updatedHotels = updatedHotels.filter((hotel) =>
+        hotel.hotelpackage.toLowerCase().includes(packageFilter.toLowerCase())
       );
     }
 
@@ -56,10 +56,10 @@ export function PackagesSection() {
 
   return (
     <section className="py-10">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <div className="hidden lg:block sticky top-16 z-30 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border py-4 mb-8">
           <div className="flex items-center justify-between gap-4">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2">
               <FilterBar
                 activeFilter={packageFilter}
                 setActiveFilter={setPackageFilter}
@@ -72,6 +72,7 @@ export function PackagesSection() {
               <Button
                 variant={"default"}
                 onClick={handleClearFilters}
+                className="px-2"
                 disabled={
                   !sortOrder && ispremium === undefined && packageFilter === ""
                 }
