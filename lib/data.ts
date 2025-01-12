@@ -110,7 +110,7 @@ export const hotels = [
         features: ["Deep Tissue", "Swedish", "Foot Massage"],
       },
     ],
-    hotelpackage: "Brunch + Spa + Swimming Pool",
+    hotelpackage: "Brunch + Swimming Pool + Spa",
   },
   {
     id: "31",
@@ -165,7 +165,7 @@ export const hotels = [
         stock: 2,
       },
     ],
-    hotelpackage: "Spa + Swimming Pool",
+    hotelpackage: "Swimming Pool + Spa",
   },
 {
     id: "3",
@@ -869,7 +869,7 @@ export const hotels = [
         features: ["Deep Tissue", "Swedish", "Foot Massage"],
       },
     ],
-    hotelpackage: "Brunch + Spa + Swimming Pool",
+    hotelpackage: "Brunch + Swimming Pool + Spa",
   },  
   {
     id: "32",
@@ -963,7 +963,7 @@ export const hotels = [
   //       stock: 8,
   //     },
   //   ],
-  // hotelpackage: "Brunch + Spa + Swimming Pool",
+  // hotelpackage: "Brunch + Swimming Pool + Spa",
 
   // },
   // {
@@ -1151,7 +1151,7 @@ export const hotels = [
   //       features: ["Deep Tissue", "Swedish", "Foot Massage"],
   //     },
   //   ],
-  // hotelpackage: "Brunch + Spa + Swimming Pool",
+  // hotelpackage: "Brunch + Swimming Pool + Spa",
   // },
 
   // {
@@ -1200,7 +1200,7 @@ export const hotels = [
   //       stock: 8,
   //     },
   //   ],
-  // hotelpackage: "Brunch + Spa + Swimming Pool",
+  // hotelpackage: "Brunch + Swimming Pool + Spa",
   // },
   
   // {
@@ -1686,7 +1686,7 @@ export const hotels = [
   //       features: ["Gourmet brunch", "Swimming Pool"],
   //     },
   //   ],
-  // hotelpackage: "Brunch + Spa + Swimming Pool",
+  // hotelpackage: "Brunch + Swimming Pool + Spa",
   // },
   // {
   //   id: "25",

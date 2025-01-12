@@ -27,7 +27,7 @@ export function FilterBar({
 
   // Set filter options once the component mounts
   useEffect(() => {
-    const uniquePackages = getUniquePackages();
+    const uniquePackages = getUniquePackages().sort();
     const options = [
       ...uniquePackages.map((pkg) => ({ id: pkg.toLowerCase(), label: pkg })),
     ];

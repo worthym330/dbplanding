@@ -40,7 +40,7 @@ export function PackagesSection() {
 
     if (packageFilter !== "") {
       updatedHotels = updatedHotels.filter(
-        (hotel) => hotel.hotelpackage.toLowerCase() === packageFilter.toLowerCase()
+        (hotel) => hotel.hotelpackage.toLowerCase().includes(packageFilter.toLowerCase())
       );
     }
 
