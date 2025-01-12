@@ -56,6 +56,12 @@ export const hotels = [
       },
     ],
     hotelpackage: "Brunch + Swimming Pool",
+    hotelRule: [
+      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
   },
   {
     id: "5",
@@ -111,6 +117,12 @@ export const hotels = [
       },
     ],
     hotelpackage: "Brunch + Swimming Pool + Spa",
+    hotelRule: [
+      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
   },
   {
     id: "31",
@@ -166,8 +178,14 @@ export const hotels = [
       },
     ],
     hotelpackage: "Swimming Pool + Spa",
+    hotelRule: [
+      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
   },
-{
+  {
     id: "3",
     name: "The Lalit Mumbai",
     images: [
@@ -216,8 +234,14 @@ export const hotels = [
       },
     ],
     hotelpackage: "Brunch + Swimming Pool",
+    hotelRule: [
+      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
   },
-{
+  {
     id: "26",
     name: "Radisson Mumbai Goregaon",
     images: [
@@ -292,8 +316,14 @@ export const hotels = [
       },
     ],
     hotelpackage: "Brunch + Swimming Pool + Spa",
+    hotelRule: [
+      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
   },
-{
+  {
     id: "12",
     name: "Fairfield by Marriott Mumbai International Airport",
     images: [
@@ -351,8 +381,14 @@ export const hotels = [
       },
     ],
     hotelpackage: "Brunch + Swimming Pool",
+    hotelRule: [
+      "Carrying food or having anything served near the pool area is not permitted.",
+      "You will have access to the rooftop to enjoy the view.",
+      "Pool access is not allowed.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
   },
-{
+  {
     id: "6",
     name: "Hotel Sea Princess",
     images: [
@@ -402,7 +438,7 @@ export const hotels = [
     ],
     hotelpackage: "Brunch + Swimming Pool",
   },
-{
+  {
     id: "13",
     name: "Trident Bandra Kurla",
     images: [
@@ -442,7 +478,6 @@ export const hotels = [
           "SUN: 1:00 pm to 4:00pm",
           "Multi-Cuisine Brunch",
           "Live Counter",
-          
         ],
       },
       {
@@ -456,13 +491,18 @@ export const hotels = [
           "SUN: 1:00 pm to 4:00pm",
           "Multi-Cuisine Brunch",
           "Live Counter",
-          
         ],
       },
     ],
     hotelpackage: "Brunch",
+    hotelRule: [
+      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
   },
-{
+  {
     id: "29",
     name: "Four Seasons Hotel Mumbai",
     images: [
@@ -535,8 +575,14 @@ export const hotels = [
       },
     ],
     hotelpackage: "Brunch + Spa",
+    hotelRule: [
+      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
   },
-{
+  {
     id: "21",
     name: "Grand Hyatt Mumbai Hotel & Residences",
     images: [
@@ -585,8 +631,14 @@ export const hotels = [
       },
     ],
     hotelpackage: "Brunch",
+    hotelRule: [
+      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
   },
-{
+  {
     id: "23",
     name: "Taj The Trees, Mumbai",
     images: [
@@ -639,8 +691,14 @@ export const hotels = [
       },
     ],
     hotelpackage: "Brunch",
+    hotelRule: [
+      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
   },
-{
+  {
     id: "28",
     name: "The St. Regis Mumbai",
     images: [
@@ -718,8 +776,14 @@ export const hotels = [
       },
     ],
     hotelpackage: "Brunch + Spa",
+    hotelRule: [
+      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
   },
-{
+  {
     id: "33",
     name: "Royal Orchid Central Grazia, Navi Mumbai",
     images: [
@@ -784,6 +848,12 @@ export const hotels = [
       },
     ],
     hotelpackage: "Brunch + Swimming Pool ",
+    hotelRule: [
+      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
   },
   {
     id: "34",
@@ -829,8 +899,14 @@ export const hotels = [
       },
     ],
     hotelpackage: "Brunch",
+    hotelRule: [
+      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
   },
-{
+  {
     id: "10",
     name: "Novotel Mumbai International Airport",
     images: [
@@ -881,7 +957,13 @@ export const hotels = [
       },
     ],
     hotelpackage: "Brunch + Swimming Pool + Spa",
-  },  
+    hotelRule: [
+      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
+  },
   {
     id: "32",
     name: "Ramada by Wyndham Navi Mumbai",
@@ -932,8 +1014,14 @@ export const hotels = [
       },
     ],
     hotelpackage: "Brunch",
+    hotelRule: [
+      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
   },
-  
+
   // {
   //   id: "1",
   //   name: "Lemon Tree Premier, Mumbai International Airport, Mumbai",
@@ -975,7 +1063,12 @@ export const hotels = [
   //     },
   //   ],
   // hotelpackage: "Brunch + Swimming Pool + Spa",
-
+  // hotelRule:[
+  //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+  //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+  //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+  // ]
   // },
   // {
   //   id: "2",
@@ -1019,8 +1112,14 @@ export const hotels = [
   //     },
   //   ],
   // hotelpackage: "Brunch + Swimming Pool",
+  // hotelRule:[
+  // "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+  // "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+  // "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+  // "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+  // ]
   // },
-  
+
   // {
   //   id: "4",
   //   name: "JW Marriott Mumbai Sahar",
@@ -1112,6 +1211,12 @@ export const hotels = [
   //     },
   //   ],
   //   hotelpackage: "Brunch",
+  // hotelRule:[
+  //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+  //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+  //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+  // ]
   // },
   // {
   //   id: "7",
@@ -1163,6 +1268,12 @@ export const hotels = [
   //     },
   //   ],
   // hotelpackage: "Brunch + Swimming Pool + Spa",
+  // hotelRule:[
+  //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+  //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+  //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+  // ]
   // },
 
   // {
@@ -1212,8 +1323,14 @@ export const hotels = [
   //     },
   //   ],
   // hotelpackage: "Brunch + Swimming Pool + Spa",
+  // hotelRule:[
+  //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+  //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+  //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+  // ]
   // },
-  
+
   // {
   //   id: "11",
   //   name: "ITC Maratha - A Luxury Collection Hotel",
@@ -1267,9 +1384,14 @@ export const hotels = [
   //     },
   //   ],
   //   hotelpackage: "Brunch + Swimming Pool",
+  // hotelRule:[
+  //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+  //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+  //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+  // ]
   // },
-  
-  
+
   // {
   //   id: "14",
   //   name: "The Orchid Hotel Mumbai Vile Parle",
@@ -1323,6 +1445,12 @@ export const hotels = [
   //     },
   //   ],
   //   hotelpackage: "Brunch",
+  // hotelRule:[
+  //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+  //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+  //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+  // ]
   // },
   // {
   //   id: "15",
@@ -1421,6 +1549,12 @@ export const hotels = [
   //     },
   //   ],
   // hotelpackage: "Brunch + Swimming Pool",
+  // hotelRule:[
+  //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+  //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+  //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+  // ]
   // },
 
   // {
@@ -1512,6 +1646,12 @@ export const hotels = [
   //     },
   //   ],
   //   hotelpackage: "Brunch",
+  // hotelRule:[
+  //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+  //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+  //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+  // ]
   // },
   // {
   //   id: "20",
@@ -1575,8 +1715,14 @@ export const hotels = [
   //     },
   //   ],
   //   hotelpackage: "Brunch + Swimming Pool",
+  // hotelRule:[
+  //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+  //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+  //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+  // ]
   // },
-  
+
   // {
   //   id: "22",
   //   name: "Sofitel Mumbai BKC",
@@ -1647,8 +1793,14 @@ export const hotels = [
   //     },
   //   ],
   //   hotelpackage: "Brunch + Swimming Pool",
+  // hotelRule:[
+  //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+  //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+  //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+  // ]
   // },
-  
+
   // {
   //   id: "24",
   //   name: "Novotel Mumbai Juhu Beach",
@@ -1698,6 +1850,12 @@ export const hotels = [
   //     },
   //   ],
   // hotelpackage: "Brunch + Swimming Pool + Spa",
+  // hotelRule:[
+  //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+  //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+  //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+  // ]
   // },
   // {
   //   id: "25",
@@ -1740,10 +1898,14 @@ export const hotels = [
   //     },
   //   ],
   //   hotelpackage: "Brunch + Swimming Pool",
+  // hotelRule:[
+  //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+  //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+  //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+  // ]
   // },
-  
-  
-  
+
   // {
   //    id: "30",
   //    name: "Hotel Marine Plaza",
@@ -1785,5 +1947,11 @@ export const hotels = [
   //      },
   //    ],
   //    hotelpackage: "Brunch + Swimming Pool",
+  // hotelRule:[
+  //   "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+  //   "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+  //   "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
+  //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+  // ]
   //  },
 ];

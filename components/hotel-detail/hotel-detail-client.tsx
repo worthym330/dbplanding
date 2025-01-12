@@ -25,15 +25,10 @@ export default function HotelDetailClient({ hotel }: { hotel: any }) {
           <h2 className="text-2xl font-bold">Hotel Rules</h2>
 
           <ul className="space-y-2 text-muted-foreground">
-            {[
-              "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
-              "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-              "Children must be supervised at all times to ensure their safety and the comfort of other guests.",
-              "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
-            ].map((feature) => (
+            {hotel.hotelRule.map((feature: any) => (
               <li
                 key={feature}
-                className="flex items-center gap-2 text-justify"
+                className="flex items-center gap-2 text-justify "
               >
                 <TriangleAlert className="h-4 w-4 text-primary" />
                 {feature}
