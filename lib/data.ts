@@ -770,7 +770,6 @@ export const hotels = [
     ],
     hotelpackage: "Brunch + Spa",
     hotelRule: [
-      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
@@ -1001,8 +1000,9 @@ export const hotels = [
         ],
       },
     ],
-    hotelpackage: "Brunch",
+    hotelpackage: "Brunch + Swimming Pool",
     hotelRule: [
+      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
