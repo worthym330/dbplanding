@@ -9,12 +9,11 @@ export function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          
           backgroundImage:
-            "url('/marathon.jpg')",
+            "url('/LandingPagewithDaybreakpasslogo.png')",
           // backgroundImage:
           //   "url('https://images.unsplash.com/photo-1596460658047-1826d5921c56?auto=format&fit=crop&q=80')",
-            filter: "blur(8px)",
+            // filter: "blur(8px)",
         }}
       >
         <div className="absolute inset-0 bg-black/50" />
