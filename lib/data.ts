@@ -1973,10 +1973,8 @@ export const hotels = [
         price: 2700,
         features: [
           "MON-SUN: 12:30pm to 3:00pm",
-          "Pool timings: 12:00 to 6pm",
           "Multi-Cuisine Buffet",
           "Swimming Pool",
-          "Valet Service",
         ],
       },
     ],
