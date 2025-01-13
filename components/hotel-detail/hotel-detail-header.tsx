@@ -73,7 +73,7 @@ export function HotelDetailHeader({ hotel }: HotelDetailHeaderProps) {
               </h1>
               <p className="mt-2 flex items-center gap-2 text-sm md:text-lg text-gray-200">
                 <MapPin className="h-4 w-4 md:h-5 md:w-5" />
-                {hotel.distance} from marathon event
+                {hotel.distance} miles from marathon event
               </p>
             </div>
             <Badge
