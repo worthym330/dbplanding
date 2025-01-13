@@ -66,8 +66,8 @@ export const hotels = [
     id: "35",
     name: "Fariyas Hotel",
     images: [
-      "/hotels/fariyas/swimmingpool.avif",
-      "/hotels/fariyas/pool.avif",
+      // "/hotels/fariyas/swimmingpool.avif",
+      "/hotels/fariyas/Pool-Side-Hotel-In-Mumbai.jpg",
       "/hotels/fariyas/restro.jpg",
       "/hotels/fariyas/restro.avif",
       "/hotels/fariyas/restrotwo.avif",
