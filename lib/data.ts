@@ -73,7 +73,7 @@ export const hotels = [
       "/hotels/fariyas/restrotwo.avif",
       "/hotels/fariyas/outdoor.webp",
     ],
-    distance: 21.9,
+    distance: 2,
     ispremium: false,
     quantity: 9,
     map_link: "https://maps.app.goo.gl/D6zQVq1PiNfTEPcQ9",
