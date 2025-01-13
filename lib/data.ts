@@ -1972,7 +1972,7 @@ export const hotels = [
           "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
         price: 2700,
         features: [
-          "MON-SUN: 12:30pm to 3:00pm",
+          "SUN: 12:30pm to 3:00pm",
           "Multi-Cuisine Buffet",
           "Swimming Pool",
         ],
