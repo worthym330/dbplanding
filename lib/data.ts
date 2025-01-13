@@ -1960,7 +1960,7 @@ export const hotels = [
       "Steam and Sauna",
     ],
     ispartner: true,
-    price: 2500,
+    price: 2700,
     description:
       "Enjoy a comfortable stay at this contemporary property offering well-appointed rooms, multiple dining spots, an outdoor pool and an extensive range of world-class amenities.",
     packages: [
