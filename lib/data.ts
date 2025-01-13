@@ -62,60 +62,53 @@ export const hotels = [
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
   },
-  {
-    id: "5",
-    name: "Radisson Blu Mumbai International Airport",
+   {
+    id: "35",
+    name: "Fariyas Hotel",
     images: [
-      "/hotels/radissonblu/202008061201129632-d55f7e0ef6db11ecb2f30a58a9feac02.avif",
-      "/hotels/radissonblu/6a653fe4d7ac11eabeec0242ac110005.avif",
-      "/hotels/radissonblu/24dcfe4c6e1b11eca8430a58a9feac02.avif",
-      "/hotels/radissonblu/202008061201129632-ba2cff746e1b11ec8ac40a58a9feac02.avif",
+      "/hotels/fariyas/swimmingpool.avif",
+      "/hotels/fariyas/pool.avif",
+      "/hotels/fariyas/restro.jpg",
+      "/hotels/fariyas/restro.avif",
+      "/hotels/fariyas/restrotwo.avif",
+      "/hotels/fariyas/outdoor.webp",
     ],
-    distance: 18.1,
+    distance: 2,
     ispremium: false,
-    quantity: 6,
-    map_link: "https://maps.app.goo.gl/GhYcpJNQv6zRFk3g9",
+    quantity: 9,
+    map_link: "https://maps.app.goo.gl/D6zQVq1PiNfTEPcQ9",
     address:
-      "Marol Maroshi Rd, near Metro Station Marol Naka, Bori Colony, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059",
-    rating: 4.5,
+      "25, Off Arthur Bunder Road, Colaba, Mumbai - 400 005, Maharashtra, India.",
+    rating: 4.2,
     amenities: [
       "Brunch",
+      "Gym",
       "Swimming Pool",
       "Spa",
       "Restuarant",
       "Bar",
-      "Jacuzzi",
+      "Steam and Sauna",
     ],
     ispartner: true,
-    price: 3450,
+    price: 2700,
     description:
-      "Experience utmost luxury at this lavish retreat offering well-furnished rooms, elite restaurants, and a host of modern amenities.",
+      "Enjoy a comfortable stay at this contemporary property offering well-appointed rooms, multiple dining spots, an outdoor pool and an extensive range of world-class amenities.",
     packages: [
       {
         id: "1",
-        name: "Sunday Brunch with Rooftop Pool (Non-Alcoholic)",
+        name: "Sunday Brunch with Pool (Non-Alcoholic)",
         issunday: true,
         description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 3250,
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 2700,
         features: [
-          "SUN: 12:30pm to 4:00pm",
-          "Multi-cuisine brunch",
-          "Jain Food Available",
-          "Rooftop Swimming Pool",
+          "SUN: 12:30pm to 3:00pm",
+          "Multi-Cuisine Buffet",
+          "Swimming Pool",
         ],
       },
-      {
-        id: "32",
-        name: "Spa Pass",
-        issunday: true,
-        description:
-          "Best spa in Mumbai with all sorts of massage to rejuvenate at Unora by Tattva Spa",
-        price: 3600,
-        features: ["Deep Tissue", "Swedish", "Foot Massage"],
-      },
     ],
-    hotelpackage: "Brunch + Swimming Pool + Spa",
+    hotelpackage: "Brunch + Swimming Pool",
     hotelRule: [
       "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
@@ -176,6 +169,66 @@ export const hotels = [
       },
     ],
     hotelpackage: "Swimming Pool + Spa",
+    hotelRule: [
+      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
+  },
+{
+    id: "5",
+    name: "Radisson Blu Mumbai International Airport",
+    images: [
+      "/hotels/radissonblu/202008061201129632-d55f7e0ef6db11ecb2f30a58a9feac02.avif",
+      "/hotels/radissonblu/6a653fe4d7ac11eabeec0242ac110005.avif",
+      "/hotels/radissonblu/24dcfe4c6e1b11eca8430a58a9feac02.avif",
+      "/hotels/radissonblu/202008061201129632-ba2cff746e1b11ec8ac40a58a9feac02.avif",
+    ],
+    distance: 18.1,
+    ispremium: false,
+    quantity: 6,
+    map_link: "https://maps.app.goo.gl/GhYcpJNQv6zRFk3g9",
+    address:
+      "Marol Maroshi Rd, near Metro Station Marol Naka, Bori Colony, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059",
+    rating: 4.5,
+    amenities: [
+      "Brunch",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Jacuzzi",
+    ],
+    ispartner: true,
+    price: 3450,
+    description:
+      "Experience utmost luxury at this lavish retreat offering well-furnished rooms, elite restaurants, and a host of modern amenities.",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch with Rooftop Pool (Non-Alcoholic)",
+        issunday: true,
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 3250,
+        features: [
+          "SUN: 12:30pm to 4:00pm",
+          "Multi-cuisine brunch",
+          "Jain Food Available",
+          "Rooftop Swimming Pool",
+        ],
+      },
+      {
+        id: "32",
+        name: "Spa Pass",
+        issunday: true,
+        description:
+          "Best spa in Mumbai with all sorts of massage to rejuvenate at Unora by Tattva Spa",
+        price: 3600,
+        features: ["Deep Tissue", "Swedish", "Foot Massage"],
+      },
+    ],
+    hotelpackage: "Brunch + Swimming Pool + Spa",
     hotelRule: [
       "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
@@ -1932,57 +1985,5 @@ export const hotels = [
   // ]
   //  },
 
-  {
-    id: "35",
-    name: "Fariyas Hotel",
-    images: [
-      "/hotels/fariyas/swimmingpool.avif",
-      "/hotels/fariyas/pool.avif",
-      "/hotels/fariyas/restro.jpg",
-      "/hotels/fariyas/restro.avif",
-      "/hotels/fariyas/restrotwo.avif",
-      "/hotels/fariyas/outdoor.webp",
-    ],
-    distance: 21.9,
-    ispremium: false,
-    quantity: 9,
-    map_link: "https://maps.app.goo.gl/D6zQVq1PiNfTEPcQ9",
-    address:
-      "25, Off Arthur Bunder Road, Colaba, Mumbai - 400 005, Maharashtra, India.",
-    rating: 4.2,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: true,
-    price: 2700,
-    description:
-      "Enjoy a comfortable stay at this contemporary property offering well-appointed rooms, multiple dining spots, an outdoor pool and an extensive range of world-class amenities.",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch with Pool (Non-Alcoholic)",
-        issunday: true,
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 2700,
-        features: [
-          "SUN: 12:30pm to 3:00pm",
-          "Multi-Cuisine Buffet",
-          "Swimming Pool",
-        ],
-      },
-    ],
-    hotelpackage: "Brunch + Swimming Pool",
-    hotelRule: [
-      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
-      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
-    ],
-  },
+ 
 ];
