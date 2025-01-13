@@ -1931,4 +1931,60 @@ export const hotels = [
   //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
   // ]
   //  },
+
+  {
+    id: "33",
+    name: "Fariyas Hotel",
+    images: [
+      "https://api.daybreakpass.com/uploads/hotel/images/Lounge.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/swimming pool 2.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/gym.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/coffeescapes.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/Swimming pool.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/Exterior.jpg",
+    ],
+    distance: 21.9,
+    ispremium: false,
+    quantity: 9,
+    map_link: "https://maps.app.goo.gl/D6zQVq1PiNfTEPcQ9",
+    address:
+      "25, Off Arthur Bunder Road, Colaba, Mumbai - 400 005, Maharashtra, India.",
+    rating: 4.2,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: true,
+    price: 2500,
+    description:
+      "Enjoy a comfortable stay at this contemporary property offering well-appointed rooms, multiple dining spots, an outdoor pool and an extensive range of world-class amenities.",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch with Pool (Non-Alcoholic)",
+        issunday: true,
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 2700,
+        features: [
+          "MON-SUN: 12:30pm to 3:00pm",
+          "Pool timings: 12:00 to 6pm",
+          "Multi-Cuisine Buffet",
+          "Swimming Pool",
+          "Valet Service",
+        ],
+      },
+    ],
+    hotelpackage: "Brunch + Swimming Pool",
+    hotelRule: [
+      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
+  },
 ];
