@@ -48,7 +48,7 @@ export function WelcomeModal() {
     if (!formSubmitted) {
       intervalRef.current = setInterval(() => {
         setIsOpen(true);
-      }, 15000); // 15 seconds
+      }, 30000); // 15 seconds
 
       return () => {
         if (intervalRef.current) {
