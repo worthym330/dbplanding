@@ -4,7 +4,6 @@ import { useEffect, useState, useRef } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import axios from "axios";
 import {
   Dialog,
   DialogContent,
@@ -46,17 +45,32 @@ export function WelcomeModal() {
     const formSubmitted = sessionStorage.getItem("formSubmitted");
     console.log("formSubmitted", formSubmitted, typeof formSubmitted);
     if (!formSubmitted) {
-      intervalRef.current = setInterval(() => {
+      const timeoutId = setTimeout(() => {
         setIsOpen(true);
       }, 30000); // 15 seconds
 
       return () => {
+        clearTimeout(timeoutId);
         if (intervalRef.current) {
-          clearInterval(intervalRef.current); // Cleanup on component unmount
+          clearInterval(intervalRef.current);
         }
       };
     }
   }, []);
+
+  useEffect(() => {
+    const formSubmitted = sessionStorage.getItem("formSubmitted");
+    if (!isOpen && !formSubmitted) {
+      intervalRef.current = setTimeout(() => {
+        setIsOpen(true);
+      }, 30000);
+      return () => {
+        if (intervalRef.current) {
+          clearTimeout(intervalRef.current);
+        }
+      };
+    }
+  }, [isOpen]);
 
   const onSubmit = async (data: FormData) => {
     try {
