@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -31,6 +31,7 @@ type FormData = z.infer<typeof formSchema>;
 
 export function WelcomeModal() {
   const [isOpen, setIsOpen] = useState(false);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   const {
     register,
@@ -42,11 +43,19 @@ export function WelcomeModal() {
   });
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setIsOpen(true);
-    }, 15000); // 15 seconds
+    const formSubmitted = sessionStorage.getItem("formSubmitted");
+    console.log("formSubmitted", formSubmitted, typeof formSubmitted);
+    if (!formSubmitted) {
+      intervalRef.current = setInterval(() => {
+        setIsOpen(true);
+      }, 15000); // 15 seconds
 
-    return () => clearInterval(interval); // Cleanup on component unmount
+      return () => {
+        if (intervalRef.current) {
+          clearInterval(intervalRef.current); // Cleanup on component unmount
+        }
+      };
+    }
   }, []);
 
   const onSubmit = async (data: FormData) => {
@@ -54,9 +63,14 @@ export function WelcomeModal() {
       await app_api.post("/contact", data);
       toast.success("We will contact you soon!");
       setIsOpen(false);
-      reset()
+      reset();
+      sessionStorage.setItem("formSubmitted", "true");
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current); // Clear interval after form submission
+      }
     } catch (error) {
       console.error("Failed to submit data:", error);
+      toast.error("Failed to submit data. Please try again.");
     }
   };
 
