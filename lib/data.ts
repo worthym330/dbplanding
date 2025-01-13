@@ -1933,7 +1933,7 @@ export const hotels = [
   //  },
 
   {
-    id: "33",
+    id: "34",
     name: "Fariyas Hotel",
     images: [
       "/hotels/fariyas/swimmingpool.avif",
