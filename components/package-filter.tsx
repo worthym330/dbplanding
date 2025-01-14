@@ -57,7 +57,7 @@ export function PackagesSection() {
   return (
     <section className="py-10">
       <div className="container mx-auto">
-        <div className="hidden lg:block sticky top-16 z-30 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border py-4 mb-8">
+        <div className="hidden lg:block sticky top-16 z-10 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border py-4 mb-8 overflow-x-auto">
           <div className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <FilterBar

@@ -9,16 +9,21 @@ export function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage:
-            "url('/LandingPagewithDaybreakpasslogo.png')",
+          backgroundImage: "url('/marathon.jpg')",
           // backgroundImage:
           //   "url('https://images.unsplash.com/photo-1596460658047-1826d5921c56?auto=format&fit=crop&q=80')",
-            // filter: "blur(8px)",
+          filter: "blur(4px)",
         }}
       >
         <div className="absolute inset-0 bg-black/50" />
       </div>
-
+      <div className="absolute inset-x-0 flex items-center justify-center">
+        <img
+          src="/DayBreakPassXTTMLogo.svg"
+          alt="DayBreakPassXTTMLogo"
+          className="w-96 object-cover"
+        />
+      </div>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -42,8 +47,6 @@ export function HeroSection() {
             const targetElement = document.getElementById("hotels");
             if (targetElement) {
               targetElement.scrollIntoView({ behavior: "smooth" });
-            } else {
-              console.warn("Element with ID 'hotel' not found.");
             }
           }}
         >
@@ -61,7 +64,16 @@ export function HeroSection() {
           }}
           className="absolute bottom-8 cursor-pointer"
         >
-          <ChevronDown size={32} className="text-white" />
+          <ChevronDown
+            size={32}
+            className="text-white"
+            onClick={() => {
+              const targetElement = document.getElementById("hotels");
+              if (targetElement) {
+                targetElement.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          />
         </motion.div>
       </motion.div>
     </div>
