@@ -62,7 +62,7 @@ export const hotels = [
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
   },
-   {
+  {
     id: "35",
     name: "Fariyas Hotel",
     images: [
@@ -144,7 +144,7 @@ export const hotels = [
       "Steam and Sauna",
     ],
     ispartner: true,
-    price: 8250,
+    price: 2200,
     description:
       "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
     packages: [
@@ -167,15 +167,36 @@ export const hotels = [
         ],
         stock: 2,
       },
+      {
+        id: "2",
+        name: "Swimming Pool Pass",
+        issunday: true,
+        description:
+          "Swimming Pool A refreshing haven for relaxation and rejuvenation.",
+        price: 2200,
+        features: ["Swimming Pool"],
+        stock: 8,
+      },
+      {
+        id: "3",
+        name: "Swimming Pool + Wet Area",
+        issunday: true,
+        description:
+          "Experience refreshing relaxation in the swimming pool, serene ambiance in the chill pool, muscle soothing in the Jacuzzi, detox warmth in the sauna, and revitalizing therapy in the steam room.",
+        price: 3600,
+        features: ["Swimming Pool", "Chill pool", "Jacuzzi", "Sauna", "Steam"],
+        stock: 5,
+      },
     ],
     hotelpackage: "Swimming Pool + Spa",
     hotelRule: [
+      "Pool access restricted to specific timings",
       "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
   },
-{
+  {
     id: "5",
     name: "Radisson Blu Mumbai International Airport",
     images: [
@@ -1984,6 +2005,4 @@ export const hotels = [
   //   "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
   // ]
   //  },
-
- 
 ];
