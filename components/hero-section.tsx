@@ -12,7 +12,7 @@ export function HeroSection() {
           backgroundImage: "url('/marathon.jpg')",
           // backgroundImage:
           //   "url('https://images.unsplash.com/photo-1596460658047-1826d5921c56?auto=format&fit=crop&q=80')",
-          filter: "blur(4px)",
+          filter: "blur(8px)",
         }}
       >
         <div className="absolute inset-0 bg-black/50" />
