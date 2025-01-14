@@ -145,7 +145,10 @@ export function PackagesSection() {
             {filteredHotels.length} hotels found
           </p>
         </div>
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          id="hotels"
+        >
           <AnimatePresence>
             {filteredHotels
               .sort((a, b) => {
