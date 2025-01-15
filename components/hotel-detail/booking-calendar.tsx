@@ -33,7 +33,9 @@ export function BookingCalendar({ selectedHotel }: { selectedHotel: Hotel }) {
   };
 
   const isDateDisabled = (date: Date) => {
+    const cutoffDate = new Date('2025-01-19');
     if (isBefore(date, new Date())) return true;
+    if (date > cutoffDate) return true;
     if (selectedpackage === "") return true;
     if (
       selectedpackage !== "" &&
