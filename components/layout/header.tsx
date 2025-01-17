@@ -19,24 +19,26 @@ export function Header() {
   const logoSrc =
     theme === "dark" ? "/logos/logowhite.png" : "/logos/LogoBlack.png";
 
-    useEffect(() => {
-      const interval = setInterval(() => {
-        const now = moment();
-        const duration = moment.duration(targetDate.diff(now));
-        setTimeLeft(
-          `${duration.days()} days ${duration.hours()} hours ${duration.minutes()} minutes ${duration.seconds()} seconds`
-        );
-      }, 1000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const now = moment();
+      const duration = moment.duration(targetDate.diff(now));
+      const totalHours = Math.floor(duration.asHours());
+      setTimeLeft(
+        `${totalHours} hours ${duration.minutes()} minutes ${duration.seconds()} seconds`
+      );
+    }, 1000);
 
-      return () => clearInterval(interval);
-    }, []);
-
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur-lg">
-      <div className={`flex justify-center items-center gap-2 bg-primary text-white py-2 w-full text-center`}>
+      <div
+        className={`flex justify-center items-center gap-2 bg-primary text-white py-2 w-full text-center`}
+      >
         <span className="font-bold text-sm">
-          Last booking date | 18<sup>th</sup> Jan 2025 | {timeLeft}
+          Marathon deals closing at | 18<sup>th</sup> Jan 2025 | {timeLeft}
         </span>
       </div>
       <div className="mx-auto flex h-16 container items-center justify-between px-4">
