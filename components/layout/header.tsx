@@ -13,7 +13,7 @@ export function Header() {
   const { items } = useCart();
   const { theme, setTheme } = useTheme();
   const itemCount = items.reduce((acc, item) => acc + item.quantity, 0);
-  const targetDate = moment("2025-01-18");
+  const targetDate = moment("2025-01-18 16:00:00");
   const [timeLeft, setTimeLeft] = useState("");
 
   const logoSrc =
