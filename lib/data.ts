@@ -1,5 +1,139 @@
 export const hotels = [
   {
+    id: "31",
+    name: "Taj Wellington Mews, Mumbai",
+    images: [
+      "/hotels/tajwellignton/swimmingpool.avif",
+      "/hotels/tajwellignton/pool.avif",
+      "/hotels/tajwellignton/spa.avif",
+      "/hotels/tajwellignton/spa2.avif",
+      "/hotels/tajwellignton/spa3.avif",
+      "/hotels/tajwellignton/restro.avif",
+      "/hotels/tajwellignton/outdoor.avif",
+    ],
+    distance: 1.6,
+    map_link: "https://maps.app.goo.gl/jhsKJGb6PzfqwK9t9",
+    ispremium: true,
+    quantity: 2,
+    address:
+      "33, Nathalal Parikh Marg, Cusrow Baug Colony, Apollo Bandar, Colaba, Mumbai, Maharashtra 400001",
+    rating: 4.5,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: true,
+    price: 2199,
+    description:
+      "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
+    packages: [
+      {
+        id: "1",
+        name: "Premium Recovery Pass",
+        issunday: true,
+        description:
+          "Indian healing rituals invite transformative journeys. Rooted in the interplay of sacred elements - Jal, Vayu, Agni, Prithvi & Akash, we offer holistic rejuvenation for mind, body, and soul",
+        price: 8000,
+        features: [
+          "Heated Swimming Pool",
+          "J Wellness Circle Spa",
+          "Indian Aromatherapy (60 mins)",
+          "Locker and show facilities",
+          "Ice Bath",
+          "Jacuzzi",
+          "Sauna",
+          "Steam",
+        ],
+        stock: 2,
+      },
+      {
+        id: "2",
+        name: "Swimming Pool Pass",
+        issunday: true,
+        description:
+          "Swimming Pool A refreshing haven for relaxation and rejuvenation.",
+        price: 2199,
+        features: ["Swimming Pool"],
+        stock: 8,
+      },
+      {
+        id: "3",
+        name: "Swimming Pool + Wet Area",
+        issunday: true,
+        description:
+          "Experience refreshing relaxation in the swimming pool, serene ambiance in the chill pool, muscle soothing in the Jacuzzi, detox warmth in the sauna, and revitalizing therapy in the steam room.",
+        price: 3600,
+        features: ["Swimming Pool", "Chill pool", "Jacuzzi", "Sauna", "Steam"],
+        stock: 5,
+      },
+    ],
+    hotelpackage: "Swimming Pool + Spa",
+    hotelRule: [
+      "Pool access restricted to specific timings",
+      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
+  },
+  {
+    id: "35",
+    name: "Fariyas Hotel",
+    images: [
+      // "/hotels/fariyas/swimmingpool.avif",
+      "/hotels/fariyas/Pool-Side-Hotel-In-Mumbai.jpg",
+      "/hotels/fariyas/restro.jpg",
+      "/hotels/fariyas/restro.avif",
+      "/hotels/fariyas/restrotwo.avif",
+      "/hotels/fariyas/outdoor.webp",
+    ],
+    distance: 2,
+    ispremium: false,
+    quantity: 9,
+    map_link: "https://maps.app.goo.gl/D6zQVq1PiNfTEPcQ9",
+    address:
+      "25, Off Arthur Bunder Road, Colaba, Mumbai - 400 005, Maharashtra, India.",
+    rating: 4.2,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: true,
+    price: 2600,
+    description:
+      "Enjoy a comfortable stay at this contemporary property offering well-appointed rooms, multiple dining spots, an outdoor pool and an extensive range of world-class amenities.",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch with Pool (Non-Alcoholic)",
+        issunday: true,
+        description:
+          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
+        price: 2600,
+        features: [
+          "SUN: 12:30pm to 3:00pm",
+          "Multi-Cuisine Buffet",
+          "Swimming Pool",
+        ],
+      },
+    ],
+    hotelpackage: "Brunch + Swimming Pool",
+    hotelRule: [
+      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
+  },
+  {
     id: "17",
     name: "Ramada Plaza by Wyndham Palm Grove, Mumbai",
     images: [
@@ -63,140 +197,6 @@ export const hotels = [
     ],
   },
   {
-    id: "35",
-    name: "Fariyas Hotel",
-    images: [
-      // "/hotels/fariyas/swimmingpool.avif",
-      "/hotels/fariyas/Pool-Side-Hotel-In-Mumbai.jpg",
-      "/hotels/fariyas/restro.jpg",
-      "/hotels/fariyas/restro.avif",
-      "/hotels/fariyas/restrotwo.avif",
-      "/hotels/fariyas/outdoor.webp",
-    ],
-    distance: 2,
-    ispremium: false,
-    quantity: 9,
-    map_link: "https://maps.app.goo.gl/D6zQVq1PiNfTEPcQ9",
-    address:
-      "25, Off Arthur Bunder Road, Colaba, Mumbai - 400 005, Maharashtra, India.",
-    rating: 4.2,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: true,
-    price: 2700,
-    description:
-      "Enjoy a comfortable stay at this contemporary property offering well-appointed rooms, multiple dining spots, an outdoor pool and an extensive range of world-class amenities.",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch with Pool (Non-Alcoholic)",
-        issunday: true,
-        description:
-          "Poolside View, Buffet Variety and Quality, Sophisticated, Worth the Price, Pool, Valet Parking",
-        price: 2700,
-        features: [
-          "SUN: 12:30pm to 3:00pm",
-          "Multi-Cuisine Buffet",
-          "Swimming Pool",
-        ],
-      },
-    ],
-    hotelpackage: "Brunch + Swimming Pool",
-    hotelRule: [
-      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
-      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
-    ],
-  },
-  {
-    id: "31",
-    name: "Taj Wellington Mews, Mumbai",
-    images: [
-      "/hotels/tajwellignton/swimmingpool.avif",
-      "/hotels/tajwellignton/pool.avif",
-      "/hotels/tajwellignton/spa.avif",
-      "/hotels/tajwellignton/spa2.avif",
-      "/hotels/tajwellignton/spa3.avif",
-      "/hotels/tajwellignton/restro.avif",
-      "/hotels/tajwellignton/outdoor.avif",
-    ],
-    distance: 1.6,
-    map_link: "https://maps.app.goo.gl/jhsKJGb6PzfqwK9t9",
-    ispremium: true,
-    quantity: 2,
-    address:
-      "33, Nathalal Parikh Marg, Cusrow Baug Colony, Apollo Bandar, Colaba, Mumbai, Maharashtra 400001",
-    rating: 4.5,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: true,
-    price: 2200,
-    description:
-      "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
-    packages: [
-      {
-        id: "1",
-        name: "Premium Recovery Pass",
-        issunday: true,
-        description:
-          "Indian healing rituals invite transformative journeys. Rooted in the interplay of sacred elements - Jal, Vayu, Agni, Prithvi & Akash, we offer holistic rejuvenation for mind, body, and soul",
-        price: 8250,
-        features: [
-          "Heated Swimming Pool",
-          "J Wellness Circle Spa",
-          "Indian Aromatherapy (60 mins)",
-          "Locker and show facilities",
-          "Chill pool",
-          "Jacuzzi",
-          "Sauna",
-          "Steam",
-        ],
-        stock: 2,
-      },
-      {
-        id: "2",
-        name: "Swimming Pool Pass",
-        issunday: true,
-        description:
-          "Swimming Pool A refreshing haven for relaxation and rejuvenation.",
-        price: 2200,
-        features: ["Swimming Pool"],
-        stock: 8,
-      },
-      {
-        id: "3",
-        name: "Swimming Pool + Wet Area",
-        issunday: true,
-        description:
-          "Experience refreshing relaxation in the swimming pool, serene ambiance in the chill pool, muscle soothing in the Jacuzzi, detox warmth in the sauna, and revitalizing therapy in the steam room.",
-        price: 3600,
-        features: ["Swimming Pool", "Chill pool", "Jacuzzi", "Sauna", "Steam"],
-        stock: 5,
-      },
-    ],
-    hotelpackage: "Swimming Pool + Spa",
-    hotelRule: [
-      "Pool access restricted to specific timings",
-      "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
-      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
-    ],
-  },
-  {
     id: "5",
     name: "Radisson Blu Mumbai International Airport",
     images: [
@@ -221,7 +221,7 @@ export const hotels = [
       "Jacuzzi",
     ],
     ispartner: true,
-    price: 3450,
+    price: 3200,
     description:
       "Experience utmost luxury at this lavish retreat offering well-furnished rooms, elite restaurants, and a host of modern amenities.",
     packages: [
@@ -231,7 +231,7 @@ export const hotels = [
         issunday: true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 3250,
+        price: 3200,
         features: [
           "SUN: 12:30pm to 4:00pm",
           "Multi-cuisine brunch",
@@ -245,7 +245,7 @@ export const hotels = [
         issunday: true,
         description:
           "Best spa in Mumbai with all sorts of massage to rejuvenate at Unora by Tattva Spa",
-        price: 3600,
+        price: 3750,
         features: ["Deep Tissue", "Swedish", "Foot Massage"],
       },
     ],
@@ -286,7 +286,7 @@ export const hotels = [
         issunday: true,
         description:
           "Outdoor pool spread over two levels features the main pool with a depth of 5 feet and the other one with a depth of 2 feet for kids only.",
-        price: 3090,
+        price: 3000,
         features: ["Gourmet brunch", "Swimming Pool", "Valet Parking"],
       },
       {
@@ -477,7 +477,7 @@ export const hotels = [
     rating: 4.5,
     amenities: ["Brunch", "Swimming Pool", "Restuarant", "Bar"],
     ispartner: true,
-    price: 3250,
+    price: 3050,
     description:
       "Hotel Sea Princess puts you in the prime area f Mumbai with the finest interiors, ultra-modern facilities, and warm hospitality you can ever imagine",
     packages: [
@@ -487,7 +487,7 @@ export const hotels = [
         issunday: true,
         description:
           "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price Pool, Luxury, Brunch",
-        price: 3250,
+        price: 3050,
         features: ["Gourmet Brunch", "Swimming Pool", "Live Music"],
       },
       {
@@ -508,68 +508,6 @@ export const hotels = [
     hotelpackage: "Brunch + Swimming Pool",
     hotelRule: [
       "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
-      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
-    ],
-  },
-  {
-    id: "13",
-    name: "Trident Bandra Kurla",
-    images: [
-      "/hotels/tridentbkc/restrotwo.avif",
-      "/hotels/tridentbkc/restro.avif",
-      "/hotels/tridentbkc/outdoor.avif",
-    ],
-    distance: 13.2,
-    ispremium: true,
-    quantity: 7,
-    map_link: "https://maps.app.goo.gl/LGMe4Vk3rGbPGbY67",
-    address:
-      "C 56, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400098",
-    rating: 4.6,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: true,
-    price: 3199,
-    description:
-      "Relax in the cosmopolitan Mumbai with a stay at Trident Bandra Kurla, which prides itself in offering the very best and indulgent leisure amenities for every type of guest",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch (Non-Alcoholic)",
-        issunday: true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 3199,
-        features: [
-          "SUN: 1:00 pm to 4:00pm",
-          "Multi-Cuisine Brunch",
-          "Live Counter",
-        ],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch (Alcoholic)",
-        issunday: true,
-        description:
-          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
-        price: 3699,
-        features: [
-          "SUN: 1:00 pm to 4:00pm",
-          "Multi-Cuisine Brunch",
-          "Live Counter",
-        ],
-      },
-    ],
-    hotelpackage: "Brunch",
-    hotelRule: [
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
@@ -649,118 +587,6 @@ export const hotels = [
     hotelpackage: "Brunch + Spa",
     hotelRule: [
       "Please remember to bring your swimming costume, as our hotel offers a swimming pool and beach access for your enjoyment.",
-      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
-    ],
-  },
-  {
-    id: "21",
-    name: "Grand Hyatt Mumbai Hotel & Residences",
-    images: [
-      "/hotels/Restro.jpg",
-      "/hotels/Grandhyattrestrotwo.jpg",
-      "/hotels/Outdoor.jpg",
-    ],
-    distance: 13.5,
-    ispremium: true,
-    quantity: 6,
-    map_link: "https://maps.app.goo.gl/mimXGAQ4LPiMF5TG8",
-    address:
-      "Bandra Kurla Complex, Siddharath Nagar, Vakola, Vicinity, Mumbai, Maharashtra 400055",
-    rating: 4.5,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: true,
-    price: 3800,
-    description:
-      "Enjoy a lavish stay at a premium hotel offering world-class comfort with elegant dining spaces, a spa and a pool.",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch (Non-Alcoholic)",
-        issunday: true,
-        description:
-          " Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
-        price: 3800,
-        features: ["Multi-Cuisine"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch (Alcoholic)",
-        issunday: true,
-        description:
-          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
-        price: 4800,
-        features: ["Gourmet brunch", "Hard drinks(Vodka, Chivas etc)"],
-      },
-    ],
-    hotelpackage: "Brunch",
-    hotelRule: [
-      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
-    ],
-  },
-  {
-    id: "23",
-    name: "Taj The Trees, Mumbai",
-    images: [
-      "/hotels/tajtrees/outdoor.jpg",
-      "/hotels/tajtrees/swimmingpool.avif",
-      "/hotels/tajtrees/pool.avif",
-      "/hotels/tajtrees/spa.avif",
-      "/hotels/tajtrees/spa2.avif",
-      "/hotels/tajtrees/restro.avif",
-      "/hotels/tajtrees/restrotwo.avif",
-    ],
-    distance: 14.6,
-    ispremium: true,
-    quantity: 10,
-    map_link: "https://maps.app.goo.gl/9ex8WmJSweithjNN9",
-    address:
-      "Taj the Trees, off Eastern Express Highway, Juhi - D wing, Pirojshanagar, Vikhroli, Mumbai, Maharashtra 400079",
-    rating: 4.6,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: true,
-    price: 2999,
-    description:
-      "Taj The Trees ensures a memorable stay with a fine dining experience, exceptional service, and top-tier amenities",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch (Non-Alcoholic)",
-        issunday: true,
-        description:
-          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
-        price: 2999,
-        features: ["Multi-Cuisine", "Live Music"],
-      },
-      {
-        id: "2",
-        name: "Sunday Brunch (Alcoholic)",
-        issunday: true,
-        description:
-          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
-        price: 4699,
-        features: ["Multi-Cuisine", "Hard Drinks", "Live Music"],
-      },
-    ],
-    hotelpackage: "Brunch",
-    hotelRule: [
       "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
@@ -920,55 +746,6 @@ export const hotels = [
     ],
   },
   {
-    id: "34",
-    name: "Hyatt Centric Juhu Mumbai",
-    images: [
-      "/hotels/hyattcentric/outdoor.avif",
-      "/hotels/hyattcentric/swimmingpool.avif",
-      "/hotels/hyattcentric/restro.jpg",
-      "/hotels/hyattcentric/restrotwo.avif",
-    ],
-    distance: 14.4,
-    ispremium: false,
-    quantity: 6,
-    map_link: "https://maps.app.goo.gl/bkPMgxdQ9eKVVH9h8",
-    address: "Juhu Tara Rd, Shivaji Nagr, Juhu, Mumbai, Maharashtra 400049",
-    rating: 4.0,
-    amenities: [
-      "Brunch",
-      "Gym",
-      "Swimming Pool",
-      "Spa",
-      "Restuarant",
-      "Bar",
-      "Steam and Sauna",
-    ],
-    ispartner: true,
-    price: 2500,
-    description:
-      "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
-    packages: [
-      {
-        id: "1",
-        name: "Sunday Brunch",
-        issunday: true,
-        description:
-          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
-        price: 2500,
-        features: [
-          "Sun: 11:00am to 3:00pm",
-          "Gourmet Brunch",
-          "Multi-Cuisine Buffet",
-        ],
-      },
-    ],
-    hotelpackage: "Brunch",
-    hotelRule: [
-      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
-      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
-    ],
-  },
-  {
     id: "10",
     name: "Novotel Mumbai International Airport",
     images: [
@@ -1029,8 +806,8 @@ export const hotels = [
     id: "32",
     name: "Ramada by Wyndham Navi Mumbai",
     images: [
-      "https://api.daybreakpass.com/uploads/hotel/images/Lounge.jpg",
       "https://api.daybreakpass.com/uploads/hotel/images/swimming pool 2.jpg",
+      "https://api.daybreakpass.com/uploads/hotel/images/Lounge.jpg",
       "https://api.daybreakpass.com/uploads/hotel/images/gym.jpg",
       "https://api.daybreakpass.com/uploads/hotel/images/coffeescapes.jpg",
       "https://api.daybreakpass.com/uploads/hotel/images/Swimming pool.jpg",
@@ -1081,7 +858,229 @@ export const hotels = [
       "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
     ],
   },
-
+  {
+    id: "13",
+    name: "Trident Bandra Kurla",
+    images: [
+      "/hotels/tridentbkc/restrotwo.avif",
+      "/hotels/tridentbkc/restro.avif",
+      "/hotels/tridentbkc/outdoor.avif",
+    ],
+    distance: 13.2,
+    ispremium: true,
+    quantity: 7,
+    map_link: "https://maps.app.goo.gl/LGMe4Vk3rGbPGbY67",
+    address:
+      "C 56, G Block BKC, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400098",
+    rating: 4.6,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: true,
+    price: 3199,
+    description:
+      "Relax in the cosmopolitan Mumbai with a stay at Trident Bandra Kurla, which prides itself in offering the very best and indulgent leisure amenities for every type of guest",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch (Non-Alcoholic)",
+        issunday: true,
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 3199,
+        features: [
+          "SUN: 1:00 pm to 4:00pm",
+          "Multi-Cuisine Brunch",
+          "Live Counter",
+        ],
+      },
+      {
+        id: "2",
+        name: "Sunday Brunch (Alcoholic)",
+        issunday: true,
+        description:
+          "Live Cooking Station, Buffet Variety and Quality, Sophisticated, Worth the Price, Luxury, Brunch",
+        price: 3699,
+        features: [
+          "SUN: 1:00 pm to 4:00pm",
+          "Multi-Cuisine Brunch",
+          "Live Counter",
+        ],
+      },
+    ],
+    hotelpackage: "Brunch",
+    hotelRule: [
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
+  },
+  {
+    id: "21",
+    name: "Grand Hyatt Mumbai Hotel & Residences",
+    images: [
+      "/hotels/Restro.jpg",
+      "/hotels/Grandhyattrestrotwo.jpg",
+      "/hotels/Outdoor.jpg",
+    ],
+    distance: 13.5,
+    ispremium: true,
+    quantity: 6,
+    map_link: "https://maps.app.goo.gl/mimXGAQ4LPiMF5TG8",
+    address:
+      "Bandra Kurla Complex, Siddharath Nagar, Vakola, Vicinity, Mumbai, Maharashtra 400055",
+    rating: 4.5,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: true,
+    price: 3800,
+    description:
+      "Enjoy a lavish stay at a premium hotel offering world-class comfort with elegant dining spaces, a spa and a pool.",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch (Non-Alcoholic)",
+        issunday: true,
+        description:
+          " Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
+        price: 3800,
+        features: ["Multi-Cuisine"],
+      },
+      {
+        id: "2",
+        name: "Sunday Brunch (Alcoholic)",
+        issunday: true,
+        description:
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
+        price: 4800,
+        features: ["Gourmet brunch", "Hard drinks(Vodka, Chivas etc)"],
+      },
+    ],
+    hotelpackage: "Brunch",
+    hotelRule: [
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
+  },
+  {
+    id: "23",
+    name: "Taj The Trees, Mumbai",
+    images: [
+      "/hotels/tajtrees/outdoor.jpg",
+      "/hotels/tajtrees/swimmingpool.avif",
+      "/hotels/tajtrees/pool.avif",
+      "/hotels/tajtrees/spa.avif",
+      "/hotels/tajtrees/spa2.avif",
+      "/hotels/tajtrees/restro.avif",
+      "/hotels/tajtrees/restrotwo.avif",
+    ],
+    distance: 14.6,
+    ispremium: true,
+    quantity: 10,
+    map_link: "https://maps.app.goo.gl/9ex8WmJSweithjNN9",
+    address:
+      "Taj the Trees, off Eastern Express Highway, Juhi - D wing, Pirojshanagar, Vikhroli, Mumbai, Maharashtra 400079",
+    rating: 4.6,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: true,
+    price: 2999,
+    description:
+      "Taj The Trees ensures a memorable stay with a fine dining experience, exceptional service, and top-tier amenities",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch (Non-Alcoholic)",
+        issunday: true,
+        description:
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
+        price: 2999,
+        features: ["Multi-Cuisine", "Live Music"],
+      },
+      {
+        id: "2",
+        name: "Sunday Brunch (Alcoholic)",
+        issunday: true,
+        description:
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
+        price: 4699,
+        features: ["Multi-Cuisine", "Hard Drinks", "Live Music"],
+      },
+    ],
+    hotelpackage: "Brunch",
+    hotelRule: [
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
+  },
+  {
+    id: "34",
+    name: "Hyatt Centric Juhu Mumbai",
+    images: [
+      "/hotels/hyattcentric/outdoor.avif",
+      "/hotels/hyattcentric/swimmingpool.avif",
+      "/hotels/hyattcentric/restro.jpg",
+      "/hotels/hyattcentric/restrotwo.avif",
+    ],
+    distance: 14.4,
+    ispremium: false,
+    quantity: 6,
+    map_link: "https://maps.app.goo.gl/bkPMgxdQ9eKVVH9h8",
+    address: "Juhu Tara Rd, Shivaji Nagr, Juhu, Mumbai, Maharashtra 400049",
+    rating: 4.0,
+    amenities: [
+      "Brunch",
+      "Gym",
+      "Swimming Pool",
+      "Spa",
+      "Restuarant",
+      "Bar",
+      "Steam and Sauna",
+    ],
+    ispartner: true,
+    price: 2500,
+    description:
+      "Spacious rooms with panoramic sea views, a rooftop lounge, and an award-winning spa await you at this chic hotel.",
+    packages: [
+      {
+        id: "1",
+        name: "Sunday Brunch",
+        issunday: true,
+        description:
+          "Buffet Variety and Quality, Sophisticated, Worth the Price, Valet Parking",
+        price: 2500,
+        features: [
+          "Sun: 11:00am to 3:00pm",
+          "Gourmet Brunch",
+          "Multi-Cuisine Buffet",
+        ],
+      },
+    ],
+    hotelpackage: "Brunch",
+    hotelRule: [
+      "No outside food or drinks are allowed within the hotel premises to ensure the quality and safety of our dining services.",
+      "Please respect other guests and hotel property to maintain a pleasant and welcoming environment for everyone.",
+    ],
+  },
   // {
   //   id: "1",
   //   name: "Lemon Tree Premier, Mumbai International Airport, Mumbai",
