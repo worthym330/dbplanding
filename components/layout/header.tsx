@@ -34,13 +34,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur-lg">
-      <div
-        className={`flex justify-center items-center gap-2 bg-primary text-white py-2 w-full text-center`}
-      >
-        <span className="font-bold text-sm">
-          Marathon deals closing at | 18<sup>th</sup> Jan 2025 | {timeLeft}
-        </span>
-      </div>
+    
       <div className="mx-auto flex h-16 container items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 text-xl font-bold">
           <img src={logoSrc} alt="DayBreakPass Logo" className="h-10 w-10" />
