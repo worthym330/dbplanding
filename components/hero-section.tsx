@@ -17,13 +17,7 @@ export function HeroSection() {
       >
         <div className="absolute inset-0 bg-black/50" />
       </div>
-      <div className="absolute inset-x-0 md:-top-12 flex items-center justify-center">
-        <img
-          src="/DayBreakPassXTTMLogo.svg"
-          alt="DayBreakPassXTTMLogo"
-          className="w-96 md:w-1/2 object-cover"
-        />
-      </div>
+      
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
