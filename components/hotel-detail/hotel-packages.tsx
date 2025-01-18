@@ -332,7 +332,9 @@ export function HotelPackages({ packages, hotel }: HotelPackagesProps) {
                       onClick={() => handleAddToCart(pkg)}
                       disabled={pkg.stock === 0}
                     >
-                      Add to Cart
+                      {(pkg.stock ?? 0) > 0
+                      ? `Add to Cart`
+                      : "Sold Out"}
                     </Button>
                   )}
                 </CardFooter>
