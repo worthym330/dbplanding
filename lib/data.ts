@@ -49,7 +49,7 @@ export const hotels = [
           "Sauna",
           "Steam",
         ],
-        stock: 2,
+        stock: 0,
       },
       {
         id: "2",
