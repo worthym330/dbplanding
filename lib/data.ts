@@ -143,7 +143,7 @@ export const hotels = [
     ],
     distance: 14.7,
     ispremium: false,
-    quantity: 5,
+    quantity: 0,
     map_link: "https://maps.app.goo.gl/iWGaiu6s7PCD5UyGA",
     address:
       "Juhu Beach, Juhu Tara Rd, next to Shivaji Maharaj Statue, Nazir Wadi, Theosophical Housing Colony, Juhu, Mumbai, Maharashtra 400049",
@@ -174,6 +174,7 @@ export const hotels = [
           "Multi-cuisine brunch",
           "Swimming Pool",
         ],
+        stock:0,
       },
       {
         id: "2",
@@ -187,6 +188,7 @@ export const hotels = [
           "Multi-cuisine brunch",
           "Swimming Pool",
         ],
+        stock:0,
       },
     ],
     hotelpackage: "Brunch + Swimming Pool",
