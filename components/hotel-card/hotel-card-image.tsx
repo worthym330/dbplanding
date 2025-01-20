@@ -44,11 +44,11 @@ export function HotelCardImage({
         </div>
       )}
 
-      {qnty && qnty <= 10 && (
+      {/* {qnty && qnty <= 10 && (
         <div className="absolute bottom-0 left-0 bg-gray-100 text-red-500 px-3 py-1 flex items-center gap-1 rounded-tr-md shadow-md text-xs">
           Only {qnty} packages left!
         </div>
-      )}
+      )} */}
     </div>
   );
 }
