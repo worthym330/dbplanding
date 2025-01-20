@@ -9,9 +9,9 @@ export function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/marathon.jpg')",
-          // backgroundImage:
-          //   "url('https://images.unsplash.com/photo-1596460658047-1826d5921c56?auto=format&fit=crop&q=80')",
+          // backgroundImage: "url('/marathon.jpg')",
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1920&auto=format&fit=crop')",
           filter: "blur(8px)",
         }}
       >
@@ -26,8 +26,6 @@ export function HeroSection() {
       >
         <h1 className="mb-6 text-4xl font-bold leading-tight tracking-tighter md:text-6xl lg:text-7xl">
           Premium Recovery
-          <br />
-          <span className="text-white">After Your Marathon</span>
         </h1>
         <p className="mb-8 max-w-[600px] text-lg text-gray-200 md:text-xl">
           Exclusive hotels with premium amenities for the perfect post-race

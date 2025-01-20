@@ -15,11 +15,11 @@ interface HotelCardProps {
 
 export function HotelCard({ hotel }: HotelCardProps) {
   return (
-    <Link href={`/hotels/${hotel.id}`} className="block h-full">
+    // <Link href={`/hotels/${hotel.id}`} className="block h-full">
       <motion.div
         whileHover={{ y: -5 }}
         transition={{ duration: 0.2 }}
-        className="h-full"
+        className="h-full blur-sm"
       >
         <Card className="h-full cursor-pointer overflow-hidden">
           <HotelCardImage
@@ -55,10 +55,10 @@ export function HotelCard({ hotel }: HotelCardProps) {
             </p>
           </CardContent>
           <CardFooter>
-            <Button className="w-full">Book Now</Button>
+            <Button className="w-full">Sold Out</Button>
           </CardFooter>
         </Card>
       </motion.div>
-    </Link>
+    // </Link>
   );
 }
