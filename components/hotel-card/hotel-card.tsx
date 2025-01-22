@@ -19,7 +19,7 @@ export function HotelCard({ hotel }: HotelCardProps) {
       <motion.div
         whileHover={{ y: -5 }}
         transition={{ duration: 0.2 }}
-        className="h-full blur-sm"
+        className="h-full"
       >
         <Card className="h-full cursor-pointer overflow-hidden">
           <HotelCardImage
