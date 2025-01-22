@@ -26,8 +26,8 @@ export function HeroSection() {
         transition={{ duration: 0.8 }}
         className="relative flex h-full flex-col items-center justify-center px-4 text-center text-white"
       >
-        <h1 className="mb-6 text-4xl font-bold leading-tight tracking-tighter md:text-6xl lg:text-7xl">
-          Premium Hotels & Resort Amenities
+        <h1 className="mb-6 text-2xl font-bold leading-tight tracking-tighter md:text-6xl lg:text-7xl">
+          Find your Next Daycation
         </h1>
         <p className="mb-8 max-w-[600px] text-lg text-gray-200 md:text-xl">
           Access world-class spas, gourmet dining, and pristine pools with our exclusive 
