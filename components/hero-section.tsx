@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Modal } from "./modal";
 
 export function HeroSection() {
-  const [isOpen, setIsOpen]= useState(false)
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="relative h-[90vh] w-full overflow-hidden">
       <div
@@ -19,7 +19,7 @@ export function HeroSection() {
       >
         <div className="absolute inset-0 bg-black/50" />
       </div>
-      
+
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -27,11 +27,12 @@ export function HeroSection() {
         className="relative flex h-full flex-col items-center justify-center px-4 text-center text-white"
       >
         <h1 className="mb-6 text-2xl font-bold leading-tight tracking-tighter md:text-6xl lg:text-7xl">
-          Find your Next Daycation
+          Discover Your Perfect Daycation
         </h1>
         <p className="mb-8 max-w-[600px] text-lg text-gray-200 md:text-xl">
-          Access world-class spas, gourmet dining, and pristine pools with our exclusive 
-          day passes. Experience luxury without the overnight stay.
+          Indulge in world-class spas, savor gourmet dining, and unwind by
+          serene pools with our exclusive day passes. Experience luxury
+          reimagined—no overnight stay required.
         </p>
         <motion.button
           whileHover={{ scale: 1.05 }}
