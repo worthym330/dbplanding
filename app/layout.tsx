@@ -28,6 +28,8 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/logos/LogoBlack.png" />
         {/* Microsoft Clarity Script */}
+        <meta name="agd-partner-manual-verification" />
+
         <Script
           id="microsoft-clarity"
           strategy="afterInteractive"
