@@ -13,9 +13,9 @@ import { WelcomeModal } from "@/components/welcomeModal";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DayBreakPass - Premium Hotel Booking for Marathon Runners",
+  title: "DayBreakPass - Discover Your Perfect Daycation",
   description:
-    "Exclusive hotel packages and recovery experiences for marathon runners",
+    "Indulge in world-class spas, savor gourmet dining, and unwind by serene pools with our exclusive day passes. Experience luxury reimagined—no overnight stay required.",
 };
 
 export default function RootLayout({
@@ -26,9 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+      <meta name="agd-partner-manual-verification" content="your-verification-code" />
+
         <link rel="icon" href="/logos/LogoBlack.png" />
         {/* Microsoft Clarity Script */}
-        <meta name="agd-partner-manual-verification" />
 
         <Script
           id="microsoft-clarity"
