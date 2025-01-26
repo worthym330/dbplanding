@@ -26,8 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <meta name="agd-partner-manual-verification" content="your-verification-code" />
-
+        <meta name="agd-partner-manual-verification" />
         <link rel="icon" href="/logos/LogoBlack.png" />
         {/* Microsoft Clarity Script */}
 
