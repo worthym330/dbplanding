@@ -14,8 +14,8 @@ interface HotelCardProps {
 }
 
 export function HotelCard({ hotel }: HotelCardProps) {
-  return (
-    // <Link href={`/hotels/${hotel.id}`} className="block h-full">
+  return (hotel?.quantity ?? 0) > 0 ? (
+    <Link href={`/hotels/${hotel.id}`} className="block h-full">
       <motion.div
         whileHover={{ y: -5 }}
         transition={{ duration: 0.2 }}
@@ -38,10 +38,7 @@ export function HotelCard({ hotel }: HotelCardProps) {
             <div className="flex flex-wrap gap-2 truncate ellipse">
               <span className="overflow-x-auto overflowclass">
                 {hotel.packages.map((pkg) => (
-                  <Badge
-                    key={pkg.id}
-                    variant="outline"
-                  >
+                  <Badge key={pkg.id} variant="outline">
                     {pkg.name}
                   </Badge>
                 ))}
@@ -55,10 +52,53 @@ export function HotelCard({ hotel }: HotelCardProps) {
             </p>
           </CardContent>
           <CardFooter>
-            <Button className="w-full">Sold Out</Button>
+            <Button className="w-full">Book Now</Button>
           </CardFooter>
         </Card>
       </motion.div>
-    // </Link>
+    </Link>
+  ) : (
+    <motion.div
+      whileHover={{ y: -5 }}
+      transition={{ duration: 0.2 }}
+      className="h-full"
+    >
+      <Card className="h-full cursor-not-allowed overflow-hidden">
+        <HotelCardImage
+          src={hotel.images[0]}
+          alt={hotel.name}
+          partner={hotel?.ispartner}
+          ispremium={hotel?.ispremium}
+          qnty={hotel?.quantity}
+        />
+        <HotelCardHeader
+          name={hotel.name}
+          distance={hotel.distance}
+          rating={hotel.rating}
+        />
+        <CardContent>
+          <div className="flex flex-wrap gap-2 truncate ellipse">
+            <span className="overflow-x-auto overflowclass">
+              {hotel.packages.map((pkg) => (
+                <Badge key={pkg.id} variant="outline">
+                  {pkg.name}
+                </Badge>
+              ))}
+            </span>
+          </div>
+          <p className="mt-4 font-bold flex justify-between items-center">
+            <span className="font-normal text-muted-foreground">
+              Starting at
+            </span>
+            <span>₹{hotel.price}</span>
+          </p>
+        </CardContent>
+        <CardFooter>
+          <Button className="w-full" disabled>
+            Sold Out
+          </Button>
+        </CardFooter>
+      </Card>
+    </motion.div>
   );
 }

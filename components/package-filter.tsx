@@ -154,7 +154,7 @@ export function PackagesSection() {
               .sort((a, b) => {
                 if (a.ispartner === b.ispartner) return 0;
                 return a.ispartner ? -1 : 1;
-              })
+              }).toSorted((a,b)=> b.quantity - a.quantity)
               .map((hotel, index) => (
                 <motion.div
                   key={hotel.id}
