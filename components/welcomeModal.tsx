@@ -32,6 +32,26 @@ export function WelcomeModal() {
   const [isOpen, setIsOpen] = useState(false);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
+ useEffect(() => {
+    const storedVersion = localStorage.getItem("app_version");
+    const currentVersion = process.env.NEXT_PUBLIC_BUILD_ID;
+
+    if (storedVersion !== currentVersion) {
+      localStorage.clear();
+      sessionStorage.clear();
+
+      // Clear all cookies
+      document.cookie.split(";").forEach((c) => {
+        document.cookie = c
+          .replace(/^ +/, "")
+          .replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+      });
+
+      // Update version in localStorage
+      localStorage.setItem("app_version", currentVersion?.toString() ?? "");
+    }
+  }, []);
+
   const {
     register,
     handleSubmit,

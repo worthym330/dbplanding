@@ -4,6 +4,9 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
+  env: {
+    NEXT_PUBLIC_BUILD_ID: Date.now().toString(), // Unique ID for each deployment
+  },
 };
 
 module.exports = nextConfig;
