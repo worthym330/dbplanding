@@ -23,6 +23,39 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // Simple maintenance mode toggle via environment variable.
+  // Set MAINTENANCE_MODE=true in .env.local to activate.
+  const maintenance = process.env.MAINTENANCE_MODE === "true";
+
+  if (maintenance) {
+    return (
+      <html lang="en">
+        <head>
+          <meta name="robots" content="noindex,nofollow" />
+          <link rel="icon" href="/logos/LogoBlack.png" />
+          <title>Scheduled Maintenance | DayBreakPass</title>
+        </head>
+        <body className={inter.className + " bg-gray-50"}>
+          <div className="min-h-screen flex flex-col items-center justify-center px-6 text-center">
+            <img
+              src="/logos/LogoBlack.png"
+              alt="DayBreakPass"
+              className="h-20 mb-8"
+            />
+            <h1 className="text-3xl font-semibold mb-4">Scheduled Maintenance</h1>
+            <p className="text-muted-foreground max-w-xl mb-6">
+              We’re currently performing upgrades to improve your experience. Please
+              check back soon.
+            </p>
+            <div className="text-sm text-gray-500">
+              &copy; {new Date().getFullYear()} DayBreakPass
+            </div>
+          </div>
+        </body>
+      </html>
+    );
+  }
+
   return (
     <html lang="en">
       <head>
