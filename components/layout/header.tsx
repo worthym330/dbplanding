@@ -33,9 +33,11 @@ export function Header() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur-lg">
-    
-      <div className="mx-auto flex h-16 container items-center justify-between px-4">
+    <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur-lg flex flex-col">
+      <div className="bg-destructive text-destructive-foreground text-center py-1.5 text-sm font-medium w-full px-4">
+        We are out of service
+      </div>
+      <div className="mx-auto flex h-16 w-full container items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 text-xl font-bold">
           <img src={logoSrc} alt="DayBreakPass Logo" className="h-10 w-10" />
           <span>DayBreakPass</span>
