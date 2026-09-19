@@ -42,10 +42,10 @@ export function Footer() {
               <li>
                 Email:{" "}
                 <a
-                  href="mailto:team@daybreakpass.com"
+                  href="mailto:team@sereneexperience.com"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  team@daybreakpass.com
+                  team@sereneexperience.com
                 </a>
               </li>
               <li>
@@ -91,13 +91,13 @@ export function Footer() {
                   <FaFacebook className="w-8 h-8 sm:w-10 sm:h-10" />
                 </a>
                 <a
-                  href="https://www.instagram.com/daybreakpass/"
+                  href="https://www.instagram.com/sereneexperience/"
                   target="_blank"
                 >
                   <FaInstagram className="w-8 h-8 sm:w-10 sm:h-10" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/company/daybreakpass/"
+                  href="https://www.linkedin.com/company/sereneexperience/"
                   target="_blank"
                 >
                   <FaLinkedinIn className="w-8 h-8 sm:w-10 sm:h-10" />
@@ -107,7 +107,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t pt-8 text-center text-sm text-muted-foreground">
-          © 2024 DayBreakPass. All rights reserved.
+          © 2024 Serene Experience. All rights reserved.
         </div>
       </div>
     </footer>

@@ -3,10 +3,10 @@ const TermsAndConditions = () => {
     <div className="">
       <div className="px-4">
         <p className="text-gray-600 mb-4">
-          Welcome to DayBreakPass (the “Website”) By accessing and using this
+          Welcome to Serene Experience (the “Website”) By accessing and using this
           website, you agree to comply with the following terms and conditions.
           Please read these terms carefully before proceeding with any booking
-          or using any services offered by DayBreakPass. If you do not agree
+          or using any services offered by Serene Experience. If you do not agree
           with any of these terms, you must refrain from using our services.
         </p>
         <div className="space-y-4 text-justify">
@@ -14,7 +14,7 @@ const TermsAndConditions = () => {
             <h2 className="text-xl font-semibold">Website Usage</h2>
             <ol className="list-[lower-alpha] list-outside ml-5">
               <li>
-                The DayBreakPass website is intended for personal and commercial
+                The Serene Experience website is intended for personal and commercial
                 use only.
               </li>
               <li>
@@ -32,7 +32,7 @@ const TermsAndConditions = () => {
                 your account.
               </li>
               <li>
-                DayBreakPass reserves the right to refuse service, terminate
+                Serene Experience reserves the right to refuse service, terminate
                 accounts, or cancel bookings at its sole discretion without
                 prior notice, if we suspect any violation of these terms or any
                 fraudulent activity.
@@ -43,7 +43,7 @@ const TermsAndConditions = () => {
             <h2 className="text-xl font-semibold">Booking and Payment</h2>
             <ol className="list-[lower-alpha] list-outside ml-5">
               <li>
-                All bookings made through DayBreakPass are subject to
+                All bookings made through Serene Experience are subject to
                 availability.
               </li>
               <li>
@@ -56,7 +56,7 @@ const TermsAndConditions = () => {
                 cards, debit cards, and other forms of electronic payment.
               </li>
               <li>
-                DayBreakPass reserves the right to change the prices and
+                Serene Experience reserves the right to change the prices and
                 availability of bookings at any time without prior Intimation.
               </li>
             </ol>
@@ -74,7 +74,7 @@ const TermsAndConditions = () => {
                 cancellation policy and within a reasonable timeframe.
               </li>
               <li>
-                DayBreakPass will not be liable for any charges or expenses
+                Serene Experience will not be liable for any charges or expenses
                 incurred as a result of a cancelled booking.
               </li>
             </ol>
@@ -85,14 +85,14 @@ const TermsAndConditions = () => {
               <li>
                 Users may have the option to post reviews, comments, photos, or
                 other content on the website. By doing so, you grant
-                DayBreakPass a non-exclusive, royalty-free, perpetual, and
+                Serene Experience a non-exclusive, royalty-free, perpetual, and
                 worldwide license to use, modify, reproduce, and display such
                 content for promotional and other business purposes.
               </li>
               <li>
                 You agree not to post any content that is illegal, offensive,
                 harmful, defamatory, or infringes upon the rights of others.
-                DayBreakPass reserves the right to delete such content.
+                Serene Experience reserves the right to delete such content.
               </li>
             </ol>
           </section>
@@ -100,15 +100,15 @@ const TermsAndConditions = () => {
             <h2 className="text-xl font-semibold">Intellectual Property</h2>
             <ol className="list-[lower-alpha] list-outside ml-5">
               <li>
-                All content on the DayBreakPass website, including text,
+                All content on the Serene Experience website, including text,
                 graphics, logos, images, software, and other materials, is the
-                property of DayBreakPass or its content suppliers and protected
+                property of Serene Experience or its content suppliers and protected
                 by applicable intellectual property laws.
               </li>
               <li>
                 You may not reproduce, distribute, display, perform, or create
                 derivative works of the website’s content without prior written
-                consent from DayBreakPass.
+                consent from Serene Experience.
               </li>
             </ol>
           </section>
@@ -116,14 +116,14 @@ const TermsAndConditions = () => {
             <h2 className="text-xl font-semibold">Liability Disclaimer</h2>
             <ol className="list-[lower-alpha] list-outside ml-5">
               <li>
-                DayBreakPass strives to provide accurate and up-to-date
+                Serene Experience strives to provide accurate and up-to-date
                 information on the website. However, we do not guarantee the
                 accuracy, completeness, or reliability of the content, including
                 the information about accommodations, amenities, facilities, and
                 services.
               </li>
               <li>
-                DayBreakPass will not be liable for any damages or losses
+                Serene Experience will not be liable for any damages or losses
                 arising from the use of this website.
               </li>
             </ol>
@@ -145,14 +145,14 @@ const TermsAndConditions = () => {
             <h2 className="text-xl font-semibold">Modification of Terms</h2>
             <ol className="list-[lower-alpha] list-outside ml-5">
               <li>
-                DayBreakPass reserves the right to modify or update these terms
+                Serene Experience reserves the right to modify or update these terms
                 and conditions at any time without prior notice. It is your
                 responsibility to review these terms regularly for any changes.
               </li>
             </ol>
           </section>
           <p>
-            By using DayBreakPass’s services and website, you acknowledge that
+            By using Serene Experience’s services and website, you acknowledge that
             you have read, understood, and agreed to these terms and conditions.
             If you do not agree with any part of these terms, you must refrain
             from using our services.

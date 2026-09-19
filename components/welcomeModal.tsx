@@ -15,7 +15,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import app_api from "@/lib/utils/api";
+
 import toast from "react-hot-toast";
 
 // Validation schema
@@ -63,45 +63,37 @@ export function WelcomeModal() {
 
   useEffect(() => {
     const formSubmitted = sessionStorage.getItem("formSubmitted");
-    console.log("formSubmitted", formSubmitted, typeof formSubmitted);
-    if (!formSubmitted) {
+    const modalSeen = sessionStorage.getItem("modalSeen");
+    
+    console.log("formSubmitted", formSubmitted);
+    if (!formSubmitted && !modalSeen) {
       const timeoutId = setTimeout(() => {
         setIsOpen(true);
-      }, 30000); // 15 seconds
+        sessionStorage.setItem("modalSeen", "true");
+      }, 30000); // 30 seconds
 
       return () => {
         clearTimeout(timeoutId);
-        if (intervalRef.current) {
-          clearInterval(intervalRef.current);
-        }
       };
     }
   }, []);
 
-  useEffect(() => {
-    const formSubmitted = sessionStorage.getItem("formSubmitted");
-    if (!isOpen && !formSubmitted) {
-      intervalRef.current = setTimeout(() => {
-        setIsOpen(true);
-      }, 30000);
-      return () => {
-        if (intervalRef.current) {
-          clearTimeout(intervalRef.current);
-        }
-      };
-    }
-  }, [isOpen]);
-
   const onSubmit = async (data: FormData) => {
     try {
-      await app_api.post("/contact", data);
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit data");
+      }
+
       toast.success("We will contact you soon!");
       setIsOpen(false);
       reset();
       sessionStorage.setItem("formSubmitted", "true");
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current); // Clear interval after form submission
-      }
     } catch (error) {
       console.error("Failed to submit data:", error);
       toast.error("Failed to submit data. Please try again.");
@@ -113,7 +105,7 @@ export function WelcomeModal() {
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
-            <DialogTitle>Welcome to DayBreakPass!</DialogTitle>
+            <DialogTitle>Welcome to Serene Experience!</DialogTitle>
             <DialogDescription>
               Need some help to book a hotel? Fill out this form and we will
               contact you ASAP.

@@ -13,7 +13,7 @@ import { WelcomeModal } from "@/components/welcomeModal";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DayBreakPass - Discover Your Perfect Daycation",
+  title: "Serene Experience - Discover Your Perfect Daycation",
   description:
     "Indulge in world-class spas, savor gourmet dining, and unwind by serene pools with our exclusive day passes. Experience luxury reimagined—no overnight stay required.",
 };
@@ -33,13 +33,13 @@ export default function RootLayout({
         <head>
           <meta name="robots" content="noindex,nofollow" />
           <link rel="icon" href="/logos/LogoBlack.png" />
-          <title>Scheduled Maintenance | DayBreakPass</title>
+          <title>Scheduled Maintenance | Serene Experience</title>
         </head>
         <body className={inter.className + " bg-gray-50"}>
           <div className="min-h-screen flex flex-col items-center justify-center px-6 text-center">
             <img
               src="/logos/LogoBlack.png"
-              alt="DayBreakPass"
+              alt="Serene Experience"
               className="h-20 mb-8"
             />
             <h1 className="text-3xl font-semibold mb-4">Scheduled Maintenance</h1>
@@ -48,7 +48,7 @@ export default function RootLayout({
               check back soon.
             </p>
             <div className="text-sm text-gray-500">
-              &copy; {new Date().getFullYear()} DayBreakPass
+              &copy; {new Date().getFullYear()} Serene Experience
             </div>
           </div>
         </body>

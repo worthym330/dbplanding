@@ -32,7 +32,7 @@ const CookiePolicy = () => {
             </h2>
             <p>
               Cookies do lots of different jobs, like helping us understand how
-              the DayBreakPass platform is being used, letting you navigate
+              the Serene Experience platform is being used, letting you navigate
               between pages efficiently, remembering your preferences, and
               generally improving your browsing experience. Cookies can also help
               ensure marketing you see online is more relevant to you and your
@@ -53,23 +53,23 @@ const CookiePolicy = () => {
             <ul className="list-disc list-outside ml-5 space-y-2">
               <li>
                 <strong>Strictly Necessary Cookies:</strong> These cookies are
-                essential, as they enable you to move around the DayBreakPass
+                essential, as they enable you to move around the Serene Experience
                 platform and use its features, such as accessing secure areas.
                 Without these cookies, some services you have asked for such as
-                booking a DayBreakPass can’t be provided.
+                booking a Serene Experience can’t be provided.
               </li>
               <li>
                 <strong>Performance Cookies:</strong> These cookies collect
-                information about how you use the DayBreakPass platform, for
+                information about how you use the Serene Experience platform, for
                 example which pages you go to most often and if you get error
                 messages from certain pages. These cookies don’t gather
                 information that identifies you. All information these cookies
                 collect is anonymous and is only used to improve how the
-                DayBreakPass platform works.
+                Serene Experience platform works.
               </li>
               <li>
                 <strong>Functionality Cookies:</strong> These cookies allow the
-                DayBreakPass platform to remember choices you make (such as a date
+                Serene Experience platform to remember choices you make (such as a date
                 you pick, or a reservation you don't complete).
               </li>
             </ul>
@@ -79,9 +79,9 @@ const CookiePolicy = () => {
             <p>
               First party cookies are cookies that belong to us, while third party
               cookies are cookies that another party places on your browsing
-              device through our DayBreakPass platform. For example, Facebook will
+              device through our Serene Experience platform. For example, Facebook will
               place a cookie on your browsing device if you click on the Facebook
-              link when browsing the DayBreakPass platform.
+              link when browsing the Serene Experience platform.
             </p>
             <h2 className="text-xl font-semibold mt-6 mb-2">
               HOW LONG WILL COOKIES STAY ON MY BROWSING DEVICE
@@ -97,13 +97,13 @@ const CookiePolicy = () => {
               HOW TO CONTROL AND DELETE COOKIES THROUGH THE BROWSER
             </h2>
             <p>
-              The browser you are using to view the DayBreakPass platform can
+              The browser you are using to view the Serene Experience platform can
               enable, disable or delete cookies. To do this, follow the
               instructions provided by your browser (usually located within the
               “Help,” “Tools” or “Edit” facility). Please note that if you set
               your browser to disable cookies, you may not be able to access
-              certain parts of the DayBreakPass platform for example booking a
-              DayBreakPass. Other parts of the DayBreakPass platform may also not
+              certain parts of the Serene Experience platform for example booking a
+              Serene Experience. Other parts of the Serene Experience platform may also not
               work properly. You can find out more information about how to change
               your browser cookie settings at{" "}
               <a
@@ -121,10 +121,10 @@ const CookiePolicy = () => {
               If you have any questions about this Cookie Policy, please contact
               us at{" "}
               <a
-                href="mailto:team@daybreakpass.com"
+                href="mailto:team@sereneexperience.com"
                 className="text-goldColor hover:underline"
               >
-                team@daybreakpass.com
+                team@sereneexperience.com
               </a>
               .
             </p>

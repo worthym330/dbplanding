@@ -39,8 +39,8 @@ export function Header() {
       </div>
       <div className="mx-auto flex h-16 w-full container items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 text-xl font-bold">
-          <img src={logoSrc} alt="DayBreakPass Logo" className="h-10 w-10" />
-          <span>DayBreakPass</span>
+          <img src={logoSrc} alt="Serene Experience Logo" className="h-10 w-10" />
+          <span>Serene Experience</span>
         </Link>
         <nav className="flex items-center gap-2 md:gap-6">
           <Link href="/#hotels" className="text-sm font-medium">

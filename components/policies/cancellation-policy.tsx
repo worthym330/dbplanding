@@ -16,8 +16,8 @@ const CancellationPolicy = () => {
           </ul>
           <p>
             If you have any questions or concerns, feel free to reach out to our support team at{" "}
-            <a href="mailto:team@daybreakpass.com" className="text-primary hover:underline">
-              team@daybreakpass.com
+            <a href="mailto:team@sereneexperience.com" className="text-primary hover:underline">
+              team@sereneexperience.com
             </a>.
           </p>
         </section>

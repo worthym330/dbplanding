@@ -1,5 +1,5 @@
 {
-  "name": "daybreakpass",
+  "name": "sereneexperience",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -39,6 +39,7 @@
     "@radix-ui/react-toggle-group": "^1.1.0",
     "@radix-ui/react-tooltip": "^1.1.2",
     "@types/node": "20.6.2",
+    "@types/nodemailer": "^6.4.17",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.15",
@@ -54,8 +55,10 @@
     "input-otp": "^1.2.4",
     "lucide-react": "^0.446.0",
     "moment": "^2.30.1",
+    "mongoose": "^8.24.4",
     "next": "13.5.1",
     "next-themes": "^0.3.0",
+    "nodemailer": "^6.10.1",
     "postcss": "8.4.30",
     "razorpay": "^2.9.5",
     "react": "18.2.0",
